@@ -59,3 +59,5 @@ class PromptCandidate:
     text: str
     # player_ref -> evidence, one entry per qualifying occurrence
     answers: dict[str, tuple[Evidence, ...]]
+    # Candidates sharing a family are alternatives (e.g. thresholds); the build keeps the first that fits 5–40 answers.
+    family: str = ""

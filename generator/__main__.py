@@ -1,8 +1,9 @@
 import argparse
+import datetime
 import sys
 from pathlib import Path
 
-from generator import wikidata
+from generator import build, wikidata
 from generator.fetch import SOURCES, ChecksumError, fetch_all
 from generator.sources import adaoduque, transfermarkt
 
@@ -22,7 +23,22 @@ def main(argv: list[str] | None = None) -> int:
     commands.add_parser("fetch", help="download pinned sources into the cache")
     wd = commands.add_parser("wikidata", help="fetch footballers from Wikidata into the cache (needs fetch first)")
     wd.add_argument("--refresh", action="store_true", help="refetch even if cached")
+    b = commands.add_parser("build", help="write site/days/*.json and reports/build.json (needs fetch and wikidata)")
+    b.add_argument("--start", type=datetime.date.fromisoformat, required=True)
+    b.add_argument("--days", type=int, required=True)
+    b.add_argument("--out", type=Path, default=Path("site/days"))
+    b.add_argument("--report", type=Path, default=Path("reports/build.json"))
+    b.add_argument("--overrides", type=Path, default=Path("data/overrides.csv"))
     args = parser.parse_args(argv)
+
+    if args.command == "build":
+        try:
+            report = build.build(args.cache, args.overrides, args.out, args.report, args.start, args.days)
+        except (build.ScheduleError, FileNotFoundError) as error:
+            print(f"build failed: {error}; see {args.report}", file=sys.stderr)
+            return 1
+        print(f"{args.days} days written to {args.out}; {report['prompts_available']} prompts available")
+        return 0
 
     if args.command == "fetch":
         try:

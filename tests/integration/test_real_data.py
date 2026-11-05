@@ -28,7 +28,7 @@ class AdaoduqueRealDataTest(unittest.TestCase):
         self.assertEqual(min(g.season for g in self.data.goals), 2014)
 
     def test_hat_trick_counts_match_the_2026_11_05_test(self):
-        prompt = hat_tricks(self.data.goals)
+        prompt = hat_tricks(self.data.goals, [(2014, 2024)])[0]
         self.assertEqual(len(prompt.answers), 36)
         self.assertEqual(sum(len(e) for e in prompt.answers.values()), 44)
 
