@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { shareText } from "../../site/game/share.js";
+import { shareText, maxScore } from "../../site/game/share.js";
 
 const day = JSON.parse(readFileSync(new URL("../fixtures/days/2027-01-01.json", import.meta.url), "utf8"));
 const results = day.prompts.map((p, i) =>
@@ -33,4 +33,10 @@ test("share text never contains a player name or prompt text", () => {
 
 test("share text ends with the site address", () => {
   assert.match(shareText(day, results), /futrivia\.felipemfp\.dev$/);
+});
+
+test("max score is 100 per prompt and matches the share text denominator", () => {
+  assert.equal(maxScore(day), 700);
+  assert.equal(maxScore({ prompts: [{}, {}, {}] }), 300);
+  assert.ok(shareText({ ...day, prompts: day.prompts.slice(0, 3) }, results.slice(0, 3)).endsWith("/300\nfutrivia.felipemfp.dev"));
 });

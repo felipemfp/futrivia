@@ -55,3 +55,27 @@ export function refresh(game, now) {
 export function totalScore(game) {
   return game.results.reduce((sum, r) => sum + r.points, 0);
 }
+
+// Saved state comes from localStorage and may be stale or corrupt: return a valid game for this day, or null.
+export function restore(saved, day) {
+  const n = day.prompts.length;
+  const isObj = (x) => x !== null && typeof x === "object" && !Array.isArray(x);
+  if (!isObj(saved) || saved.version !== 1 || saved.date !== day.date) return null;
+  if (!Array.isArray(saved.promptIds) || saved.promptIds.join() !== day.prompts.map((p) => p.id).join()) return null;
+  const { phase, index, results } = saved;
+  if (!Number.isInteger(index) || !Array.isArray(results)) return null;
+  const fits = {
+    ready: index === -1 && results.length === 0,
+    playing: index >= 0 && index < n && results.length === index && Number.isFinite(saved.startedAt),
+    reveal: index >= 0 && index < n && results.length === index + 1,
+    done: index === n && results.length === n,
+  };
+  if (!fits[phase]) return null;
+  const valid = results.every((r, i) => {
+    if (!isObj(r) || r.promptId !== saved.promptIds[i] || !Number.isFinite(r.wrong) || r.wrong < 0) return false;
+    if (r.answerId === null) return r.points === 0;
+    const answer = day.prompts[i].answers.find((a) => a.id === r.answerId);
+    return !!answer && answer.points === r.points;
+  });
+  return valid ? { ...saved } : null;
+}

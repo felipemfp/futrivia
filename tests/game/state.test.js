@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { PROMPT_MS, guess, newGame, nextPrompt, refresh, timeLeft, totalScore } from "../../site/game/state.js";
+import { PROMPT_MS, guess, newGame, nextPrompt, refresh, restore, timeLeft, totalScore } from "../../site/game/state.js";
 
 const day = JSON.parse(readFileSync(new URL("../fixtures/days/2027-01-01.json", import.meta.url), "utf8"));
 const T0 = Date.parse("2027-01-01T15:00:00Z");
@@ -79,4 +79,64 @@ test("state never changes in place", () => {
   const before = JSON.stringify(game);
   guess(game, day, "Germán Cano", T0 + 1_000);
   assert.equal(JSON.stringify(game), before);
+});
+
+// restore(): saved state comes from localStorage, so anything can be in there.
+const clone = (x) => JSON.parse(JSON.stringify(x));
+function played() {
+  let g = started();
+  const a = day.prompts[0].answers[0];
+  g = guess(g, day, a.name, T0 + 1000).game;
+  return g;
+}
+function finished() {
+  let g = started();
+  for (let i = 0; i < day.prompts.length; i++) {
+    g = guess(g, day, day.prompts[i].answers[0].name, T0 + 1000).game;
+    g = nextPrompt(g, T0 + 2000);
+  }
+  return g;
+}
+
+test("restore accepts a valid state in every phase", () => {
+  for (const g of [newGame(day), started(), played(), finished()]) assert.deepEqual(restore(clone(g), day), g);
+});
+
+test("restore rejects non-objects and wrong version, date or prompt ids", () => {
+  for (const bad of [null, undefined, "x", 5, [], {}]) assert.equal(restore(bad, day), null);
+  assert.equal(restore({ ...clone(started()), version: 2 }, day), null);
+  assert.equal(restore({ ...clone(started()), date: "2020-01-01" }, day), null);
+  assert.equal(restore({ ...clone(started()), promptIds: ["a"] }, day), null);
+  assert.equal(restore({ ...clone(started()), promptIds: undefined }, day), null);
+});
+
+test("restore rejects an unknown phase or an index out of range for the phase", () => {
+  assert.equal(restore({ ...clone(started()), phase: "paused" }, day), null);
+  assert.equal(restore({ ...clone(started()), index: 7 }, day), null);
+  assert.equal(restore({ ...clone(started()), index: -1 }, day), null);
+  assert.equal(restore({ ...clone(started()), index: 1.5 }, day), null);
+  assert.equal(restore({ ...clone(newGame(day)), index: 0 }, day), null);
+  assert.equal(restore({ ...clone(finished()), index: 3 }, day), null);
+});
+
+test("restore rejects results that are not an array or do not fit the phase", () => {
+  assert.equal(restore({ ...clone(started()), results: null }, day), null);
+  assert.equal(restore({ ...clone(started()), results: {} }, day), null);
+  assert.equal(restore({ ...clone(started()), results: [{}] }, day), null);
+  assert.equal(restore({ ...clone(played()), results: [] }, day), null);
+  assert.equal(restore({ ...clone(finished()), results: clone(finished()).results.slice(1) }, day), null);
+});
+
+test("restore rejects results with a wrong prompt, unknown answer or inflated points", () => {
+  const g = clone(played());
+  assert.equal(restore({ ...g, results: [{ ...g.results[0], promptId: "outro" }] }, day), null);
+  assert.equal(restore({ ...g, results: [{ ...g.results[0], answerId: "Q0" }] }, day), null);
+  assert.equal(restore({ ...g, results: [{ ...g.results[0], points: 999 }] }, day), null);
+  assert.equal(restore({ ...g, results: [{ ...g.results[0], answerId: null, points: 10 }] }, day), null);
+  assert.equal(restore({ ...g, results: [null] }, day), null);
+});
+
+test("restore rejects a playing state without a numeric startedAt", () => {
+  assert.equal(restore({ ...clone(started()), startedAt: null }, day), null);
+  assert.equal(restore({ ...clone(started()), startedAt: "now" }, day), null);
 });
