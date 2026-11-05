@@ -1,7 +1,7 @@
 import io
 import unittest
 
-from generator.sources.adaoduque import read_goals, read_matches
+from generator.sources.adaoduque import read_cards, read_goals, read_matches
 
 MATCHES = '''"ID","rodata","data","hora","mandante","visitante","formacao_mandante","formacao_visitante","tecnico_mandante","tecnico_visitante","vencedor","arena","mandante_Placar","visitante_Placar","mandante_Estado","visitante_Estado"
 "1","38","06/12/2020","16:00","Gremio","Santos","","","","","Gremio","Arena","2","1","RS","SP"
@@ -38,6 +38,14 @@ class AdaoduqueTest(unittest.TestCase):
     def test_player_ref_is_namespaced_by_source(self):
         goals = read_goals(io.StringIO(GOALS), self.matches)
         self.assertEqual(goals[0].player_ref, "adaoduque:Pedro")
+
+    def test_excluded_card_is_dropped_and_others_kept(self):
+        cards = '''"partida_id","rodata","clube","cartao","atleta","num_camisa","posicao","minuto"
+"2","30","Flamengo","Vermelho","Pedro","9","","82"
+"2","30","Flamengo","Amarelo","Pedro","9","","40"
+'''
+        kept = read_cards(io.StringIO(cards), self.matches, excluded={("2", "Pedro", "82")})
+        self.assertEqual([(c.player, c.red) for c in kept], [("Pedro", False)])
 
     def test_goal_for_unknown_match_is_an_error(self):
         with self.assertRaises(KeyError):

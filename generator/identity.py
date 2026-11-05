@@ -150,9 +150,11 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
         aliases = {normalize(n) for n in dataset_names} | extra_aliases[ident]
         if p:
             aliases |= {normalize(n) for n in p["names"]}
-        # Shown name: override, then Transfermarkt's common name (Wikidata labels are often legal names), then the label.
+        # Shown name: override, then a common name (Transfermarkt, then the Portuguese Wikipedia title), then the
+        # Wikidata label, which is often a legal name.
         common = min(transfermarkt_names[ident], key=len) if transfermarkt_names[ident] else None
-        name = shown_name.get(ident) or common or (p and p.get("label")) or min(dataset_names, key=len)
+        name = (shown_name.get(ident) or common or (p and p.get("common")) or (p and p.get("label"))
+                or min(dataset_names, key=len))
         aliases.add(normalize(name))
         identities[ident] = Identity(id=ident, name=name, aliases=tuple(sorted(a for a in aliases if a)),
                                      sitelinks=p["sitelinks"] if p else None, status=status[ident])

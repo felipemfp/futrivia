@@ -94,6 +94,20 @@ def _tmids_query(qids: list[str]) -> str:
 SELECT ?p ?tm WHERE {{ VALUES ?p {{ {values} }} ?p wdt:P2446 ?tm. }}"""
 
 
+def _titles_query(qids: list[str]) -> str:
+    values = " ".join(f"wd:{q}" for q in qids)
+    return f"""# titles
+SELECT ?p ?title WHERE {{
+  VALUES ?p {{ {values} }}
+  ?article schema:about ?p; schema:isPartOf <https://pt.wikipedia.org/>; schema:name ?title.
+}}"""
+
+
+def common_name(title: str) -> str:
+    """'Maicon (futebolista, nascido em 1990)' -> 'Maicon': Portuguese Wikipedia titles use the name fans know."""
+    return title.split(" (", 1)[0].strip()
+
+
 def _bytm_query(ids: list[str]) -> str:
     values = " ".join(_literal(i) for i in ids)
     return f"""# bytm
@@ -118,6 +132,7 @@ def fetch_people(sparql: Sparql, dataset_names: list[str], transfermarkt_ids: li
                  progress: Callable[[str, int, int], None] = _silent) -> dict:
     people: dict[str, dict] = {}
     labels: dict[str, dict[str, str]] = {}
+    titles: dict[str, str] = {}
 
     def batched(stage: str, items: list, size: int):
         batches = list(_batches(items, size))
@@ -136,6 +151,8 @@ def fetch_people(sparql: Sparql, dataset_names: list[str], transfermarkt_ids: li
                     labels.setdefault(_qid(b), {})[b["lang"]["value"]] = b["l"]["value"]
             for b in sparql(_tmids_query(batch)):
                 people[_qid(b)]["transfermarkt"].add(b["tm"]["value"])
+            for b in sparql(_titles_query(batch)):
+                titles[_qid(b)] = common_name(b["title"]["value"])
 
     clubs = sorted({_qid(b, "c") for b in sparql(_clubs_query())})
     for batch in batched("clubs", clubs, CLUB_BATCH):
@@ -160,7 +177,7 @@ def fetch_people(sparql: Sparql, dataset_names: list[str], transfermarkt_ids: li
         return next((found[lang] for lang in LANGS if lang in found), None)
 
     return {
-        qid: {"sitelinks": p["sitelinks"], "label": best_label(qid), "names": sorted(p["names"]),
+        qid: {"sitelinks": p["sitelinks"], "label": best_label(qid), "common": titles.get(qid), "names": sorted(p["names"]),
               "stints": sorted([list(s) for s in p["stints"]], key=lambda s: (s[0], s[1] or 0, s[2] or 0)),
               "transfermarkt": sorted(p["transfermarkt"])}
         for qid, p in sorted(people.items())

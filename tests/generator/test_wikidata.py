@@ -17,9 +17,9 @@ def lit(value: str) -> dict:
 class FakeSparql:
     """Answers each query kind from canned bindings and records the queries it saw."""
 
-    def __init__(self, clubs=(), stints=(), names=(), labels=(), tmids=(), bytm=(), fail_on: str | None = None):
+    def __init__(self, clubs=(), stints=(), names=(), labels=(), tmids=(), bytm=(), titles=(), fail_on: str | None = None):
         self.responses = {"clubs": list(clubs), "stints": list(stints), "names": list(names), "labels": list(labels),
-                          "tmids": list(tmids), "bytm": list(bytm)}
+                          "tmids": list(tmids), "bytm": list(bytm), "titles": list(titles)}
         self.fail_on = fail_on
         self.queries: list[tuple[str, str]] = []
 
@@ -65,6 +65,11 @@ class WikidataTest(unittest.TestCase):
     def test_portuguese_label_is_preferred_for_display(self):
         sparql = FakeSparql(clubs=[{"c": uri("Q80955")}], stints=RODRYGO_STINTS, names=RODRYGO_NAMES)
         self.assertEqual(self.fetch(sparql)["Q42728914"]["label"], "Rodrygo")
+
+    def test_portuguese_wikipedia_title_gives_the_common_name(self):
+        titles = [{"p": uri("Q42728914"), "title": lit("Rodrygo (futebolista)")}]
+        sparql = FakeSparql(clubs=[{"c": uri("Q80955")}], stints=RODRYGO_STINTS, names=RODRYGO_NAMES, titles=titles)
+        self.assertEqual(self.fetch(sparql)["Q42728914"]["common"], "Rodrygo")
 
     def test_transfermarkt_ids_are_recorded_and_only_unknown_ids_are_looked_up(self):
         tmids = [{"p": uri("Q42728914"), "tm": lit("412363")}]

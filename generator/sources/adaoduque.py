@@ -55,9 +55,19 @@ def read_goals(rows: TextIO, matches: dict[str, Match]) -> list[Goal]:
     return goals
 
 
-def read_cards(rows: TextIO, matches: dict[str, Match]) -> list[Card]:
+def read_exclusions(path: Path) -> set[tuple[str, str, str]]:
+    """Known source errors from data/exclusions.csv, as (match id, player, minute)."""
+    if not path.exists():
+        return set()
+    with open(path, encoding="utf-8") as rows:
+        return {(r["match_id"], r["player"], r["minute"]) for r in csv.DictReader(rows) if r["source"] == SOURCE}
+
+
+def read_cards(rows: TextIO, matches: dict[str, Match], excluded: set[tuple[str, str, str]] = frozenset()) -> list[Card]:
     cards = []
     for row in csv.DictReader(rows):
+        if (row["partida_id"], row["atleta"], row["minuto"]) in excluded:
+            continue
         match = matches[row["partida_id"]]
         cards.append(Card(
             match_id=match.match_id,
@@ -71,11 +81,11 @@ def read_cards(rows: TextIO, matches: dict[str, Match]) -> list[Card]:
     return cards
 
 
-def load(cache: Path) -> Data:
+def load(cache: Path, exclusions: Path = Path("data/exclusions.csv")) -> Data:
     with open(cache / "campeonato-brasileiro-full.csv", encoding="utf-8") as rows:
         matches = read_matches(rows)
     with open(cache / "campeonato-brasileiro-gols.csv", encoding="utf-8") as rows:
         goals = read_goals(rows, matches)
     with open(cache / "campeonato-brasileiro-cartoes.csv", encoding="utf-8") as rows:
-        cards = read_cards(rows, matches)
+        cards = read_cards(rows, matches, read_exclusions(exclusions))
     return Data(matches, goals, cards)

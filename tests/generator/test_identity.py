@@ -89,6 +89,12 @@ class ResolveTest(unittest.TestCase):
         refs, ids = resolve({"transfermarkt:432895": player("transfermarkt:432895", "Pedro", ("Flamengo", 2025))}, people, [])
         self.assertEqual(ids["Q47491410"].name, "Pedro")
 
+    def test_wikipedia_common_name_is_shown_over_a_legal_name_label(self):
+        people = dict(PEOPLE, Q9=dict(person(20, ["Maicon Douglas Sisenando", "Maicon"]), common="Maicon"))
+        refs, ids = resolve({"a:Maicon Douglas Sisenando": player("a:Maicon Douglas Sisenando", "Maicon Douglas Sisenando",
+                                                                    ("Gremio", 2020))}, people, [])
+        self.assertEqual(ids[refs["a:Maicon Douglas Sisenando"]].name, "Maicon")
+
     def test_override_name_is_shown(self):
         refs, ids = self.resolve(player("a:Wesley", "Wesley", ("Goias", 2015)),
                                  overrides=[Override("a:Wesley", "Q2", (), name="Wesley Pacheco")])
