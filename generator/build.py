@@ -10,7 +10,7 @@ from pathlib import Path
 
 from generator import config
 from generator.clubs import display
-from generator.dayfile import MAX_ANSWERS, MIN_ANSWERS, PROMPTS_PER_DAY, TIERS, DayAnswer, DayPrompt, write_day
+from generator.dayfile import MAX_ANSWERS, MIN_ANSWERS, PROMPTS_PER_DAY, TIERS, DayAnswer, DayPrompt, normalize, write_day
 from generator.identity import Identity, Player, read_overrides, resolve
 from generator.rarity import ORDER, assign_tiers
 from generator.records import Evidence, PromptCandidate
@@ -41,6 +41,24 @@ def format_evidence(evidence: list[Evidence]) -> str:
     return f"{shown} e mais {rest}" if rest > 0 else shown
 
 
+def _join_unresolved_namesakes(merged: dict[str, list[Evidence]], identities: dict[str, Identity]) -> None:
+    """Within one prompt, an unresolved per-club identity ('dataset:Fred|Atletico-MG') sharing its shown name with
+    another answer joins it: it is almost always the same player at a club Wikidata doesn't list, and two answers
+    with one name could never be told apart by typing. Two resolved people keep separate answers."""
+    by_name: dict[str, list[str]] = defaultdict(list)
+    for ident in sorted(merged):
+        by_name[normalize(identities[ident].name)].append(ident)
+    for group in by_name.values():
+        resolved = [i for i in group if not i.startswith("dataset:")]
+        unresolved = [i for i in group if i.startswith("dataset:")]
+        if len(group) < 2 or not unresolved or len(resolved) > 1:
+            continue
+        target = resolved[0] if resolved else unresolved[0]
+        for ident in unresolved:
+            if ident != target:
+                merged[target].extend(merged.pop(ident))
+
+
 def prepare(candidates: list[PromptCandidate], ref_to_id: dict[str, str], identities: dict[str, Identity],
             trusted: Callable[[Identity], bool]) -> tuple[list[Prepared], dict]:
     report: dict[str, Counter] = defaultdict(Counter)
@@ -54,7 +72,10 @@ def prepare(candidates: list[PromptCandidate], ref_to_id: dict[str, str], identi
             continue
         merged: dict[str, list[Evidence]] = defaultdict(list)
         for ref, evidence in c.answers.items():
-            merged[ref_to_id.get(ref, ref)].extend(evidence)  # canonical records already carry identity ids
+            ident = ref_to_id.get(ref, ref)  # canonical records already carry identity ids
+            if identities[ident].name:  # nobody can type a player the sources never named
+                merged[ident].extend(evidence)
+        _join_unresolved_namesakes(merged, identities)
         if len(merged) < MIN_ANSWERS:
             stats["too_few"] += 1
             continue

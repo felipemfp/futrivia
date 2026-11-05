@@ -48,6 +48,28 @@ class PrepareTest(unittest.TestCase):
         self.assertEqual([k.prompt.id for k in kept], ["expulso-figueirense-2014-2019"])
         self.assertEqual(report["t"]["duplicate"], 1)
 
+    def test_unresolved_namesake_in_one_prompt_joins_the_named_person(self):
+        # Fred at Atlético-MG stayed a dataset identity (his Wikidata clubs miss it) while Fred at Fluminense resolved;
+        # in one prompt they must be one answer, or typing "Fred" only ever gets "Seja mais específico".
+        ids = dict(IDS, **{"dataset:Fred|Atletico-MG": Identity("dataset:Fred|Atletico-MG", "Fred", ("fred",), None, "ambiguous"),
+                           "Q9": Identity("Q9", "Fred", ("fred", "frederico chaves guedes"), 64, "club")})
+        refs = dict(REFS, **{"a:Fred|Atletico-MG": "dataset:Fred|Atletico-MG", "a:Fred|Fluminense": "Q9"})
+        kept, _ = prepare([candidate("p", ["a:Fred|Atletico-MG", "a:Fred|Fluminense", "r1", "r2", "r3", "r4"])], refs, ids, lambda i: True)
+        freds = [a for a in kept[0].prompt.answers if a.name == "Fred"]
+        self.assertEqual([a.id for a in freds], ["Q9"])
+
+    def test_two_resolved_people_with_one_name_stay_separate(self):
+        ids = dict(IDS, Q90=Identity("Q90", "Dudu", ("dudu",), 40, "club"), Q91=Identity("Q91", "Dudu", ("dudu",), 5, "club"))
+        refs = dict(REFS, **{"a:Dudu|Palmeiras": "Q90", "a:Dudu|Figueirense": "Q91"})
+        kept, _ = prepare([candidate("p", ["a:Dudu|Palmeiras", "a:Dudu|Figueirense", "r1", "r2", "r3"])], refs, ids, lambda i: True)
+        self.assertEqual(sorted(a.id for a in kept[0].prompt.answers if a.name == "Dudu"), ["Q90", "Q91"])
+
+    def test_nameless_identities_are_left_out_of_answers(self):
+        ids = dict(IDS, Q0=Identity("Q0", "", (), 99, "club"))
+        kept, _ = prepare([candidate("p", ["r0", "r1", "r2", "r3", "r4", "r5"])], REFS, ids, lambda i: True)
+        self.assertNotIn("Q0", [a.id for a in kept[0].prompt.answers])
+        self.assertEqual(len(kept[0].prompt.answers), 5)
+
     def test_answers_are_ordered_obvious_first_with_tier_points(self):
         kept, _ = self.prepare([candidate("p", ["r4", "r0", "r2", "r1", "r3"])])
         answers = kept[0].prompt.answers

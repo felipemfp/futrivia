@@ -47,7 +47,7 @@ def read_goals(rows: TextIO, matches: dict[str, Match]) -> list[Goal]:
             date=match.date,
             club=row["clube"],
             player=row["atleta"],
-            player_ref=f"{SOURCE}:{row['atleta']}",
+            player_ref=f"{SOURCE}:{row['atleta']}|{row['clube']}",
             minute=row["minuto"],
             penalty=row["tipo_de_gol"] == "Penalty",
             own_goal=row["tipo_de_gol"] == "Gol Contra",
@@ -75,7 +75,7 @@ def read_cards(rows: TextIO, matches: dict[str, Match], excluded: set[tuple[str,
             date=match.date,
             club=row["clube"],
             player=row["atleta"],
-            player_ref=f"{SOURCE}:{row['atleta']}",
+            player_ref=f"{SOURCE}:{row['atleta']}|{row['clube']}",
             red=row["cartao"] == "Vermelho",
         ))
     return cards

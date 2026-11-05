@@ -161,7 +161,7 @@
     "evidence": "Flamengo 2014"
    },
    {
-    "id": "dataset:Augusto",
+    "id": "dataset:Augusto|Sport",
     "name": "Augusto",
     "aliases": [
      "augusto"
@@ -305,22 +305,22 @@
     "evidence": "Corinthians 2018"
    },
    {
-    "id": "Q181193",
-    "name": "Roger Silva",
+    "id": "Q359160",
+    "name": "Jadson",
     "aliases": [
-     "roger rodrigues da silva",
-     "roger silva"
+     "jadson",
+     "jadson rodrigues da silva"
     ],
     "tier": "arquibancada",
     "points": 10,
     "evidence": "Corinthians 2018"
    },
    {
-    "id": "Q107584170",
-    "name": "Marquinhos",
+    "id": "Q181193",
+    "name": "Roger Silva",
     "aliases": [
-     "marcus vinicius oliveira alencar",
-     "marquinhos"
+     "roger rodrigues da silva",
+     "roger silva"
     ],
     "tier": "torcedor",
     "points": 30,
@@ -345,8 +345,8 @@
      "douglas augusto",
      "douglas augusto soares gomes"
     ],
-    "tier": "torcedor",
-    "points": 30,
+    "tier": "raiz",
+    "points": 60,
     "evidence": "Corinthians 2018"
    },
    {
@@ -362,12 +362,12 @@
     "evidence": "Corinthians 2018"
    },
    {
-    "id": "Q3806090",
-    "name": "Jádson",
+    "id": "Q3940035",
+    "name": "Rodriguinho",
     "aliases": [
-     "jadson",
-     "jadson alves",
-     "jadson alves dos santos"
+     "rodrigo eduardo costa marinho",
+     "rodriguinho",
+     "rodriguinho marinho"
     ],
     "tier": "raiz",
     "points": 60,
@@ -399,15 +399,13 @@
     "evidence": "Corinthians 2018"
    },
    {
-    "id": "Q3940035",
-    "name": "Rodriguinho",
+    "id": "dataset:Marquinhos|Corinthians",
+    "name": "Marquinhos",
     "aliases": [
-     "rodrigo eduardo costa marinho",
-     "rodriguinho",
-     "rodriguinho marinho"
+     "marquinhos"
     ],
-    "tier": "resenha",
-    "points": 85,
+    "tier": "raiz",
+    "points": 60,
     "evidence": "Corinthians 2018"
    },
    {
@@ -543,18 +541,6 @@
     "evidence": "Santos 2020"
    },
    {
-    "id": "Q18719710",
-    "name": "Eduardo",
-    "aliases": [
-     "eduardo",
-     "eduardo bauermann",
-     "eduardo gabriel dos santos bauermann"
-    ],
-    "tier": "torcedor",
-    "points": 30,
-    "evidence": "Santos 2022, Santos 2023"
-   },
-   {
     "id": "Q4727127",
     "name": "Alison Lopes",
     "aliases": [
@@ -600,6 +586,16 @@
     "evidence": "Santos 2023"
    },
    {
+    "id": "dataset:Eduardo|Santos",
+    "name": "Eduardo",
+    "aliases": [
+     "eduardo"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Santos 2022, Santos 2023"
+   },
+   {
     "id": "Q15075773",
     "name": "Jean Mota",
     "aliases": [
@@ -611,7 +607,7 @@
     "evidence": "Santos 2021"
    },
    {
-    "id": "dataset:Lucas Barbosa",
+    "id": "dataset:Lucas Barbosa|Santos",
     "name": "Lucas Barbosa",
     "aliases": [
      "lucas barbosa"
@@ -776,23 +772,13 @@
     "evidence": "Palmeiras 2021"
    },
    {
-    "id": "Q316836",
-    "name": "Nenê",
-    "aliases": [
-     "nene"
-    ],
-    "tier": "arquibancada",
-    "points": 10,
-    "evidence": "Fluminense 2021"
-   },
-   {
     "id": "Q28748046",
     "name": "Rony",
     "aliases": [
      "rony"
     ],
-    "tier": "torcedor",
-    "points": 30,
+    "tier": "arquibancada",
+    "points": 10,
     "evidence": "Palmeiras 2021"
    },
    {
@@ -961,7 +947,17 @@
     "evidence": "Atlético-MG 2021"
    },
    {
-    "id": "dataset:Vinícius",
+    "id": "dataset:Nenê|Fluminense",
+    "name": "Nenê",
+    "aliases": [
+     "nene"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Fluminense 2021"
+   },
+   {
+    "id": "dataset:Vinícius|Ceara",
     "name": "Vinícius",
     "aliases": [
      "vinicius"
@@ -971,7 +967,17 @@
     "evidence": "Ceará 2021"
    },
    {
-    "id": "dataset:Zé Roberto",
+    "id": "dataset:Ytalo José dos Santos|Bragantino",
+    "name": "Ytalo José dos Santos",
+    "aliases": [
+     "ytalo jose dos santos"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Bragantino 2021"
+   },
+   {
+    "id": "dataset:Zé Roberto|Atletico-GO",
     "name": "Zé Roberto",
     "aliases": [
      "ze roberto"
@@ -1012,18 +1018,6 @@
     "tier": "resenha",
     "points": 85,
     "evidence": "Juventude 2021"
-   },
-   {
-    "id": "Q4023127",
-    "name": "Ytalo",
-    "aliases": [
-     "ytalo",
-     "ytalo jose dos santos",
-     "ytalo jose oliveira dos santos"
-    ],
-    "tier": "resenha",
-    "points": 85,
-    "evidence": "Bragantino 2021"
    },
    {
     "id": "Q58128182",
@@ -1072,6 +1066,17 @@
     "evidence": "Bahia 2021"
    },
    {
+    "id": "Q5041720",
+    "name": "Carlos Alberto",
+    "aliases": [
+     "carlos alberto",
+     "carlos alberto dos santos gomes"
+    ],
+    "tier": "enciclopedia",
+    "points": 100,
+    "evidence": "América-MG 2021"
+   },
+   {
     "id": "Q66372557",
     "name": "Dawhan",
     "aliases": [
@@ -1086,18 +1091,6 @@
     "name": "João Paulo Gomes da Costa",
     "aliases": [
      "joao paulo gomes da costa"
-    ],
-    "tier": "enciclopedia",
-    "points": 100,
-    "evidence": "América-MG 2021"
-   },
-   {
-    "id": "Q9696818",
-    "name": "Carlos Alberto",
-    "aliases": [
-     "carlos alberto",
-     "carlos alberto pereira silveira",
-     "carlos alberto pereira silvestre"
     ],
     "tier": "enciclopedia",
     "points": 100,
@@ -1250,16 +1243,6 @@
     "evidence": "Palmeiras 2014"
    },
    {
-    "id": "dataset:Jailson",
-    "name": "Jailson",
-    "aliases": [
-     "jailson"
-    ],
-    "tier": "raiz",
-    "points": 60,
-    "evidence": "Palmeiras 2018"
-   },
-   {
     "id": "Q657823",
     "name": "Jonatan Cristaldo",
     "aliases": [
@@ -1295,6 +1278,17 @@
     "tier": "resenha",
     "points": 85,
     "evidence": "Palmeiras 2014"
+   },
+   {
+    "id": "Q18978130",
+    "name": "Jailson",
+    "aliases": [
+     "jailson",
+     "jailson marcelino dos santos"
+    ],
+    "tier": "resenha",
+    "points": 85,
+    "evidence": "Palmeiras 2018"
    },
    {
     "id": "Q6290803",
@@ -1390,18 +1384,6 @@
     "tier": "torcedor",
     "points": 30,
     "evidence": "Cruzeiro 2019, Internacional 2020, Internacional 2021 e mais 2"
-   },
-   {
-    "id": "Q14584722",
-    "name": "Vitinho",
-    "aliases": [
-     "victor vinicius coelho dos santos",
-     "victor vinicius coelho santos",
-     "vitinho"
-    ],
-    "tier": "raiz",
-    "points": 60,
-    "evidence": "Internacional 2015, Internacional 2016, Cruzeiro 2024"
    },
    {
     "id": "Q848129",
@@ -2196,17 +2178,6 @@
     "evidence": "Goiás 2015"
    },
    {
-    "id": "Q39079181",
-    "name": "Paulinho",
-    "aliases": [
-     "paulinho",
-     "paulo henrique sampaio filho"
-    ],
-    "tier": "raiz",
-    "points": 60,
-    "evidence": "Flamengo 2015"
-   },
-   {
     "id": "Q1339366",
     "name": "Rafael Marques Mariano",
     "aliases": [
@@ -2214,8 +2185,8 @@
      "rafael marques",
      "rafael marques mariano"
     ],
-    "tier": "raiz",
-    "points": 60,
+    "tier": "torcedor",
+    "points": 30,
     "evidence": "Palmeiras 2015"
    },
    {
@@ -2252,15 +2223,15 @@
     "evidence": "Goiás 2015"
    },
    {
-    "id": "Q107584170",
-    "name": "Marquinhos",
+    "id": "Q16729128",
+    "name": "Gabriel Xavier",
     "aliases": [
-     "marcus vinicius oliveira alencar",
-     "marquinhos"
+     "gabriel augusto xavier",
+     "gabriel xavier"
     ],
     "tier": "raiz",
     "points": 60,
-    "evidence": "Santos 2015"
+    "evidence": "Cruzeiro 2015"
    },
    {
     "id": "Q2449294",
@@ -2306,6 +2277,16 @@
     "tier": "raiz",
     "points": 60,
     "evidence": "Grêmio 2015"
+   },
+   {
+    "id": "dataset:Marquinhos|Santos",
+    "name": "Marquinhos",
+    "aliases": [
+     "marquinhos"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Santos 2015"
    },
    {
     "id": "Q25712648",
@@ -2395,6 +2376,18 @@
     "evidence": "Athletico-PR 2015"
    },
    {
+    "id": "Q7155246",
+    "name": "Paulinho",
+    "aliases": [
+     "paulinho",
+     "paulo luiz beraldo santos",
+     "paulo luiz santos"
+    ],
+    "tier": "enciclopedia",
+    "points": 100,
+    "evidence": "Flamengo 2015"
+   },
+   {
     "id": "Q2092700",
     "name": "Paulão",
     "aliases": [
@@ -2432,7 +2425,8 @@
     "name": "Renato Chaves",
     "aliases": [
      "renato chaves",
-     "renato de araujo chaves junior"
+     "renato de araujo chaves junior",
+     "renato junior"
     ],
     "tier": "enciclopedia",
     "points": 100,
@@ -2455,16 +2449,6 @@
     "aliases": [
      "marcos antonio da silva goncalves",
      "marquinhos"
-    ],
-    "tier": "enciclopedia",
-    "points": 100,
-    "evidence": "Cruzeiro 2015"
-   },
-   {
-    "id": "Q118215219",
-    "name": "Gabriel Xavier",
-    "aliases": [
-     "gabriel xavier"
     ],
     "tier": "enciclopedia",
     "points": 100,
@@ -2732,8 +2716,8 @@
      "deyverson brum silva",
      "deyverson brum silva acosta"
     ],
-    "tier": "torcedor",
-    "points": 30,
+    "tier": "raiz",
+    "points": 60,
     "evidence": "Palmeiras 2021"
    },
    {
@@ -2837,6 +2821,36 @@
     "evidence": "Santos 2021"
    },
    {
+    "id": "dataset:Janderson|Atletico-GO",
+    "name": "Janderson",
+    "aliases": [
+     "janderson"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Atlético-GO 2021"
+   },
+   {
+    "id": "dataset:Lima|Ceara",
+    "name": "Lima",
+    "aliases": [
+     "lima"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Ceará 2021"
+   },
+   {
+    "id": "dataset:Robson Fernandes|Fortaleza",
+    "name": "Robson Fernandes",
+    "aliases": [
+     "robson fernandes"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Fortaleza 2021"
+   },
+   {
     "id": "Q86493810",
     "name": "Gabriel Sara",
     "aliases": [
@@ -2857,17 +2871,6 @@
     "tier": "resenha",
     "points": 85,
     "evidence": "Fortaleza 2021"
-   },
-   {
-    "id": "Q30084677",
-    "name": "Lima",
-    "aliases": [
-     "lima",
-     "vinicius moreira de lima"
-    ],
-    "tier": "resenha",
-    "points": 85,
-    "evidence": "Ceará 2021"
    },
    {
     "id": "Q5186167",
@@ -2917,26 +2920,15 @@
     "evidence": "Athletico-PR 2021"
    },
    {
-    "id": "Q16234987",
+    "id": "Q1627338",
     "name": "Madson",
     "aliases": [
      "madson",
-     "madson ferreira dos santos"
+     "madson formagini caridade"
     ],
     "tier": "enciclopedia",
     "points": 100,
     "evidence": "Santos 2021"
-   },
-   {
-    "id": "Q27662797",
-    "name": "Robson Fernandes",
-    "aliases": [
-     "robson dos santos fernandes",
-     "robson fernandes"
-    ],
-    "tier": "enciclopedia",
-    "points": 100,
-    "evidence": "Fortaleza 2021"
    },
    {
     "id": "Q6849383",
@@ -2977,17 +2969,6 @@
      "baralhas",
      "gabriel baralhas",
      "gabriel baralhas dos santos"
-    ],
-    "tier": "enciclopedia",
-    "points": 100,
-    "evidence": "Atlético-GO 2021"
-   },
-   {
-    "id": "Q118365249",
-    "name": "Janderson",
-    "aliases": [
-     "janderson",
-     "janderson de carvalho costa"
     ],
     "tier": "enciclopedia",
     "points": 100,

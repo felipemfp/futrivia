@@ -109,15 +109,18 @@ def _pick_by_club(candidates: set[str], player: Player, people: dict,
     identity (Transfermarkt id, override) count as history too, and a confirmed candidate wins over unconfirmed ones."""
     confirmed = confirmed or {}
     for use_season in (True, False):
-        fit = {q for q in candidates
-               if any(_club_fits(club, season, people[q]["stints"], use_season)
-                      or _confirmed_fits(confirmed.get(q, set()), club, season, use_season)
-                      for club, season in player.seen)}
+        # Rank by how much of the player's record each candidate explains; confirmation only breaks ties, so a
+        # confirmed namesake can't take a record another candidate explains better (Pepê of Grêmio).
+        explained = {q: sum(1 for club, season in player.seen
+                            if _club_fits(club, season, people[q]["stints"], use_season)
+                            or _confirmed_fits(confirmed.get(q, set()), club, season, use_season))
+                     for q in candidates}
+        best = max(explained.values(), default=0)
+        if best == 0:
+            continue
+        fit = {q for q, n in explained.items() if n == best}
         sure = {q for q in fit if q in confirmed}
-        if len(sure) == 1:
-            return sure, True
-        if fit:
-            return fit, True
+        return (sure if len(sure) == 1 else fit), True
     return candidates, False
 
 
@@ -163,15 +166,20 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
         if ident not in status or rank.index(how) > rank.index(status[ident]):
             status[ident] = how
 
+    def dataset_id(ref: str) -> str:
+        # adaoduque refs are "name|club": an unresolved player stays one answer per club, never a mix of namesakes.
+        return f"dataset:{ref.split(':', 1)[1]}"
+
+    def override_for(ref: str) -> Override | None:
+        return override.get(ref) or override.get(ref.split("|", 1)[0])  # a name-level row covers every club
+
     # Pass 1: identities we can trust outright (override file, Transfermarkt id).
     confirmed: dict[str, set[tuple[str, int]]] = defaultdict(set)  # qid -> (club, season) seen under it
     for ref, player in sorted(players.items()):
-        dataset_id = f"dataset:{player.name}"
-        if ref in override:
-            o = override[ref]
+        if o := override_for(ref):
             if o.wikidata is not None and o.wikidata not in people:
                 raise KeyError(f"override for {ref}: {o.wikidata} is not in the Wikidata cache")
-            target = o.wikidata or dataset_id
+            target = o.wikidata or dataset_id(ref)
             extra_aliases[target].update(o.aliases)
             if o.name:
                 shown_name[target] = o.name
@@ -184,28 +192,30 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
             confirmed[ref_to_id[ref]] |= player.seen
             by_name[normalize(player.name)].add(ref_to_id[ref])
 
-    # Pass 2: everyone else, by name and club. Confirmed people skip the age check: their Wikidata birth year can be
-    # wrong (Luciano's says 1965) while the Transfermarkt id is certain.
+    # Pass 2: everyone else, by name and club. The age check is skipped only where Wikidata's birth year is provably
+    # wrong: it would put the person's own Transfermarkt seasons outside playing age (Luciano's says 1965).
+    wrong_birth = {q for q, seen in confirmed.items()
+                   if not _plausible_age(people[q], Player("", "", frozenset(seen)))}
+
     def plausible(q: str, player: Player) -> bool:
-        return q in confirmed or _plausible_age(people[q], player)
+        return q in wrong_birth or _plausible_age(people[q], player)
 
     for ref, player in sorted(players.items()):
         if ref in ref_to_id:
             continue
-        dataset_id = f"dataset:{player.name}"
         exact = {q for q in by_name.get(normalize(player.name), set()) if plausible(q, player)}
         if exact:
             fit, by_club = _pick_by_club(exact, player, people, confirmed)
             if len(fit) == 1:
                 assign(ref, next(iter(fit)), "club" if by_club else "name")
                 continue
-            assign(ref, dataset_id, "ambiguous")
+            assign(ref, dataset_id(ref), "ambiguous")
             continue
         fit, by_club = _pick_by_club({q for q in loose(player) if plausible(q, player)}, player, people, confirmed)
         if by_club and len(fit) == 1:
             assign(ref, next(iter(fit)), "club")
             continue
-        assign(ref, dataset_id, "ambiguous" if fit else "none")
+        assign(ref, dataset_id(ref), "ambiguous" if fit else "none")
 
     # Pass 3: a short name left ambiguous ("Marinho") joins a person whose other spelling ("Mário Sérgio Santos Costa")
     # resolved in pass 2 at the same club and season, if exactly one such person shares the name.
@@ -214,10 +224,15 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
         if ident in people:
             resolved_seen[ident] |= players[ref].seen
     for ref, player in sorted(players.items()):
-        if ref_to_id[ref] in people or ref in override:
+        if ref_to_id[ref] in people or override_for(ref) or not player.seen:
             continue
+        # Every club-season of the ref must fit the target (one overlap merged whole mixed records: Diego Costa), and
+        # at least one must fit a record that resolved to it, since undated Wikidata stints fit any season.
         near = {q for q in by_name.get(normalize(player.name), set())
-                if any(_confirmed_fits(resolved_seen[q], club, season, True) for club, season in player.seen)}
+                if plausible(q, player)
+                and all(_confirmed_fits(resolved_seen[q], club, season, True)
+                        or _club_fits(club, season, people[q]["stints"], True) for club, season in player.seen)
+                and any(_confirmed_fits(resolved_seen[q], club, season, True) for club, season in player.seen)}
         if len(near) == 1:
             assign(ref, next(iter(near)), "club")
 
@@ -241,7 +256,8 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
         if ident in shown_name:
             name = shown_name[ident]
         else:
-            name = min(known, key=lambda n: (len(n.split(" (", 1)[0].split()), known.index(n)))
+            # Some source rows have no name at all; such a player stays nameless and the build leaves them out.
+            name = min(known, key=lambda n: (len(n.split(" (", 1)[0].split()), known.index(n))) if known else ""
             name = _shorten(name, (p["names"] if p else []) + sorted(dataset_names))
         name = name.split(" (", 1)[0].strip()  # 'Carlos Júnior (futebolista)': disambiguation isn't part of the name
         aliases.add(normalize(name))

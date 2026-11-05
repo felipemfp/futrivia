@@ -35,9 +35,10 @@ class AdaoduqueTest(unittest.TestCase):
         self.assertEqual([g.penalty for g in goals], [False, True, False])
         self.assertEqual([g.own_goal for g in goals], [False, False, True])
 
-    def test_player_ref_is_namespaced_by_source(self):
+    def test_player_ref_is_name_and_club(self):
+        # adaoduque has one name for many players ("Paulinho" at five clubs), so a name alone is not a person.
         goals = read_goals(io.StringIO(GOALS), self.matches)
-        self.assertEqual(goals[0].player_ref, "adaoduque:Pedro")
+        self.assertEqual(goals[0].player_ref, "adaoduque:Pedro|Flamengo")
 
     def test_excluded_card_is_dropped_and_others_kept(self):
         cards = '''"partida_id","rodata","clube","cartao","atleta","num_camisa","posicao","minuto"

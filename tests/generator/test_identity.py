@@ -168,6 +168,51 @@ class ResolveTest(unittest.TestCase):
                            "a:Marinho": player("a:Marinho", "Marinho", ("Santos", 2021))}, people, [])
         self.assertEqual(refs["a:Marinho"], "Q70")
 
+    def test_confirmed_person_does_not_take_a_namesake_outside_playing_age(self):
+        # Regression: Paulinho (born 2000, Transfermarkt-confirmed at Atlético-MG) was credited with Flamengo 2014.
+        people = dict(PEOPLE, Q39079181=dict(person(26, ["Paulinho", "Paulo Henrique Sampaio Filho"], transfermarkt=["1"]), born=2000))
+        refs, _ = resolve({"transfermarkt:1": player("transfermarkt:1", "Paulinho", ("Atletico-MG", 2025)),
+                           "a:Paulinho|Flamengo": player("a:Paulinho|Flamengo", "Paulinho", ("Flamengo", 2014)),
+                           "a:Paulinho|Atletico-MG": player("a:Paulinho|Atletico-MG", "Paulinho", ("Atletico-MG", 2023))}, people, [])
+        self.assertNotEqual(refs["a:Paulinho|Flamengo"], "Q39079181")
+        self.assertEqual(refs["a:Paulinho|Atletico-MG"], "Q39079181")
+
+    def test_candidate_explaining_more_of_the_record_beats_a_confirmed_one(self):
+        # Regression: Grêmio's Pepê (stint from 2017) lost to a Transfermarkt-confirmed namesake from Flamengo.
+        people = dict(PEOPLE,
+                      Q54858384=dict(person(20, ["Pepê", "Eduardo Gabriel Aquino Cossa"], [("Grêmio Foot-Ball Porto Alegrense", 2017, 2021)]), born=1997),
+                      Q60736566=dict(person(4, ["Pepê", "João Pedro Vilardi Pinto"], transfermarkt=["2"]), born=1998))
+        r = "a:Pepê|Gremio"
+        refs, _ = resolve({"transfermarkt:2": player("transfermarkt:2", "Pepê", ("Flamengo", 2025)),
+                           r: player(r, "Pepê", ("Gremio", 2018), ("Gremio", 2019))}, people, [])
+        self.assertEqual(refs[r], "Q54858384")
+
+    def test_pass_three_needs_every_club_season_to_fit(self):
+        # Regression: the São Paulo defender Diego Costa took the striker's Botafogo 2023 record through one overlap.
+        people = dict(PEOPLE,
+                      Q96376358=dict(person(13, ["Diego Costa", "Diego Henrique Costa Barbosa"]), born=1999),
+                      Q1234=dict(person(2, ["Diego Costa"]), born=1990),
+                      Q459707=dict(person(73, ["Diego Costa"], []), born=1988))
+        refs, _ = resolve({"a:Diego Henrique Costa Barbosa|Sao Paulo": player("a:Diego Henrique Costa Barbosa|Sao Paulo", "Diego Henrique Costa Barbosa", ("Sao Paulo", 2021)),
+                           "a:Diego Costa|Botafogo-RJ": player("a:Diego Costa|Botafogo-RJ", "Diego Costa", ("Botafogo-RJ", 2023), ("Sao Paulo", 2021))},
+                          people, [])
+        self.assertNotEqual(refs["a:Diego Costa|Botafogo-RJ"], "Q96376358")
+
+    def test_unresolved_namesakes_at_different_clubs_stay_apart(self):
+        refs, _ = resolve({"a:Keno|Palmeiras": player("a:Keno|Palmeiras", "Keno", ("Palmeiras", 2017)),
+                           "a:Keno|Santa Cruz": player("a:Keno|Santa Cruz", "Keno", ("Santa Cruz", 2016))}, PEOPLE, [])
+        self.assertNotEqual(refs["a:Keno|Palmeiras"], refs["a:Keno|Santa Cruz"])
+
+    def test_override_by_name_applies_to_every_club_of_that_name(self):
+        refs, ids = resolve({"adaoduque:Keno|Palmeiras": player("adaoduque:Keno|Palmeiras", "Keno", ("Palmeiras", 2017)),
+                             "adaoduque:Keno|Atletico-MG": player("adaoduque:Keno|Atletico-MG", "Keno", ("Atletico-MG", 2020))},
+                            PEOPLE, [Override("adaoduque:Keno", "Q1", ("keno",), name="Keno")])
+        self.assertEqual({refs["adaoduque:Keno|Palmeiras"], refs["adaoduque:Keno|Atletico-MG"]}, {"Q1"})
+
+    def test_player_with_only_blank_names_gets_an_empty_name(self):
+        refs, ids = resolve({"transfermarkt:404": player("transfermarkt:404", "", ("Santos", 2025))}, PEOPLE, [])
+        self.assertEqual(ids[refs["transfermarkt:404"]].name, "")
+
     def test_disambiguation_suffix_is_never_shown(self):
         people = dict(PEOPLE, Q7=person(9, ["Carlos Júnior (futebolista)"], [("Santos Futebol Clube", 2018, 2019)]))
         refs, ids = resolve({"a:Carlos Júnior": player("a:Carlos Júnior", "Carlos Júnior (futebolista)", ("Santos", 2018))}, people, [])

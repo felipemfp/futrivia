@@ -29,12 +29,49 @@ class AdaoduqueRealDataTest(unittest.TestCase):
 
     def test_hat_trick_counts_match_the_2026_11_05_test(self):
         prompt = hat_tricks(self.data.goals, [(2014, 2024)])[0]
-        self.assertEqual(len(prompt.answers), 36)
+        # Refs are name|club, so count names: the 2026-11-05 test counted 36 players.
+        self.assertEqual(len({ref.split("|")[0] for ref in prompt.answers}), 36)
         self.assertEqual(sum(len(e) for e in prompt.answers.values()), 44)
 
     def test_every_club_has_a_display_name(self):
         for club in {g.club for g in self.data.goals} | {c.club for c in self.data.cards}:
             self.assertTrue(clubs.display(club), club)
+
+
+class IdentityRealDataTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        import json
+        from generator import build
+        from generator.identity import read_overrides, resolve
+        old, new = load(CACHE), transfermarkt.load(CACHE)
+        cls.players = build.collect_players(old.goals + new.goals, old.cards + new.cards, new.lineups)
+        cls.people = json.loads((CACHE / "wikidata.json").read_text(encoding="utf-8"))
+        cls.refs, cls.ids = resolve(cls.players, cls.people, read_overrides(Path("data/overrides.csv")))
+
+    def test_no_identity_holds_a_record_outside_playing_age(self):
+        # Regression: Paulinho (born 2000) held Flamengo 2014. Exempt only people whose Wikidata birth year is
+        # provably wrong: it puts their own Transfermarkt seasons outside playing age too.
+        seen = collections.defaultdict(set)
+        tm_seen = collections.defaultdict(set)
+        for ref, ident in self.refs.items():
+            seen[ident] |= self.players[ref].seen
+            if ref.startswith("transfermarkt:"):
+                tm_seen[ident] |= self.players[ref].seen
+        bad = []
+        for ident, pairs in seen.items():
+            born = self.people.get(ident, {}).get("born")
+            if not born:
+                continue
+            wrong_birth = any(not 15 <= s - born <= 43 for _, s in tm_seen[ident])
+            if not wrong_birth and any(not 15 <= s - born <= 43 for _, s in pairs):
+                bad.append((ident, born, sorted(pairs)[:3]))
+        self.assertEqual(bad, [])
+
+    def test_no_adaoduque_ref_mixes_clubs(self):
+        for ref, player in self.players.items():
+            if ref.startswith("adaoduque:"):
+                self.assertLessEqual(len({c for c, _ in player.seen}), 1, ref)
 
 
 class TransfermarktRealDataTest(unittest.TestCase):
