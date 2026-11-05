@@ -80,3 +80,6 @@ Date: 2026-11-05. Sample: 20 prompts drawn with a fixed seed from an 86-day buil
 | `marcou-contra-flamengo-2024` | Philippe Coutinho | arquibancada | Vasco 2024 | **correct** | player's article names Vasco ([source](https://pt.wikipedia.org/wiki/Philippe_Coutinho)) |
 | `marcou-contra-flamengo-2024` | Mateo Ponte | raiz | Botafogo 2024 | **correct** | player's article names Botafogo ([source](https://pt.wikipedia.org/wiki/Mateo_Ponte)) |
 | `marcou-contra-flamengo-2024` | Mandaca | enciclopedia | Juventude 2024 | **correct** | player's article names Juventude ([source](https://en.wikipedia.org/wiki/Luis_Mandaca)) |
+
+## Re-run on the final build (2026-11-05)
+After the identity fixes from the generator reviews, `tools/fact_check.py` was re-run on an 85-day build with the same seed: 55 of 60 answers auto-confirmed (up from 50). The 5 others were not hand-checked in this run.
