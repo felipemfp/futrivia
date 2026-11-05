@@ -14,7 +14,7 @@ Facts come from the match data, and fame comes from Wikidata. Rarity is a player
 | Source | Used for | Coverage |
 |---|---|---|
 | [`adaoduque/Brasileirao_Dataset`](https://github.com/adaoduque/Brasileirao_Dataset) | Scorers and carded players | Série A, 2014–2024 |
-| [`dcaribou/transfermarkt-datasets`](https://github.com/dcaribou/transfermarkt-datasets) | Lineups, including goalkeepers | 557 Série A games, 2024 and part of 2025; collection stopped in July 2026 |
+| [`dcaribou/transfermarkt-datasets`](https://github.com/dcaribou/transfermarkt-datasets) | Lineups, goals and cards | 557 Série A games: Brasileirão 2025, and 2026 to 1 June. Its season labels are one year behind (`2024` = Brasileirão 2025). Collection stopped in July 2026 |
 | Wikidata | Fame, player identity, typed aliases | See test results |
 
 ## Wikidata Test Results (2026-11-05)
@@ -51,7 +51,7 @@ The identity failure doesn't block the game, because a player's name only has to
 ## MVP Scope
 **In:**
 - A Python generator with tests, including checks on answer counts, that adjusts thresholds until a prompt has enough answers
-- Prompts from goals and cards, 2014–2024, plus goalkeeper and lineup prompts from 2024
+- Prompts from goals and cards, 2014–2026, plus goalkeeper and lineup prompts from 2025–2026
 - A prompt's data window stated in its text, so answers aren't wrong by omission
 - A static web page in Portuguese, with name matching that tolerates typos and accents
 - Results sharing as text for WhatsApp, and saved progress on the device
@@ -69,6 +69,6 @@ The identity failure doesn't block the game, because a player's name only has to
 - **Unlimited mode or archive** — the daily habit comes first.
 
 ## Open Questions
-- **Legends:** Ronaldinho and Neymar have no goals in this data, so the most obvious names will come from the last decade. Is that acceptable?
+- **Legends:** Ronaldinho has no goals in this data. Neymar appears only from 2025, through Transfermarkt. Accepted for the trial.
 - **Public launch licensing:** `adaoduque/Brasileirao_Dataset` declares no licence, and the Transfermarkt data's origin needs checking. Settle this before any public launch.
 - **Name:** does "Futrivia" stay as the game's name?
