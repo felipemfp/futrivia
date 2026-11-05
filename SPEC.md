@@ -80,7 +80,7 @@ The project doesn't exist yet, so these are the commands it must support.
 python3 -m generator fetch            # download pinned sources into .cache/
 python3 -m generator build --start 2027-01-01 --days 365   # write site/days/*.json and a report
 python3 -m unittest discover -s tests/generator            # generator tests
-node --test tests/game/                                    # game logic tests
+node --test 'tests/game/*.test.js'                                    # game logic tests
 python3 -m http.server --directory site 8000               # play locally
 ```
 

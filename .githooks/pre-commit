@@ -3,5 +3,5 @@
 set -euo pipefail
 python3 -m unittest discover -s tests/generator -p 'test_*.py' -q
 if compgen -G 'tests/game/*.test.js' > /dev/null; then
-  node --test tests/game/
+  node --test 'tests/game/*.test.js'
 fi

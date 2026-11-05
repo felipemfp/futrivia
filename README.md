@@ -16,5 +16,5 @@ The first command runs the unit tests on every commit. The second downloads the 
 ## Tests
 ```bash
 python3 -m unittest discover -s tests/generator
-node --test tests/game/
+node --test 'tests/game/*.test.js'
 ```
