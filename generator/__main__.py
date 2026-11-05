@@ -12,8 +12,10 @@ from generator.sources import adaoduque, transfermarkt
 def dataset_players(cache: Path) -> tuple[list[str], list[str]]:
     """Every player name in the sources, and every Transfermarkt player id."""
     old, new = adaoduque.load(cache), transfermarkt.load(cache)
-    names = {g.player for g in old.goals} | {c.player for c in old.cards} | set(new.names.values())
-    ids = {ref.split(":", 1)[1] for ref in new.names}
+    # Only players in Série A records: players.csv lists tens of thousands of players worldwide.
+    records = [*old.goals, *old.cards, *new.goals, *new.cards, *new.lineups]
+    names = {r.player for r in records}
+    ids = {r.player_ref.split(":", 1)[1] for r in records if r.player_ref.startswith("transfermarkt:")}
     return sorted(names), sorted(ids)
 
 
