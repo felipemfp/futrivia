@@ -110,15 +110,26 @@ SELECT DISTINCT ?l ?p ?n WHERE {{
 }}"""
 
 
-def fetch_people(sparql: Sparql, dataset_names: list[str], transfermarkt_ids: list[str] = ()) -> dict:
+def _silent(stage: str, done: int, total: int) -> None:
+    pass
+
+
+def fetch_people(sparql: Sparql, dataset_names: list[str], transfermarkt_ids: list[str] = (),
+                 progress: Callable[[str, int, int], None] = _silent) -> dict:
     people: dict[str, dict] = {}
     labels: dict[str, dict[str, str]] = {}
+
+    def batched(stage: str, items: list, size: int):
+        batches = list(_batches(items, size))
+        for number, batch in enumerate(batches, 1):
+            yield batch
+            progress(stage, number, len(batches))
 
     def person(qid: str, sitelinks: int) -> dict:
         return people.setdefault(qid, {"sitelinks": sitelinks, "names": set(), "stints": set(), "transfermarkt": set()})
 
     def add_details(qids: list[str]) -> None:
-        for batch in _batches(sorted(qids), NAME_BATCH):
+        for batch in batched("names", sorted(qids), NAME_BATCH):
             for b in sparql(_names_query(batch)):
                 people[_qid(b)]["names"].add(b["l"]["value"])
                 if b["k"]["value"] == "label":
@@ -127,7 +138,7 @@ def fetch_people(sparql: Sparql, dataset_names: list[str], transfermarkt_ids: li
                 people[_qid(b)]["transfermarkt"].add(b["tm"]["value"])
 
     clubs = sorted({_qid(b, "c") for b in sparql(_clubs_query())})
-    for batch in _batches(clubs, CLUB_BATCH):
+    for batch in batched("clubs", clubs, CLUB_BATCH):
         for b in sparql(_stints_query(batch)):
             person(_qid(b), int(b["n"]["value"]))["stints"].add((b["teamLabel"]["value"], _year(b, "from"), _year(b, "to")))
     add_details(list(people))
@@ -135,11 +146,11 @@ def fetch_people(sparql: Sparql, dataset_names: list[str], transfermarkt_ids: li
     # Players without a Brazilian club on Wikidata (its histories have gaps): look up by Transfermarkt id, then by name.
     before = set(people)
     known_tm = {i for p in people.values() for i in p["transfermarkt"]}
-    for batch in _batches(sorted(set(transfermarkt_ids) - known_tm), LABEL_BATCH):
+    for batch in batched("transfermarkt ids", sorted(set(transfermarkt_ids) - known_tm), LABEL_BATCH):
         for b in sparql(_bytm_query(batch)):
             person(_qid(b), int(b["n"]["value"]))["transfermarkt"].add(b["tm"]["value"])
     known = {name for p in people.values() for name in p["names"]}
-    for batch in _batches(sorted({n for n in dataset_names if n and n not in known}), LABEL_BATCH):
+    for batch in batched("labels", sorted({n for n in dataset_names if n and n not in known}), LABEL_BATCH):
         for b in sparql(_labels_query(batch)):
             person(_qid(b), int(b["n"]["value"]))["names"].add(b["l"]["value"])
     add_details(list(set(people) - before))
@@ -157,10 +168,10 @@ def fetch_people(sparql: Sparql, dataset_names: list[str], transfermarkt_ids: li
 
 
 def load_or_fetch(path: Path, sparql: Sparql, dataset_names: list[str], refresh: bool,
-                  transfermarkt_ids: list[str] = ()) -> dict:
+                  transfermarkt_ids: list[str] = (), progress: Callable[[str, int, int], None] = _silent) -> dict:
     if path.exists() and not refresh:
         return json.loads(path.read_text(encoding="utf-8"))
-    people = fetch_people(sparql, dataset_names, transfermarkt_ids)
+    people = fetch_people(sparql, dataset_names, transfermarkt_ids, progress)
     partial = path.with_suffix(".partial")
     partial.write_text(json.dumps(people, ensure_ascii=False, sort_keys=True), encoding="utf-8")
     os.replace(partial, path)

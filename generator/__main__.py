@@ -1,6 +1,7 @@
 import argparse
 import datetime
 import sys
+import time
 from pathlib import Path
 
 from generator import build, wikidata
@@ -14,6 +15,25 @@ def dataset_players(cache: Path) -> tuple[list[str], list[str]]:
     names = {g.player for g in old.goals} | {c.player for c in old.cards} | set(new.names.values())
     ids = {ref.split(":", 1)[1] for ref in new.names}
     return sorted(names), sorted(ids)
+
+
+class ProgressLog:
+    """Prints one line per finished batch with percent and ETA, and appends it to a log file."""
+
+    def __init__(self, path: Path):
+        self.path = path
+        self.started: dict[str, float] = {}
+        path.parent.mkdir(parents=True, exist_ok=True)
+
+    def __call__(self, stage: str, done: int, total: int) -> None:
+        now = time.monotonic()
+        start = self.started.setdefault(stage, now - 1e-9 if done == 1 else now)
+        eta = (now - start) / done * (total - done)
+        line = (f"{datetime.datetime.now():%H:%M:%S} wikidata {stage}: {done}/{total} batches "
+                f"({100 * done / total:.0f}%), ETA {eta / 60:.1f} min")
+        print(line, file=sys.stderr, flush=True)
+        with open(self.path, "a", encoding="utf-8") as log:
+            log.write(line + "\n")
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -50,7 +70,8 @@ def main(argv: list[str] | None = None) -> int:
     elif args.command == "wikidata":
         names, ids = dataset_players(args.cache)
         try:
-            people = wikidata.load_or_fetch(args.cache / "wikidata.json", wikidata.http_sparql, names, args.refresh, ids)
+            people = wikidata.load_or_fetch(args.cache / "wikidata.json", wikidata.http_sparql, names, args.refresh, ids,
+                                            ProgressLog(Path("/tmp/futrivia-wikidata/progress.log")))
         except wikidata.WikidataError as error:
             print(f"wikidata failed: {error}", file=sys.stderr)
             return 1
