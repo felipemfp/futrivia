@@ -106,6 +106,15 @@ class ScheduleTest(unittest.TestCase):
         with self.assertRaises(ScheduleError):
             schedule(self.pool(70, templates=3), datetime.date(2027, 1, 1), 10, seed="s")
 
+    def test_schedulable_days_stops_where_variety_runs_out(self):
+        from generator.build import Prepared, schedulable_days
+        # 40 prompts of one template and 30 spread over three: 4 templates allow 7 a day only while all four last.
+        pool = [Prepared(day_prompt(i, "big"), "big") for i in range(40)]
+        pool += [Prepared(day_prompt(100 + i, f"t{i % 3}"), f"t{i % 3}") for i in range(30)]
+        days = schedulable_days(pool, "s")
+        self.assertLess(days, 70 // 7)
+        self.assertEqual(len(schedule(pool, datetime.date(2027, 1, 1), days, seed="s")), days)
+
 
 if __name__ == "__main__":
     unittest.main()

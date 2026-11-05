@@ -27,6 +27,7 @@ class Override:
     ref: str
     wikidata: str | None  # None forces a dataset identity
     aliases: tuple[str, ...]
+    name: str | None = None  # name shown to players, when the sources only have a legal name
 
 
 @dataclass(frozen=True)
@@ -67,7 +68,8 @@ def read_overrides(path: Path) -> list[Override]:
     if not path.exists():
         return []
     with open(path, encoding="utf-8") as rows:
-        return [Override(r["ref"], r["wikidata"] or None, tuple(normalize(a) for a in r["aliases"].split("|") if a.strip()))
+        return [Override(r["ref"], r["wikidata"] or None, tuple(normalize(a) for a in r["aliases"].split("|") if a.strip()),
+                         r.get("name") or None)
                 for r in csv.DictReader(rows)]
 
 
@@ -95,6 +97,7 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
     ref_to_id: dict[str, str] = {}
     status: dict[str, str] = {}
     extra_aliases: dict[str, set[str]] = defaultdict(set)
+    shown_name: dict[str, str] = {}
 
     def assign(ref: str, ident: str, how: str) -> None:
         ref_to_id[ref] = ident
@@ -111,6 +114,8 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
                 raise KeyError(f"override for {ref}: {o.wikidata} is not in the Wikidata cache")
             target = o.wikidata or dataset_id
             extra_aliases[target].update(o.aliases)
+            if o.name:
+                shown_name[target] = o.name
             assign(ref, target, "override")
             continue
         if ref.startswith("transfermarkt:"):
@@ -133,8 +138,11 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
         assign(ref, dataset_id, "ambiguous" if fit else "none")
 
     names_of: dict[str, set[str]] = defaultdict(set)
+    transfermarkt_names: dict[str, set[str]] = defaultdict(set)
     for ref, ident in ref_to_id.items():
         names_of[ident].add(players[ref].name)
+        if ref.startswith("transfermarkt:"):
+            transfermarkt_names[ident].add(players[ref].name)
 
     identities = {}
     for ident, dataset_names in names_of.items():
@@ -142,7 +150,10 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
         aliases = {normalize(n) for n in dataset_names} | extra_aliases[ident]
         if p:
             aliases |= {normalize(n) for n in p["names"]}
-        name = (p and p.get("label")) or min(dataset_names, key=len)
+        # Shown name: override, then Transfermarkt's common name (Wikidata labels are often legal names), then the label.
+        common = min(transfermarkt_names[ident], key=len) if transfermarkt_names[ident] else None
+        name = shown_name.get(ident) or common or (p and p.get("label")) or min(dataset_names, key=len)
+        aliases.add(normalize(name))
         identities[ident] = Identity(id=ident, name=name, aliases=tuple(sorted(a for a in aliases if a)),
                                      sitelinks=p["sitelinks"] if p else None, status=status[ident])
     return ref_to_id, identities

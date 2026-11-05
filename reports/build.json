@@ -3,6 +3,7 @@
  "days": 365,
  "prompts_available": 694,
  "prompts_needed": 2555,
+ "days_schedulable": 86,
  "templates": {
   "acrescimos": {
    "candidates": 33,
@@ -72,14 +73,15 @@
   }
  },
  "identities": {
-  "ambiguous": 236,
+  "ambiguous": 223,
   "club": 1023,
-  "name": 589,
-  "none": 161,
-  "transfermarkt-id": 952
+  "name": 585,
+  "none": 159,
+  "override": 19,
+  "transfermarkt-id": 940
  },
- "answers_in_use": 2078,
- "answers_untrusted": 527,
+ "answers_in_use": 2066,
+ "answers_untrusted": 512,
  "name_only_trusted": false,
- "error": "365 days need 2555 prompts; only 694 prompts pass the filters"
+ "error": "365 days need 2555 prompts; only 694 prompts pass the filters (86 days can be scheduled)"
 }

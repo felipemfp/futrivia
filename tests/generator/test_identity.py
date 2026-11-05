@@ -84,6 +84,16 @@ class ResolveTest(unittest.TestCase):
         self.assertEqual(refs["a:Deyverson"], "dataset:Deyverson")
         self.assertEqual(ids["dataset:Deyverson"].status, "override")
 
+    def test_transfermarkt_name_is_shown_over_a_legal_name_label(self):
+        people = dict(PEOPLE, Q47491410=person(30, ["Pedro Guilherme Abreu dos Santos"], transfermarkt=["432895"]))
+        refs, ids = resolve({"transfermarkt:432895": player("transfermarkt:432895", "Pedro", ("Flamengo", 2025))}, people, [])
+        self.assertEqual(ids["Q47491410"].name, "Pedro")
+
+    def test_override_name_is_shown(self):
+        refs, ids = self.resolve(player("a:Wesley", "Wesley", ("Goias", 2015)),
+                                 overrides=[Override("a:Wesley", "Q2", (), name="Wesley Pacheco")])
+        self.assertEqual(ids["Q2"].name, "Wesley Pacheco")
+
     def test_override_for_a_person_not_in_the_cache_is_an_error(self):
         with self.assertRaises(KeyError):
             self.resolve(player("a:Keno", "Keno", ("Palmeiras", 2016)), overrides=[Override("a:Keno", "Q404", ())])

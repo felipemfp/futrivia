@@ -75,15 +75,13 @@ def _order_key(seed: str, prompt_id: str) -> str:
     return hashlib.sha256(f"{seed}:{prompt_id}".encode()).hexdigest()
 
 
-def schedule(pool: list[Prepared], start: datetime.date, days: int, seed: str) -> dict[str, list[Prepared]]:
-    needed = days * PROMPTS_PER_DAY
-    if len(pool) < needed:
-        raise ScheduleError(f"{days} days need {needed} prompts; only {len(pool)} prompts pass the filters")
+def _fill(pool: list[Prepared], start: datetime.date, limit: int, seed: str) -> dict[str, list[Prepared]]:
+    """Schedule up to `limit` days, stopping at the first day that can't be filled within the template limit."""
     queues: dict[str, list[Prepared]] = defaultdict(list)
     for p in sorted(pool, key=lambda p: _order_key(seed, p.prompt.id)):
         queues[p.template].append(p)
     result = {}
-    for offset in range(days):
+    for offset in range(limit):
         date = (start + datetime.timedelta(days=offset)).isoformat()
         # Draw from the fullest templates first, so no template runs dry while others pile up.
         picked = []
@@ -91,8 +89,24 @@ def schedule(pool: list[Prepared], start: datetime.date, days: int, seed: str) -
             take = min(MAX_PER_TEMPLATE_PER_DAY, len(queues[template]), PROMPTS_PER_DAY - len(picked))
             picked += [queues[template].pop(0) for _ in range(take)]
         if len(picked) < PROMPTS_PER_DAY:
-            raise ScheduleError(f"{date}: not enough template variety left to fill the day ({len(picked)} of {PROMPTS_PER_DAY})")
+            break
         result[date] = sorted(picked, key=lambda p: _order_key(f"{seed}:{date}", p.prompt.id))
+    return result
+
+
+def schedulable_days(pool: list[Prepared], seed: str) -> int:
+    return len(_fill(pool, datetime.date(2000, 1, 1), len(pool) // PROMPTS_PER_DAY, seed))
+
+
+def schedule(pool: list[Prepared], start: datetime.date, days: int, seed: str) -> dict[str, list[Prepared]]:
+    needed = days * PROMPTS_PER_DAY
+    if len(pool) < needed:
+        raise ScheduleError(f"{days} days need {needed} prompts; only {len(pool)} prompts pass the filters "
+                            f"({schedulable_days(pool, seed)} days can be scheduled)")
+    result = _fill(pool, start, days, seed)
+    if len(result) < days:
+        raise ScheduleError(f"only {len(result)} of {days} days can be filled with at most "
+                            f"{MAX_PER_TEMPLATE_PER_DAY} prompts per template a day")
     return result
 
 
@@ -164,6 +178,7 @@ def build(cache: Path, overrides: Path, out: Path, report_path: Path, start: dat
     report = {
         "start": start.isoformat(), "days": days, "prompts_available": len(pool),
         "prompts_needed": days * PROMPTS_PER_DAY,
+        "days_schedulable": schedulable_days(pool, config.SCHEDULE_SEED),
         "templates": per_template,
         "identities": dict(sorted(statuses.items())),
         "answers_in_use": len(in_use),
