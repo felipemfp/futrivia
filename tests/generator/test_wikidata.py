@@ -17,8 +17,9 @@ def lit(value: str) -> dict:
 class FakeSparql:
     """Answers each query kind from canned bindings and records the queries it saw."""
 
-    def __init__(self, clubs=(), stints=(), names=(), labels=(), fail_on: str | None = None):
-        self.responses = {"clubs": list(clubs), "stints": list(stints), "names": list(names), "labels": list(labels)}
+    def __init__(self, clubs=(), stints=(), names=(), labels=(), tmids=(), bytm=(), fail_on: str | None = None):
+        self.responses = {"clubs": list(clubs), "stints": list(stints), "names": list(names), "labels": list(labels),
+                          "tmids": list(tmids), "bytm": list(bytm)}
         self.fail_on = fail_on
         self.queries: list[tuple[str, str]] = []
 
@@ -35,8 +36,9 @@ RODRYGO_STINTS = [
     {"p": uri("Q42728914"), "n": lit("61"), "teamLabel": lit("Seleção Brasileira de Futebol"), "from": lit("2019-01-01T00:00:00Z")},
 ]
 RODRYGO_NAMES = [
-    {"p": uri("Q42728914"), "l": lit("Rodrygo")},
-    {"p": uri("Q42728914"), "l": lit("Rodrygo Silva de Goes")},
+    {"p": uri("Q42728914"), "l": lit("Rodrygo Goes"), "k": lit("label"), "lang": lit("en")},
+    {"p": uri("Q42728914"), "l": lit("Rodrygo"), "k": lit("label"), "lang": lit("pt")},
+    {"p": uri("Q42728914"), "l": lit("Rodrygo Silva de Goes"), "k": lit("alias"), "lang": lit("pt")},
 ]
 
 
@@ -56,12 +58,34 @@ class WikidataTest(unittest.TestCase):
         sparql = FakeSparql(clubs=[{"c": uri("Q80955")}], stints=RODRYGO_STINTS, names=RODRYGO_NAMES)
         person = self.fetch(sparql)["Q42728914"]
         self.assertEqual(person["sitelinks"], 61)
-        self.assertEqual(person["names"], ["Rodrygo", "Rodrygo Silva de Goes"])
+        self.assertEqual(person["names"], ["Rodrygo", "Rodrygo Goes", "Rodrygo Silva de Goes"])
         self.assertIn(["Santos Futebol Clube", 2017, 2019], person["stints"])
         self.assertIn(["Seleção Brasileira de Futebol", 2019, None], person["stints"])
 
+    def test_portuguese_label_is_preferred_for_display(self):
+        sparql = FakeSparql(clubs=[{"c": uri("Q80955")}], stints=RODRYGO_STINTS, names=RODRYGO_NAMES)
+        self.assertEqual(self.fetch(sparql)["Q42728914"]["label"], "Rodrygo")
+
+    def test_transfermarkt_ids_are_recorded_and_only_unknown_ids_are_looked_up(self):
+        tmids = [{"p": uri("Q42728914"), "tm": lit("412363")}]
+        bytm = [{"p": uri("Q142794"), "n": lit("150"), "tm": lit("68290")}]
+        sparql = FakeSparql(clubs=[{"c": uri("Q80955")}], stints=RODRYGO_STINTS, names=RODRYGO_NAMES, tmids=tmids, bytm=bytm)
+        people = wikidata.fetch_people(sparql, [], ["412363", "68290"])
+        bytm_query = next(q for kind, q in sparql.queries if kind == "bytm")
+        self.assertIn('"68290"', bytm_query)
+        self.assertNotIn('"412363"', bytm_query)
+        self.assertEqual(people["Q142794"]["sitelinks"], 150)
+        self.assertIn("68290", people["Q142794"]["transfermarkt"])
+
+    def test_people_found_by_lookup_also_get_names(self):
+        bytm = [{"p": uri("Q142794"), "n": lit("150"), "tm": lit("68290")}]
+        sparql = FakeSparql(clubs=[{"c": uri("Q80955")}], bytm=bytm,
+                            names=[{"p": uri("Q142794"), "l": lit("Neymar"), "k": lit("label"), "lang": lit("pt")}])
+        people = wikidata.fetch_people(sparql, [], ["68290"])
+        self.assertEqual(people["Q142794"]["label"], "Neymar")
+
     def test_names_not_found_among_brazilian_club_players_are_looked_up_by_label(self):
-        labels = [{"l": lit("Lucas Pratto", ), "p": uri("Q1845684"), "n": lit("23")}]
+        labels = [{"l": lit("Lucas Pratto"), "p": uri("Q1845684"), "n": lit("23")}]
         sparql = FakeSparql(clubs=[{"c": uri("Q80955")}], stints=RODRYGO_STINTS, names=RODRYGO_NAMES, labels=labels)
         people = self.fetch(sparql, names=["Rodrygo", "Lucas Pratto"])
         label_query = next(q for kind, q in sparql.queries if kind == "labels")

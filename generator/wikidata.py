@@ -80,11 +80,24 @@ def _names_query(qids: list[str]) -> str:
     values = " ".join(f"wd:{q}" for q in qids)
     langs = ", ".join(f'"{lang}"' for lang in LANGS)
     return f"""# names
-SELECT ?p ?l WHERE {{
+SELECT ?p ?l ?k ?lang WHERE {{
   VALUES ?p {{ {values} }}
-  {{ ?p rdfs:label ?l }} UNION {{ ?p skos:altLabel ?l }} UNION {{ ?p wdt:P1477 ?l }} UNION {{ ?p wdt:P1559 ?l }}
-  FILTER(LANG(?l) IN ({langs}))
+  {{ ?p rdfs:label ?l BIND("label" AS ?k) }} UNION {{ ?p skos:altLabel ?l BIND("alias" AS ?k) }}
+  UNION {{ ?p wdt:P1477 ?l BIND("alias" AS ?k) }} UNION {{ ?p wdt:P1559 ?l BIND("alias" AS ?k) }}
+  BIND(LANG(?l) AS ?lang) FILTER(?lang IN ({langs}))
 }}"""
+
+
+def _tmids_query(qids: list[str]) -> str:
+    values = " ".join(f"wd:{q}" for q in qids)
+    return f"""# tmids
+SELECT ?p ?tm WHERE {{ VALUES ?p {{ {values} }} ?p wdt:P2446 ?tm. }}"""
+
+
+def _bytm_query(ids: list[str]) -> str:
+    values = " ".join(_literal(i) for i in ids)
+    return f"""# bytm
+SELECT ?p ?n ?tm WHERE {{ VALUES ?tm {{ {values} }} ?p wdt:P2446 ?tm; wikibase:sitelinks ?n. }}"""
 
 
 def _labels_query(names: list[str]) -> str:
@@ -97,37 +110,57 @@ SELECT DISTINCT ?l ?p ?n WHERE {{
 }}"""
 
 
-def fetch_people(sparql: Sparql, dataset_names: list[str]) -> dict:
+def fetch_people(sparql: Sparql, dataset_names: list[str], transfermarkt_ids: list[str] = ()) -> dict:
     people: dict[str, dict] = {}
+    labels: dict[str, dict[str, str]] = {}
 
     def person(qid: str, sitelinks: int) -> dict:
-        return people.setdefault(qid, {"sitelinks": sitelinks, "names": set(), "stints": set()})
+        return people.setdefault(qid, {"sitelinks": sitelinks, "names": set(), "stints": set(), "transfermarkt": set()})
+
+    def add_details(qids: list[str]) -> None:
+        for batch in _batches(sorted(qids), NAME_BATCH):
+            for b in sparql(_names_query(batch)):
+                people[_qid(b)]["names"].add(b["l"]["value"])
+                if b["k"]["value"] == "label":
+                    labels.setdefault(_qid(b), {})[b["lang"]["value"]] = b["l"]["value"]
+            for b in sparql(_tmids_query(batch)):
+                people[_qid(b)]["transfermarkt"].add(b["tm"]["value"])
 
     clubs = sorted({_qid(b, "c") for b in sparql(_clubs_query())})
     for batch in _batches(clubs, CLUB_BATCH):
         for b in sparql(_stints_query(batch)):
             person(_qid(b), int(b["n"]["value"]))["stints"].add((b["teamLabel"]["value"], _year(b, "from"), _year(b, "to")))
-    for batch in _batches(sorted(people), NAME_BATCH):
-        for b in sparql(_names_query(batch)):
-            people[_qid(b)]["names"].add(b["l"]["value"])
+    add_details(list(people))
 
+    # Players without a Brazilian club on Wikidata (its histories have gaps): look up by Transfermarkt id, then by name.
+    before = set(people)
+    known_tm = {i for p in people.values() for i in p["transfermarkt"]}
+    for batch in _batches(sorted(set(transfermarkt_ids) - known_tm), LABEL_BATCH):
+        for b in sparql(_bytm_query(batch)):
+            person(_qid(b), int(b["n"]["value"]))["transfermarkt"].add(b["tm"]["value"])
     known = {name for p in people.values() for name in p["names"]}
-    missing = sorted({n for n in dataset_names if n and n not in known})
-    for batch in _batches(missing, LABEL_BATCH):
+    for batch in _batches(sorted({n for n in dataset_names if n and n not in known}), LABEL_BATCH):
         for b in sparql(_labels_query(batch)):
             person(_qid(b), int(b["n"]["value"]))["names"].add(b["l"]["value"])
+    add_details(list(set(people) - before))
+
+    def best_label(qid: str) -> str | None:
+        found = labels.get(qid, {})
+        return next((found[lang] for lang in LANGS if lang in found), None)
 
     return {
-        qid: {"sitelinks": p["sitelinks"], "names": sorted(p["names"]),
-              "stints": sorted([list(s) for s in p["stints"]], key=lambda s: (s[0], s[1] or 0, s[2] or 0))}
+        qid: {"sitelinks": p["sitelinks"], "label": best_label(qid), "names": sorted(p["names"]),
+              "stints": sorted([list(s) for s in p["stints"]], key=lambda s: (s[0], s[1] or 0, s[2] or 0)),
+              "transfermarkt": sorted(p["transfermarkt"])}
         for qid, p in sorted(people.items())
     }
 
 
-def load_or_fetch(path: Path, sparql: Sparql, dataset_names: list[str], refresh: bool) -> dict:
+def load_or_fetch(path: Path, sparql: Sparql, dataset_names: list[str], refresh: bool,
+                  transfermarkt_ids: list[str] = ()) -> dict:
     if path.exists() and not refresh:
         return json.loads(path.read_text(encoding="utf-8"))
-    people = fetch_people(sparql, dataset_names)
+    people = fetch_people(sparql, dataset_names, transfermarkt_ids)
     partial = path.with_suffix(".partial")
     partial.write_text(json.dumps(people, ensure_ascii=False, sort_keys=True), encoding="utf-8")
     os.replace(partial, path)

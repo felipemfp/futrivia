@@ -22,5 +22,22 @@ TRANSFERMARKT = {
 }
 
 
+# Normalized words a Wikidata club label must contain to be this club. Generic words alone would match
+# other clubs (Grêmio Mangaratibense, Internacional de Santa Maria), so ambiguous names carry a second word.
+WIKIDATA_WORDS = {
+    "America-MG": {"america"}, "Athletico-PR": {"paranaense"}, "Atletico-GO": {"goianiense"},
+    "Atletico-MG": {"atletico", "mineiro"}, "Avai": {"avai"}, "Bahia": {"bahia"}, "Botafogo-RJ": {"botafogo", "regatas"},
+    "Bragantino": {"bragantino"}, "CSA": {"alagoano"}, "Ceara": {"ceara", "sporting"}, "Chapecoense": {"chapecoense"},
+    "Corinthians": {"corinthians", "paulista"}, "Coritiba": {"coritiba"}, "Criciuma": {"criciuma"},
+    "Cruzeiro": {"cruzeiro", "esporte"}, "Cuiaba": {"cuiaba"}, "Figueirense": {"figueirense"},
+    "Flamengo": {"regatas", "flamengo"}, "Fluminense": {"fluminense", "football"}, "Fortaleza": {"fortaleza", "esporte"},
+    "Goias": {"goias", "esporte"}, "Gremio": {"gremio", "porto", "alegrense"}, "Internacional": {"sport", "internacional"},
+    "Joinville": {"joinville"}, "Juventude": {"juventude", "esporte"}, "Mirassol": {"mirassol"},
+    "Palmeiras": {"esportiva", "palmeiras"}, "Parana": {"parana", "clube"}, "Ponte Preta": {"ponte", "preta"},
+    "Remo": {"remo"}, "Santa Cruz": {"santa", "cruz"}, "Santos": {"santos", "futebol"}, "Sao Paulo": {"sao", "paulo", "futebol"},
+    "Sport": {"recife"}, "Vasco": {"vasco"}, "Vitoria": {"vitoria", "esporte"},
+}
+
+
 def display(club: str) -> str:
     return DISPLAY[club]

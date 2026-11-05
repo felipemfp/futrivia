@@ -4,12 +4,15 @@ from pathlib import Path
 
 from generator import wikidata
 from generator.fetch import SOURCES, ChecksumError, fetch_all
-from generator.sources import adaoduque
+from generator.sources import adaoduque, transfermarkt
 
 
-def dataset_names(cache: Path) -> list[str]:
-    data = adaoduque.load(cache)
-    return sorted({g.player for g in data.goals} | {c.player for c in data.cards})
+def dataset_players(cache: Path) -> tuple[list[str], list[str]]:
+    """Every player name in the sources, and every Transfermarkt player id."""
+    old, new = adaoduque.load(cache), transfermarkt.load(cache)
+    names = {g.player for g in old.goals} | {c.player for c in old.cards} | set(new.names.values())
+    ids = {ref.split(":", 1)[1] for ref in new.names}
+    return sorted(names), sorted(ids)
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -29,9 +32,9 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         print(f"{len(SOURCES)} sources verified in {args.cache}")
     elif args.command == "wikidata":
+        names, ids = dataset_players(args.cache)
         try:
-            people = wikidata.load_or_fetch(args.cache / "wikidata.json", wikidata.http_sparql,
-                                            dataset_names(args.cache), args.refresh)
+            people = wikidata.load_or_fetch(args.cache / "wikidata.json", wikidata.http_sparql, names, args.refresh, ids)
         except wikidata.WikidataError as error:
             print(f"wikidata failed: {error}", file=sys.stderr)
             return 1
