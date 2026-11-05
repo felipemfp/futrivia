@@ -34,7 +34,7 @@
     },
     {
      "id": "Q13646572",
-     "name": "Gabriel Barbosa",
+     "name": "Gabigol",
      "aliases": [
       "gabigol",
       "gabriel barbosa",
@@ -325,6 +325,19 @@
    "text": "Diga um jogador que foi expulso jogando pelo Goiás no Brasileirão, 2014–2026",
    "answers": [
     {
+     "id": "Q44742",
+     "name": "Breno",
+     "aliases": [
+      "breno",
+      "breno borges",
+      "breno rodrigues borges",
+      "breno vinicius rodrigues borges"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Goiás 2019, Goiás 2020"
+    },
+    {
      "id": "Q19956526",
      "name": "Bruno Henrique",
      "aliases": [
@@ -335,18 +348,6 @@
      "tier": "arquibancada",
      "points": 10,
      "evidence": "Goiás 2015"
-    },
-    {
-     "id": "Q517914",
-     "name": "Dadá Maravilha",
-     "aliases": [
-      "dada",
-      "dada maravilha",
-      "dario jose dos santos"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Goiás 2022"
     },
     {
      "id": "Q18277749",
@@ -360,17 +361,6 @@
      "evidence": "Goiás 2014"
     },
     {
-     "id": "Q60048692",
-     "name": "Michael",
-     "aliases": [
-      "michael",
-      "michael richard delgado de oliveira"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Goiás 2019"
-    },
-    {
      "id": "Q61130844",
      "name": "Lucas Halter",
      "aliases": [
@@ -379,6 +369,17 @@
      "tier": "torcedor",
      "points": 30,
      "evidence": "Goiás 2023"
+    },
+    {
+     "id": "Q60048692",
+     "name": "Michael",
+     "aliases": [
+      "michael",
+      "michael richard delgado de oliveira"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Goiás 2019"
     },
     {
      "id": "Q578635",
@@ -449,7 +450,7 @@
     },
     {
      "id": "Q19884219",
-     "name": "Yago Felipe",
+     "name": "Yago",
      "aliases": [
       "yago",
       "yago felipe",
@@ -471,14 +472,14 @@
      "evidence": "Goiás 2022"
     },
     {
-     "id": "dataset:Guilherme",
-     "name": "Guilherme",
+     "id": "dataset:Dada",
+     "name": "Dada",
      "aliases": [
-      "guilherme"
+      "dada"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Goiás 2023"
+     "evidence": "Goiás 2022"
     },
     {
      "id": "Q104415836",
@@ -514,8 +515,20 @@
      "evidence": "Goiás 2023"
     },
     {
+     "id": "Q18218092",
+     "name": "Tinga",
+     "aliases": [
+      "guilherme",
+      "guilherme de jesus da silva",
+      "tinga"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Goiás 2023"
+    },
+    {
      "id": "Q18274915",
-     "name": "Felipe Francisco Macedo",
+     "name": "Felipe Macedo",
      "aliases": [
       "felipe francisco macedo",
       "felipe macedo"
@@ -526,7 +539,7 @@
     },
     {
      "id": "Q60048701",
-     "name": "Leonardo de Souza Sena",
+     "name": "Léo Sena",
      "aliases": [
       "leo sena",
       "leonardo de souza sena"
@@ -545,18 +558,6 @@
      "tier": "resenha",
      "points": 85,
      "evidence": "Goiás 2020"
-    },
-    {
-     "id": "Q66685048",
-     "name": "Breno",
-     "aliases": [
-      "breno",
-      "breno rodrigues da silva",
-      "breno washington rodrigues da silva"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Goiás 2019, Goiás 2020"
     },
     {
      "id": "Q64167372",
@@ -615,8 +616,7 @@
      "aliases": [
       "felix eduardo torres caicedo",
       "felix torres",
-      "felix torres caicedo",
-      "la muralla"
+      "felix torres caicedo"
      ],
      "tier": "arquibancada",
      "points": 10,
@@ -685,9 +685,7 @@
      "name": "Johan Carbonero",
      "aliases": [
       "johan carbonero",
-      "johan stiven carbonero",
-      "mambita rayo",
-      "mambita rayo carbonicius"
+      "johan stiven carbonero"
      ],
      "tier": "resenha",
      "points": 85,
@@ -716,8 +714,7 @@
      "name": "Lucas Paquetá",
      "aliases": [
       "lucas paqueta",
-      "lucas tolentino coelho de lima",
-      "valentin moron"
+      "lucas tolentino coelho de lima"
      ],
      "tier": "arquibancada",
      "points": 10,
@@ -750,7 +747,7 @@
     },
     {
      "id": "Q13646572",
-     "name": "Gabriel Barbosa",
+     "name": "Gabigol",
      "aliases": [
       "gabigol",
       "gabriel barbosa",
@@ -852,7 +849,7 @@
     },
     {
      "id": "Q488139",
-     "name": "Éverton",
+     "name": "Everton",
      "aliases": [
       "everton",
       "everton cardoso da silva"
@@ -993,8 +990,6 @@
      "id": "Q159059",
      "name": "Grafite",
      "aliases": [
-      "edinaldo batista libanio",
-      "edinaldo batista libano",
       "grafite"
      ],
      "tier": "arquibancada",
@@ -1207,7 +1202,7 @@
    "answers": [
     {
      "id": "Q312772",
-     "name": "Frederico Chaves Guedes",
+     "name": "Fred",
      "aliases": [
       "fred",
       "frederico chaves guedes"
@@ -1266,7 +1261,7 @@
     },
     {
      "id": "Q13646572",
-     "name": "Gabriel Barbosa",
+     "name": "Gabigol",
      "aliases": [
       "gabigol",
       "gabriel barbosa",
@@ -1280,8 +1275,7 @@
      "id": "Q296133",
      "name": "Lisandro López",
      "aliases": [
-      "lisandro lopez",
-      "uno mas del monton"
+      "lisandro lopez"
      ],
      "tier": "arquibancada",
      "points": 10,
@@ -1294,8 +1288,8 @@
       "michel bastos",
       "michel fernandes bastos"
      ],
-     "tier": "arquibancada",
-     "points": 10,
+     "tier": "torcedor",
+     "points": 30,
      "evidence": "São Paulo 2015"
     },
     {
@@ -1335,7 +1329,6 @@
      "id": "Q316836",
      "name": "Nenê",
      "aliases": [
-      "anderson luiz de carvalho",
       "nene"
      ],
      "tier": "torcedor",
@@ -1373,8 +1366,8 @@
       "rafael marques",
       "rafael marques mariano"
      ],
-     "tier": "torcedor",
-     "points": 30,
+     "tier": "raiz",
+     "points": 60,
      "evidence": "Palmeiras 2015"
     },
     {
@@ -1391,9 +1384,7 @@
      "id": "Q1027483",
      "name": "Apodi",
      "aliases": [
-      "apodi",
-      "luis dialisson de souza alves",
-      "luiz diallisson de souza alves"
+      "apodi"
      ],
      "tier": "raiz",
      "points": 60,
@@ -1424,18 +1415,6 @@
      "evidence": "Cruzeiro 2015"
     },
     {
-     "id": "Q107584170",
-     "name": "Marquinhos",
-     "aliases": [
-      "marcus vinicius oliveira alencar",
-      "marquinhos",
-      "marquinhos futbolista nacido en 2003"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Santos 2015"
-    },
-    {
      "id": "Q2449294",
      "name": "Diego Souza",
      "aliases": [
@@ -1459,6 +1438,16 @@
      "evidence": "Grêmio 2015"
     },
     {
+     "id": "dataset:Marquinhos",
+     "name": "Marquinhos",
+     "aliases": [
+      "marquinhos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Santos 2015"
+    },
+    {
      "id": "dataset:Paulinho",
      "name": "Paulinho",
      "aliases": [
@@ -1480,7 +1469,7 @@
     },
     {
      "id": "Q10327357",
-     "name": "Matheus Ferraz Pereira",
+     "name": "Matheus Ferraz",
      "aliases": [
       "matheus ferraz",
       "matheus ferraz pereira"
@@ -1504,8 +1493,7 @@
      "id": "Q736325",
      "name": "Alan Kardec",
      "aliases": [
-      "alan kardec",
-      "alan kardec de souza pereira junior"
+      "alan kardec"
      ],
      "tier": "resenha",
      "points": 85,
@@ -1561,7 +1549,6 @@
      "name": "Élber",
      "aliases": [
       "elber",
-      "elber futebolista",
       "jose elber pimentel da silva"
      ],
      "tier": "resenha",
@@ -1592,7 +1579,7 @@
     },
     {
      "id": "Q726982",
-     "name": "Douglas dos Santos",
+     "name": "Douglas",
      "aliases": [
       "douglas",
       "douglas dos santos"

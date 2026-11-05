@@ -126,6 +126,13 @@ class ResolveTest(unittest.TestCase):
         refs, ids = resolve({"a:Dadá": player("a:Dadá", "Dadá", ("Goias", 2019))}, people, [])
         self.assertEqual(refs["a:Dadá"], "Q3")
 
+    def test_blank_source_name_never_becomes_the_shown_name(self):
+        people = dict(PEOPLE, Q2=dict(person(13, ["Petros Matheus dos Santos Araujo", "الخبيث"], label="Petros Matheus dos Santos Araujo",
+                                             transfermarkt=["200558"]), common="Petros"))
+        refs, ids = resolve({"transfermarkt:200558": player("transfermarkt:200558", "", ("Internacional", 2025))}, people, [])
+        self.assertEqual(ids["Q2"].name, "Petros")
+        self.assertNotIn("", ids["Q2"].aliases)
+
     def test_disambiguation_suffix_is_never_shown(self):
         people = dict(PEOPLE, Q7=person(9, ["Carlos Júnior (futebolista)"], [("Santos Futebol Clube", 2018, 2019)]))
         refs, ids = resolve({"a:Carlos Júnior": player("a:Carlos Júnior", "Carlos Júnior (futebolista)", ("Santos", 2018))}, people, [])

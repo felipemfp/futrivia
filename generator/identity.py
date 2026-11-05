@@ -187,8 +187,8 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
     identities = {}
     for ident, dataset_names in names_of.items():
         p = people.get(ident)
-        known = sorted(transfermarkt_names[ident]) + [n for n in (p and p.get("common"), p and p.get("label")) if n] \
-            + sorted(dataset_names)
+        known = [n for n in sorted(transfermarkt_names[ident]) + [p and p.get("common"), p and p.get("label")]
+                 + sorted(dataset_names) if n and n.split(" (", 1)[0].strip()]  # sources hold some blank names
         aliases = {normalize(n) for n in dataset_names} | extra_aliases[ident]
         if p:
             aliases |= _clean_aliases(p["names"], known)

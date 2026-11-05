@@ -8,7 +8,7 @@
    "answers": [
     {
      "id": "Q312772",
-     "name": "Frederico Chaves Guedes",
+     "name": "Fred",
      "aliases": [
       "fred",
       "frederico chaves guedes"
@@ -79,8 +79,7 @@
      "aliases": [
       "edno",
       "edno cunha",
-      "edno roberto cunha",
-      "roberto cunha"
+      "edno roberto cunha"
      ],
      "tier": "torcedor",
      "points": 30,
@@ -241,8 +240,7 @@
      "id": "Q2056485",
      "name": "Kieza",
      "aliases": [
-      "kieza",
-      "welker marcal almeida"
+      "kieza"
      ],
      "tier": "enciclopedia",
      "points": 100,
@@ -321,25 +319,12 @@
      "evidence": "Corinthians 2018"
     },
     {
-     "id": "Q107584170",
-     "name": "Marquinhos",
-     "aliases": [
-      "marcus vinicius oliveira alencar",
-      "marquinhos",
-      "marquinhos futbolista nacido en 2003"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Corinthians 2018"
-    },
-    {
      "id": "Q15960510",
      "name": "Ángel Romero",
      "aliases": [
       "angel rodrigo romero villamayor",
       "angel romero",
-      "angel romero villamayor",
-      "el pollero"
+      "angel romero villamayor"
      ],
      "tier": "torcedor",
      "points": 30,
@@ -352,8 +337,8 @@
       "douglas augusto",
       "douglas augusto soares gomes"
      ],
-     "tier": "raiz",
-     "points": 60,
+     "tier": "torcedor",
+     "points": 30,
      "evidence": "Corinthians 2018"
     },
     {
@@ -370,7 +355,7 @@
     },
     {
      "id": "Q3940035",
-     "name": "Rodrigo Eduardo Costa Marinho",
+     "name": "Rodriguinho",
      "aliases": [
       "rodrigo eduardo costa marinho",
       "rodriguinho",
@@ -410,6 +395,16 @@
       "jonathas cristian de jesus",
       "jonathas cristian de jesus mauricio",
       "jonathas de jesus"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Corinthians 2018"
+    },
+    {
+     "id": "dataset:Marquinhos",
+     "name": "Marquinhos",
+     "aliases": [
+      "marquinhos"
      ],
      "tier": "raiz",
      "points": 60,
@@ -481,7 +476,7 @@
     },
     {
      "id": "Q13646572",
-     "name": "Gabriel Barbosa",
+     "name": "Gabigol",
      "aliases": [
       "gabigol",
       "gabriel barbosa",
@@ -517,7 +512,6 @@
      "id": "Q20976280",
      "name": "Yeferson Soteldo",
      "aliases": [
-      "minion mojoteldo",
       "soteldinho",
       "yeferson julio soteldo martinez",
       "yeferson soteldo"
@@ -550,14 +544,14 @@
     },
     {
      "id": "Q18719710",
-     "name": "Eduardo Bauermann",
+     "name": "Eduardo",
      "aliases": [
       "eduardo",
       "eduardo bauermann",
       "eduardo gabriel dos santos bauermann"
      ],
-     "tier": "raiz",
-     "points": 60,
+     "tier": "torcedor",
+     "points": 30,
      "evidence": "Santos 2022, Santos 2023"
     },
     {
@@ -606,16 +600,6 @@
      "evidence": "Santos 2023"
     },
     {
-     "id": "dataset:Gustavinho",
-     "name": "Gustavinho",
-     "aliases": [
-      "gustavinho"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Santos 2026"
-    },
-    {
      "id": "Q15075773",
      "name": "Jean Mota",
      "aliases": [
@@ -637,7 +621,7 @@
      "evidence": "Santos 2022"
     },
     {
-     "id": "dataset:Rodrigo Fernández",
+     "id": "Q27922050",
      "name": "Rodrigo Fernández",
      "aliases": [
       "rodrigo fernandez"
@@ -662,8 +646,7 @@
      "name": "Vladimir",
      "aliases": [
       "vladimir",
-      "vladimir orlando cardoso de araujo filho",
-      "vladmir orlando cardoso de araujo filho"
+      "vladimir orlando cardoso de araujo filho"
      ],
      "tier": "resenha",
      "points": 85,
@@ -676,20 +659,20 @@
       "gonzalo daniel escobar",
       "gonzalo escobar"
      ],
-     "tier": "enciclopedia",
-     "points": 100,
+     "tier": "resenha",
+     "points": 85,
      "evidence": "Santos 2025"
     },
     {
      "id": "Q28474511",
-     "name": "Zé Ivaldo",
+     "name": "Ivaldo",
      "aliases": [
       "ivaldo",
       "jose ivaldo almeida silva",
       "ze ivaldo"
      ],
-     "tier": "enciclopedia",
-     "points": 100,
+     "tier": "resenha",
+     "points": 85,
      "evidence": "Santos 2025"
     },
     {
@@ -703,6 +686,18 @@
      "tier": "enciclopedia",
      "points": 100,
      "evidence": "Santos 2020"
+    },
+    {
+     "id": "Q117031970",
+     "name": "Gustavinho",
+     "aliases": [
+      "gustavinho",
+      "gustavo neves",
+      "gustavo ribeiro neves"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Santos 2026"
     },
     {
      "id": "Q104538050",
@@ -727,8 +722,7 @@
      "name": "Jô",
      "aliases": [
       "jo",
-      "jo alves",
-      "joao alves de assis silva"
+      "jo alves"
      ],
      "tier": "arquibancada",
      "points": 10,
@@ -746,20 +740,8 @@
      "evidence": "Internacional 2021"
     },
     {
-     "id": "Q57167",
-     "name": "Zé Roberto",
-     "aliases": [
-      "ce roberto",
-      "jose roberto da silva junior",
-      "ze roberto"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Atlético-GO 2021"
-    },
-    {
      "id": "Q13646572",
-     "name": "Gabriel Barbosa",
+     "name": "Gabigol",
      "aliases": [
       "gabigol",
       "gabriel barbosa",
@@ -774,7 +756,6 @@
      "name": "Andreas Pereira",
      "aliases": [
       "andreas hugo hoelgebaum pereira",
-      "andreas hugo hoelgebaum pereira fue eliminado de copa america",
       "andreas pereira"
      ],
      "tier": "arquibancada",
@@ -798,18 +779,16 @@
      "id": "Q316836",
      "name": "Nenê",
      "aliases": [
-      "anderson luiz de carvalho",
       "nene"
      ],
-     "tier": "torcedor",
-     "points": 30,
+     "tier": "arquibancada",
+     "points": 10,
      "evidence": "Fluminense 2021"
     },
     {
      "id": "Q28748046",
      "name": "Rony",
      "aliases": [
-      "ronielson da silva barbosa",
       "rony"
      ],
      "tier": "torcedor",
@@ -865,8 +844,8 @@
       "yuri alberto",
       "yuri alberto monteiro da silva"
      ],
-     "tier": "raiz",
-     "points": 60,
+     "tier": "torcedor",
+     "points": 30,
      "evidence": "Internacional 2021"
     },
     {
@@ -992,6 +971,16 @@
      "evidence": "Ceará 2021"
     },
     {
+     "id": "dataset:Zé Roberto",
+     "name": "Zé Roberto",
+     "aliases": [
+      "ze roberto"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-GO 2021"
+    },
+    {
      "id": "Q14921884",
      "name": "Gabriel",
      "aliases": [
@@ -1086,8 +1075,7 @@
      "id": "Q66372557",
      "name": "Dawhan",
      "aliases": [
-      "dawhan",
-      "dawhan fran urano da purificacao oliveira"
+      "dawhan"
      ],
      "tier": "enciclopedia",
      "points": 100,
@@ -1198,9 +1186,7 @@
      "id": "Q559474",
      "name": "Edu Dracena",
      "aliases": [
-      "edu dracena",
-      "eduardo luis abonizi de souza",
-      "eduardo luis abonizio de souza"
+      "edu dracena"
      ],
      "tier": "torcedor",
      "points": 30,
@@ -1376,8 +1362,7 @@
      "id": "Q62733",
      "name": "Leandro Damião",
      "aliases": [
-      "leandro damiao",
-      "leandro damiao da silva dos santos"
+      "leandro damiao"
      ],
      "tier": "arquibancada",
      "points": 10,
@@ -1449,22 +1434,10 @@
      "id": "Q23893158",
      "name": "Felipe Vizeu",
      "aliases": [
-      "felipe dos reis pereira vizeu do carmo",
       "felipe vizeu"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Ceará 2020"
-    },
-    {
-     "id": "Q2449583",
-     "name": "Lima",
-     "aliases": [
-      "antonio lima dos santos",
-      "lima"
-     ],
-     "tier": "torcedor",
-     "points": 30,
      "evidence": "Ceará 2020"
     },
     {
@@ -1474,8 +1447,8 @@
       "wescley",
       "wescley gomes dos santos"
      ],
-     "tier": "torcedor",
-     "points": 30,
+     "tier": "arquibancada",
+     "points": 10,
      "evidence": "Ceará 2020"
     },
     {
@@ -1495,8 +1468,8 @@
       "samuel xavier",
       "samuel xavier brito"
      ],
-     "tier": "raiz",
-     "points": 60,
+     "tier": "torcedor",
+     "points": 30,
      "evidence": "Ceará 2020"
     },
     {
@@ -1512,10 +1485,11 @@
      "evidence": "Ceará 2020"
     },
     {
-     "id": "dataset:Cléber",
-     "name": "Cléber",
+     "id": "Q5042023",
+     "name": "Eduardo",
      "aliases": [
-      "cleber"
+      "carlos eduardo santos oliveira",
+      "eduardo"
      ],
      "tier": "raiz",
      "points": 60,
@@ -1549,6 +1523,16 @@
      "name": "Leandro Carvalho",
      "aliases": [
       "leandro carvalho"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Ceará 2020"
+    },
+    {
+     "id": "dataset:Lima",
+     "name": "Lima",
+     "aliases": [
+      "lima"
      ],
      "tier": "raiz",
      "points": 60,
@@ -1621,11 +1605,12 @@
      "evidence": "Ceará 2020"
     },
     {
-     "id": "Q5042023",
-     "name": "Eduardo",
+     "id": "Q5137266",
+     "name": "Cléber",
      "aliases": [
-      "carlos eduardo santos oliveira",
-      "eduardo"
+      "cleber",
+      "cleber antonio de oliveira",
+      "cleber antonio oliveira"
      ],
      "tier": "resenha",
      "points": 85,
@@ -1657,8 +1642,7 @@
      "id": "Q96377583",
      "name": "Fabinho",
      "aliases": [
-      "fabinho",
-      "fabio augusto luciano da silva"
+      "fabinho"
      ],
      "tier": "enciclopedia",
      "points": 100,
