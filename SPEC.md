@@ -170,7 +170,7 @@ These run inside the build, in this order. None is a prerequisite for this spec.
 
 ## Success Criteria
 Before the trial:
-- [ ] `build` produces 365 day files from a fresh clone and a clean `.cache/`, and running it twice gives identical files. **Blocked by gate 3:** 694 prompts schedule 86 days. Two 86-day builds are byte-identical.
+- [ ] `build` produces 365 day files from a fresh clone and a clean `.cache/`, and running it twice gives identical files. **Blocked by gate 3:** 708 prompts schedule 89 days. Two 86-day builds are byte-identical.
 - [x] Every day has 7 prompts with 5–40 answers each, at most 2 from one template, and no repeats (enforced by the validator and scheduler, for the 86 days available).
 - [x] At least 90% of hand-checked answers in the fact check are correct, with every error traced and fixed: 58 of 60, one source error excluded ([reports/fact-check.md](reports/fact-check.md)).
 - [x] At least 90% of the 50 test answers are handled as expected: 56 of 56 (`tests/game/typed-answers.test.js`).
@@ -197,4 +197,5 @@ Accounts, leaderboards, autocomplete, archive or unlimited mode, seasons before 
 | 2026-11-05 | Known source errors are excluded through `data/exclusions.csv`, one row each with the evidence. |
 
 ## Open Questions
-1. **Gate 3 (blocking the 365-day criterion):** the templates yield 694 prompts, which schedule 86 days at 7 a day and at most 2 per template. Options are in the build PR.
+1. **Gate 3 (blocking the 365-day criterion):** the templates yield 708 prompts, which schedule 89 days at 7 a day and at most 2 per template. Options are in the build PR.
+2. **Same shown name, different players:** 19 of the scheduled prompts hold two different players with the same name (two Dudus, two Bruno Henriques). Under matching rule 5, typing that name always gets "Seja mais específico", even though every one is a valid answer. Options are in the build PR.
