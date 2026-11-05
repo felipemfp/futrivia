@@ -43,6 +43,21 @@ def _words(text: str) -> set[str]:
     return set(normalize(text).split()) - PARTICLES
 
 
+LEGAL_NAME_WORDS = 4
+
+
+def _shorten(name: str, candidates: list[str]) -> str:
+    """A legal name ('André Luiz Paulino de Souza Motta') becomes the longest 1–2 word alias drawn from it ('André Paulino')."""
+    if len(name.split()) < LEGAL_NAME_WORDS:
+        return name
+    full = _words(name)
+    short = [c for c in candidates if 1 <= len(c.split()) <= 2 and _words(c) and _words(c) <= full]
+    if not short:
+        return name
+    # More words first, then accented spellings over unaccented ones, then alphabetical for determinism.
+    return max(short, key=lambda c: (len(c.split()), c != normalize(c), sum(1 for ch in c if ord(ch) > 127), c))
+
+
 def _club_fits(club: str, season: int, stints: list, use_season: bool) -> bool:
     need = WIKIDATA_WORDS[club]
     for team, start, end in stints:
@@ -155,6 +170,9 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
         common = min(transfermarkt_names[ident], key=len) if transfermarkt_names[ident] else None
         name = (shown_name.get(ident) or common or (p and p.get("common")) or (p and p.get("label"))
                 or min(dataset_names, key=len))
+        if ident not in shown_name:
+            name = _shorten(name, (p["names"] if p else []) + sorted(dataset_names))
+        name = name.split(" (", 1)[0].strip()  # 'Carlos Júnior (futebolista)': disambiguation isn't part of the name
         aliases.add(normalize(name))
         identities[ident] = Identity(id=ident, name=name, aliases=tuple(sorted(a for a in aliases if a)),
                                      sitelinks=p["sitelinks"] if p else None, status=status[ident])

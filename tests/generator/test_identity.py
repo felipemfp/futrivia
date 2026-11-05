@@ -95,6 +95,22 @@ class ResolveTest(unittest.TestCase):
                                                                     ("Gremio", 2020))}, people, [])
         self.assertEqual(ids[refs["a:Maicon Douglas Sisenando"]].name, "Maicon")
 
+    def test_long_legal_name_shortens_to_a_short_alias_drawn_from_it(self):
+        people = dict(PEOPLE, Q8=person(15, ["André Luiz Paulino de Souza Motta", "Andre Paulino", "André Paulino", "Paulão Motta"],
+                                         [("Santos Futebol Clube", 2015, 2016)]))
+        refs, ids = resolve({"a:André Luiz Paulino de Souza Motta": player("a:André Luiz Paulino de Souza Motta",
+                                                                             "André Luiz Paulino de Souza Motta", ("Santos", 2015))}, people, [])
+        self.assertEqual(ids["Q8"].name, "André Paulino")
+
+    def test_disambiguation_suffix_is_never_shown(self):
+        people = dict(PEOPLE, Q7=person(9, ["Carlos Júnior (futebolista)"], [("Santos Futebol Clube", 2018, 2019)]))
+        refs, ids = resolve({"a:Carlos Júnior": player("a:Carlos Júnior", "Carlos Júnior (futebolista)", ("Santos", 2018))}, people, [])
+        self.assertEqual(ids["Q7"].name, "Carlos Júnior")
+
+    def test_short_names_are_never_shortened(self):
+        refs, ids = self.resolve(player("a:Gabriel Barbosa", "Gabriel Barbosa", ("Flamengo", 2019)))
+        self.assertEqual(ids["Q13646572"].name, "Gabriel Barbosa")
+
     def test_override_name_is_shown(self):
         refs, ids = self.resolve(player("a:Wesley", "Wesley", ("Goias", 2015)),
                                  overrides=[Override("a:Wesley", "Q2", (), name="Wesley Pacheco")])
