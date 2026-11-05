@@ -1,6 +1,6 @@
 # Spec: Futrivia
 
-Status: draft, awaiting approval. Product background and test evidence: [docs/ideas/futrivia.md](docs/ideas/futrivia.md).
+Status: approved 2026-11-05. Product background and test evidence: [docs/ideas/futrivia.md](docs/ideas/futrivia.md).
 
 ## Objective
 A daily Brazilian football trivia game in Portuguese. Every player gets the same 7 prompts each day, types one player per prompt, and scores more for valid answers that are harder to remember. All content is generated from data, so nobody edits prompts.
@@ -59,12 +59,19 @@ No runtime dependencies and no build step.
 | Generator | Python 3.12, standard library |
 | Game | Plain HTML, CSS and JavaScript modules |
 | Device storage | `localStorage` |
-| Hosting | Static files; GitHub Pages proposed (see Open Questions) |
+| Hosting | GitHub Pages, public URL shared only with the trial group |
 
 **Inputs:**
-- `adaoduque/Brasileirao_Dataset`, pinned to a commit: scorers and cards, 2014–2024
-- `dcaribou/transfermarkt-datasets`: lineups, 2024 and part of 2025
-- Wikidata: language-page counts, aliases and identity
+
+| Source | Provides | Calendar window |
+|---|---|---|
+| `adaoduque/Brasileirao_Dataset`, pinned commit | Scorers, cards | Brasileirão 2014–2024 |
+| `dcaribou/transfermarkt-datasets`, checksummed | Lineups, goals, cards | Brasileirão 2025, and 2026 to 1 June |
+| Wikidata | Language-page counts, aliases, identity | Not a source of facts |
+
+- Transfermarkt labels each season with the year before: its `2024` season is Brasileirão 2025. The generator must convert this, and a test must prove it.
+- Collection stopped in July 2026, so no later matches will arrive.
+- Prompts may cover 2014 to 2026, but must name the window they use, such as "2014–2024" or "2025".
 
 ## Commands
 The project doesn't exist yet, so these are the commands it must support.
@@ -178,7 +185,12 @@ After the trial:
 ## Not In Scope
 Accounts, leaderboards, autocomplete, archive or unlimited mode, seasons before 2014, single-match prompts for older games, English text, native apps. Reasons are in the [idea doc](docs/ideas/futrivia.md).
 
+## Decisions
+| Date | Decision |
+|---|---|
+| 2026-11-05 | Host the friends trial on GitHub Pages. Felipe accepts the risk of the unlicensed dataset for the trial; review this before any wider launch. |
+| 2026-11-05 | The name is **futrivia**, lowercase, in the title and share text. |
+| 2026-11-05 | Pre-2014 legends such as Ronaldinho are accepted as missing. Neymar is in the 2025–2026 data, with 12 goals and 28 lineup appearances. |
+
 ## Open Questions
-1. **Where to host, given the data licences?** `adaoduque/Brasileirao_Dataset` declares no licence, and generated answers reproduce its facts. A public GitHub Pages URL is technically public even if only friends get the link. Options: accept that risk for a friends-only trial, or host somewhere access-limited. Needed before publishing.
-2. **Are the last decade's names enough?** Ronaldinho and Neymar have no goals in this data, so they won't be answers. Accepted for now, and the trial will show if it hurts.
-3. **Is "Futrivia" the name?** It affects only the title and share text.
+None blocking.
