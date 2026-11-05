@@ -1,6 +1,6 @@
 # Implementation Plan: futrivia
 
-Status: awaiting approval. Implements [SPEC.md](../SPEC.md); detailed tasks are in [todo.md](todo.md).
+Status: approved; T1–T16 done, T17–T18 wait on Felipe (gate 3 decision, Cloudflare setup). Implements [SPEC.md](../SPEC.md); detailed tasks are in [todo.md](todo.md).
 
 ## Overview
 Two parts joined by one file format:
@@ -39,12 +39,12 @@ T1 scaffold + hooks
 ## Task List
 
 ### Phase 1: Walking skeleton
-- [ ] T1: Scaffold, test runners, pre-commit hook
-- [ ] T2: `fetch` with pinned, checksummed sources
-- [ ] T3: 2014–2024 adapter and hat-trick template
-- [ ] T4: Day-file writer and validator (contract v1)
-- [ ] T5: Game logic: matching, scoring, timer, São Paulo date, share text
-- [ ] T6: Game page plays a test day file
+- [x] T1: Scaffold, test runners, pre-commit hook
+- [x] T2: `fetch` with pinned, checksummed sources
+- [x] T3: 2014–2024 adapter and hat-trick template
+- [x] T4: Day-file writer and validator (contract v1)
+- [x] T5: Game logic: matching, scoring, timer, São Paulo date, share text
+- [x] T6: Game page plays a test day file
 
 ### Checkpoint 1: playable skeleton
 - [ ] Both unit suites pass in the hook, in under 2 seconds
@@ -52,29 +52,29 @@ T1 scaffold + hooks
 - [ ] Review with Felipe
 
 ### Phase 2: Identity and rarity
-- [ ] T7: Wikidata fetch, cached
-- [ ] T8: Identity resolver and report
-- [ ] T9: Gate 1, hand-check 50 name-only matches
-- [ ] T10: Gate 2, draft the overrides file for Felipe's review
-- [ ] T11: Rarity tiers in the build
+- [x] T7: Wikidata fetch, cached
+- [x] T8: Identity resolver and report
+- [x] T9: Gate 1, hand-check 50 name-only matches
+- [x] T10: Gate 2, draft the overrides file for Felipe's review
+- [x] T11: Rarity tiers in the build
 
 ### Checkpoint 2: trusted rarity
 - [ ] Identity report produced; gate 1 decision recorded
 - [ ] Felipe has reviewed the overrides file
-- [ ] The hat-trick prompt ranks Suárez, Rodrygo and Gabriel Barbosa in its top third
+- [x] The hat-trick prompts rank Suárez, Rodrygo and Gabriel Barbosa in their top third (Rodrygo 1st and Gabigol 6th of 24 in 2014–2019; Suárez 2nd and Gabigol 3rd of 21 in 2020–2026)
 
 ### Phase 3: Content
-- [ ] T12: Transfermarkt adapter, with the season shift proven
-- [ ] T13: Goal-based templates
-- [ ] T14: Card and lineup templates
-- [ ] T15: Schedule builder and build report (gate 3)
+- [x] T12: Transfermarkt adapter, with the season shift proven
+- [x] T13: Goal-based templates
+- [x] T14: Card and lineup templates
+- [x] T15: Schedule builder and build report (gate 3) — gate tripped: 694 prompts, 86 days
 
 ### Checkpoint 3: a full year
 - [ ] 365 valid day files, identical across two builds
 - [ ] Report reviewed with Felipe; if the prompt count falls short, stop here with options
 
 ### Phase 4: Trial
-- [ ] T16: Fact check and 50-answer test
+- [x] T16: Fact check and 50-answer test
 - [ ] T17: Cloudflare Pages deploy at futrivia.felipemfp.dev
 - [ ] T18: Browser pass at phone width
 

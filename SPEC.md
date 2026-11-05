@@ -170,14 +170,14 @@ These run inside the build, in this order. None is a prerequisite for this spec.
 
 ## Success Criteria
 Before the trial:
-- [ ] `build` produces 365 day files from a fresh clone and a clean `.cache/`, and running it twice gives identical files.
-- [ ] Every day has 7 prompts with 5–40 answers each, at most 2 from one template, and no repeats in the 365 days.
-- [ ] At least 90% of hand-checked answers in the fact check are correct, with every error traced and fixed in the generator or override file.
-- [ ] At least 90% of the 50 test answers are handled as expected.
-- [ ] Two different devices show identical prompts on the same São Paulo date.
-- [ ] A game can be finished on a phone-width screen, resumed after closing the tab, and shared as text with no answers in it.
-- [ ] The shared result pastes into WhatsApp readably.
-- [ ] Page and day file load in under 1 second locally, excluding hosting.
+- [ ] `build` produces 365 day files from a fresh clone and a clean `.cache/`, and running it twice gives identical files. **Blocked by gate 3:** 694 prompts schedule 86 days. Two 86-day builds are byte-identical.
+- [x] Every day has 7 prompts with 5–40 answers each, at most 2 from one template, and no repeats (enforced by the validator and scheduler, for the 86 days available).
+- [x] At least 90% of hand-checked answers in the fact check are correct, with every error traced and fixed: 58 of 60, one source error excluded ([reports/fact-check.md](reports/fact-check.md)).
+- [x] At least 90% of the 50 test answers are handled as expected: 56 of 56 (`tests/game/typed-answers.test.js`).
+- [ ] Two different devices show identical prompts on the same São Paulo date. Needs the deploy; the date logic is tested across time zones.
+- [x] A game can be finished on a phone-width screen, resumed after closing the tab, and shared as text with no answers in it: blind critic rounds 1–8, plus a real generated day played at 360 px.
+- [ ] The shared result pastes into WhatsApp readably. Felipe checks on a phone.
+- [x] Page and day file load in under 1 second locally: each file under 3 ms, 63 KB in total.
 
 After the trial:
 - [ ] Of 5 friends, at least 3 share a result on day 7 without being reminded.
@@ -192,6 +192,9 @@ Accounts, leaderboards, autocomplete, archive or unlimited mode, seasons before 
 | 2026-11-05 | Use Cloudflare Pages at `futrivia.felipemfp.dev` instead of GitHub Pages. This needs no CI workflow in the repo. |
 | 2026-11-05 | The name is **futrivia**, lowercase, in the title and share text. |
 | 2026-11-05 | Pre-2014 legends such as Ronaldinho are accepted as missing. Neymar is in the 2025–2026 data, with 12 goals and 28 lineup appearances. |
+| 2026-11-05 | Gate 1: name-only identity matches get the default Raiz tier (32 of 50 proven correct; [reports/identity-check.md](reports/identity-check.md)). |
+| 2026-11-05 | Identity hardening found during the build: candidates must be of playing age (15–43) in every dataset season; Wikidata aliases must share a word with a known name or be a short single-word nickname (removes vandalism); the shown name is the shortest name the sources use. |
+| 2026-11-05 | Known source errors are excluded through `data/exclusions.csv`, one row each with the evidence. |
 
 ## Open Questions
-None blocking.
+1. **Gate 3 (blocking the 365-day criterion):** the templates yield 694 prompts, which schedule 86 days at 7 a day and at most 2 per template. Options are in the build PR.
