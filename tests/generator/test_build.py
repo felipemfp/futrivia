@@ -1,7 +1,7 @@
 import datetime
 import unittest
 
-from generator.build import ScheduleError, format_evidence, prepare, schedule
+from generator.build import ScheduleError, collect_players, format_evidence, prepare, schedule
 from generator.dayfile import DayAnswer, DayPrompt
 from generator.identity import Identity
 from generator.records import PromptCandidate
@@ -50,6 +50,19 @@ class PrepareTest(unittest.TestCase):
     def test_untrusted_identities_get_the_default_tier(self):
         kept, _ = self.prepare([candidate("p", ["r0", "r1", "r2", "r3", "r4"])], trusted=lambda i: i.id != "Q0")
         self.assertEqual(next(a for a in kept[0].prompt.answers if a.id == "Q0").tier, "raiz")
+
+
+class CollectPlayersTest(unittest.TestCase):
+    def test_own_goal_club_is_not_evidence_of_where_the_player_played(self):
+        from generator.records import Goal
+        own = Goal("m", 2023, "2023-06-01", "Flamengo", "Léo", "t:Léo", "10", False, True)
+        players = collect_players([own], [], [])
+        self.assertEqual(players["t:Léo"].seen, frozenset())
+
+    def test_only_players_in_the_records_are_collected(self):
+        from generator.records import Card
+        players = collect_players([], [Card("m", 2023, "2023-06-01", "Santos", "A", "t:A", True)], [])
+        self.assertEqual(list(players), ["t:A"])
 
 
 class EvidenceTest(unittest.TestCase):

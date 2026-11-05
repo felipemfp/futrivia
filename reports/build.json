@@ -1,0 +1,85 @@
+{
+ "start": "2027-01-01",
+ "days": 365,
+ "prompts_available": 694,
+ "prompts_needed": 2555,
+ "templates": {
+  "acrescimos": {
+   "candidates": 33,
+   "kept": 29,
+   "too_few": 4,
+   "too_many": 0
+  },
+  "expulso": {
+   "candidates": 97,
+   "kept": 80,
+   "too_few": 9,
+   "too_many": 8
+  },
+  "gols-numa-edicao": {
+   "candidates": 4,
+   "kept": 1,
+   "too_few": 0,
+   "too_many": 0
+  },
+  "gols-por": {
+   "candidates": 108,
+   "kept": 19,
+   "too_few": 71,
+   "too_many": 0
+  },
+  "hat-trick": {
+   "candidates": 3,
+   "kept": 2,
+   "too_few": 0,
+   "too_many": 1
+  },
+  "marcou-contra": {
+   "candidates": 260,
+   "kept": 171,
+   "too_few": 0,
+   "too_many": 89
+  },
+  "marcou-por": {
+   "candidates": 260,
+   "kept": 260,
+   "too_few": 0,
+   "too_many": 0
+  },
+  "marcou-por-dois": {
+   "candidates": 136,
+   "kept": 62,
+   "too_few": 74,
+   "too_many": 0
+  },
+  "penalti": {
+   "candidates": 35,
+   "kept": 29,
+   "too_few": 6,
+   "too_many": 0
+  },
+  "sem-sofrer-gol": {
+   "candidates": 3,
+   "kept": 1,
+   "too_few": 2,
+   "too_many": 0
+  },
+  "titular": {
+   "candidates": 160,
+   "kept": 40,
+   "too_few": 0,
+   "too_many": 1
+  }
+ },
+ "identities": {
+  "ambiguous": 236,
+  "club": 1023,
+  "name": 589,
+  "none": 161,
+  "transfermarkt-id": 952
+ },
+ "answers_in_use": 2078,
+ "answers_untrusted": 527,
+ "name_only_trusted": false,
+ "error": "365 days need 2555 prompts; only 694 prompts pass the filters"
+}

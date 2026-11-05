@@ -108,9 +108,10 @@ def _partial_seasons(matches) -> dict[int, str]:
     return partial
 
 
-def collect_players(goals, cards, lineups, names: dict[str, str]) -> dict[str, Player]:
+def collect_players(goals, cards, lineups) -> dict[str, Player]:
+    """Every player in the Série A records, with the (club, season) pairs they were seen at."""
     seen = defaultdict(set)
-    name_of = dict(names)
+    name_of = {}
     for g in goals:
         if not g.own_goal:  # an own goal is filed under the opponent club
             seen[g.player_ref].add((g.club, g.season))
@@ -118,7 +119,7 @@ def collect_players(goals, cards, lineups, names: dict[str, str]) -> dict[str, P
     for record in [*cards, *lineups]:
         seen[record.player_ref].add((record.club, record.season))
         name_of.setdefault(record.player_ref, record.player)
-    return {ref: Player(ref, name_of[ref], frozenset(seen[ref])) for ref in name_of}
+    return {ref: Player(ref, name_of[ref], frozenset(seen[ref])) for ref in sorted(name_of)}
 
 
 def candidates_from(old, new) -> list[PromptCandidate]:
@@ -154,7 +155,7 @@ def build(cache: Path, overrides: Path, out: Path, report_path: Path, start: dat
     if not people_path.exists():
         raise FileNotFoundError("run `python3 -m generator wikidata` first")
     old, new = adaoduque.load(cache), transfermarkt.load(cache)
-    players = collect_players(old.goals + new.goals, old.cards + new.cards, new.lineups, new.names)
+    players = collect_players(old.goals + new.goals, old.cards + new.cards, new.lineups)
     ref_to_id, identities = resolve(players, json.loads(people_path.read_text(encoding="utf-8")), read_overrides(overrides))
     pool, per_template = prepare(candidates_from(old, new), ref_to_id, identities, trusted)
 
