@@ -67,7 +67,7 @@ T1 scaffold + hooks
 - [x] T12: Transfermarkt adapter, with the season shift proven
 - [x] T13: Goal-based templates
 - [x] T14: Card and lineup templates
-- [x] T15: Schedule builder and build report (gate 3) — gate tripped: 694 prompts, 86 days
+- [x] T15: Schedule builder and build report (gate 3) — gate tripped: 687 prompts, 85 days
 
 ### Checkpoint 3: a full year
 - [ ] 365 valid day files, identical across two builds
