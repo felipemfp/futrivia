@@ -1,0 +1,439 @@
+{
+ "version": 1,
+ "date": "2027-01-01",
+ "prompts": [
+  {
+   "id": "teste-hat-trick",
+   "text": "[teste] Diga um jogador que marcou um hat-trick no Brasileirão, 2014–2024",
+   "answers": [
+    {
+     "id": "Q26517",
+     "name": "Luis Suárez",
+     "aliases": [
+      "luis suarez",
+      "luis alberto suarez"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Grêmio 2023"
+    },
+    {
+     "id": "Q42728914",
+     "name": "Rodrygo",
+     "aliases": [
+      "rodrygo",
+      "rodrygo silva de goes"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Santos 2018"
+    },
+    {
+     "id": "Q13646572",
+     "name": "Gabriel Barbosa",
+     "aliases": [
+      "gabriel barbosa",
+      "gabigol",
+      "gabriel barbosa almeida"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2019"
+    },
+    {
+     "id": "Q19956526",
+     "name": "Bruno Henrique",
+     "aliases": [
+      "bruno henrique"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2019"
+    },
+    {
+     "id": "Q3761170",
+     "name": "Germán Cano",
+     "aliases": [
+      "german cano"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Fluminense 2022"
+    },
+    {
+     "id": "dataset:Daniel Corrêa Freitas",
+     "name": "Daniel Corrêa Freitas",
+     "aliases": [
+      "daniel correa freitas"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Ponte Preta 2017"
+    }
+   ]
+  },
+  {
+   "id": "teste-gabriel",
+   "text": "[teste] Diga um jogador chamado Gabriel que marcou no Brasileirão",
+   "answers": [
+    {
+     "id": "Q13646572",
+     "name": "Gabriel Barbosa",
+     "aliases": [
+      "gabriel barbosa",
+      "gabigol"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2019"
+    },
+    {
+     "id": "dataset:Gabriel Boschilia",
+     "name": "Gabriel Boschilia",
+     "aliases": [
+      "gabriel boschilia"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Internacional 2020"
+    },
+    {
+     "id": "dataset:Gabriel Baralhas",
+     "name": "Gabriel Baralhas",
+     "aliases": [
+      "gabriel baralhas"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-GO 2021"
+    },
+    {
+     "id": "dataset:Gabriel Appelt Pires",
+     "name": "Gabriel Pires",
+     "aliases": [
+      "gabriel pires",
+      "gabriel appelt pires"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Santos 2016"
+    },
+    {
+     "id": "dataset:Gabriel Pec",
+     "name": "Gabriel Pec",
+     "aliases": [
+      "gabriel pec"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Vasco 2023"
+    }
+   ]
+  },
+  {
+   "id": "teste-curto",
+   "text": "[teste] Diga um atacante com nome de uma palavra",
+   "answers": [
+    {
+     "id": "Q62786",
+     "name": "Hulk",
+     "aliases": [
+      "hulk"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Atlético-MG 2021"
+    },
+    {
+     "id": "Q312772",
+     "name": "Fred",
+     "aliases": [
+      "fred"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Fluminense 2016"
+    },
+    {
+     "id": "dataset:Pedro",
+     "name": "Pedro",
+     "aliases": [
+      "pedro"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2021"
+    },
+    {
+     "id": "dataset:Keno",
+     "name": "Keno",
+     "aliases": [
+      "keno"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Palmeiras 2016"
+    },
+    {
+     "id": "dataset:Kieza",
+     "name": "Kieza",
+     "aliases": [
+      "kieza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Bahia 2015"
+    }
+   ]
+  },
+  {
+   "id": "teste-sobrenome",
+   "text": "[teste] Diga um meia que marcou de pênalti",
+   "answers": [
+    {
+     "id": "Q27443365",
+     "name": "Raphael Veiga",
+     "aliases": [
+      "raphael veiga",
+      "raphael cavalcante veiga"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Palmeiras 2022"
+    },
+    {
+     "id": "dataset:Gustavo Scarpa",
+     "name": "Gustavo Scarpa",
+     "aliases": [
+      "gustavo scarpa"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Palmeiras 2021"
+    },
+    {
+     "id": "dataset:Thiago Galhardo",
+     "name": "Thiago Galhardo",
+     "aliases": [
+      "thiago galhardo"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2020"
+    },
+    {
+     "id": "dataset:Diego Souza",
+     "name": "Diego Souza",
+     "aliases": [
+      "diego souza"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Sport 2016"
+    },
+    {
+     "id": "dataset:Nenê",
+     "name": "Nenê",
+     "aliases": [
+      "nene"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Vasco 2015"
+    }
+   ]
+  },
+  {
+   "id": "teste-erro",
+   "text": "[teste] Diga um zagueiro que marcou de cabeça",
+   "answers": [
+    {
+     "id": "dataset:Rodrigo Moledo",
+     "name": "Rodrigo Moledo",
+     "aliases": [
+      "rodrigo moledo"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2018"
+    },
+    {
+     "id": "dataset:Pedro Geromel",
+     "name": "Pedro Geromel",
+     "aliases": [
+      "pedro geromel"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Grêmio 2017"
+    },
+    {
+     "id": "dataset:Réver",
+     "name": "Réver",
+     "aliases": [
+      "rever"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Atlético-MG 2014"
+    },
+    {
+     "id": "dataset:Lucas Veríssimo",
+     "name": "Lucas Veríssimo",
+     "aliases": [
+      "lucas verissimo"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Santos 2019"
+    },
+    {
+     "id": "dataset:Gustavo Henrique Vernes",
+     "name": "Gustavo Henrique",
+     "aliases": [
+      "gustavo henrique",
+      "gustavo henrique vernes"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Santos 2018"
+    }
+   ]
+  },
+  {
+   "id": "teste-gringos",
+   "text": "[teste] Diga um estrangeiro que marcou 10 gols numa temporada",
+   "answers": [
+    {
+     "id": "dataset:Giorgian De Arrascaeta",
+     "name": "Giorgian De Arrascaeta",
+     "aliases": [
+      "giorgian de arrascaeta",
+      "arrascaeta"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2019"
+    },
+    {
+     "id": "dataset:Paolo Guerrero",
+     "name": "Paolo Guerrero",
+     "aliases": [
+      "paolo guerrero"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2016"
+    },
+    {
+     "id": "dataset:Jonathan Calleri",
+     "name": "Jonathan Calleri",
+     "aliases": [
+      "jonathan calleri"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "São Paulo 2023"
+    },
+    {
+     "id": "dataset:Lucas Pratto",
+     "name": "Lucas Pratto",
+     "aliases": [
+      "lucas pratto"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-MG 2016"
+    },
+    {
+     "id": "dataset:Pablo Vegetti",
+     "name": "Pablo Vegetti",
+     "aliases": [
+      "pablo vegetti"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Vasco 2024"
+    },
+    {
+     "id": "dataset:Hernán Barcos",
+     "name": "Hernán Barcos",
+     "aliases": [
+      "hernan barcos"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Grêmio 2014"
+    }
+   ]
+  },
+  {
+   "id": "teste-goleiros",
+   "text": "[teste] Diga um goleiro que ficou 3 jogos seguidos sem sofrer gol, Brasileirão 2025",
+   "answers": [
+    {
+     "id": "dataset:Agustín Rossi",
+     "name": "Agustín Rossi",
+     "aliases": [
+      "agustin rossi",
+      "rossi"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "dataset:Everson",
+     "name": "Everson",
+     "aliases": [
+      "everson"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Atlético-MG 2025"
+    },
+    {
+     "id": "dataset:Cássio",
+     "name": "Cássio",
+     "aliases": [
+      "cassio"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Cruzeiro 2025"
+    },
+    {
+     "id": "dataset:Hugo Souza",
+     "name": "Hugo Souza",
+     "aliases": [
+      "hugo souza"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Corinthians 2025"
+    },
+    {
+     "id": "dataset:Léo Jardim",
+     "name": "Léo Jardim",
+     "aliases": [
+      "leo jardim"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Vasco 2025"
+    },
+    {
+     "id": "dataset:Gabriel Brazão",
+     "name": "Gabriel Brazão",
+     "aliases": [
+      "gabriel brazao",
+      "brazao"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Santos 2025"
+    }
+   ]
+  }
+ ]
+}
