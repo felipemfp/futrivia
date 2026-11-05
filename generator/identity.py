@@ -44,6 +44,31 @@ def _words(text: str) -> set[str]:
 
 
 LEGAL_NAME_WORDS = 4
+PLAYING_AGES = range(15, 44)
+NOT_A_NAME = {"futebolista", "futbolista", "footballer", "nascido", "nacido", "born", "fue", "eliminado", "jugador", "jogador"}
+MAX_ALIAS_WORDS = 5
+MAX_NICKNAME_CHARS = 12
+
+
+def _plausible_age(person: dict, player: Player) -> bool:
+    """A candidate must be of playing age in every season the dataset has the player."""
+    born = person.get("born")
+    return born is None or all(season - born in PLAYING_AGES for _, season in player.seen)
+
+
+def _clean_aliases(names: list[str], known: list[str]) -> set[str]:
+    """Wikidata aliases, minus vandalism and descriptions: an alias must share a word with a known name of the player,
+    unless it is a single short nickname."""
+    base = set().union(*(_words(n) for n in known)) if known else set()
+    kept = set()
+    for name in names:
+        alias = normalize(name)
+        words = alias.split()
+        if not words or len(words) > MAX_ALIAS_WORDS or NOT_A_NAME & set(words):
+            continue
+        if _words(alias) & base or (len(words) == 1 and len(alias) <= MAX_NICKNAME_CHARS):
+            kept.add(alias)
+    return kept
 
 
 def _shorten(name: str, candidates: list[str]) -> str:
@@ -138,7 +163,7 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
             if len(found) == 1:
                 assign(ref, next(iter(found)), "transfermarkt-id")
                 continue
-        exact = by_name.get(normalize(player.name), set())
+        exact = {q for q in by_name.get(normalize(player.name), set()) if _plausible_age(people[q], player)}
         if exact:
             fit, by_club = _pick_by_club(exact, player, people)
             if len(fit) == 1:
@@ -146,7 +171,7 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
                 continue
             assign(ref, dataset_id, "ambiguous")
             continue
-        fit, by_club = _pick_by_club(loose(player), player, people)
+        fit, by_club = _pick_by_club({q for q in loose(player) if _plausible_age(people[q], player)}, player, people)
         if by_club and len(fit) == 1:
             assign(ref, next(iter(fit)), "club")
             continue
@@ -162,15 +187,17 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
     identities = {}
     for ident, dataset_names in names_of.items():
         p = people.get(ident)
+        known = sorted(transfermarkt_names[ident]) + [n for n in (p and p.get("common"), p and p.get("label")) if n] \
+            + sorted(dataset_names)
         aliases = {normalize(n) for n in dataset_names} | extra_aliases[ident]
         if p:
-            aliases |= {normalize(n) for n in p["names"]}
-        # Shown name: override, then a common name (Transfermarkt, then the Portuguese Wikipedia title), then the
-        # Wikidata label, which is often a legal name.
-        common = min(transfermarkt_names[ident], key=len) if transfermarkt_names[ident] else None
-        name = (shown_name.get(ident) or common or (p and p.get("common")) or (p and p.get("label"))
-                or min(dataset_names, key=len))
-        if ident not in shown_name:
+            aliases |= _clean_aliases(p["names"], known)
+        # Shown name: the override, else the shortest name the sources use for the player. Labels and Wikipedia
+        # titles are each sometimes a legal name (Frederico Chaves Guedes for Fred), so neither wins outright.
+        if ident in shown_name:
+            name = shown_name[ident]
+        else:
+            name = min(known, key=lambda n: (len(n.split(" (", 1)[0].split()), known.index(n)))
             name = _shorten(name, (p["names"] if p else []) + sorted(dataset_names))
         name = name.split(" (", 1)[0].strip()  # 'Carlos Júnior (futebolista)': disambiguation isn't part of the name
         aliases.add(normalize(name))

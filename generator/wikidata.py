@@ -91,7 +91,10 @@ SELECT ?p ?l ?k ?lang WHERE {{
 def _tmids_query(qids: list[str]) -> str:
     values = " ".join(f"wd:{q}" for q in qids)
     return f"""# tmids
-SELECT ?p ?tm WHERE {{ VALUES ?p {{ {values} }} ?p wdt:P2446 ?tm. }}"""
+SELECT ?p ?tm ?born WHERE {{
+  VALUES ?p {{ {values} }}
+  OPTIONAL {{ ?p wdt:P2446 ?tm }} OPTIONAL {{ ?p wdt:P569 ?born }}
+}}"""
 
 
 def _titles_query(qids: list[str]) -> str:
@@ -133,6 +136,7 @@ def fetch_people(sparql: Sparql, dataset_names: list[str], transfermarkt_ids: li
     people: dict[str, dict] = {}
     labels: dict[str, dict[str, str]] = {}
     titles: dict[str, str] = {}
+    born: dict[str, int] = {}
 
     def batched(stage: str, items: list, size: int):
         batches = list(_batches(items, size))
@@ -150,7 +154,11 @@ def fetch_people(sparql: Sparql, dataset_names: list[str], transfermarkt_ids: li
                 if b["k"]["value"] == "label":
                     labels.setdefault(_qid(b), {})[b["lang"]["value"]] = b["l"]["value"]
             for b in sparql(_tmids_query(batch)):
-                people[_qid(b)]["transfermarkt"].add(b["tm"]["value"])
+                if "tm" in b:
+                    people[_qid(b)]["transfermarkt"].add(b["tm"]["value"])
+                year = _year(b, "born")
+                if year:
+                    born[_qid(b)] = min(year, born.get(_qid(b), year))
             for b in sparql(_titles_query(batch)):
                 titles[_qid(b)] = common_name(b["title"]["value"])
 
@@ -177,7 +185,8 @@ def fetch_people(sparql: Sparql, dataset_names: list[str], transfermarkt_ids: li
         return next((found[lang] for lang in LANGS if lang in found), None)
 
     return {
-        qid: {"sitelinks": p["sitelinks"], "label": best_label(qid), "common": titles.get(qid), "names": sorted(p["names"]),
+        qid: {"sitelinks": p["sitelinks"], "label": best_label(qid), "common": titles.get(qid), "born": born.get(qid),
+              "names": sorted(p["names"]),
               "stints": sorted([list(s) for s in p["stints"]], key=lambda s: (s[0], s[1] or 0, s[2] or 0)),
               "transfermarkt": sorted(p["transfermarkt"])}
         for qid, p in sorted(people.items())

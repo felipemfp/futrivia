@@ -102,6 +102,30 @@ class ResolveTest(unittest.TestCase):
                                                                              "André Luiz Paulino de Souza Motta", ("Santos", 2015))}, people, [])
         self.assertEqual(ids["Q8"].name, "André Paulino")
 
+    def test_shortest_known_name_is_shown_when_the_title_is_a_legal_name(self):
+        people = dict(PEOPLE, Q6=dict(person(64, ["Fred", "Frederico Chaves Guedes"], [("Fluminense Football Club", 2009, 2016)],
+                                             label="Fred"), common="Frederico Chaves Guedes"))
+        del people["Q312772"], people["Q999001"]
+        refs, ids = resolve({"a:Fred": player("a:Fred", "Fred", ("Fluminense", 2015))}, people, [])
+        self.assertEqual(ids["Q6"].name, "Fred")
+
+    def test_vandalised_or_unrelated_aliases_are_dropped(self):
+        people = dict(PEOPLE, Q5=dict(person(30, ["Juan Nardoni", "Juan Ignacio Nardoni", "Adolfo Hitler Buendía", "Nardo",
+                                                  "Marquinhos futbolista nacido en 2003"], [("Grêmio Foot-Ball Porto Alegrense", 2026, None)],
+                                             label="Juan Nardoni")))
+        refs, ids = resolve({"tm:1": player("a:Juan Nardoni", "Juan Nardoni", ("Gremio", 2026))}, people, [])
+        aliases = ids["Q5"].aliases
+        self.assertIn("juan ignacio nardoni", aliases)
+        self.assertIn("nardo", aliases)  # single-word nicknames are kept
+        self.assertNotIn("adolfo hitler buendia", aliases)
+        self.assertFalse(any("futbolista" in a for a in aliases))
+
+    def test_candidate_too_old_for_the_season_is_rejected(self):
+        people = dict(PEOPLE, Q4=dict(person(40, ["Dadá Maravilha", "Dadá"], [("Goiás Esporte Clube", None, None)]), born=1946),
+                      Q3=dict(person(3, ["Dadá"]), born=1995))
+        refs, ids = resolve({"a:Dadá": player("a:Dadá", "Dadá", ("Goias", 2019))}, people, [])
+        self.assertEqual(refs["a:Dadá"], "Q3")
+
     def test_disambiguation_suffix_is_never_shown(self):
         people = dict(PEOPLE, Q7=person(9, ["Carlos Júnior (futebolista)"], [("Santos Futebol Clube", 2018, 2019)]))
         refs, ids = resolve({"a:Carlos Júnior": player("a:Carlos Júnior", "Carlos Júnior (futebolista)", ("Santos", 2018))}, people, [])

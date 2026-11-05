@@ -66,6 +66,11 @@ class WikidataTest(unittest.TestCase):
         sparql = FakeSparql(clubs=[{"c": uri("Q80955")}], stints=RODRYGO_STINTS, names=RODRYGO_NAMES)
         self.assertEqual(self.fetch(sparql)["Q42728914"]["label"], "Rodrygo")
 
+    def test_birth_year_is_recorded(self):
+        tmids = [{"p": uri("Q42728914"), "born": lit("2001-01-09T00:00:00Z")}]
+        sparql = FakeSparql(clubs=[{"c": uri("Q80955")}], stints=RODRYGO_STINTS, names=RODRYGO_NAMES, tmids=tmids)
+        self.assertEqual(self.fetch(sparql)["Q42728914"]["born"], 2001)
+
     def test_portuguese_wikipedia_title_gives_the_common_name(self):
         titles = [{"p": uri("Q42728914"), "title": lit("Rodrygo (futebolista)")}]
         sparql = FakeSparql(clubs=[{"c": uri("Q80955")}], stints=RODRYGO_STINTS, names=RODRYGO_NAMES, titles=titles)
