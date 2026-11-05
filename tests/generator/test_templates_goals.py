@@ -36,6 +36,11 @@ class HatTrickTest(unittest.TestCase):
         goals = [goal("m1", "A")] * 3 + [goal("m2", "A", club="Santos", season=2019)] * 4
         self.assertEqual(t.hat_tricks(goals, [(2014, 2026)])[0].answers["t:A"], (("Santos", 2019), ("Gremio", 2023)))
 
+    def test_window_ending_in_a_partial_season_says_where_the_data_stops(self):
+        prompts = t.hat_tricks([goal("m1", "A", season=2025)] * 3, [(2020, 2026)], PARTIAL)
+        self.assertIn("2020–2026 (até 1º de junho)", prompts[0].text)
+        self.assertEqual(prompts[0].id, "hat-trick-2020-2026")
+
     def test_each_window_only_counts_its_seasons(self):
         goals = [goal("m1", "A", season=2015)] * 3 + [goal("m2", "B", season=2024)] * 3
         early, late = t.hat_tricks(goals, [(2014, 2019), (2020, 2026)])

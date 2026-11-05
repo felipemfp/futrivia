@@ -1,7 +1,7 @@
 import datetime
 import unittest
 
-from generator.build import ScheduleError, collect_players, format_evidence, prepare, schedule
+from generator.build import ScheduleError, canonical, collect_players, format_evidence, prepare, schedule
 from generator.dayfile import DayAnswer, DayPrompt
 from generator.identity import Identity
 from generator.records import PromptCandidate
@@ -33,13 +33,20 @@ class PrepareTest(unittest.TestCase):
                                      candidate("many", [f"r{i}" for i in range(41)]),
                                      candidate("ok", [f"r{i}" for i in range(5)])])
         self.assertEqual([k.prompt.id for k in kept], ["ok"])
-        self.assertEqual(report["t"], {"candidates": 3, "kept": 1, "too_few": 1, "too_many": 1})
+        self.assertEqual(report["t"], {"candidates": 3, "kept": 1, "too_few": 1, "too_many": 1, "duplicate": 0})
 
     def test_family_keeps_only_its_first_variant_that_fits(self):
         kept, _ = self.prepare([candidate("f-40", [f"r{i}" for i in range(3)], family="f"),
                                 candidate("f-30", [f"r{i}" for i in range(6)], family="f"),
                                 candidate("f-20", [f"r{i}" for i in range(9)], family="f")])
         self.assertEqual([k.prompt.id for k in kept], ["f-30"])
+
+    def test_same_answers_under_another_window_are_dropped_as_duplicates(self):
+        # Regression: Figueirense 2014–2019 and 2014–2026 had identical red-card lists and were scheduled on one day.
+        refs = [f"r{i}" for i in range(6)]
+        kept, report = self.prepare([candidate("expulso-figueirense-2014-2019", refs), candidate("expulso-figueirense-2014-2026", refs)])
+        self.assertEqual([k.prompt.id for k in kept], ["expulso-figueirense-2014-2019"])
+        self.assertEqual(report["t"]["duplicate"], 1)
 
     def test_answers_are_ordered_obvious_first_with_tier_points(self):
         kept, _ = self.prepare([candidate("p", ["r4", "r0", "r2", "r1", "r3"])])
@@ -63,6 +70,19 @@ class CollectPlayersTest(unittest.TestCase):
         from generator.records import Card
         players = collect_players([], [Card("m", 2023, "2023-06-01", "Santos", "A", "t:A", True)], [])
         self.assertEqual(list(players), ["t:A"])
+
+
+class CanonicalTest(unittest.TestCase):
+    def test_goals_from_two_sources_count_for_one_person(self):
+        # Regression: Flaco López had 2014–2024 goals under one ref and 2025–2026 goals under another, and neither
+        # alone reached 20, so "20 or more goals for Palmeiras" left him out.
+        from generator.records import Goal
+        from generator.templates.goals import club_totals
+        old = [Goal(f"a{i}", 2024, "2024-06-01", "Palmeiras", "José López", "adaoduque:José López", "1", False, False) for i in range(12)]
+        new = [Goal(f"t{i}", 2025, "2025-06-01", "Palmeiras", "Flaco López", "transfermarkt:9", "1", False, False) for i in range(10)]
+        refs = {"adaoduque:José López": "Q1", "transfermarkt:9": "Q1"}
+        prompts = club_totals(canonical(old + new, refs), (2014, 2026), thresholds=(20,))
+        self.assertEqual(set(prompts[0].answers), {"Q1"})
 
 
 class EvidenceTest(unittest.TestCase):

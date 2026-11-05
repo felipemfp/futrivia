@@ -28,6 +28,10 @@ class RedCardTest(unittest.TestCase):
         self.assertEqual(answers(prompts, "expulso-santos-2014-2026"), {"t:A"})
         self.assertIn("foi expulso jogando pelo Santos", prompts[0].text)
 
+    def test_window_ending_in_a_partial_season_says_where_the_data_stops(self):
+        prompts = t.red_cards([card("A", season=2025)], [(2020, 2026)], PARTIAL)
+        self.assertIn("2020–2026 (até 1º de junho)", prompts[0].text)
+
     def test_windows_split_by_season(self):
         prompts = t.red_cards([card("A", season=2015), card("B", season=2022)], [(2014, 2019), (2020, 2026)])
         self.assertEqual(answers(prompts, "expulso-santos-2014-2019"), {"t:A"})

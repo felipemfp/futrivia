@@ -9,14 +9,14 @@ def _answers(evidence: dict[str, list[Evidence]]) -> dict[str, tuple[Evidence, .
     return {ref: tuple(sorted(set(found), key=lambda e: (e[1], e[0]))) for ref, found in sorted(evidence.items())}
 
 
-def red_cards(cards: list[Card], spans: list[tuple[int, int]]) -> list[PromptCandidate]:
+def red_cards(cards: list[Card], spans: list[tuple[int, int]], partial: dict[int, str] | None = None) -> list[PromptCandidate]:
     prompts = []
     for span in spans:
         evidence: dict[str, dict[str, list[Evidence]]] = defaultdict(lambda: defaultdict(list))
         for c in cards:
             if c.red and span[0] <= c.season <= span[1]:
                 evidence[c.club][c.player_ref].append((c.club, c.season))
-        w = window(*span)
+        w = window(*span, partial)
         prompts += [PromptCandidate(
             id=f"expulso-{slug(club)}-{window_id(*span)}", template="expulso",
             text=f"Diga um jogador que foi expulso jogando {pelo(club)} no Brasileirão, {w}",

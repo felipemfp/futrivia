@@ -1,4 +1,5 @@
 """Build day files: templates → identity-merged answers → rarity tiers → schedule → site/days/*.json."""
+import dataclasses
 import datetime
 import hashlib
 import json
@@ -44,6 +45,7 @@ def prepare(candidates: list[PromptCandidate], ref_to_id: dict[str, str], identi
             trusted: Callable[[Identity], bool]) -> tuple[list[Prepared], dict]:
     report: dict[str, Counter] = defaultdict(Counter)
     done_families: set[str] = set()
+    seen_sets: set[tuple[str, frozenset]] = set()
     kept = []
     for c in candidates:
         stats = report[c.template]
@@ -52,13 +54,18 @@ def prepare(candidates: list[PromptCandidate], ref_to_id: dict[str, str], identi
             continue
         merged: dict[str, list[Evidence]] = defaultdict(list)
         for ref, evidence in c.answers.items():
-            merged[ref_to_id[ref]].extend(evidence)
+            merged[ref_to_id.get(ref, ref)].extend(evidence)  # canonical records already carry identity ids
         if len(merged) < MIN_ANSWERS:
             stats["too_few"] += 1
             continue
         if len(merged) > MAX_ANSWERS:
             stats["too_many"] += 1
             continue
+        answer_set = (c.template, frozenset(merged))
+        if answer_set in seen_sets:  # e.g. a club that only played in one era gives the same list for two windows
+            stats["duplicate"] += 1
+            continue
+        seen_sets.add(answer_set)
         if c.family:
             done_families.add(c.family)
         fame = {i: (identities[i].sitelinks if trusted(identities[i]) else None) for i in merged}
@@ -68,7 +75,7 @@ def prepare(candidates: list[PromptCandidate], ref_to_id: dict[str, str], identi
             DayAnswer(i, identities[i].name, identities[i].aliases, tiers[i], TIERS[tiers[i]], format_evidence(merged[i]))
             for i in answers)), c.template))
         stats["kept"] += 1
-    return kept, {t: {k: s[k] for k in ("candidates", "kept", "too_few", "too_many")} for t, s in sorted(report.items())}
+    return kept, {t: {k: s[k] for k in ("candidates", "kept", "too_few", "too_many", "duplicate")} for t, s in sorted(report.items())}
 
 
 def _order_key(seed: str, prompt_id: str) -> str:
@@ -136,25 +143,32 @@ def collect_players(goals, cards, lineups) -> dict[str, Player]:
     return {ref: Player(ref, name_of[ref], frozenset(seen[ref])) for ref in sorted(name_of)}
 
 
-def candidates_from(old, new) -> list[PromptCandidate]:
-    goals = old.goals + new.goals
+def canonical(records: list, ref_to_id: dict[str, str]) -> list:
+    """Records keyed by person, not by source: thresholds and 'both clubs' must count one player once."""
+    return [dataclasses.replace(r, player_ref=ref_to_id[r.player_ref]) for r in records]
+
+
+def candidates_from(old, new, ref_to_id: dict[str, str]) -> list[PromptCandidate]:
+    goals = canonical(old.goals + new.goals, ref_to_id)
+    cards = canonical(old.cards + new.cards, ref_to_id)
+    lineups = canonical(new.lineups, ref_to_id)
     matches = {**old.matches, **new.matches}
     partial = _partial_seasons(new.matches.values())
     span = (min(g.season for g in goals), max(g.season for g in goals))
     eras = [span, (span[0], 2019), (2020, span[1])]
     regular_clubs = [c for c, n in Counter(club for club, _ in {(g.club, g.season) for g in goals}).items() if n >= 8]
     return [
-        *goal_templates.hat_tricks(goals, eras),
+        *goal_templates.hat_tricks(goals, eras, partial),
         *goal_templates.scorers_for_club(goals, partial),
         *goal_templates.scorers_against_club(goals, matches, partial),
-        *goal_templates.penalty_scorers(goals, span),
+        *goal_templates.penalty_scorers(goals, span, partial),
         *goal_templates.stoppage_time_scorers(goals),
-        *goal_templates.prolific_seasons(goals, span),
-        *goal_templates.club_totals(goals, span),
-        *goal_templates.two_club_scorers(goals, span, regular_clubs),
-        *squad_templates.red_cards(old.cards + new.cards, eras),
-        *squad_templates.clean_sheet_runs(new.lineups, new.matches, partial, seasons=(2025,)),
-        *squad_templates.starters(new.lineups, partial),
+        *goal_templates.prolific_seasons(goals, span, partial=partial),
+        *goal_templates.club_totals(goals, span, partial=partial),
+        *goal_templates.two_club_scorers(goals, span, regular_clubs, partial),
+        *squad_templates.red_cards(cards, eras, partial),
+        *squad_templates.clean_sheet_runs(lineups, new.matches, partial, seasons=(2025,)),
+        *squad_templates.starters(lineups, partial),
     ]
 
 
@@ -171,7 +185,7 @@ def build(cache: Path, overrides: Path, out: Path, report_path: Path, start: dat
     old, new = adaoduque.load(cache), transfermarkt.load(cache)
     players = collect_players(old.goals + new.goals, old.cards + new.cards, new.lineups)
     ref_to_id, identities = resolve(players, json.loads(people_path.read_text(encoding="utf-8")), read_overrides(overrides))
-    pool, per_template = prepare(candidates_from(old, new), ref_to_id, identities, trusted)
+    pool, per_template = prepare(candidates_from(old, new, ref_to_id), ref_to_id, identities, trusted)
 
     statuses = Counter(identities[i].status for i in set(ref_to_id.values()))
     in_use = {a.id for p in pool for a in p.prompt.answers}

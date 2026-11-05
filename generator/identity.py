@@ -44,6 +44,7 @@ def _words(text: str) -> set[str]:
 
 
 LEGAL_NAME_WORDS = 4
+DIMINUTIVE_STEM = 4
 PLAYING_AGES = range(15, 44)
 NOT_A_NAME = {"futebolista", "futbolista", "footballer", "nascido", "nacido", "born", "fue", "eliminado", "jugador", "jogador"}
 MAX_ALIAS_WORDS = 5
@@ -78,6 +79,10 @@ def _shorten(name: str, candidates: list[str]) -> str:
     full = _words(name)
     short = [c for c in candidates if 1 <= len(c.split()) <= 2 and _words(c) and _words(c) <= full]
     if not short:
+        # A diminutive built on a word of the name: Rodrigo Eduardo Costa Marinho -> Rodriguinho.
+        short = [c for c in candidates if len(c.split()) == 1 and _words(c)
+                 and any(len(w) >= DIMINUTIVE_STEM and normalize(c).startswith(w[:DIMINUTIVE_STEM]) for w in full)]
+    if not short:
         return name
     # More words first, then accented spellings over unaccented ones, then alphabetical for determinism.
     return max(short, key=lambda c: (len(c.split()), c != normalize(c), sum(1 for ch in c if ord(ch) > 127), c))
@@ -94,11 +99,23 @@ def _club_fits(club: str, season: int, stints: list, use_season: bool) -> bool:
     return False
 
 
-def _pick_by_club(candidates: set[str], player: Player, people: dict) -> tuple[set[str], bool]:
-    """Candidates whose club history fits the player's clubs, trying seasons first."""
+def _confirmed_fits(seen: set[tuple[str, int]], club: str, season: int, use_season: bool) -> bool:
+    return any(c == club and (not use_season or abs(s - season) <= SEASON_SLACK) for c, s in seen)
+
+
+def _pick_by_club(candidates: set[str], player: Player, people: dict,
+                  confirmed: dict[str, set[tuple[str, int]]] | None = None) -> tuple[set[str], bool]:
+    """Candidates whose club history fits the player's clubs, trying seasons first. Clubs seen under a confirmed
+    identity (Transfermarkt id, override) count as history too, and a confirmed candidate wins over unconfirmed ones."""
+    confirmed = confirmed or {}
     for use_season in (True, False):
         fit = {q for q in candidates
-               if any(_club_fits(club, season, people[q]["stints"], use_season) for club, season in player.seen)}
+               if any(_club_fits(club, season, people[q]["stints"], use_season)
+                      or _confirmed_fits(confirmed.get(q, set()), club, season, use_season)
+                      for club, season in player.seen)}
+        sure = {q for q in fit if q in confirmed}
+        if len(sure) == 1:
+            return sure, True
         if fit:
             return fit, True
     return candidates, False
@@ -146,6 +163,8 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
         if ident not in status or rank.index(how) > rank.index(status[ident]):
             status[ident] = how
 
+    # Pass 1: identities we can trust outright (override file, Transfermarkt id).
+    confirmed: dict[str, set[tuple[str, int]]] = defaultdict(set)  # qid -> (club, season) seen under it
     for ref, player in sorted(players.items()):
         dataset_id = f"dataset:{player.name}"
         if ref in override:
@@ -157,25 +176,50 @@ def resolve(players: dict[str, Player], people: dict, overrides: list[Override])
             if o.name:
                 shown_name[target] = o.name
             assign(ref, target, "override")
+        elif ref.startswith("transfermarkt:") and len(found := by_tm.get(ref.split(":", 1)[1], set())) == 1:
+            assign(ref, next(iter(found)), "transfermarkt-id")
+        else:
             continue
-        if ref.startswith("transfermarkt:"):
-            found = by_tm.get(ref.split(":", 1)[1], set())
-            if len(found) == 1:
-                assign(ref, next(iter(found)), "transfermarkt-id")
-                continue
-        exact = {q for q in by_name.get(normalize(player.name), set()) if _plausible_age(people[q], player)}
+        if ref_to_id[ref] in people:
+            confirmed[ref_to_id[ref]] |= player.seen
+            by_name[normalize(player.name)].add(ref_to_id[ref])
+
+    # Pass 2: everyone else, by name and club. Confirmed people skip the age check: their Wikidata birth year can be
+    # wrong (Luciano's says 1965) while the Transfermarkt id is certain.
+    def plausible(q: str, player: Player) -> bool:
+        return q in confirmed or _plausible_age(people[q], player)
+
+    for ref, player in sorted(players.items()):
+        if ref in ref_to_id:
+            continue
+        dataset_id = f"dataset:{player.name}"
+        exact = {q for q in by_name.get(normalize(player.name), set()) if plausible(q, player)}
         if exact:
-            fit, by_club = _pick_by_club(exact, player, people)
+            fit, by_club = _pick_by_club(exact, player, people, confirmed)
             if len(fit) == 1:
                 assign(ref, next(iter(fit)), "club" if by_club else "name")
                 continue
             assign(ref, dataset_id, "ambiguous")
             continue
-        fit, by_club = _pick_by_club({q for q in loose(player) if _plausible_age(people[q], player)}, player, people)
+        fit, by_club = _pick_by_club({q for q in loose(player) if plausible(q, player)}, player, people, confirmed)
         if by_club and len(fit) == 1:
             assign(ref, next(iter(fit)), "club")
             continue
         assign(ref, dataset_id, "ambiguous" if fit else "none")
+
+    # Pass 3: a short name left ambiguous ("Marinho") joins a person whose other spelling ("Mário Sérgio Santos Costa")
+    # resolved in pass 2 at the same club and season, if exactly one such person shares the name.
+    resolved_seen: dict[str, set[tuple[str, int]]] = defaultdict(set)
+    for ref, ident in ref_to_id.items():
+        if ident in people:
+            resolved_seen[ident] |= players[ref].seen
+    for ref, player in sorted(players.items()):
+        if ref_to_id[ref] in people or ref in override:
+            continue
+        near = {q for q in by_name.get(normalize(player.name), set())
+                if any(_confirmed_fits(resolved_seen[q], club, season, True) for club, season in player.seen)}
+        if len(near) == 1:
+            assign(ref, next(iter(near)), "club")
 
     names_of: dict[str, set[str]] = defaultdict(set)
     transfermarkt_names: dict[str, set[str]] = defaultdict(set)

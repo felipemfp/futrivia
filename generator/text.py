@@ -15,8 +15,10 @@ def contra(club: str) -> str:
     return f"contra {'a' if club in FEMININE else 'o'} {display(club)}"
 
 
-def window(first: int, last: int) -> str:
-    return str(first) if first == last else f"{first}–{last}"
+def window(first: int, last: int, partial: dict[int, str] | None = None) -> str:
+    """'2014–2024', or '2020–2026 (até 1º de junho)' when the last season isn't covered in full."""
+    text = str(first) if first == last else f"{first}–{last}"
+    return f"{text} ({partial[last]})" if partial and last in partial else text
 
 
 def window_id(first: int, last: int) -> str:

@@ -4,9 +4,8 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { matchAnswer } from "../../site/game/match.js";
 
-const days = Object.fromEntries(["2026-11-09", "2026-11-20", "2026-12-01"].map((d) => [
-  d, JSON.parse(readFileSync(new URL(`../fixtures/real/${d}.json`, import.meta.url), "utf8")),
-]));
+// Real prompts from a build, extracted by id with tools/extract_prompts.py so the cases don't depend on the schedule.
+const prompts = JSON.parse(readFileSync(new URL("../fixtures/real/prompts.json", import.meta.url), "utf8"));
 
 // [day, prompt id, typed, expected status, expected answer name when correct]
 const CASES = [
@@ -70,7 +69,7 @@ const CASES = [
   ["2026-12-01", "marcou-contra-internacional-2021", "Thiago Nevez", "correct", "Thiago Neves"],
 ];
 
-const prompt = (date, id) => days[date].prompts.find((p) => p.id === id);
+const prompt = (_date, id) => prompts.find((p) => p.id === id);
 
 test("at least 50 typed-answer cases", () => assert.ok(CASES.length >= 50));
 

@@ -133,10 +133,54 @@ class ResolveTest(unittest.TestCase):
         self.assertEqual(ids["Q2"].name, "Petros")
         self.assertNotIn("", ids["Q2"].aliases)
 
+    def test_player_split_across_sources_joins_through_the_transfermarkt_match(self):
+        # Regression: Neris (Vitória 2024 in adaoduque, 2025 in Transfermarkt) became two answers.
+        people = dict(PEOPLE, Q50=dict(person(8, ["Neris Augusto"], label="Neris Augusto", transfermarkt=["5"]), born=1993))
+        refs, _ = resolve({"transfermarkt:5": player("transfermarkt:5", "Neris", ("Vitoria", 2025)),
+                           "a:Neris": player("a:Neris", "Neris", ("Vitoria", 2024))}, people, [])
+        self.assertEqual(refs["a:Neris"], refs["transfermarkt:5"])
+
+    def test_wrong_wikidata_birth_year_does_not_reject_a_transfermarkt_confirmed_person(self):
+        # Regression: Luciano's Wikidata birth year (1965) is wrong; his Transfermarkt id confirms the person.
+        people = dict(PEOPLE, Q15966749=dict(person(16, ["Luciano", "Luciano da Rocha Neves"], [("São Paulo Futebol Clube", 2021, None)],
+                                                    transfermarkt=["7"]), born=1965))
+        refs, _ = resolve({"transfermarkt:7": player("transfermarkt:7", "Luciano", ("Sao Paulo", 2025)),
+                           "a:Luciano da Rocha Neves": player("a:Luciano da Rocha Neves", "Luciano da Rocha Neves", ("Sao Paulo", 2022))},
+                          people, [])
+        self.assertEqual(refs["a:Luciano da Rocha Neves"], "Q15966749")
+
+    def test_transfermarkt_confirmed_person_wins_over_an_older_namesake(self):
+        # Regression: Marinho (Santos 2021) matched Mauro Sérgio, born 1978, whose Santos stint has no dates.
+        people = dict(PEOPLE,
+                      Q60=dict(person(25, ["Marinho", "Mario Sérgio Santos Costa"], [("Santos Futebol Clube", 2019, 2021)], transfermarkt=["8"]), born=1990),
+                      Q61=dict(person(9, ["Marinho", "Mauro Sérgio da Silva"], [("Santos Futebol Clube", None, None)]), born=1978))
+        refs, _ = resolve({"transfermarkt:8": player("transfermarkt:8", "Marinho", ("Fortaleza", 2025)),
+                           "a:Marinho": player("a:Marinho", "Marinho", ("Santos", 2021))}, people, [])
+        self.assertEqual(refs["a:Marinho"], "Q60")
+
+    def test_short_name_joins_the_person_its_full_name_resolved_to(self):
+        # Regression: "Mário Sérgio Santos Costa" (Santos 2020) resolved by club, but "Marinho" (Santos 2021) stayed
+        # ambiguous between him and an undated namesake, so penalti-santos showed two Marinho answers.
+        people = dict(PEOPLE,
+                      Q70=dict(person(25, ["Mário Sérgio Santos Costa", "Marinho"], [("Santos Futebol Clube", 2019, 2020)]), born=1990),
+                      Q71=dict(person(9, ["Marinho"], [("Santos Futebol Clube", None, None)]), born=1985))
+        refs, _ = resolve({"a:Mário Sérgio Santos Costa": player("a:Mário Sérgio Santos Costa", "Mário Sérgio Santos Costa", ("Santos", 2020)),
+                           "a:Marinho": player("a:Marinho", "Marinho", ("Santos", 2021))}, people, [])
+        self.assertEqual(refs["a:Marinho"], "Q70")
+
     def test_disambiguation_suffix_is_never_shown(self):
         people = dict(PEOPLE, Q7=person(9, ["Carlos Júnior (futebolista)"], [("Santos Futebol Clube", 2018, 2019)]))
         refs, ids = resolve({"a:Carlos Júnior": player("a:Carlos Júnior", "Carlos Júnior (futebolista)", ("Santos", 2018))}, people, [])
         self.assertEqual(ids["Q7"].name, "Carlos Júnior")
+
+    def test_legal_name_shortens_to_a_diminutive_nickname(self):
+        # Rodrigo Eduardo Costa Marinho is known as Rodriguinho: a one-word alias built on a word of the full name.
+        people = dict(PEOPLE, Q3940035=dict(person(20, ["Rodrigo Eduardo Costa Marinho", "Rodriguinho", "Rodriguinho Marinho"],
+                                                   [("Sport Club Corinthians Paulista", 2015, 2018)], label="Rodrigo Eduardo Costa Marinho"),
+                                            common="Rodrigo Eduardo Costa Marinho", born=1988))
+        r = "a:Rodrigo Eduardo Costa Marinho"
+        refs, ids = resolve({r: player(r, "Rodrigo Eduardo Costa Marinho", ("Corinthians", 2017))}, people, [])
+        self.assertEqual(ids["Q3940035"].name, "Rodriguinho")
 
     def test_short_names_are_never_shortened(self):
         refs, ids = self.resolve(player("a:Gabriel Barbosa", "Gabriel Barbosa", ("Flamengo", 2019)))
