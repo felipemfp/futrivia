@@ -41,6 +41,18 @@ class Card:
 
 
 @dataclass(frozen=True)
+class LineupEntry:
+    match_id: str
+    season: int
+    date: str
+    club: str
+    player: str
+    player_ref: str
+    position: str
+    starter: bool
+
+
+@dataclass(frozen=True)
 class PromptCandidate:
     id: str
     template: str
