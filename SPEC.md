@@ -59,7 +59,7 @@ No runtime dependencies and no build step.
 | Generator | Python 3.12, standard library |
 | Game | Plain HTML, CSS and JavaScript modules |
 | Device storage | `localStorage` |
-| Hosting | GitHub Pages, public URL shared only with the trial group |
+| Hosting | Cloudflare Pages at `futrivia.felipemfp.dev`, publishing `site/` from `main` through Cloudflare's GitHub integration, with no build step. The public URL is shared only with the trial group |
 
 **Inputs:**
 
@@ -188,7 +188,8 @@ Accounts, leaderboards, autocomplete, archive or unlimited mode, seasons before 
 ## Decisions
 | Date | Decision |
 |---|---|
-| 2026-11-05 | Host the friends trial on GitHub Pages. Felipe accepts the risk of the unlicensed dataset for the trial; review this before any wider launch. |
+| 2026-11-05 | Host the friends trial publicly. Felipe accepts the risk of the unlicensed dataset for the trial; review this before any wider launch. |
+| 2026-11-05 | Use Cloudflare Pages at `futrivia.felipemfp.dev` instead of GitHub Pages. This needs no CI workflow in the repo. |
 | 2026-11-05 | The name is **futrivia**, lowercase, in the title and share text. |
 | 2026-11-05 | Pre-2014 legends such as Ronaldinho are accepted as missing. Neymar is in the 2025–2026 data, with 12 goals and 28 lineup appearances. |
 

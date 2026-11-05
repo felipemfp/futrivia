@@ -265,19 +265,19 @@ Spec: [SPEC.md](../SPEC.md). Plan: [plan.md](plan.md). Tests are written before 
 **Files likely touched:** `reports/fact-check.md`, `tests/game/typed-answers.test.js`
 **Estimated scope:** Small
 
-## Task 17: GitHub Pages deploy
-**Description:** Add a workflow that publishes `site/` to GitHub Pages on each push to `main`. Pin action versions after checking they exist.
+## Task 17: Cloudflare Pages deploy at futrivia.felipemfp.dev
+**Description:** Connect the repo to Cloudflare Pages, publishing `site/` from `main` with no build command. Then attach the custom domain `futrivia.felipemfp.dev`. Claude writes the exact settings, checked against current Cloudflare docs, and Felipe applies them in the dashboard. That includes approving replacement of the old records pointing at GitHub Pages.
 
 **Acceptance criteria:**
-- [ ] The public URL serves today's game
+- [ ] `https://futrivia.felipemfp.dev` serves today's game over HTTPS, and a PR gets a preview URL
 - [ ] Two different devices show identical prompts on the same São Paulo date
 - [ ] The page and day file load in under 1 second over a normal connection
 
 **Verification:**
-- [ ] Manual: open on two devices
+- [ ] `dig` shows only Cloudflare records for the subdomain; manual check on two devices
 
-**Dependencies:** T15, plan approval for the workflow
-**Files likely touched:** `.github/workflows/pages.yml`
+**Dependencies:** T15
+**Files likely touched:** `README.md` (deploy notes only)
 **Estimated scope:** Small
 
 ## Task 18: Browser pass at phone width

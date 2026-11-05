@@ -16,7 +16,7 @@ The work starts with a thin end-to-end slice. A test day file is playable before
 - **The build is deterministic.** Inputs are pinned by commit hash or checksum, and every output is sorted. Choices are seeded from the date string, so two builds produce identical files. That makes generated files reviewable in diffs.
 - **Pinned inputs, cached outside git.** Transfermarkt files aren't versioned, so `fetch` records their checksums and stops if they change. A changed checksum means a deliberate update, not a silent one.
 - **The game is plain JavaScript modules.** Game logic is pure functions tested with `node --test`, and the page is a thin layer over them. The browser's `Intl` API supplies the São Paulo date.
-- **GitHub Pages deploys from an Actions workflow.** Pages can publish only the repo root or `/docs` from a branch, and `docs/` holds documentation. So a workflow publishes `site/` instead. This adds CI config, which needs approval with this plan.
+- **Cloudflare Pages deploys from GitHub.** Cloudflare's GitHub integration publishes `site/` on each push to `main`, with no build command. Every PR gets a preview URL, which is useful for checking generated days. The repo has no CI config, and the deploy settings live in Cloudflare.
 - **Fast checks gate every commit.** A pre-commit hook in `.githooks/` runs both unit suites, kept under 2 seconds.
 
 ## Dependency Graph
@@ -75,7 +75,7 @@ T1 scaffold + hooks
 
 ### Phase 4: Trial
 - [ ] T16: Fact check and 50-answer test
-- [ ] T17: GitHub Pages deploy
+- [ ] T17: Cloudflare Pages deploy at futrivia.felipemfp.dev
 - [ ] T18: Browser pass at phone width
 
 ### Checkpoint 4: trial ready
@@ -93,6 +93,7 @@ T1 scaffold + hooks
 | Own goals counted as goals in Transfermarkt events | Medium | T12 identifies own goals from event descriptions, tested against known own goals |
 | Day boundary differs between devices | Medium | One function computes the date with an explicit time zone, tested at 23:59 and 00:00 São Paulo time |
 | Answers visible in the public day files | Low | Accepted by spec: friends-first, no anti-cheat |
+| Existing DNS records for futrivia.felipemfp.dev | Low | Records already point at GitHub Pages servers (185.199.108–111.153) but serve nothing over HTTPS. Felipe confirms they can be replaced in T17 |
 
 ## Open Questions
-- **Approve the Pages workflow?** T17 adds `.github/workflows/pages.yml`, which counts as a CI change.
+None blocking.
