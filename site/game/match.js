@@ -53,8 +53,12 @@ export function matchAnswer(input, answers) {
   const typed = normalize(input);
   if (!typed) return { status: "wrong" };
 
-  const exact = decide(answers.filter((a) => keys(a).includes(typed)));
-  if (exact) return exact;
+  // Different players can share an exact name (two Dudus): every one is valid, so credit the most obvious one.
+  const exactMatches = answers.filter((a) => keys(a).includes(typed));
+  if (exactMatches.length) {
+    const answer = exactMatches.reduce((best, a) => ((a.points ?? 0) < (best.points ?? 0) ? a : best));
+    return { status: "correct", answer };
+  }
 
   const singleWord = !typed.includes(" ");
   if (singleWord && typed.length >= MIN_WORD && !PARTICLES.has(typed)) {

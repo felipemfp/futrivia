@@ -22,7 +22,7 @@ node --test 'tests/game/*.test.js'
 ## Build the days
 ```bash
 python3 -m generator wikidata
-python3 -m generator build --start 2026-11-09 --days 86
+python3 -m generator build --start 2026-11-06 --days 85
 ```
 
 `wikidata` caches footballers from Wikidata (about 15 minutes; progress in `/tmp/futrivia-wikidata/progress.log`). `build` writes `site/days/*.json` and `reports/build.json`, and stops if the prompts can't fill the days asked for. Play locally with `python3 -m http.server --directory site 8000`, or the test day at `http://localhost:8000/site/?teste=1` when serving the repo root.

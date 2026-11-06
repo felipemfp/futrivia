@@ -51,6 +51,17 @@ test("two typos, or a typo in a short name, are wrong", () => {
   assert.equal(matchAnswer("Hilk", prompt("teste-curto")).status, "wrong");
 });
 
+test("an exact name shared by different players credits the most obvious one", () => {
+  const answers = [
+    { id: "rare", name: "Dudu", aliases: ["dudu"], points: 85 },
+    { id: "obvious", name: "Dudu", aliases: ["dudu", "eduardo pereira rodrigues"], points: 10 },
+    { id: "other", name: "Rony", aliases: ["rony"], points: 30 },
+  ];
+  const result = matchAnswer("Dudu", answers);
+  assert.equal(result.status, "correct");
+  assert.equal(result.answer.id, "obvious");
+});
+
 test("a typo close to several answers asks for more detail", () => {
   const answers = [
     { id: "a", name: "Marlon", aliases: ["marlon"] },

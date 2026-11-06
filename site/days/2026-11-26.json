@@ -1,0 +1,1379 @@
+{
+ "version": 1,
+ "date": "2026-11-26",
+ "prompts": [
+  {
+   "id": "marcou-por-atletico-mg-e-corinthians",
+   "text": "Diga um jogador que marcou pelo Atlético-MG e pelo Corinthians no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q314099",
+     "name": "Jô",
+     "aliases": [
+      "jo",
+      "jo alves"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Atlético-MG 2015, Corinthians 2017, Corinthians 2020 e mais 2"
+    },
+    {
+     "id": "Q2316179",
+     "name": "Fábio Santos",
+     "aliases": [
+      "fabio santos",
+      "fabio santos romeu"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Corinthians 2014, Corinthians 2015, Atlético-MG 2017 e mais 6"
+    },
+    {
+     "id": "Q19559974",
+     "name": "Guilherme Arana",
+     "aliases": [
+      "guilherme antonio arana lopes",
+      "guilherme arana"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Corinthians 2015, Corinthians 2017, Atlético-MG 2020 e mais 4"
+    },
+    {
+     "id": "Q510123",
+     "name": "Elias",
+     "aliases": [
+      "elias",
+      "elias mendes",
+      "elias mendes trindade"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Corinthians 2014, Corinthians 2015, Corinthians 2016 e mais 3"
+    },
+    {
+     "id": "Q518525",
+     "name": "André Balada",
+     "aliases": [
+      "andre balada",
+      "andre felipe",
+      "andre felipe ribeiro de souza"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Atlético-MG 2014, Corinthians 2016"
+    },
+    {
+     "id": "Q58754692",
+     "name": "Fausto Vera",
+     "aliases": [
+      "fausto vera"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Corinthians 2023, Atlético-MG 2024, Atlético-MG 2025"
+    },
+    {
+     "id": "Q554402",
+     "name": "Guilherme Milhomem Gusmão",
+     "aliases": [
+      "guilherme milhomem gusmao",
+      "guilherme milhomen gusmao",
+      "puncho"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-MG 2014, Corinthians 2016"
+    },
+    {
+     "id": "Q22958501",
+     "name": "Maycon",
+     "aliases": [
+      "maycon",
+      "maycon de andrade barberan"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Corinthians 2017, Corinthians 2023, Corinthians 2025 e mais 1"
+    },
+    {
+     "id": "Q952754",
+     "name": "Juan Cazares",
+     "aliases": [
+      "juan cazares",
+      "juan ramon cazares sevillano",
+      "juanito"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-MG 2016, Atlético-MG 2017, Atlético-MG 2018 e mais 2"
+    },
+    {
+     "id": "Q10364015",
+     "name": "Róger Guedes",
+     "aliases": [
+      "roger guedes"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-MG 2018, Corinthians 2021, Corinthians 2022 e mais 1"
+    },
+    {
+     "id": "Q5938594",
+     "name": "Rómulo Otero",
+     "aliases": [
+      "romulo otero",
+      "romulo otero vasquez"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Atlético-MG 2016, Atlético-MG 2017, Atlético-MG 2018 e mais 2"
+    },
+    {
+     "id": "Q18707906",
+     "name": "Clayton",
+     "aliases": [
+      "clayton",
+      "clayton da silveira da silva"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Atlético-MG 2016, Corinthians 2017"
+    },
+    {
+     "id": "Q3184106",
+     "name": "Júnior Urso",
+     "aliases": [
+      "junior urso",
+      "ocimar de almeida junior"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Atlético-MG 2016, Corinthians 2019"
+    },
+    {
+     "id": "Q6273829",
+     "name": "Marlone",
+     "aliases": [
+      "johnath marlone",
+      "johnath marlone azevedo da silva",
+      "jonathan marlone",
+      "jonathan marlone azevedo da silva",
+      "marlone"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Corinthians 2016, Atlético-MG 2017"
+    },
+    {
+     "id": "Q10289882",
+     "name": "Giovanni Augusto",
+     "aliases": [
+      "giovanni augusto",
+      "giovanni augusto oliveira cardoso"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Atlético-MG 2015, Corinthians 2016, Corinthians 2017"
+    }
+   ]
+  },
+  {
+   "id": "marcou-por-sport-2014",
+   "text": "Diga um jogador que marcou pelo Sport no Brasileirão 2014",
+   "answers": [
+    {
+     "id": "Q20047360",
+     "name": "Joelinton",
+     "aliases": [
+      "joelinton",
+      "joelinton cassio apolinario de lira"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q712406",
+     "name": "Neto Baiano",
+     "aliases": [
+      "euvaldo jose de aguiar neto",
+      "neto baiano"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q3940042",
+     "name": "Rodrigo Mancha",
+     "aliases": [
+      "rodrigo mancha",
+      "rodrigo marcos dos santos"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q2449294",
+     "name": "Diego Souza",
+     "aliases": [
+      "diego de souza andrade",
+      "diego souza"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q4751411",
+     "name": "Ananias",
+     "aliases": [
+      "ananias",
+      "ananias eloi castro monteiro"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q495325",
+     "name": "Felipe Azevedo",
+     "aliases": [
+      "felipe azevedo",
+      "felipe azevedo dos santos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q1185500",
+     "name": "Durval",
+     "aliases": [
+      "durval"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q3368854",
+     "name": "Patric Cabral Lalau",
+     "aliases": [
+      "patric cabral lalau"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "dataset:Augusto|Sport",
+     "name": "Augusto",
+     "aliases": [
+      "augusto"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q26132957",
+     "name": "Danilo",
+     "aliases": [
+      "danilo",
+      "danilo barcelos",
+      "danilo carvalho barcelos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q6849383",
+     "name": "Mike",
+     "aliases": [
+      "mike",
+      "mike dos santos nenatarvicius"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q5419018",
+     "name": "Ewerton Páscoa",
+     "aliases": [
+      "ewerton pascoa"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q18637914",
+     "name": "Rithely",
+     "aliases": [
+      "francisco rithely da silva sousa",
+      "rithely"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q63828138",
+     "name": "Régis",
+     "aliases": [
+      "regis",
+      "regis tosatti giacomin"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Sport 2014"
+    }
+   ]
+  },
+  {
+   "id": "marcou-por-figueirense-2014",
+   "text": "Diga um jogador que marcou pelo Figueirense no Brasileirão 2014",
+   "answers": [
+    {
+     "id": "Q1574084",
+     "name": "Marcelino Júnior Lopes Arruda",
+     "aliases": [
+      "marcelino junior lopes arruda",
+      "mazola",
+      "mazzolla"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q15831136",
+     "name": "Pablo",
+     "aliases": [
+      "pablo",
+      "pablo felipe teixeira"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q17379892",
+     "name": "Everaldo",
+     "aliases": [
+      "everaldo",
+      "everaldo stum"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q976476",
+     "name": "Thiago Heleno",
+     "aliases": [
+      "thiago heleno",
+      "thiago heleno henrique ferreira"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q18707906",
+     "name": "Clayton",
+     "aliases": [
+      "clayton",
+      "clayton da silveira da silva"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q10289882",
+     "name": "Giovanni Augusto",
+     "aliases": [
+      "giovanni augusto",
+      "giovanni augusto oliveira cardoso"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "dataset:França|Figueirense",
+     "name": "França",
+     "aliases": [
+      "franca"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q19958250",
+     "name": "Jefferson Nogueira",
+     "aliases": [
+      "jefferson nogueira",
+      "jefferson nogueira junior"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q925067",
+     "name": "Marquinhos Silva",
+     "aliases": [
+      "marcos roberto da silva barbosa",
+      "marquinhos",
+      "marquinhos silva"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q10325288",
+     "name": "Marco Antônio",
+     "aliases": [
+      "marco antonio",
+      "marco antonio miranda filho",
+      "marcos antonio miranda filho"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q6757822",
+     "name": "Marcos Assis Santana",
+     "aliases": [
+      "marcos assis de santana",
+      "marcos assis santana"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q19968730",
+     "name": "Léo Lisboa",
+     "aliases": [
+      "leo lisboa",
+      "leonardo santos lisboa"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Figueirense 2014"
+    }
+   ]
+  },
+  {
+   "id": "marcou-por-athletico-pr-e-sao-paulo",
+   "text": "Diga um jogador que marcou pelo Athletico-PR e pelo São Paulo no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q329451",
+     "name": "Luiz Gustavo",
+     "aliases": [
+      "luiz gustavo",
+      "luiz gustavo dias"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "São Paulo 2024, São Paulo 2025, Athletico-PR 2026"
+    },
+    {
+     "id": "Q15831136",
+     "name": "Pablo",
+     "aliases": [
+      "pablo",
+      "pablo felipe teixeira"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Athletico-PR 2016, Athletico-PR 2017, Athletico-PR 2018 e mais 6"
+    },
+    {
+     "id": "Q16731977",
+     "name": "Marcos Guilherme",
+     "aliases": [
+      "marcos guilherme"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Athletico-PR 2014, Athletico-PR 2015, São Paulo 2017 e mais 1"
+    },
+    {
+     "id": "Q20641619",
+     "name": "Vitor Bueno",
+     "aliases": [
+      "vitor bueno",
+      "vitor frezarin bueno"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "São Paulo 2019, São Paulo 2020, São Paulo 2021 e mais 2"
+    },
+    {
+     "id": "Q2605478",
+     "name": "Nikão",
+     "aliases": [
+      "nikao"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Athletico-PR 2015, Athletico-PR 2016, Athletico-PR 2017 e mais 6"
+    },
+    {
+     "id": "Q4023127",
+     "name": "Ytalo",
+     "aliases": [
+      "ytalo",
+      "ytalo jose dos santos",
+      "ytalo jose oliveira dos santos"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Athletico-PR 2015, São Paulo 2016"
+    },
+    {
+     "id": "Q28939711",
+     "name": "Marcinho",
+     "aliases": [
+      "marcinho",
+      "marcio antonio de sousa junior",
+      "marcio antonio de souza junior"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "São Paulo 2017, Athletico-PR 2018"
+    }
+   ]
+  },
+  {
+   "id": "marcou-contra-gremio-2020",
+   "text": "Diga um jogador que marcou contra o Grêmio no Brasileirão 2020",
+   "answers": [
+    {
+     "id": "Q296222",
+     "name": "Mauricio Isla",
+     "aliases": [
+      "huaso",
+      "huaso isla",
+      "mauricio anibal isla",
+      "mauricio anibal isla isla",
+      "mauricio isla"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2020"
+    },
+    {
+     "id": "Q318456",
+     "name": "Abel Hernández",
+     "aliases": [
+      "abel hernandez",
+      "abel mathias hernandez duvan",
+      "abel mathias hernandez platero"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2020"
+    },
+    {
+     "id": "Q13578003",
+     "name": "Giorgian de Arrascaeta",
+     "aliases": [
+      "de arrascaeta",
+      "giorgian arrascaeta",
+      "giorgian daniel de arrascaeta benedetti",
+      "giorgian de arrascaeta"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2020"
+    },
+    {
+     "id": "Q13646572",
+     "name": "Gabigol",
+     "aliases": [
+      "gabigol",
+      "gabriel barbosa",
+      "gabriel barbosa almeida"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2020"
+    },
+    {
+     "id": "Q4025436",
+     "name": "Everton Ribeiro",
+     "aliases": [
+      "everton augusto de barros ribeiro",
+      "everton de barros ribeiro",
+      "everton ribeiro"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2020"
+    },
+    {
+     "id": "Q27443365",
+     "name": "Raphael Veiga",
+     "aliases": [
+      "raphael cavalcante veiga",
+      "raphael veiga"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Palmeiras 2020"
+    },
+    {
+     "id": "Q1707749",
+     "name": "Edenilson",
+     "aliases": [
+      "edenilson",
+      "edenilson andrade dos santos"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Internacional 2020"
+    },
+    {
+     "id": "Q56876908",
+     "name": "Kaio Jorge",
+     "aliases": [
+      "kaio jorge",
+      "kaio jorge pinto ramos"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Santos 2020"
+    },
+    {
+     "id": "Q20050532",
+     "name": "Thiago Galhardo",
+     "aliases": [
+      "thiago galhardo",
+      "thiago galhardo do nascimento rocha",
+      "thiago galhardo nascimento rocha"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Internacional 2020"
+    },
+    {
+     "id": "Q1753325",
+     "name": "Osvaldo",
+     "aliases": [
+      "osvaldo",
+      "osvaldo filho",
+      "osvaldo lourenco filho"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Fortaleza 2020"
+    },
+    {
+     "id": "Q3869209",
+     "name": "Marinho",
+     "aliases": [
+      "marinho",
+      "mario sergio santos costa"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Santos 2020"
+    },
+    {
+     "id": "Q17180926",
+     "name": "Keno",
+     "aliases": [
+      "keno",
+      "marcos da silva",
+      "marcos da silva franca"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-MG 2020"
+    },
+    {
+     "id": "Q15966749",
+     "name": "Luciano",
+     "aliases": [
+      "luciano",
+      "luciano da rocha neves"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "São Paulo 2020"
+    },
+    {
+     "id": "Q24049261",
+     "name": "Tchê Tchê",
+     "aliases": [
+      "danilo das neves pinheiro",
+      "danilo neves",
+      "tche tche"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "São Paulo 2020"
+    },
+    {
+     "id": "Q27804547",
+     "name": "Arthur Gomes",
+     "aliases": [
+      "arthur gomes",
+      "arthur gomes lourenco"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Santos 2020"
+    },
+    {
+     "id": "Q18638095",
+     "name": "Tiago Pagnussat",
+     "aliases": [
+      "tiago pagnussat"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Ceará 2020"
+    },
+    {
+     "id": "dataset:Claudinho|Bragantino",
+     "name": "Claudinho",
+     "aliases": [
+      "claudinho"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Bragantino 2020"
+    },
+    {
+     "id": "Q69963610",
+     "name": "Dalberto",
+     "aliases": [
+      "dalberto",
+      "dalberto belo",
+      "dalberto luan belo"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Sport 2020"
+    },
+    {
+     "id": "Q30126774",
+     "name": "Jan Hurtado",
+     "aliases": [
+      "churta hurtado",
+      "jan carlos hurtado",
+      "jan carlos hurtado anchico",
+      "jan hurtado"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Bragantino 2020"
+    },
+    {
+     "id": "dataset:João Marcos Lima Candido|Goias",
+     "name": "João Marcos Lima Candido",
+     "aliases": [
+      "joao marcos lima candido"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Goiás 2020"
+    },
+    {
+     "id": "Q100795784",
+     "name": "Kelvyn",
+     "aliases": [
+      "kelvyn",
+      "kelvyn ramos da fonseca"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Ceará 2020"
+    },
+    {
+     "id": "Q80672850",
+     "name": "Nathan Silva",
+     "aliases": [
+      "nathan silva",
+      "nathanael ananias da silva"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2020"
+    },
+    {
+     "id": "Q19958146",
+     "name": "Hyoran",
+     "aliases": [
+      "hyoran",
+      "hyoran kaue dalmoro"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Atlético-MG 2020"
+    },
+    {
+     "id": "Q94733205",
+     "name": "Rafael Navarro",
+     "aliases": [
+      "rafael navarro",
+      "rafael navarro leal"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Botafogo 2020"
+    },
+    {
+     "id": "Q8023194",
+     "name": "Wilson Rodrigues de Moura Júnior",
+     "aliases": [
+      "wilson rodrigues de moura junior"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Coritiba 2020"
+    },
+    {
+     "id": "Q3368854",
+     "name": "Patric Cabral Lalau",
+     "aliases": [
+      "patric cabral lalau"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Sport 2020"
+    },
+    {
+     "id": "Q3615365",
+     "name": "Anderson Martins",
+     "aliases": [
+      "anderson martins",
+      "anderson vieira martins"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Bahia 2020"
+    },
+    {
+     "id": "Q18719454",
+     "name": "Gustavo Ferrareis",
+     "aliases": [
+      "gustavo ferrareis",
+      "gustavo henrique ferrareis"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Atlético-GO 2020"
+    },
+    {
+     "id": "Q1627338",
+     "name": "Madson",
+     "aliases": [
+      "madson",
+      "madson formagini caridade"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Santos 2020"
+    },
+    {
+     "id": "Q16337384",
+     "name": "Edson Felipe da Cruz",
+     "aliases": [
+      "edson felipe da cruz"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Atlético-GO 2020"
+    },
+    {
+     "id": "Q21005273",
+     "name": "Carlos Eduardo",
+     "aliases": [
+      "carlos eduardo",
+      "carlos eduardo ferreira de souza"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Athletico-PR 2020"
+    },
+    {
+     "id": "Q19958149",
+     "name": "Iago Maidana",
+     "aliases": [
+      "iago justen maidana martins",
+      "iago maidana"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Sport 2020"
+    },
+    {
+     "id": "Q96280211",
+     "name": "Matheus Babi",
+     "aliases": [
+      "matheus babi",
+      "matheus barcelos da silva"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Botafogo 2020"
+    },
+    {
+     "id": "Q5137266",
+     "name": "Cléber",
+     "aliases": [
+      "cleber",
+      "cleber antonio de oliveira",
+      "cleber antonio oliveira"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Ceará 2020"
+    }
+   ]
+  },
+  {
+   "id": "expulso-parana-2014-2026",
+   "text": "Diga um jogador que foi expulso jogando pelo Paraná no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q3386617",
+     "name": "Mansur",
+     "aliases": [
+      "joeliton lima santos",
+      "mansur"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Paraná 2018"
+    },
+    {
+     "id": "Q99244441",
+     "name": "Raphael Utzig",
+     "aliases": [
+      "raphael alemao",
+      "raphael utzig"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Paraná 2018"
+    },
+    {
+     "id": "Q20048078",
+     "name": "Neris",
+     "aliases": [
+      "hueglo dos santos neris",
+      "neris"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Paraná 2018"
+    },
+    {
+     "id": "dataset:Cleber Reis|Parana",
+     "name": "Cleber Reis",
+     "aliases": [
+      "cleber reis"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Paraná 2018"
+    },
+    {
+     "id": "Q48864777",
+     "name": "Leandro Vilela",
+     "aliases": [
+      "leandro vilela",
+      "leandro vilela sales teixeira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Paraná 2018"
+    },
+    {
+     "id": "Q7312941",
+     "name": "Renê Santos",
+     "aliases": [
+      "rene santos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Paraná 2018"
+    },
+    {
+     "id": "dataset:Silvinho|Parana",
+     "name": "Silvinho",
+     "aliases": [
+      "silvinho"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Paraná 2018"
+    },
+    {
+     "id": "Q58821130",
+     "name": "Andrey Nunes dos Santos",
+     "aliases": [
+      "andrey nunes dos santos"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Paraná 2018"
+    }
+   ]
+  },
+  {
+   "id": "marcou-contra-flamengo-2021",
+   "text": "Diga um jogador que marcou contra o Flamengo no Brasileirão 2021",
+   "answers": [
+    {
+     "id": "Q318456",
+     "name": "Abel Hernández",
+     "aliases": [
+      "abel hernandez",
+      "abel mathias hernandez duvan",
+      "abel mathias hernandez platero"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Fluminense 2021"
+    },
+    {
+     "id": "Q303108",
+     "name": "Taison",
+     "aliases": [
+      "taison",
+      "taison barcellos freda"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2021"
+    },
+    {
+     "id": "Q4094820",
+     "name": "Miguel Borja",
+     "aliases": [
+      "borjameyang",
+      "miguel angel borja hernandez",
+      "miguel borja",
+      "miguel borojo"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Grêmio 2021"
+    },
+    {
+     "id": "Q22082660",
+     "name": "Robert Arboleda",
+     "aliases": [
+      "robert abel arboleda escobar",
+      "robert arboleda",
+      "robert0 arboleda"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "São Paulo 2021"
+    },
+    {
+     "id": "Q14584722",
+     "name": "Vitinho",
+     "aliases": [
+      "victor vinicius coelho dos santos",
+      "victor vinicius coelho santos",
+      "vitinho"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Corinthians 2021"
+    },
+    {
+     "id": "Q98534760",
+     "name": "Marcos Leonardo",
+     "aliases": [
+      "marcos leonardo",
+      "marcos leonardo santos almeida"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Santos 2021"
+    },
+    {
+     "id": "Q43252427",
+     "name": "Yuri Alberto",
+     "aliases": [
+      "yuri alberto",
+      "yuri alberto monteiro da silva"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Internacional 2021"
+    },
+    {
+     "id": "Q28665426",
+     "name": "Artur",
+     "aliases": [
+      "artur",
+      "artur victor guimaraes"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Bragantino 2021"
+    },
+    {
+     "id": "Q20735677",
+     "name": "Jefferson Savarino",
+     "aliases": [
+      "jefferson david savarino quintero",
+      "jefferson savarino"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Atlético-MG 2021"
+    },
+    {
+     "id": "Q105393903",
+     "name": "John Kennedy",
+     "aliases": [
+      "jk",
+      "john kennedy",
+      "john kennedy batista de souza"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Fluminense 2021"
+    },
+    {
+     "id": "Q65718438",
+     "name": "Wesley",
+     "aliases": [
+      "wesley",
+      "wesley ribeiro da silva",
+      "wesley ribeiro silva"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Palmeiras 2021"
+    },
+    {
+     "id": "Q100327655",
+     "name": "Alê",
+     "aliases": [
+      "ale",
+      "alexandre egea"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "América-MG 2021"
+    },
+    {
+     "id": "Q103876000",
+     "name": "André",
+     "aliases": [
+      "andre",
+      "andre trindade",
+      "andre trindade da costa neto"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Fluminense 2021"
+    },
+    {
+     "id": "Q104880373",
+     "name": "Chrigor",
+     "aliases": [
+      "chrigor",
+      "chrigor flores moraes"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Bragantino 2021"
+    },
+    {
+     "id": "dataset:Gustavo|Sport",
+     "name": "Gustavo",
+     "aliases": [
+      "gustavo"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Sport 2021"
+    },
+    {
+     "id": "Q70449138",
+     "name": "Kaio Nunes",
+     "aliases": [
+      "kaio",
+      "kaio nunes",
+      "kaio nunes ferreira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Chapecoense 2021"
+    },
+    {
+     "id": "Q107080134",
+     "name": "Lucas Gabriel Ribeiro Firmo",
+     "aliases": [
+      "lucas gabriel ribeiro firmo"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-GO 2021"
+    },
+    {
+     "id": "Q3311735",
+     "name": "Rick",
+     "aliases": [
+      "ricardo aparecido tavares",
+      "rick"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Ceará 2021"
+    },
+    {
+     "id": "dataset:Vinícius|Ceara",
+     "name": "Vinícius",
+     "aliases": [
+      "vinicius"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Ceará 2021"
+    },
+    {
+     "id": "Q47900157",
+     "name": "Bissoli",
+     "aliases": [
+      "bissoli",
+      "guilherme bissoli",
+      "guilherme bissoli campos"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Athletico-PR 2021"
+    },
+    {
+     "id": "Q58235234",
+     "name": "Matheus Peixoto",
+     "aliases": [
+      "matheus peixoto",
+      "matheus vieira campos peixoto"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Juventude 2021"
+    },
+    {
+     "id": "Q8015227",
+     "name": "William Matheus",
+     "aliases": [
+      "william matheus",
+      "william matheus da silva"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Juventude 2021"
+    },
+    {
+     "id": "Q18128072",
+     "name": "Aderlan",
+     "aliases": [
+      "aderlan",
+      "aderlan de lima silva",
+      "aderlan silva"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Bragantino 2021"
+    },
+    {
+     "id": "Q77896856",
+     "name": "Ferreirinha",
+     "aliases": [
+      "aldemir dos santos ferreira",
+      "aldemir ferreira",
+      "ferreirinha"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Grêmio 2021"
+    },
+    {
+     "id": "Q56826476",
+     "name": "Eric Ramires",
+     "aliases": [
+      "eric dos santos rodrigues",
+      "eric ramires",
+      "ramires"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Bragantino 2021"
+    },
+    {
+     "id": "Q28151691",
+     "name": "Perotti",
+     "aliases": [
+      "pedro henrique perotti",
+      "pedro perotti",
+      "perotti"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Chapecoense 2021"
+    },
+    {
+     "id": "Q22279980",
+     "name": "Renato Kayzer",
+     "aliases": [
+      "renato kayser",
+      "renato kayzer",
+      "renato kayzer de souza"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Athletico-PR 2021"
+    },
+    {
+     "id": "Q65030454",
+     "name": "Jonas Toró",
+     "aliases": [
+      "jonas gabriel da silva nunes",
+      "jonas toro"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Atlético-GO 2021"
+    },
+    {
+     "id": "Q27839473",
+     "name": "David",
+     "aliases": [
+      "david",
+      "david correa da fonseca"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Fortaleza 2021"
+    }
+   ]
+  }
+ ]
+}

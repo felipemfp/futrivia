@@ -1,0 +1,1402 @@
+{
+ "version": 1,
+ "date": "2026-11-22",
+ "prompts": [
+  {
+   "id": "marcou-por-csa-2019",
+   "text": "Diga um jogador que marcou pelo CSA no Brasileirão 2019",
+   "answers": [
+    {
+     "id": "Q1027483",
+     "name": "Apodi",
+     "aliases": [
+      "apodi"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "CSA 2019"
+    },
+    {
+     "id": "Q848129",
+     "name": "Nílton",
+     "aliases": [
+      "nilton",
+      "nilton ferreira junior"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "CSA 2019"
+    },
+    {
+     "id": "Q20048235",
+     "name": "Matheus Sávio",
+     "aliases": [
+      "matheus savio"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "CSA 2019"
+    },
+    {
+     "id": "Q2002761",
+     "name": "Alecsandro",
+     "aliases": [
+      "alecsandro",
+      "alecsandro barbosa felisbino"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "CSA 2019"
+    },
+    {
+     "id": "Q3956606",
+     "name": "Ricardo Bueno",
+     "aliases": [
+      "ricardo bueno",
+      "ricardo bueno da silva"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "CSA 2019"
+    },
+    {
+     "id": "Q23762118",
+     "name": "Emilton Pedroso",
+     "aliases": [
+      "emilton pedroso",
+      "emilton pedroso domingues",
+      "jarro pedroso"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "CSA 2019"
+    },
+    {
+     "id": "Q47785325",
+     "name": "Héctor Bustamante",
+     "aliases": [
+      "hector ariel bustamante lopez",
+      "hector bustamante"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "CSA 2019"
+    },
+    {
+     "id": "dataset:Jonatan Gómez|CSA",
+     "name": "Jonatan Gómez",
+     "aliases": [
+      "jonatan gomez"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "CSA 2019"
+    },
+    {
+     "id": "dataset:Rafinha|CSA",
+     "name": "Rafinha",
+     "aliases": [
+      "rafinha"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "CSA 2019"
+    },
+    {
+     "id": "Q1091521",
+     "name": "Carlinhos",
+     "aliases": [
+      "carlinhos",
+      "carlos andrade souza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "CSA 2019"
+    },
+    {
+     "id": "Q617860",
+     "name": "Maranhão",
+     "aliases": [
+      "francinilson meirelles",
+      "francinilson santos meireles",
+      "francinilson santos meirelles",
+      "maranhao"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "CSA 2019"
+    },
+    {
+     "id": "Q16336241",
+     "name": "Alan Henrique Costa",
+     "aliases": [
+      "alan henrique costa"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "CSA 2019"
+    }
+   ]
+  },
+  {
+   "id": "marcou-por-bahia-e-gremio",
+   "text": "Diga um jogador que marcou pelo Bahia e pelo Grêmio no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q64738587",
+     "name": "Cristian Olivera",
+     "aliases": [
+      "cristian gonzalo olivera ibarra",
+      "cristian olivera",
+      "cristian olivera ibarra",
+      "el pistola olivera"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Grêmio 2025, Bahia 2026"
+    },
+    {
+     "id": "Q2457765",
+     "name": "Henrique Almeida",
+     "aliases": [
+      "henrique almeida",
+      "henrique almeida caixeta nascentes",
+      "henrique nascentes"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Bahia 2014, Grêmio 2016"
+    },
+    {
+     "id": "Q18285217",
+     "name": "João Pedro",
+     "aliases": [
+      "joao pedro",
+      "joao pedro dos santos",
+      "joao pedro maturano dos santos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Bahia 2019, Grêmio 2023, Grêmio 2024"
+    },
+    {
+     "id": "Q3940035",
+     "name": "Rodriguinho",
+     "aliases": [
+      "rodrigo eduardo costa marinho",
+      "rodriguinho",
+      "rodriguinho marinho"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Grêmio 2014, Bahia 2020, Bahia 2021"
+    },
+    {
+     "id": "Q3928947",
+     "name": "Rafael Galhardo",
+     "aliases": [
+      "galhardo",
+      "rafael galhardo",
+      "rafael galhardo de souza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Bahia 2014, Grêmio 2015, Grêmio 2019"
+    },
+    {
+     "id": "Q24062447",
+     "name": "Thaciano",
+     "aliases": [
+      "thaciano",
+      "thaciano mickael da silva"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Grêmio 2018, Grêmio 2019, Grêmio 2020 e mais 3"
+    }
+   ]
+  },
+  {
+   "id": "marcou-por-palmeiras-2019",
+   "text": "Diga um jogador que marcou pelo Palmeiras no Brasileirão 2019",
+   "answers": [
+    {
+     "id": "Q204450",
+     "name": "Felipe Melo",
+     "aliases": [
+      "felipe melo",
+      "felipe melo de carvalho"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q72904",
+     "name": "Luiz Adriano",
+     "aliases": [
+      "luiz adriano"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q1033783",
+     "name": "Gustavo Gómez",
+     "aliases": [
+      "gustavo gomez",
+      "gustavo gomez portillo",
+      "gustavo raul gomez portillo",
+      "mariscal"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q4094820",
+     "name": "Miguel Borja",
+     "aliases": [
+      "borjameyang",
+      "miguel angel borja hernandez",
+      "miguel borja",
+      "miguel borojo"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q15207061",
+     "name": "Lucas Lima",
+     "aliases": [
+      "lucas lima",
+      "lucas rafael araujo lima"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q218611",
+     "name": "Marcos Rocha",
+     "aliases": [
+      "marcos luis rocha aquino",
+      "marcos rocha"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q27443365",
+     "name": "Raphael Veiga",
+     "aliases": [
+      "raphael cavalcante veiga",
+      "raphael veiga"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q1341709",
+     "name": "Dudu",
+     "aliases": [
+      "dudu",
+      "eduardo pereira rodrigues"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q29169290",
+     "name": "Fernandes",
+     "aliases": [
+      "fernandes",
+      "matheus fernandes",
+      "matheus fernandes siqueira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q19709176",
+     "name": "Gustavo Scarpa",
+     "aliases": [
+      "gustavo henrique furtado scarpa",
+      "gustavo scarpa"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q10552615",
+     "name": "Deyverson",
+     "aliases": [
+      "deyverson",
+      "deyverson brum silva",
+      "deyverson brum silva acosta"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q75059692",
+     "name": "Gabriel Souza",
+     "aliases": [
+      "gabriel souza",
+      "gabriel veron",
+      "gabriel veron fonseca de souza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q4979245",
+     "name": "Bruno Henrique",
+     "aliases": [
+      "bruno henrique",
+      "bruno henrique corsini"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q1031647",
+     "name": "Willian Bigode",
+     "aliases": [
+      "willian bigode",
+      "willian gomes de siqueira"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q19519846",
+     "name": "Zé Rafael",
+     "aliases": [
+      "jose rafael vivian",
+      "ze rafael"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q21030271",
+     "name": "Thiago Santos",
+     "aliases": [
+      "thiago dos santos",
+      "thiago santos"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Palmeiras 2019"
+    },
+    {
+     "id": "Q19958146",
+     "name": "Hyoran",
+     "aliases": [
+      "hyoran",
+      "hyoran kaue dalmoro"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Palmeiras 2019"
+    }
+   ]
+  },
+  {
+   "id": "marcou-por-flamengo-e-fluminense",
+   "text": "Diga um jogador que marcou pelo Flamengo e pelo Fluminense no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q14755604",
+     "name": "Kenedy",
+     "aliases": [
+      "kenedy",
+      "nascimento",
+      "robert a kenedy",
+      "robert kenedy",
+      "robert kenedy nunes do nascimento"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Fluminense 2014, Flamengo 2021"
+    },
+    {
+     "id": "Q18617137",
+     "name": "Gerson",
+     "aliases": [
+      "gerson",
+      "gerson santos da silva",
+      "gerson santos putin"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Fluminense 2015, Flamengo 2019, Flamengo 2020 e mais 2"
+    },
+    {
+     "id": "Q47491410",
+     "name": "Pedro",
+     "aliases": [
+      "pedro",
+      "pedro guilherme",
+      "pedro guilherme abreu dos santos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Fluminense 2017, Fluminense 2018, Fluminense 2019 e mais 7"
+    },
+    {
+     "id": "Q20048330",
+     "name": "Renê",
+     "aliases": [
+      "rene",
+      "rene rodrigues martins"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Flamengo 2018, Flamengo 2020, Flamengo 2021 e mais 1"
+    },
+    {
+     "id": "Q14244926",
+     "name": "Henrique Dourado",
+     "aliases": [
+      "henrique dourado",
+      "jose henrique da silva dourado"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Fluminense 2016, Fluminense 2017, Flamengo 2018"
+    }
+   ]
+  },
+  {
+   "id": "marcou-contra-coritiba-2014",
+   "text": "Diga um jogador que marcou contra o Coritiba no Brasileirão 2014",
+   "answers": [
+    {
+     "id": "Q58441",
+     "name": "Robinho",
+     "aliases": [
+      "robinho"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Santos 2014"
+    },
+    {
+     "id": "Q138075",
+     "name": "Alexandre Pato",
+     "aliases": [
+      "alex pato",
+      "alexandre pato",
+      "alexandre rodrigues da silva",
+      "pato"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "São Paulo 2014"
+    },
+    {
+     "id": "Q455557",
+     "name": "Borges",
+     "aliases": [
+      "borges",
+      "humberlito borges",
+      "humberlito borges teixeira"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2014"
+    },
+    {
+     "id": "Q310697",
+     "name": "Michel Bastos",
+     "aliases": [
+      "michel bastos",
+      "michel fernandes bastos"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "São Paulo 2014"
+    },
+    {
+     "id": "Q4025436",
+     "name": "Everton Ribeiro",
+     "aliases": [
+      "everton augusto de barros ribeiro",
+      "everton de barros ribeiro",
+      "everton ribeiro"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2014"
+    },
+    {
+     "id": "Q370507",
+     "name": "Marcelo Moreno",
+     "aliases": [
+      "marcelo martins",
+      "marcelo martins moreno",
+      "marcelo moreno",
+      "marcelo moreno martins"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2014"
+    },
+    {
+     "id": "Q312375",
+     "name": "Mario Bolatti",
+     "aliases": [
+      "bolatti",
+      "maranga",
+      "mario ariel bolatti",
+      "mario bolatti"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Botafogo 2014"
+    },
+    {
+     "id": "Q215454",
+     "name": "Cristian Riveros",
+     "aliases": [
+      "christian riveros",
+      "cristian miguel riveros",
+      "cristian miguel riveros nunez",
+      "cristian riveros"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Grêmio 2014"
+    },
+    {
+     "id": "Q313741",
+     "name": "Andrés D'Alessandro",
+     "aliases": [
+      "andres d alessandro",
+      "andres nicolas d alessandro"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Internacional 2014"
+    },
+    {
+     "id": "Q2756361",
+     "name": "Ademilson",
+     "aliases": [
+      "ademilson",
+      "ademilson braga bispo junior"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "São Paulo 2014"
+    },
+    {
+     "id": "Q510123",
+     "name": "Elias",
+     "aliases": [
+      "elias",
+      "elias mendes",
+      "elias mendes trindade"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Corinthians 2014"
+    },
+    {
+     "id": "Q15207061",
+     "name": "Lucas Lima",
+     "aliases": [
+      "lucas lima",
+      "lucas rafael araujo lima"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Santos 2014"
+    },
+    {
+     "id": "Q1574084",
+     "name": "Marcelino Júnior Lopes Arruda",
+     "aliases": [
+      "marcelino junior lopes arruda",
+      "mazola",
+      "mazzolla"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q359071",
+     "name": "Pedro Botelho",
+     "aliases": [
+      "pedro botelho",
+      "pedro mamerto silva botelho",
+      "pedro roberto da silva botelho",
+      "pedro roberto silva botelho"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Atlético-MG 2014"
+    },
+    {
+     "id": "Q18246631",
+     "name": "Erik Nascimento Lima",
+     "aliases": [
+      "erik",
+      "erik lima",
+      "erik nascimento de lima",
+      "erik nascimento lima"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Goiás 2014"
+    },
+    {
+     "id": "Q3312668",
+     "name": "Telmário de Araújo Sacramento",
+     "aliases": [
+      "dinei",
+      "telmario de araujo sacramento"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Vitória 2014"
+    },
+    {
+     "id": "Q553754",
+     "name": "Alex Meschini",
+     "aliases": [
+      "alex meschini",
+      "alex raphael meschini",
+      "alexandre raphael meschini",
+      "meschini"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2014"
+    },
+    {
+     "id": "Q16731977",
+     "name": "Marcos Guilherme",
+     "aliases": [
+      "marcos guilherme"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Athletico-PR 2014"
+    },
+    {
+     "id": "Q7322659",
+     "name": "Ricardo Goulart",
+     "aliases": [
+      "ricardo goulart",
+      "ricardo goulart pereira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2014"
+    },
+    {
+     "id": "Q4979245",
+     "name": "Bruno Henrique",
+     "aliases": [
+      "bruno henrique",
+      "bruno henrique corsini"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Corinthians 2014"
+    },
+    {
+     "id": "Q17379892",
+     "name": "Everaldo",
+     "aliases": [
+      "everaldo",
+      "everaldo stum"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q488139",
+     "name": "Everton",
+     "aliases": [
+      "everton",
+      "everton cardoso da silva"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2014"
+    },
+    {
+     "id": "Q934259",
+     "name": "Hernán Barcos",
+     "aliases": [
+      "hernan barcos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Grêmio 2014"
+    },
+    {
+     "id": "Q47766",
+     "name": "Elivélton",
+     "aliases": [
+      "elivelton",
+      "elivelton alves rufino"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Fluminense 2014"
+    },
+    {
+     "id": "Q5340762",
+     "name": "Eduardo Sasha",
+     "aliases": [
+      "eduardo colcenti",
+      "eduardo colcenti antunes",
+      "eduardo sasha"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2014"
+    },
+    {
+     "id": "Q1634101",
+     "name": "Wellington Paulista",
+     "aliases": [
+      "wellington paulista",
+      "wellington pereira do nascimento"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2014"
+    },
+    {
+     "id": "Q2457765",
+     "name": "Henrique Almeida",
+     "aliases": [
+      "henrique almeida",
+      "henrique almeida caixeta nascentes",
+      "henrique nascentes"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Bahia 2014"
+    },
+    {
+     "id": "Q976476",
+     "name": "Thiago Heleno",
+     "aliases": [
+      "thiago heleno",
+      "thiago heleno henrique ferreira"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q495325",
+     "name": "Felipe Azevedo",
+     "aliases": [
+      "felipe azevedo",
+      "felipe azevedo dos santos"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q3838361",
+     "name": "Lucas Mugni",
+     "aliases": [
+      "lucas andres mugni",
+      "lucas mugni"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Flamengo 2014"
+    },
+    {
+     "id": "Q20048352",
+     "name": "Rômulo José Pacheco da Silva",
+     "aliases": [
+      "romulo jose pacheco da silva"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Bahia 2014"
+    },
+    {
+     "id": "Q5233823",
+     "name": "David",
+     "aliases": [
+      "david",
+      "david franca oliveira e silva"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Goiás 2014"
+    },
+    {
+     "id": "Q16337605",
+     "name": "Jackson de Souza",
+     "aliases": [
+      "jackson de souza"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Goiás 2014"
+    },
+    {
+     "id": "Q10549271",
+     "name": "Nixon",
+     "aliases": [
+      "nixon",
+      "nixon darlanio reis cardoso"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2014"
+    },
+    {
+     "id": "Q3755359",
+     "name": "Fábio Ferreira",
+     "aliases": [
+      "fabio ferreira",
+      "fabio ferreira da silva"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Criciúma 2014"
+    },
+    {
+     "id": "Q10325288",
+     "name": "Marco Antônio",
+     "aliases": [
+      "marco antonio",
+      "marco antonio miranda filho",
+      "marcos antonio miranda filho"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q6757822",
+     "name": "Marcos Assis Santana",
+     "aliases": [
+      "marcos assis de santana",
+      "marcos assis santana"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Figueirense 2014"
+    },
+    {
+     "id": "Q18637914",
+     "name": "Rithely",
+     "aliases": [
+      "francisco rithely da silva sousa",
+      "rithely"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Sport 2014"
+    },
+    {
+     "id": "Q48472785",
+     "name": "Juninho",
+     "aliases": [
+      "juninho"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Palmeiras 2014"
+    }
+   ]
+  },
+  {
+   "id": "marcou-contra-flamengo-2024",
+   "text": "Diga um jogador que marcou contra o Flamengo no Brasileirão 2024",
+   "answers": [
+    {
+     "id": "Q311872",
+     "name": "Philippe Coutinho",
+     "aliases": [
+      "coutinho",
+      "coutinho correia",
+      "philippe coutinho",
+      "philippe coutinho correia"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Vasco 2024"
+    },
+    {
+     "id": "Q459707",
+     "name": "Diego Costa",
+     "aliases": [
+      "diego costa",
+      "diego da silva costa"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Grêmio 2024"
+    },
+    {
+     "id": "Q62786",
+     "name": "Hulk",
+     "aliases": [
+      "givanildo vieira de sousa",
+      "hulk",
+      "hulk chorao",
+      "hulk creps aweonaito"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Atlético-MG 2024"
+    },
+    {
+     "id": "Q459356",
+     "name": "Fernandinho",
+     "aliases": [
+      "fernandinho",
+      "fernando luiz rosa",
+      "fernando luiz roza"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Athletico-PR 2024"
+    },
+    {
+     "id": "Q2843080",
+     "name": "Enner Valencia",
+     "aliases": [
+      "enner remberto valencia lastra",
+      "enner valencia"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2024"
+    },
+    {
+     "id": "Q2440999",
+     "name": "Martin Braithwaite",
+     "aliases": [
+      "martin braithwaite",
+      "martin christensen braithwaite"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Grêmio 2024"
+    },
+    {
+     "id": "Q16298050",
+     "name": "Jonathan Calleri",
+     "aliases": [
+      "jonathan calleri"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "São Paulo 2024"
+    },
+    {
+     "id": "Q65378670",
+     "name": "Jhon Arias",
+     "aliases": [
+      "jhon adolfo arias andrade",
+      "jhon arias"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Fluminense 2024"
+    },
+    {
+     "id": "Q101764291",
+     "name": "Luiz Henrique",
+     "aliases": [
+      "luiz henrique"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Botafogo 2024"
+    },
+    {
+     "id": "Q65030995",
+     "name": "Igor Jesus",
+     "aliases": [
+      "igor jesus",
+      "igor jesus maciel da cruz"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Botafogo 2024"
+    },
+    {
+     "id": "Q1707749",
+     "name": "Edenilson",
+     "aliases": [
+      "edenilson",
+      "edenilson andrade dos santos"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Grêmio 2024"
+    },
+    {
+     "id": "Q15831118",
+     "name": "Matheus Pereira",
+     "aliases": [
+      "matheus fellipe costa pereira",
+      "matheus pereira"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Cruzeiro 2024"
+    },
+    {
+     "id": "Q15960510",
+     "name": "Ángel Romero",
+     "aliases": [
+      "angel rodrigo romero villamayor",
+      "angel romero",
+      "angel romero villamayor"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Corinthians 2024"
+    },
+    {
+     "id": "Q65718359",
+     "name": "Talles Magno",
+     "aliases": [
+      "talles",
+      "talles magno",
+      "talles magno bacelar martins"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Corinthians 2024"
+    },
+    {
+     "id": "Q20735677",
+     "name": "Jefferson Savarino",
+     "aliases": [
+      "jefferson david savarino quintero",
+      "jefferson savarino"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Botafogo 2024"
+    },
+    {
+     "id": "Q17379892",
+     "name": "Everaldo",
+     "aliases": [
+      "everaldo",
+      "everaldo stum"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Bahia 2024, Vitória 2024"
+    },
+    {
+     "id": "Q2945530",
+     "name": "Gilberto",
+     "aliases": [
+      "gilberto",
+      "gilberto oliveira souza junior"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Juventude 2024"
+    },
+    {
+     "id": "Q16233976",
+     "name": "Juan Martín Lucero",
+     "aliases": [
+      "juan martin lucero"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Fortaleza 2024"
+    },
+    {
+     "id": "Q55081204",
+     "name": "Alerrandro",
+     "aliases": [
+      "alerrandro",
+      "alerrandro barra mansa realino de souza"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Vitória 2024"
+    },
+    {
+     "id": "Q105714192",
+     "name": "Mateo Ponte",
+     "aliases": [
+      "mateo ponte"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Botafogo 2024"
+    },
+    {
+     "id": "dataset:Lucas Barbosa|Juventude",
+     "name": "Lucas Barbosa",
+     "aliases": [
+      "lucas barbosa"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Juventude 2024"
+    },
+    {
+     "id": "Q97831926",
+     "name": "Rodrigo Fagundes de Freitas",
+     "aliases": [
+      "rodrigo fagundes de freitas",
+      "rodrigo fagundes freitas"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Criciúma 2024"
+    },
+    {
+     "id": "Q17632574",
+     "name": "Franco Cristaldo",
+     "aliases": [
+      "franco cristaldo",
+      "franco sebastian cristaldo"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Grêmio 2024"
+    },
+    {
+     "id": "Q105977735",
+     "name": "Matheus Martins",
+     "aliases": [
+      "matheus martins"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Botafogo 2024"
+    },
+    {
+     "id": "Q65718438",
+     "name": "Wesley",
+     "aliases": [
+      "wesley",
+      "wesley ribeiro da silva",
+      "wesley ribeiro silva"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2024"
+    },
+    {
+     "id": "Q30084677",
+     "name": "Lima",
+     "aliases": [
+      "lima",
+      "vinicius moreira de lima"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Fluminense 2024"
+    },
+    {
+     "id": "Q77896856",
+     "name": "Ferreirinha",
+     "aliases": [
+      "aldemir dos santos ferreira",
+      "aldemir ferreira",
+      "ferreirinha"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "São Paulo 2024"
+    },
+    {
+     "id": "Q115522187",
+     "name": "Douglas Mendes",
+     "aliases": [
+      "douglas mendes"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Bragantino 2024"
+    },
+    {
+     "id": "Q123440263",
+     "name": "Luighi",
+     "aliases": [
+      "luighi",
+      "luighi hanri sousa santos"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Palmeiras 2024"
+    },
+    {
+     "id": "Q15146754",
+     "name": "Pablo Vegetti",
+     "aliases": [
+      "pablo ezequiel vegetti pfaffen",
+      "pablo vegetti"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Vasco 2024"
+    },
+    {
+     "id": "Q24452269",
+     "name": "Pedro Henrique",
+     "aliases": [
+      "pedro henrique",
+      "pedro henrique ribeiro goncalves"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Bragantino 2024"
+    },
+    {
+     "id": "Q75299959",
+     "name": "Derik Lacerda",
+     "aliases": [
+      "derik gean severino lacerda",
+      "derik lacerda"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cuiabá 2024"
+    },
+    {
+     "id": "Q28086372",
+     "name": "Luiz Fernando",
+     "aliases": [
+      "luiz fernando",
+      "luiz fernando moraes dos santos"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Atlético-GO 2024"
+    },
+    {
+     "id": "Q108010748",
+     "name": "Edson",
+     "aliases": [
+      "edson",
+      "edson carioca",
+      "edson guilherme mendes dos santos"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Juventude 2024"
+    },
+    {
+     "id": "Q118365249",
+     "name": "Janderson",
+     "aliases": [
+      "janderson",
+      "janderson de carvalho costa"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Vitória 2024"
+    },
+    {
+     "id": "Q124608292",
+     "name": "Mandaca",
+     "aliases": [
+      "luis mandaca",
+      "mandaca"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Juventude 2024"
+    }
+   ]
+  },
+  {
+   "id": "expulso-criciuma-2014-2019",
+   "text": "Diga um jogador que foi expulso jogando pelo Criciúma no Brasileirão, 2014–2019",
+   "answers": [
+    {
+     "id": "Q210135",
+     "name": "José Carlos Ferreira Filho",
+     "aliases": [
+      "jose carlos ferreira filho",
+      "jose carlos filho",
+      "ze carlos"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Criciúma 2014"
+    },
+    {
+     "id": "Q1631987",
+     "name": "Sergio Escudero",
+     "aliases": [
+      "sergio daniel escudero",
+      "sergio escudero"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Criciúma 2014"
+    },
+    {
+     "id": "Q6298426",
+     "name": "João Vitor",
+     "aliases": [
+      "joao vitor",
+      "joao vitor lima gomes"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Criciúma 2014"
+    },
+    {
+     "id": "Q5042023",
+     "name": "Eduardo",
+     "aliases": [
+      "carlos eduardo santos oliveira",
+      "eduardo"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Criciúma 2014"
+    },
+    {
+     "id": "Q15830875",
+     "name": "Rodrigo Souza",
+     "aliases": [
+      "rodrigo de souza fonseca",
+      "rodrigo souza"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Criciúma 2014"
+    }
+   ]
+  }
+ ]
+}
