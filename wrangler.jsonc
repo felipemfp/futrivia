@@ -1,0 +1,10 @@
+// Cloudflare Workers Builds config: the site is static files in site/, no Worker script.
+{
+  "name": "futrivia",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./site"
+  },
+  // Required by `wrangler preview`, which Workers Builds runs for pull requests. May stay empty.
+  "previews": {}
+}

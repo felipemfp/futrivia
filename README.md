@@ -27,16 +27,10 @@ python3 -m generator build --start 2026-11-05 --days 85
 
 `wikidata` caches footballers from Wikidata (about 15 minutes; progress in `/tmp/futrivia-wikidata/progress.log`). `build` writes `site/days/*.json` and `reports/build.json`, and stops if the prompts can't fill the days asked for. Play locally with `python3 -m http.server --directory site 8000`, or the test day at `http://localhost:8000/site/?teste=1` when serving the repo root.
 
-## Deploy (Cloudflare Pages)
-In the Cloudflare dashboard, create a Pages project connected to `felipemfp/futrivia`:
+## Deploy (Cloudflare Workers)
+The site is a Cloudflare Worker named `futrivia` that serves the static files in `site/`, connected to this repo with Workers Builds. `wrangler.jsonc` holds the configuration: every push to `main` deploys to `https://futrivia.felipemfp.dev`, and every pull request builds a preview with `npx wrangler preview`, which needs the `previews` block in that file.
 
-| Setting | Value |
-|---|---|
-| Production branch | `main` |
-| Framework preset | None |
-| Build command | `exit 0` |
-| Build output directory | `site` |
-
-Then add the custom domain `futrivia.felipemfp.dev` under the project's Custom domains tab. The subdomain currently has A records pointing at GitHub Pages (185.199.108–111.153); remove them first so Cloudflare can create its CNAME. Every PR gets a preview URL.
-
-Settings checked against [Cloudflare's Git integration guide](https://developers.cloudflare.com/pages/get-started/git-integration/) and [static HTML guide](https://developers.cloudflare.com/pages/framework-guides/deploy-anything/) on 2026-11-05.
+Check the configuration locally without deploying:
+```bash
+npx -y wrangler@4.158.0 deploy --dry-run
+```

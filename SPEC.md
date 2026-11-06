@@ -59,7 +59,7 @@ No runtime dependencies and no build step.
 | Generator | Python 3.12, standard library |
 | Game | Plain HTML, CSS and JavaScript modules |
 | Device storage | `localStorage` |
-| Hosting | Cloudflare Pages at `futrivia.felipemfp.dev`, publishing `site/` from `main` through Cloudflare's GitHub integration, with no build step. The public URL is shared only with the trial group |
+| Hosting | Cloudflare Worker `futrivia` serving the static `site/` folder at `futrivia.felipemfp.dev`, deployed from `main` by Workers Builds (config in `wrangler.jsonc`), with no build step. The public URL is shared only with the trial group |
 
 **Inputs:**
 
