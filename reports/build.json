@@ -1,0 +1,97 @@
+{
+ "start": "2026-11-06",
+ "days": 85,
+ "prompts_available": 687,
+ "prompts_needed": 595,
+ "days_schedulable": 85,
+ "templates": {
+  "acrescimos": {
+   "candidates": 33,
+   "kept": 29,
+   "too_few": 4,
+   "too_many": 0,
+   "duplicate": 0
+  },
+  "expulso": {
+   "candidates": 97,
+   "kept": 72,
+   "too_few": 9,
+   "too_many": 8,
+   "duplicate": 8
+  },
+  "gols-numa-edicao": {
+   "candidates": 4,
+   "kept": 1,
+   "too_few": 0,
+   "too_many": 0,
+   "duplicate": 0
+  },
+  "gols-por": {
+   "candidates": 108,
+   "kept": 19,
+   "too_few": 69,
+   "too_many": 0,
+   "duplicate": 0
+  },
+  "hat-trick": {
+   "candidates": 3,
+   "kept": 2,
+   "too_few": 0,
+   "too_many": 1,
+   "duplicate": 0
+  },
+  "marcou-contra": {
+   "candidates": 260,
+   "kept": 171,
+   "too_few": 0,
+   "too_many": 89,
+   "duplicate": 0
+  },
+  "marcou-por": {
+   "candidates": 260,
+   "kept": 260,
+   "too_few": 0,
+   "too_many": 0,
+   "duplicate": 0
+  },
+  "marcou-por-dois": {
+   "candidates": 136,
+   "kept": 63,
+   "too_few": 73,
+   "too_many": 0,
+   "duplicate": 0
+  },
+  "penalti": {
+   "candidates": 35,
+   "kept": 29,
+   "too_few": 6,
+   "too_many": 0,
+   "duplicate": 0
+  },
+  "sem-sofrer-gol": {
+   "candidates": 3,
+   "kept": 1,
+   "too_few": 2,
+   "too_many": 0,
+   "duplicate": 0
+  },
+  "titular": {
+   "candidates": 160,
+   "kept": 40,
+   "too_few": 0,
+   "too_many": 1,
+   "duplicate": 0
+  }
+ },
+ "identities": {
+  "ambiguous": 459,
+  "club": 1046,
+  "name": 584,
+  "none": 179,
+  "override": 23,
+  "transfermarkt-id": 940
+ },
+ "answers_in_use": 2185,
+ "answers_untrusted": 622,
+ "name_only_trusted": false
+}

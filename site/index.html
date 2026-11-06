@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0b6b35">
+<meta name="description" content="Quiz diário de futebol brasileiro: 7 perguntas, 25 segundos cada. Quanto mais raro o jogador, mais pontos.">
+<title>futrivia · quiz diário de futebol</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="./" aria-label="futrivia, página inicial"><span class="logo-ball" aria-hidden="true"></span>futrivia</a>
+  <span class="edition" id="edition"></span>
+</header>
+<main id="app" tabindex="-1"><p class="loading">Colando as figurinhas…</p></main>
+<p class="sr-only" id="sr" role="status" aria-live="polite"></p>
+<noscript><p class="loading">O futrivia precisa de JavaScript para funcionar.</p></noscript>
+<script type="module" src="game/app.js"></script>
+</body>
+</html>

@@ -8,7 +8,7 @@ Spec: [SPEC.md](../SPEC.md). Plan: [plan.md](plan.md). Tests are written before 
 **Description:** Create the project layout from the spec, both test runners, `.gitignore` for `.cache/`, and a pre-commit hook that runs both unit suites.
 
 **Acceptance criteria:**
-- [ ] `python3 -m unittest discover -s tests/generator` and `node --test tests/game/` each run a placeholder test and pass
+- [ ] `python3 -m unittest discover -s tests/generator` and `node --test 'tests/game/*.test.js'` each run a placeholder test and pass
 - [ ] `git config core.hooksPath .githooks` enables the hook, and a failing test blocks a commit
 - [ ] README explains setup in three commands
 
@@ -76,7 +76,7 @@ Spec: [SPEC.md](../SPEC.md). Plan: [plan.md](plan.md). Tests are written before 
 - [ ] A saved game restores with the right remaining time, and share text contains no player names
 
 **Verification:**
-- [ ] `node --test tests/game/`
+- [ ] `node --test 'tests/game/*.test.js'`
 
 **Dependencies:** T4
 **Files likely touched:** `site/game/match.js`, `site/game/score.js`, `site/game/state.js`, `site/game/share.js`, `tests/game/*.test.js`
@@ -259,7 +259,7 @@ Spec: [SPEC.md](../SPEC.md). Plan: [plan.md](plan.md). Tests are written before 
 - [ ] At least 45 of the 50 typed answers behave as expected, and failures are fixed or explained
 
 **Verification:**
-- [ ] Report reviewed; `node --test tests/game/`
+- [ ] Report reviewed; `node --test 'tests/game/*.test.js'`
 
 **Dependencies:** T15, T5
 **Files likely touched:** `reports/fact-check.md`, `tests/game/typed-answers.test.js`

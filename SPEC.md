@@ -42,7 +42,7 @@ A daily Brazilian football trivia game in Portuguese. Every player gets the same
 2. Accept the player's dataset name or any Wikidata or override alias.
 3. Accept a single name word, such as a surname, if it identifies one answer in this prompt.
 4. Accept one typo (edit distance 1) in names of 5 or more letters, if that identifies one answer.
-5. If several answers match, show "Seja mais específico" and keep the timer running.
+5. If several answers match by name word or typo, show "Seja mais específico" and keep the timer running. If the typed text exactly matches the name or alias of several answers (two different players called Dudu), it is correct and credits the most obvious of them.
 
 ### Prompt rules
 - Every prompt states its data window, for example "no Brasileirão, 2014–2024", so a true answer from outside the data isn't implied to be valid.
@@ -80,7 +80,7 @@ The project doesn't exist yet, so these are the commands it must support.
 python3 -m generator fetch            # download pinned sources into .cache/
 python3 -m generator build --start 2027-01-01 --days 365   # write site/days/*.json and a report
 python3 -m unittest discover -s tests/generator            # generator tests
-node --test tests/game/                                    # game logic tests
+node --test 'tests/game/*.test.js'                                    # game logic tests
 python3 -m http.server --directory site 8000               # play locally
 ```
 
@@ -170,14 +170,14 @@ These run inside the build, in this order. None is a prerequisite for this spec.
 
 ## Success Criteria
 Before the trial:
-- [ ] `build` produces 365 day files from a fresh clone and a clean `.cache/`, and running it twice gives identical files.
-- [ ] Every day has 7 prompts with 5–40 answers each, at most 2 from one template, and no repeats in the 365 days.
-- [ ] At least 90% of hand-checked answers in the fact check are correct, with every error traced and fixed in the generator or override file.
-- [ ] At least 90% of the 50 test answers are handled as expected.
-- [ ] Two different devices show identical prompts on the same São Paulo date.
-- [ ] A game can be finished on a phone-width screen, resumed after closing the tab, and shared as text with no answers in it.
-- [ ] The shared result pastes into WhatsApp readably.
-- [ ] Page and day file load in under 1 second locally, excluding hosting.
+- [x] `build` produces the trial schedule from a fresh clone and a clean `.cache/`, and running it twice gives identical files: 85 days (gate 3 decision, see Decisions), byte-identical across builds.
+- [x] Every day has 7 prompts with 5–40 answers each, at most 2 from one template, and no repeats (enforced by the validator and scheduler, for the 86 days available).
+- [x] At least 90% of hand-checked answers in the fact check are correct, with every error traced and fixed: 58 of 60, one source error excluded ([reports/fact-check.md](reports/fact-check.md)).
+- [x] At least 90% of the 50 test answers are handled as expected: 56 of 56 (`tests/game/typed-answers.test.js`).
+- [ ] Two different devices show identical prompts on the same São Paulo date. Needs the deploy; the date logic is tested across time zones.
+- [x] A game can be finished on a phone-width screen, resumed after closing the tab, and shared as text with no answers in it: blind critic rounds 1–8, plus a real generated day played at 360 px.
+- [ ] The shared result pastes into WhatsApp readably. Felipe checks on a phone.
+- [x] Page and day file load in under 1 second locally: each file under 3 ms, 63 KB in total.
 
 After the trial:
 - [ ] Of 5 friends, at least 3 share a result on day 7 without being reminded.
@@ -192,6 +192,11 @@ Accounts, leaderboards, autocomplete, archive or unlimited mode, seasons before 
 | 2026-11-05 | Use Cloudflare Pages at `futrivia.felipemfp.dev` instead of GitHub Pages. This needs no CI workflow in the repo. |
 | 2026-11-05 | The name is **futrivia**, lowercase, in the title and share text. |
 | 2026-11-05 | Pre-2014 legends such as Ronaldinho are accepted as missing. Neymar is in the 2025–2026 data, with 12 goals and 28 lineup appearances. |
+| 2026-11-05 | Gate 1: name-only identity matches get the default Raiz tier (32 of 50 proven correct; [reports/identity-check.md](reports/identity-check.md)). |
+| 2026-11-05 | Identity hardening found during the build: candidates must be of playing age (15–43) in every dataset season; Wikidata aliases must share a word with a known name or be a short single-word nickname (removes vandalism); the shown name is the shortest name the sources use. |
+| 2026-11-05 | Known source errors are excluded through `data/exclusions.csv`, one row each with the evidence. |
+| 2026-11-05 | Gate 3: the friends trial runs on the 85 days the data supports (687 prompts), 6 Nov 2026 to 29 Jan 2027; more templates from the same data come later. |
+| 2026-11-05 | Matching rule 5: an exact name or alias shared by several answers is correct and credits the most obvious one. |
 
 ## Open Questions
-None blocking.
+1. Is Coritiba's Andrey (2022–2023) the same player as Vasco's Andrey Ramos? Until confirmed, they are separate answers.

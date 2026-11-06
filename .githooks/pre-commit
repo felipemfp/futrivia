@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Gate tests: fast, offline, run on every commit. Enable with: git config core.hooksPath .githooks
+set -euo pipefail
+python3 -m unittest discover -s tests/generator -p 'test_*.py' -q
+if compgen -G 'tests/game/*.test.js' > /dev/null; then
+  node --test 'tests/game/*.test.js'
+fi
