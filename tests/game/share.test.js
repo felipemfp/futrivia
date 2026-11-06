@@ -32,11 +32,11 @@ test("share text never contains a player name or prompt text", () => {
 });
 
 test("share text ends with the site address", () => {
-  assert.match(shareText(day, results), /futrivia\.felipemfp\.dev$/);
+  assert.match(shareText(day, results), /https:\/\/futrivia\.felipemfp\.dev$/);
 });
 
 test("max score is 100 per prompt and matches the share text denominator", () => {
   assert.equal(maxScore(day), 700);
   assert.equal(maxScore({ prompts: [{}, {}, {}] }), 300);
-  assert.ok(shareText({ ...day, prompts: day.prompts.slice(0, 3) }, results.slice(0, 3)).endsWith("/300\nfutrivia.felipemfp.dev"));
+  assert.ok(shareText({ ...day, prompts: day.prompts.slice(0, 3) }, results.slice(0, 3)).endsWith("/300\nhttps://futrivia.felipemfp.dev"));
 });

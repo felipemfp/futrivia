@@ -17,5 +17,5 @@ export function shareText(day, results) {
     })
     .join("");
   const total = results.reduce((sum, r) => sum + r.points, 0);
-  return `futrivia ${dayOfMonth}/${month}/${year}\n${squares} ${total}/${maxScore(day)}\nfutrivia.felipemfp.dev`;
+  return `futrivia ${dayOfMonth}/${month}/${year}\n${squares} ${total}/${maxScore(day)}\nhttps://futrivia.felipemfp.dev`;
 }
