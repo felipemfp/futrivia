@@ -1,6 +1,6 @@
 # Implementation Plan: futrivia
 
-Status: approved; T1–T16 done, T17–T18 wait on Felipe (gate 3 decision, Cloudflare setup). Implements [SPEC.md](../SPEC.md); detailed tasks are in [todo.md](todo.md).
+Status: T1–T18 done; the friends trial is live. Only the WhatsApp paste check remains (Felipe). Implements [SPEC.md](../SPEC.md); detailed tasks are in [todo.md](todo.md).
 
 ## Overview
 Two parts joined by one file format:
@@ -75,8 +75,8 @@ T1 scaffold + hooks
 
 ### Phase 4: Trial
 - [x] T16: Fact check and 50-answer test
-- [ ] T17: Cloudflare Pages deploy at futrivia.felipemfp.dev
-- [ ] T18: Browser pass at phone width
+- [x] T17: Deploy at futrivia.felipemfp.dev — a Cloudflare Worker serving site/ (wrangler.jsonc), auto-deployed from main with PR previews
+- [x] T18: Browser pass at phone width on the live site (5 Nov 2026): full game, wrong guess, mid-prompt reload, share text, reload after finishing, no console errors
 
 ### Checkpoint 4: trial ready
 - [ ] Every pre-trial success criterion in SPEC.md is checked off, with evidence
