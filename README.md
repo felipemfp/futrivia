@@ -25,7 +25,7 @@ python3 -m generator wikidata
 python3 -m generator build --start 2026-11-05 --days 85
 ```
 
-`wikidata` caches footballers from Wikidata (about 15 minutes; progress in `/tmp/futrivia-wikidata/progress.log`). `build` writes `site/days/*.json` and `reports/build.json`, and stops if the prompts can't fill the days asked for. Play locally with `python3 -m http.server --directory site 8000`, or the test day at `http://localhost:8000/site/?teste=1` when serving the repo root.
+`wikidata` caches footballers from Wikidata (about 15 minutes; progress in `/tmp/futrivia-wikidata/progress.log`). `build` writes `site/days/*.json` and `reports/build.json`, and stops if the prompts can't fill the days asked for. When a date has no file, the site replays the schedule from the start (2027-01-29 plays 2026-11-05); if you rebuild with a different `--start` or `--days`, update `SCHEDULE_START` and `SCHEDULE_DAYS` in `site/game/date.js` (a test fails until you do). Play locally with `python3 -m http.server --directory site 8000`, or the test day at `http://localhost:8000/site/?teste=1` when serving the repo root.
 
 ## Deploy (Cloudflare Workers)
 The site is a Cloudflare Worker named `futrivia` that serves the static files in `site/`, connected to this repo with Workers Builds. `wrangler.jsonc` holds the configuration: every push to `main` deploys to `https://futrivia.felipemfp.dev`, and every pull request builds a preview with `npx wrangler preview`, which needs the `previews` block in that file.

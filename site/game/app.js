@@ -1,6 +1,6 @@
 // futrivia page: renders the screens and wires the game modules to the DOM. All rules live in the sibling modules.
 import { PROMPT_MS, newGame, nextPrompt, guess, refresh, restore, timeLeft, totalScore } from "./state.js";
-import { gameDate } from "./date.js";
+import { gameDate, cycledDate } from "./date.js";
 import { shareText, maxScore } from "./share.js";
 
 const TIERS = { arquibancada: "Arquibancada", torcedor: "Torcedor", raiz: "Raiz", resenha: "Resenha", enciclopedia: "Enciclopédia" };
@@ -245,9 +245,13 @@ function tick() {
 async function boot() {
   const test = new URLSearchParams(location.search).has("teste");
   try {
-    const res = await fetch(test ? "../tests/fixtures/days/2027-01-01.json" : `days/${gameDate()}.json`, { cache: "no-cache" });
+    const today = gameDate();
+    let res = await fetch(test ? "../tests/fixtures/days/2027-01-01.json" : `days/${today}.json`, { cache: "no-cache" });
+    // No file for today: replay the schedule, but keep today's date so saves, header and share don't clash with the original day.
+    if (!test && res.status === 404) res = await fetch(`days/${cycledDate(today)}.json`, { cache: "no-cache" });
     if (!res.ok) throw new Error(String(res.status));
     day = await res.json();
+    if (!test) day.date = today;
     if (!Array.isArray(day.prompts) || !day.prompts.length) throw new Error("empty");
   } catch {
     return showError("Ainda não saiu o álbum de hoje", "Não encontramos as perguntas de hoje. Tente de novo daqui a pouco.");
