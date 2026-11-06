@@ -195,7 +195,7 @@ Accounts, leaderboards, autocomplete, archive or unlimited mode, seasons before 
 | 2026-11-05 | Gate 1: name-only identity matches get the default Raiz tier (32 of 50 proven correct; [reports/identity-check.md](reports/identity-check.md)). |
 | 2026-11-05 | Identity hardening found during the build: candidates must be of playing age (15–43) in every dataset season; Wikidata aliases must share a word with a known name or be a short single-word nickname (removes vandalism); the shown name is the shortest name the sources use. |
 | 2026-11-05 | Known source errors are excluded through `data/exclusions.csv`, one row each with the evidence. |
-| 2026-11-05 | Gate 3: the friends trial runs on the 85 days the data supports (687 prompts), 6 Nov 2026 to 29 Jan 2027; more templates from the same data come later. |
+| 2026-11-05 | Gate 3: the friends trial runs on the 85 days the data supports (687 prompts), 5 Nov 2026 to 28 Jan 2027; more templates from the same data come later. |
 | 2026-11-05 | Matching rule 5: an exact name or alias shared by several answers is correct and credits the most obvious one. |
 
 ## Open Questions
