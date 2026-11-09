@@ -924,16 +924,6 @@
      "evidence": "Coritiba 2020"
     },
     {
-     "id": "dataset:Vinícius|Ceara",
-     "name": "Vinícius",
-     "aliases": [
-      "vinicius"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ceará 2020"
-    },
-    {
      "id": "Q94759948",
      "name": "Vinícius Paiva",
      "aliases": [
@@ -987,6 +977,19 @@
      "tier": "resenha",
      "points": 85,
      "evidence": "Vasco 2020"
+    },
+    {
+     "id": "Q20641618",
+     "name": "Vina",
+     "aliases": [
+      "vina",
+      "vinicius",
+      "vinicius goes",
+      "vinicius goes barbosa de souza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Ceará 2020"
     },
     {
      "id": "Q3732095",

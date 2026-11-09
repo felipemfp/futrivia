@@ -25,8 +25,8 @@
       "david braz",
       "david braz de oliveira filho"
      ],
-     "tier": "raiz",
-     "points": 60,
+     "tier": "torcedor",
+     "points": 30,
      "evidence": "Grêmio 2019, Grêmio 2020, Fluminense 2021 e mais 1"
     },
     {
@@ -36,8 +36,8 @@
       "luciano",
       "luciano da rocha neves"
      ],
-     "tier": "raiz",
-     "points": 60,
+     "tier": "torcedor",
+     "points": 30,
      "evidence": "Fluminense 2018, Fluminense 2019, Grêmio 2019"
     },
     {
@@ -46,8 +46,8 @@
      "aliases": [
       "cicero santos"
      ],
-     "tier": "resenha",
-     "points": 85,
+     "tier": "raiz",
+     "points": 60,
      "evidence": "Fluminense 2014, Fluminense 2015, Fluminense 2016 e mais 1"
     },
     {
@@ -58,9 +58,22 @@
       "diogo barbosa medonha",
       "diogo barbosa mendanha"
      ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Grêmio 2021, Fluminense 2023"
+    },
+    {
+     "id": "Q20641618",
+     "name": "Vina",
+     "aliases": [
+      "vina",
+      "vinicius",
+      "vinicius goes",
+      "vinicius goes barbosa de souza"
+     ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Grêmio 2021, Fluminense 2023"
+     "evidence": "Fluminense 2015, Grêmio 2023"
     }
    ]
   },
@@ -252,9 +265,11 @@
     },
     {
      "id": "Q17385902",
-     "name": "Everton",
+     "name": "Everton Cebolinha",
      "aliases": [
+      "cebolinha",
       "everton",
+      "everton cebolinha",
       "everton sousa soares"
      ],
      "tier": "arquibancada",

@@ -67,9 +67,11 @@
     },
     {
      "id": "Q17385902",
-     "name": "Everton",
+     "name": "Everton Cebolinha",
      "aliases": [
+      "cebolinha",
       "everton",
+      "everton cebolinha",
       "everton sousa soares"
      ],
      "tier": "arquibancada",
@@ -443,421 +445,6 @@
      "tier": "enciclopedia",
      "points": 100,
      "evidence": "Botafogo 2017"
-    }
-   ]
-  },
-  {
-   "id": "expulso-cruzeiro-2014-2026",
-   "text": "Diga um jogador que foi expulso jogando pelo Cruzeiro no Brasileirão, 2014–2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q13578003",
-     "name": "Giorgian de Arrascaeta",
-     "aliases": [
-      "de arrascaeta",
-      "giorgian arrascaeta",
-      "giorgian daniel de arrascaeta benedetti",
-      "giorgian de arrascaeta"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Cruzeiro 2016"
-    },
-    {
-     "id": "Q370507",
-     "name": "Marcelo Moreno",
-     "aliases": [
-      "marcelo martins",
-      "marcelo martins moreno",
-      "marcelo moreno",
-      "marcelo moreno martins"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Cruzeiro 2014"
-    },
-    {
-     "id": "Q6696318",
-     "name": "Lucas Silva",
-     "aliases": [
-      "lucas silva",
-      "lucas silva borges"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Cruzeiro 2017"
-    },
-    {
-     "id": "Q2761481",
-     "name": "Eugenio Mena",
-     "aliases": [
-      "eugenio esteban mena reveco",
-      "eugenio mena",
-      "quero"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Cruzeiro 2015"
-    },
-    {
-     "id": "Q350493",
-     "name": "Rafael Sóbis",
-     "aliases": [
-      "rafael augusto sobis",
-      "rafael augusto sobis do nascimento",
-      "rafael sobis"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Cruzeiro 2017"
-    },
-    {
-     "id": "Q197584",
-     "name": "Henrique",
-     "aliases": [
-      "henrique",
-      "henrique pacheco de lima",
-      "henrique pacheco lima"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Cruzeiro 2017"
-    },
-    {
-     "id": "Q56876908",
-     "name": "Kaio Jorge",
-     "aliases": [
-      "kaio jorge",
-      "kaio jorge pinto ramos"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Cruzeiro 2025"
-    },
-    {
-     "id": "Q20048445",
-     "name": "William",
-     "aliases": [
-      "william",
-      "william de asevedo furtado",
-      "william furtado"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Cruzeiro 2025, Cruzeiro 2026"
-    },
-    {
-     "id": "Q15831118",
-     "name": "Matheus Pereira",
-     "aliases": [
-      "matheus fellipe costa pereira",
-      "matheus pereira"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Cruzeiro 2024"
-    },
-    {
-     "id": "Q3538173",
-     "name": "Lucas Romero",
-     "aliases": [
-      "lucas daniel romero",
-      "lucas romero"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Cruzeiro 2016, Cruzeiro 2024"
-    },
-    {
-     "id": "Q5042026",
-     "name": "Eduardo",
-     "aliases": [
-      "carlos eduardo",
-      "carlos eduardo de oliveira alves",
-      "eduardo"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Cruzeiro 2025"
-    },
-    {
-     "id": "Q32984822",
-     "name": "Murilo",
-     "aliases": [
-      "murilo",
-      "murilo cerqueira",
-      "murilo cerqueira paim"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Cruzeiro 2019"
-    },
-    {
-     "id": "Q20015578",
-     "name": "Luis Manuel Orejuela",
-     "aliases": [
-      "luis manuel orejuela",
-      "luis manuel orejuela garcia"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2019"
-    },
-    {
-     "id": "Q3844793",
-     "name": "Manoel",
-     "aliases": [
-      "manoel",
-      "manoel messias silva carvalho"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2016"
-    },
-    {
-     "id": "Q3720578",
-     "name": "Egídio",
-     "aliases": [
-      "egidio",
-      "egidio de araujo pereira junior",
-      "egidio pereira junior"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2019"
-    },
-    {
-     "id": "Q28531145",
-     "name": "Fabrício Bruno",
-     "aliases": [
-      "fabricio bruno",
-      "fabricio bruno soares de faria"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2025"
-    },
-    {
-     "id": "Q2077454",
-     "name": "Federico Mancuello",
-     "aliases": [
-      "federico mancuello"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2018"
-    },
-    {
-     "id": "Q1100643",
-     "name": "Paulo André",
-     "aliases": [
-      "paulo andre",
-      "paulo andre cren benini"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2015"
-    },
-    {
-     "id": "Q5346996",
-     "name": "Edílson",
-     "aliases": [
-      "edilson",
-      "edilson mendes guimaraes"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2019"
-    },
-    {
-     "id": "Q2638408",
-     "name": "Luan Michel Louzã",
-     "aliases": [
-      "luan michel de louza",
-      "luan michel louza"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2014"
-    },
-    {
-     "id": "dataset:Anderson|Cruzeiro",
-     "name": "Anderson",
-     "aliases": [
-      "anderson"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2023"
-    },
-    {
-     "id": "Q15830946",
-     "name": "Bryan",
-     "aliases": [
-      "bryan",
-      "bryan silva garcia"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2016"
-    },
-    {
-     "id": "Q106065345",
-     "name": "Fernando Henrique Pereira",
-     "aliases": [
-      "fernando henrique pereira"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2023"
-    },
-    {
-     "id": "Q10340708",
-     "name": "Oliveira",
-     "aliases": [
-      "oliveira",
-      "oliveira imortal"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2023"
-    },
-    {
-     "id": "dataset:Rafael da Silva|Cruzeiro",
-     "name": "Rafael da Silva",
-     "aliases": [
-      "rafael da silva"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2024"
-    },
-    {
-     "id": "Q123488359",
-     "name": "Keny Arroyo",
-     "aliases": [
-      "keny arroyo"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Cruzeiro 2026"
-    },
-    {
-     "id": "Q4025985",
-     "name": "Fabrício dos Santos Silva",
-     "aliases": [
-      "fabricio dos santos silva"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Cruzeiro 2015"
-    },
-    {
-     "id": "Q115937785",
-     "name": "Kaiki",
-     "aliases": [
-      "kaiki",
-      "kaiki bruno"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Cruzeiro 2026"
-    },
-    {
-     "id": "Q1634835",
-     "name": "Leonardo Renan Simões de Lacerda",
-     "aliases": [
-      "leonardo renan de lacerda",
-      "leonardo renan lacerda",
-      "leonardo renan simoes de lacerda"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Cruzeiro 2016"
-    },
-    {
-     "id": "Q2082547",
-     "name": "Lucas Marques",
-     "aliases": [
-      "lucas marques",
-      "lucas rios marques"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Cruzeiro 2016"
-    },
-    {
-     "id": "Q992104",
-     "name": "Rafael da Silva Francisco",
-     "aliases": [
-      "rafael da silva francisco"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Cruzeiro 2017"
-    },
-    {
-     "id": "Q7357360",
-     "name": "Rodrigo Junior Paula Silva",
-     "aliases": [
-      "digao",
-      "rodrigo junior paula silva"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Cruzeiro 2017"
-    },
-    {
-     "id": "Q2054410",
-     "name": "Willians Domingos Fernandes",
-     "aliases": [
-      "willians domingos fernandes"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Cruzeiro 2015"
-    },
-    {
-     "id": "Q23639381",
-     "name": "Marlon",
-     "aliases": [
-      "marlon",
-      "marlon rodrigues xavier"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Cruzeiro 2024"
-    },
-    {
-     "id": "Q15831092",
-     "name": "Sassá",
-     "aliases": [
-      "luiz ricardo alves",
-      "sassa"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Cruzeiro 2019"
-    },
-    {
-     "id": "Q104839508",
-     "name": "João Marcelo",
-     "aliases": [
-      "joao marcelo"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Cruzeiro 2024"
-    },
-    {
-     "id": "Q126698041",
-     "name": "Jonathan Jesus",
-     "aliases": [
-      "jonathan jesus"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Cruzeiro 2025"
     }
    ]
   },
@@ -1433,6 +1020,104 @@
    ]
   },
   {
+   "id": "marcou-por-fluminense-e-internacional",
+   "text": "Diga um jogador que marcou pelo Fluminense e pelo Internacional no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q318456",
+     "name": "Abel Hernández",
+     "aliases": [
+      "abel hernandez",
+      "abel mathias hernandez duvan",
+      "abel mathias hernandez platero"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2020, Fluminense 2021"
+    },
+    {
+     "id": "Q350493",
+     "name": "Rafael Sóbis",
+     "aliases": [
+      "rafael augusto sobis",
+      "rafael augusto sobis do nascimento",
+      "rafael sobis"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Fluminense 2014, Internacional 2019"
+    },
+    {
+     "id": "Q644235",
+     "name": "Wellington Silva",
+     "aliases": [
+      "wellington alves da silva",
+      "wellington silva"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Fluminense 2016, Fluminense 2017, Internacional 2018 e mais 2"
+    },
+    {
+     "id": "Q20048330",
+     "name": "Renê",
+     "aliases": [
+      "rene",
+      "rene rodrigues martins"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Internacional 2023, Fluminense 2025"
+    },
+    {
+     "id": "Q1634101",
+     "name": "Wellington Paulista",
+     "aliases": [
+      "wellington paulista",
+      "wellington pereira do nascimento"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2014, Fluminense 2015"
+    },
+    {
+     "id": "Q10552199",
+     "name": "Lucca",
+     "aliases": [
+      "lucca",
+      "lucca borges de brito"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2018, Fluminense 2020, Fluminense 2021"
+    },
+    {
+     "id": "Q59206576",
+     "name": "Nonato",
+     "aliases": [
+      "gustavo nonato",
+      "gustavo nonato santana",
+      "nonato"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2019, Internacional 2020, Fluminense 2025 e mais 1"
+    },
+    {
+     "id": "Q7981493",
+     "name": "Wellington Silva",
+     "aliases": [
+      "wellington do nascimento silva",
+      "wellington nascimento silva",
+      "wellington silva"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Internacional 2014, Fluminense 2015, Fluminense 2016"
+    }
+   ]
+  },
+  {
    "id": "marcou-por-athletico-pr-e-palmeiras",
    "text": "Diga um jogador que marcou pelo Athletico-PR e pelo Palmeiras no Brasileirão, 2014–2026 (até 1º de junho)",
    "answers": [
@@ -1494,133 +1179,6 @@
    ]
   },
   {
-   "id": "expulso-ponte-preta-2014-2026",
-   "text": "Diga um jogador que foi expulso jogando pela Ponte Preta no Brasileirão, 2014–2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q10393735",
-     "name": "William Pottker",
-     "aliases": [
-      "william de oliveira pottker",
-      "william pottker"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Ponte Preta 2016"
-    },
-    {
-     "id": "Q2092417",
-     "name": "Renato Cajá",
-     "aliases": [
-      "renato adriano jaco morais",
-      "renato caja"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Ponte Preta 2017"
-    },
-    {
-     "id": "Q5274756",
-     "name": "Diego Oliveira",
-     "aliases": [
-      "diego oliveira",
-      "diego oliveira de queiroz"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Ponte Preta 2015"
-    },
-    {
-     "id": "Q20048828",
-     "name": "Rodinei",
-     "aliases": [
-      "rodinei",
-      "rodinei de almeida",
-      "rodinei marcelo de almeida"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Ponte Preta 2015"
-    },
-    {
-     "id": "Q19879773",
-     "name": "Clayson",
-     "aliases": [
-      "clayson",
-      "clayson henrique da silva vieira"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ponte Preta 2016"
-    },
-    {
-     "id": "Q2707174",
-     "name": "Rodrigo Baldasso da Costa",
-     "aliases": [
-      "rodrigo baldasso da costa",
-      "rodrigo da costa"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ponte Preta 2017"
-    },
-    {
-     "id": "Q43883907",
-     "name": "Marinaldo dos Santos Oliveira",
-     "aliases": [
-      "marinaldo dos santos oliveira"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ponte Preta 2017"
-    },
-    {
-     "id": "Q2070369",
-     "name": "Fernando Bob",
-     "aliases": [
-      "fernando bob",
-      "fernando paixao da silva"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Ponte Preta 2017"
-    },
-    {
-     "id": "Q28729624",
-     "name": "Elton",
-     "aliases": [
-      "elton",
-      "elton junior melo ataide"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Ponte Preta 2015, Ponte Preta 2017"
-    },
-    {
-     "id": "Q18199200",
-     "name": "Tiago Alves",
-     "aliases": [
-      "tiago alves",
-      "tiago dos santos alves"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Ponte Preta 2015"
-    },
-    {
-     "id": "Q14755605",
-     "name": "Biro-Biro",
-     "aliases": [
-      "biro biro",
-      "diego santos gama camilo"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Ponte Preta 2015"
-    }
-   ]
-  },
-  {
    "id": "marcou-por-gremio-2019",
    "text": "Diga um jogador que marcou pelo Grêmio no Brasileirão 2019",
    "answers": [
@@ -1649,9 +1207,11 @@
     },
     {
      "id": "Q17385902",
-     "name": "Everton",
+     "name": "Everton Cebolinha",
      "aliases": [
+      "cebolinha",
       "everton",
+      "everton cebolinha",
       "everton sousa soares"
      ],
      "tier": "arquibancada",
@@ -1857,6 +1417,243 @@
      "tier": "enciclopedia",
      "points": 100,
      "evidence": "Grêmio 2019"
+    }
+   ]
+  },
+  {
+   "id": "expulso-chapecoense-2014-2026",
+   "text": "Diga um jogador que foi expulso jogando pela Chapecoense no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q719472",
+     "name": "Thiego",
+     "aliases": [
+      "thiego",
+      "william thiego de jesus",
+      "willian thiego",
+      "willian thiego de jesus"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Chapecoense 2016"
+    },
+    {
+     "id": "Q1440120",
+     "name": "Márcio Araújo",
+     "aliases": [
+      "marcio araujo",
+      "marcio rodrigues araujo"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Chapecoense 2019"
+    },
+    {
+     "id": "Q1027483",
+     "name": "Apodi",
+     "aliases": [
+      "apodi"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Chapecoense 2015"
+    },
+    {
+     "id": "Q3083900",
+     "name": "Leandro",
+     "aliases": [
+      "leandro",
+      "leandro rodrigues"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Chapecoense 2018"
+    },
+    {
+     "id": "Q20312611",
+     "name": "Barreto",
+     "aliases": [
+      "barreto",
+      "gustavo barreto",
+      "gustavo bonatto barreto"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Chapecoense 2018"
+    },
+    {
+     "id": "Q3031471",
+     "name": "Tiago Luís",
+     "aliases": [
+      "tiago luis",
+      "tiago luis martins"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Chapecoense 2014"
+    },
+    {
+     "id": "Q2458285",
+     "name": "Gum",
+     "aliases": [
+      "gum"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Chapecoense 2019"
+    },
+    {
+     "id": "Q4979169",
+     "name": "Bruno Silva",
+     "aliases": [
+      "bruno cesar pereira da silva",
+      "bruno cesar pereira silva",
+      "bruno silva"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Chapecoense 2014"
+    },
+    {
+     "id": "Q7322717",
+     "name": "Kadu",
+     "aliases": [
+      "kadu"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Chapecoense 2021"
+    },
+    {
+     "id": "dataset:Anderson Jordan|Chapecoense",
+     "name": "Anderson Jordan",
+     "aliases": [
+      "anderson jordan"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Chapecoense 2021"
+    },
+    {
+     "id": "dataset:698784",
+     "name": "Doma",
+     "aliases": [
+      "doma"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Chapecoense 2026"
+    },
+    {
+     "id": "Q3934983",
+     "name": "Douglas Silva Bacelar",
+     "aliases": [
+      "douglas",
+      "douglas silva bacelar"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Chapecoense 2018"
+    },
+    {
+     "id": "Q70449138",
+     "name": "Kaio Nunes",
+     "aliases": [
+      "kaio",
+      "kaio nunes",
+      "kaio nunes ferreira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Chapecoense 2021"
+    },
+    {
+     "id": "dataset:Rossicley Pereira da Silva|Chapecoense",
+     "name": "Rossi",
+     "aliases": [
+      "rossi",
+      "rossicley pereira da silva"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Chapecoense 2017"
+    },
+    {
+     "id": "Q28534266",
+     "name": "Luizão",
+     "aliases": [
+      "luiz otavio",
+      "luiz otavio da silva santos",
+      "luizao"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Chapecoense 2017"
+    },
+    {
+     "id": "Q7931220",
+     "name": "Vilson",
+     "aliases": [
+      "vilson",
+      "vilson xavier de menezes junior"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Chapecoense 2015"
+    },
+    {
+     "id": "Q54744062",
+     "name": "Bruno Silva",
+     "aliases": [
+      "bruno da silva costa",
+      "bruno silva"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Chapecoense 2021"
+    },
+    {
+     "id": "Q32187582",
+     "name": "Bruno Pacheco",
+     "aliases": [
+      "bruno de jesus pacheco",
+      "bruno pacheco"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Chapecoense 2019"
+    },
+    {
+     "id": "Q5554895",
+     "name": "Geuvânio",
+     "aliases": [
+      "geuvanio",
+      "geuvanio silva"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Chapecoense 2021"
+    },
+    {
+     "id": "Q59206098",
+     "name": "Hiago",
+     "aliases": [
+      "hiago",
+      "hiago correa silveira cena"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Chapecoense 2019"
+    },
+    {
+     "id": "Q138004908",
+     "name": "Everton",
+     "aliases": [
+      "everton"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Chapecoense 2026"
     }
    ]
   }

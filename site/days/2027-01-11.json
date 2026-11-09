@@ -443,6 +443,7 @@
      "name": "Yago Pikachu",
      "aliases": [
       "glaybson yago souza lisboa",
+      "pikachu",
       "yago picachu",
       "yago pikachu"
      ],
@@ -683,222 +684,880 @@
    ]
   },
   {
-   "id": "gols-por-corinthians-20",
-   "text": "Diga um jogador que fez 20 ou mais gols pelo Corinthians no Brasileirão, 2014–2026 (até 1º de junho)",
+   "id": "acrescimos-cruzeiro",
+   "text": "Diga um jogador que marcou nos acréscimos do segundo tempo pelo Cruzeiro no Brasileirão, 2014–2024",
    "answers": [
     {
-     "id": "Q314099",
-     "name": "Jô",
+     "id": "Q59150057",
+     "name": "Éderson",
      "aliases": [
-      "jo",
-      "jo alves"
+      "ederson",
+      "ederson dos santos",
+      "ederson jose dos santos lourenco",
+      "ederson silva"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Corinthians 2017, Corinthians 2020, Corinthians 2021 e mais 1"
+     "evidence": "Cruzeiro 2019"
     },
     {
-     "id": "Q359160",
-     "name": "Jadson",
+     "id": "Q20048445",
+     "name": "William",
      "aliases": [
-      "jadson",
-      "jadson rodrigues da silva"
+      "william",
+      "william de asevedo furtado",
+      "william furtado"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2024"
+    },
+    {
+     "id": "Q10391638",
+     "name": "Vinícius Araújo",
+     "aliases": [
+      "vinicius araujo",
+      "vinicius vasconcelos araujo"
      ],
      "tier": "torcedor",
      "points": 30,
-     "evidence": "Corinthians 2014, Corinthians 2015, Corinthians 2017 e mais 1"
+     "evidence": "Cruzeiro 2015"
     },
     {
-     "id": "Q10364015",
-     "name": "Róger Guedes",
+     "id": "Q1031647",
+     "name": "Willian Bigode",
      "aliases": [
-      "roger guedes"
+      "willian bigode",
+      "willian gomes de siqueira"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Cruzeiro 2016"
+    },
+    {
+     "id": "Q943432",
+     "name": "Dagoberto",
+     "aliases": [
+      "dagoberto",
+      "dagoberto pelentier",
+      "dagoberto pelentier de jesus"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Corinthians 2021, Corinthians 2022, Corinthians 2023"
+     "evidence": "Cruzeiro 2014"
     },
     {
-     "id": "Q43252427",
-     "name": "Yuri Alberto",
+     "id": "Q2945530",
+     "name": "Gilberto",
      "aliases": [
-      "yuri alberto",
-      "yuri alberto monteiro da silva"
+      "gilberto",
+      "gilberto oliveira souza junior"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2023"
+    },
+    {
+     "id": "Q10340708",
+     "name": "Oliveira",
+     "aliases": [
+      "oliveira",
+      "oliveira imortal"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2023"
+    },
+    {
+     "id": "Q55081250",
+     "name": "Rafael Elias",
+     "aliases": [
+      "rafael elias",
+      "rafael elias da silva",
+      "rafael papagaio"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2024"
+    },
+    {
+     "id": "dataset:Robert|Cruzeiro",
+     "name": "Robert",
+     "aliases": [
+      "robert"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2023"
+    },
+    {
+     "id": "dataset:Vitinho|Cruzeiro",
+     "name": "Vitinho",
+     "aliases": [
+      "vitinho"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2024"
+    },
+    {
+     "id": "Q6294396",
+     "name": "Élber",
+     "aliases": [
+      "elber",
+      "jose elber pimentel da silva"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Corinthians 2022, Corinthians 2023, Corinthians 2024 e mais 2"
+     "evidence": "Cruzeiro 2017"
     },
     {
-     "id": "Q15960510",
-     "name": "Ángel Romero",
+     "id": "Q48851846",
+     "name": "Bruno Rodrigues",
      "aliases": [
-      "angel rodrigo romero villamayor",
-      "angel romero",
-      "angel romero villamayor"
+      "bruno rafael rodrigues do nascimento",
+      "bruno rodrigues"
      ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Corinthians 2015, Corinthians 2016, Corinthians 2017 e mais 3"
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2023"
+    },
+    {
+     "id": "Q15831092",
+     "name": "Sassá",
+     "aliases": [
+      "luiz ricardo alves",
+      "sassa"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2019"
     }
    ]
   },
   {
-   "id": "marcou-por-gremio-e-santos",
-   "text": "Diga um jogador que marcou pelo Grêmio e pelo Santos no Brasileirão, 2014–2026 (até 1º de junho)",
+   "id": "titular-gremio-2026-1",
+   "text": "Diga um jogador que foi titular pelo Grêmio no Brasileirão 2026 (até 1º de junho)",
    "answers": [
     {
-     "id": "Q905206",
-     "name": "Diego Tardelli",
+     "id": "Q73480",
+     "name": "Willian",
      "aliases": [
-      "diego tardelli",
-      "diego tardelli martins",
-      "tardelli martins"
+      "willian",
+      "willian borges da silva",
+      "willian huazanga da silva"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Grêmio 2019, Santos 2021"
+     "evidence": "Grêmio 2026"
     },
     {
-     "id": "Q508075",
-     "name": "Bruno Uvini",
+     "id": "Q39667548",
+     "name": "Arthur",
      "aliases": [
-      "bruno uvini",
-      "bruno uvini bortolanca"
+      "arthur",
+      "arthur melo"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Santos 2014, Grêmio 2023"
+     "evidence": "Grêmio 2026"
     },
     {
-     "id": "Q20976280",
-     "name": "Yeferson Soteldo",
+     "id": "Q2440999",
+     "name": "Martin Braithwaite",
      "aliases": [
-      "soteldinho",
-      "yeferson julio soteldo martinez",
-      "yeferson soteldo"
+      "martin braithwaite",
+      "martin christensen braithwaite"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q16553648",
+     "name": "Cristian Pavón",
+     "aliases": [
+      "cristian david pavon",
+      "cristian pavon"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q16297591",
+     "name": "Fabián Balbuena",
+     "aliases": [
+      "fabian balbuena",
+      "fabian cornelio balbuena gonzalez"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q8040741",
+     "name": "Weverton",
+     "aliases": [
+      "weverton",
+      "weverton pereira da silva"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q35694605",
+     "name": "Carlos Vinícius",
+     "aliases": [
+      "carlos vinicius",
+      "carlos vinicius alves morais"
      ],
      "tier": "torcedor",
      "points": 30,
-     "evidence": "Santos 2019, Santos 2020, Santos 2023 e mais 1"
+     "evidence": "Grêmio 2026"
     },
     {
-     "id": "Q3869209",
-     "name": "Marinho",
+     "id": "Q218611",
+     "name": "Marcos Rocha",
      "aliases": [
-      "marinho",
-      "mario sergio santos costa"
+      "marcos luis rocha aquino",
+      "marcos rocha"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q1707749",
+     "name": "Edenilson",
+     "aliases": [
+      "edenilson",
+      "edenilson andrade dos santos"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q60842153",
+     "name": "Tetê",
+     "aliases": [
+      "mateus cardoso lemos martins",
+      "tete",
+      "tete cardoso"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q46696898",
+     "name": "Francis Amuzu",
+     "aliases": [
+      "francis amuzu",
+      "francis apelete amuzu"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q85872828",
+     "name": "Erick Noriega",
+     "aliases": [
+      "erick noriega"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Grêmio 2018, Santos 2019, Santos 2020 e mais 1"
+     "evidence": "Grêmio 2026"
     },
     {
-     "id": "Q939542",
-     "name": "David Braz",
+     "id": "Q18285217",
+     "name": "João Pedro",
      "aliases": [
-      "david braz",
-      "david braz de oliveira filho"
+      "joao pedro",
+      "joao pedro dos santos",
+      "joao pedro maturano dos santos"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Santos 2014, Santos 2015, Santos 2017 e mais 2"
+     "evidence": "Grêmio 2026"
     },
     {
-     "id": "Q16919481",
-     "name": "Luan Guilherme",
+     "id": "Q85757277",
+     "name": "Dodi",
      "aliases": [
-      "luan guilherme",
-      "luan guilherme de jesus vieira",
-      "luan vieira"
+      "dodi",
+      "douglas moreira",
+      "douglas moreira fagundes"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Grêmio 2014, Grêmio 2015, Grêmio 2016 e mais 4"
+     "evidence": "Grêmio 2026"
     },
     {
-     "id": "Q1150828",
-     "name": "Cícero Santos",
+     "id": "Q66929490",
+     "name": "Juan Nardoni",
      "aliases": [
-      "cicero santos"
+      "juan ignacio martin nardoni",
+      "juan ignacio nardoni",
+      "juan nardoni"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q23639381",
+     "name": "Marlon",
+     "aliases": [
+      "marlon",
+      "marlon rodrigues xavier"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q106365222",
+     "name": "Miguel Monsalve",
+     "aliases": [
+      "miguel angel monsalve",
+      "miguel monsalve"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q138955330",
+     "name": "Bernardo Zortea",
+     "aliases": [
+      "bernardo zortea"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q130553755",
+     "name": "Gabriel Mec",
+     "aliases": [
+      "gabriel mec"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Santos 2014, Grêmio 2018"
+     "evidence": "Grêmio 2026"
     },
     {
-     "id": "Q24062447",
-     "name": "Thaciano",
+     "id": "Q66372460",
+     "name": "Caio Paulista",
      "aliases": [
-      "thaciano",
-      "thaciano mickael da silva"
+      "caio fernando de oliveira",
+      "caio paulista"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q133801098",
+     "name": "Viery",
+     "aliases": [
+      "viery",
+      "viery fernandes santos lopes"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q61995785",
+     "name": "Wagner Leonardo",
+     "aliases": [
+      "wagner leonardo",
+      "wagner leonardo calvelo de souza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q60841935",
+     "name": "José Enamorado",
+     "aliases": [
+      "jose david enamorado gomez",
+      "jose enamorado"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q132172615",
+     "name": "Leonel Pérez",
+     "aliases": [
+      "leonel perez"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Grêmio 2018, Grêmio 2019, Grêmio 2020 e mais 2"
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q107011960",
+     "name": "Gustavo Martins",
+     "aliases": [
+      "gustavo martins"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q133874312",
+     "name": "Luis Eduardo",
+     "aliases": [
+      "luis eduardo",
+      "luis eduardo guedes de souza"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q139255427",
+     "name": "Pedro Gabriel",
+     "aliases": [
+      "pedro gabriel"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Grêmio 2026"
+    },
+    {
+     "id": "Q140030949",
+     "name": "Thiago Beltrame",
+     "aliases": [
+      "thiago beltrame"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Grêmio 2026"
     }
    ]
   },
   {
-   "id": "gols-por-santos-20",
-   "text": "Diga um jogador que fez 20 ou mais gols pelo Santos no Brasileirão, 2014–2026 (até 1º de junho)",
+   "id": "titular-flamengo-2025-1",
+   "text": "Diga um jogador que foi titular pelo Flamengo no Brasileirão 2025",
    "answers": [
     {
-     "id": "Q13646572",
-     "name": "Gabigol",
+     "id": "Q437329",
+     "name": "Danilo",
      "aliases": [
-      "gabigol",
-      "gabriel barbosa",
-      "gabriel barbosa almeida"
+      "danilo",
+      "danilo luiz",
+      "danilo luiz da silva"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Santos 2014, Santos 2015, Santos 2016 e mais 2"
+     "evidence": "Flamengo 2025"
     },
     {
-     "id": "Q315079",
-     "name": "Ricardo Oliveira",
+     "id": "Q3810078",
+     "name": "Jorginho",
      "aliases": [
-      "ricardo de oliveira",
-      "ricardo oliveira"
+      "jorge luiz frello",
+      "jorge luiz frello filho",
+      "jorginho"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q912172",
+     "name": "Saúl Ñíguez",
+     "aliases": [
+      "saul",
+      "saul niguez",
+      "saul niguez esclapez"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q551192",
+     "name": "Alex Sandro",
+     "aliases": [
+      "alex sandro",
+      "alex sandro lobo silva"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q13578003",
+     "name": "Giorgian de Arrascaeta",
+     "aliases": [
+      "de arrascaeta",
+      "giorgian arrascaeta",
+      "giorgian daniel de arrascaeta benedetti",
+      "giorgian de arrascaeta"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q13422031",
+     "name": "Guillermo Varela",
+     "aliases": [
+      "guillermo varela",
+      "guillermo varela olivera",
+      "varela"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q30123152",
+     "name": "Emerson Royal",
+     "aliases": [
+      "emerson",
+      "emerson royal"
      ],
      "tier": "torcedor",
      "points": 30,
-     "evidence": "Santos 2015, Santos 2016, Santos 2017"
+     "evidence": "Flamengo 2025"
     },
     {
-     "id": "Q5041766",
-     "name": "Carlos Sánchez",
+     "id": "Q17385902",
+     "name": "Everton Cebolinha",
      "aliases": [
-      "carlos andres sanchez",
-      "carlos andres sanchez arcosa",
-      "carlos sanchez"
+      "cebolinha",
+      "everton",
+      "everton cebolinha",
+      "everton sousa soares"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q20994037",
+     "name": "Nicolás de la Cruz",
+     "aliases": [
+      "nicolas de la cruz"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q60842120",
+     "name": "Gonzalo Plata",
+     "aliases": [
+      "gonzalo plata"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q28663925",
+     "name": "Matías Viña",
+     "aliases": [
+      "matias nicolas vina",
+      "matias nicolas vina susperreguy",
+      "matias vina"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q18617137",
+     "name": "Gerson",
+     "aliases": [
+      "gerson",
+      "gerson santos da silva",
+      "gerson santos putin"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q47491410",
+     "name": "Pedro",
+     "aliases": [
+      "pedro",
+      "pedro guilherme",
+      "pedro guilherme abreu dos santos"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q19362872",
+     "name": "Jorge Carrascal",
+     "aliases": [
+      "el fracasado carrascal",
+      "jorge andres carrascal guardo",
+      "jorge carrascal",
+      "jorge carrascalle"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Santos 2018, Santos 2019, Santos 2021"
+     "evidence": "Flamengo 2025"
     },
     {
-     "id": "Q98534760",
-     "name": "Marcos Leonardo",
+     "id": "Q18199184",
+     "name": "Léo Pereira",
      "aliases": [
-      "marcos leonardo",
-      "marcos leonardo santos almeida"
+      "leo pereira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q67222776",
+     "name": "Samuel Lino",
+     "aliases": [
+      "samuel dias lino",
+      "samuel lino"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q19956526",
+     "name": "Bruno Henrique",
+     "aliases": [
+      "bruno henrique",
+      "bruno henrique pinto",
+      "bruno henrique pintos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q16911636",
+     "name": "Erick Pulgar",
+     "aliases": [
+      "eric pulgar",
+      "erick antonio pulgar farfan",
+      "erick pulgar"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q20916833",
+     "name": "Allan",
+     "aliases": [
+      "allan",
+      "allan rodrigues de souza",
+      "allan souza"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q110882542",
+     "name": "Wesley",
+     "aliases": [
+      "wesley",
+      "wesley franca",
+      "wesley vinicius franca lima"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "dataset:1193868",
+     "name": "João Souza",
+     "aliases": [
+      "joao souza"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q20736318",
+     "name": "Agustín Rossi",
+     "aliases": [
+      "agustin daniel rossi",
+      "agustin rossi"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Santos 2020, Santos 2021, Santos 2022 e mais 1"
+     "evidence": "Flamengo 2025"
     },
     {
-     "id": "Q3869209",
-     "name": "Marinho",
+     "id": "Q23638974",
+     "name": "Ayrton Lucas",
      "aliases": [
-      "marinho",
-      "mario sergio santos costa"
+      "ayrton",
+      "ayrton lucas",
+      "ayrton lucas dantas de medeiros"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q25175962",
+     "name": "Luiz Araújo",
+     "aliases": [
+      "luiz araujo",
+      "luiz de araujo guimaraes neto"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q55816003",
+     "name": "Léo Ortiz",
+     "aliases": [
+      "leo ortiz",
+      "leonardo rech ortiz"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q60048692",
+     "name": "Michael",
+     "aliases": [
+      "michael",
+      "michael richard delgado de oliveira"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q50841898",
+     "name": "Juninho",
+     "aliases": [
+      "juninho",
+      "olavio vieira dos santos junior"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q132213617",
+     "name": "Iago Teodoro",
+     "aliases": [
+      "iago",
+      "iago teodoro",
+      "iago teodoro da silva nogueira"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q126365061",
+     "name": "Evertton Araújo",
+     "aliases": [
+      "evertton araujo",
+      "evertton gustavo fernandes araujo"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q130635636",
+     "name": "Wallace Yan",
+     "aliases": [
+      "wallace yan"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Santos 2019, Santos 2020, Santos 2021"
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q130634245",
+     "name": "Daniel Sales",
+     "aliases": [
+      "daniel sales"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q131300424",
+     "name": "Guilherme Gomes",
+     "aliases": [
+      "guilherme",
+      "guilherme gomes",
+      "guilherme henrique bernardineli gomes"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q136379066",
+     "name": "Dyogo Alves",
+     "aliases": [
+      "dyogo alves",
+      "francisco dyogo bento alves"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q137362878",
+     "name": "Johnny Góes",
+     "aliases": [
+      "johnny goes"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q137261254",
+     "name": "Pablo",
+     "aliases": [
+      "pablo",
+      "pablo lucio"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q136842195",
+     "name": "Douglas Telles",
+     "aliases": [
+      "douglas telles"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2025"
     }
    ]
   },

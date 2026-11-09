@@ -360,184 +360,6 @@
    ]
   },
   {
-   "id": "expulso-coritiba-2014-2019",
-   "text": "Diga um jogador que foi expulso jogando pelo Coritiba no Brasileirão, 2014–2019",
-   "answers": [
-    {
-     "id": "Q484772",
-     "name": "Anderson",
-     "aliases": [
-      "anderson",
-      "anderson de abreu",
-      "anderson luis de abreu oliveira"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Coritiba 2017"
-    },
-    {
-     "id": "Q3187323",
-     "name": "João Paulo",
-     "aliases": [
-      "joao paulo",
-      "joao paulo da silva",
-      "joao paulo silva"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Coritiba 2016"
-    },
-    {
-     "id": "Q2277170",
-     "name": "Kléber",
-     "aliases": [
-      "kleber",
-      "kleber de sousa freitas",
-      "kleber giacomazzi de souza freitas",
-      "kleber gladiador"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Coritiba 2016, Coritiba 2017"
-    },
-    {
-     "id": "Q2585913",
-     "name": "Leandro Almeida",
-     "aliases": [
-      "leandro almeida",
-      "leandro almeida da silva",
-      "leandro almeida silva"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Coritiba 2014"
-    },
-    {
-     "id": "Q1634101",
-     "name": "Wellington Paulista",
-     "aliases": [
-      "wellington paulista",
-      "wellington pereira do nascimento"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Coritiba 2015"
-    },
-    {
-     "id": "Q2457765",
-     "name": "Henrique Almeida",
-     "aliases": [
-      "henrique almeida",
-      "henrique almeida caixeta nascentes",
-      "henrique nascentes"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Coritiba 2015"
-    },
-    {
-     "id": "Q21621619",
-     "name": "Juninho",
-     "aliases": [
-      "jose carlos ferreira junior",
-      "juninho"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Coritiba 2015"
-    },
-    {
-     "id": "Q779177",
-     "name": "Juan",
-     "aliases": [
-      "juan",
-      "juan maldonado jaimez",
-      "juan maldonado jaimez junior"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Coritiba 2016"
-    },
-    {
-     "id": "Q8015227",
-     "name": "William Matheus",
-     "aliases": [
-      "william matheus",
-      "william matheus da silva"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Coritiba 2017"
-    },
-    {
-     "id": "Q1615346",
-     "name": "Lucio Flavio",
-     "aliases": [
-      "lucio flavio",
-      "lucio flavio dos santos"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Coritiba 2015"
-    },
-    {
-     "id": "Q6997000",
-     "name": "Nery Bareiro",
-     "aliases": [
-      "nery bareiro",
-      "nery ruben bareiro zorrilla"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Coritiba 2016"
-    },
-    {
-     "id": "Q7386520",
-     "name": "Róbson Michael Signorini",
-     "aliases": [
-      "robinho",
-      "robson michael signorini"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Coritiba 2014"
-    },
-    {
-     "id": "Q16940371",
-     "name": "Norberto",
-     "aliases": [
-      "norberto",
-      "norberto pereira marinho neto"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Coritiba 2015"
-    },
-    {
-     "id": "Q4019016",
-     "name": "Werley",
-     "aliases": [
-      "werley",
-      "werley ananias da silva"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Coritiba 2017"
-    },
-    {
-     "id": "Q30145302",
-     "name": "Marcio",
-     "aliases": [
-      "marcio",
-      "marcio marcelo leite junior"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Coritiba 2017"
-    }
-   ]
-  },
-  {
    "id": "marcou-por-bragantino-2023",
    "text": "Diga um jogador que marcou pelo Bragantino no Brasileirão 2023",
    "answers": [
@@ -741,6 +563,133 @@
      "tier": "enciclopedia",
      "points": 100,
      "evidence": "Bragantino 2023"
+    }
+   ]
+  },
+  {
+   "id": "expulso-ponte-preta-2014-2026",
+   "text": "Diga um jogador que foi expulso jogando pela Ponte Preta no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q10393735",
+     "name": "William Pottker",
+     "aliases": [
+      "william de oliveira pottker",
+      "william pottker"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Ponte Preta 2016"
+    },
+    {
+     "id": "Q2092417",
+     "name": "Renato Cajá",
+     "aliases": [
+      "renato adriano jaco morais",
+      "renato caja"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Ponte Preta 2017"
+    },
+    {
+     "id": "Q5274756",
+     "name": "Diego Oliveira",
+     "aliases": [
+      "diego oliveira",
+      "diego oliveira de queiroz"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Ponte Preta 2015"
+    },
+    {
+     "id": "Q20048828",
+     "name": "Rodinei",
+     "aliases": [
+      "rodinei",
+      "rodinei de almeida",
+      "rodinei marcelo de almeida"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Ponte Preta 2015"
+    },
+    {
+     "id": "Q19879773",
+     "name": "Clayson",
+     "aliases": [
+      "clayson",
+      "clayson henrique da silva vieira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Ponte Preta 2016"
+    },
+    {
+     "id": "Q2707174",
+     "name": "Rodrigo Baldasso da Costa",
+     "aliases": [
+      "rodrigo baldasso da costa",
+      "rodrigo da costa"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Ponte Preta 2017"
+    },
+    {
+     "id": "Q43883907",
+     "name": "Marinaldo dos Santos Oliveira",
+     "aliases": [
+      "marinaldo dos santos oliveira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Ponte Preta 2017"
+    },
+    {
+     "id": "Q2070369",
+     "name": "Fernando Bob",
+     "aliases": [
+      "fernando bob",
+      "fernando paixao da silva"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Ponte Preta 2017"
+    },
+    {
+     "id": "Q28729624",
+     "name": "Elton",
+     "aliases": [
+      "elton",
+      "elton junior melo ataide"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Ponte Preta 2015, Ponte Preta 2017"
+    },
+    {
+     "id": "Q18199200",
+     "name": "Tiago Alves",
+     "aliases": [
+      "tiago alves",
+      "tiago dos santos alves"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Ponte Preta 2015"
+    },
+    {
+     "id": "Q14755605",
+     "name": "Biro-Biro",
+     "aliases": [
+      "biro biro",
+      "diego santos gama camilo"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Ponte Preta 2015"
     }
    ]
   },
@@ -1095,6 +1044,421 @@
    ]
   },
   {
+   "id": "expulso-cruzeiro-2014-2026",
+   "text": "Diga um jogador que foi expulso jogando pelo Cruzeiro no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q13578003",
+     "name": "Giorgian de Arrascaeta",
+     "aliases": [
+      "de arrascaeta",
+      "giorgian arrascaeta",
+      "giorgian daniel de arrascaeta benedetti",
+      "giorgian de arrascaeta"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2016"
+    },
+    {
+     "id": "Q370507",
+     "name": "Marcelo Moreno",
+     "aliases": [
+      "marcelo martins",
+      "marcelo martins moreno",
+      "marcelo moreno",
+      "marcelo moreno martins"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2014"
+    },
+    {
+     "id": "Q6696318",
+     "name": "Lucas Silva",
+     "aliases": [
+      "lucas silva",
+      "lucas silva borges"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2017"
+    },
+    {
+     "id": "Q2761481",
+     "name": "Eugenio Mena",
+     "aliases": [
+      "eugenio esteban mena reveco",
+      "eugenio mena",
+      "quero"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2015"
+    },
+    {
+     "id": "Q350493",
+     "name": "Rafael Sóbis",
+     "aliases": [
+      "rafael augusto sobis",
+      "rafael augusto sobis do nascimento",
+      "rafael sobis"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2017"
+    },
+    {
+     "id": "Q197584",
+     "name": "Henrique",
+     "aliases": [
+      "henrique",
+      "henrique pacheco de lima",
+      "henrique pacheco lima"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2017"
+    },
+    {
+     "id": "Q56876908",
+     "name": "Kaio Jorge",
+     "aliases": [
+      "kaio jorge",
+      "kaio jorge pinto ramos"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Cruzeiro 2025"
+    },
+    {
+     "id": "Q20048445",
+     "name": "William",
+     "aliases": [
+      "william",
+      "william de asevedo furtado",
+      "william furtado"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Cruzeiro 2025, Cruzeiro 2026"
+    },
+    {
+     "id": "Q15831118",
+     "name": "Matheus Pereira",
+     "aliases": [
+      "matheus fellipe costa pereira",
+      "matheus pereira"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Cruzeiro 2024"
+    },
+    {
+     "id": "Q3538173",
+     "name": "Lucas Romero",
+     "aliases": [
+      "lucas daniel romero",
+      "lucas romero"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Cruzeiro 2016, Cruzeiro 2024"
+    },
+    {
+     "id": "Q5042026",
+     "name": "Eduardo",
+     "aliases": [
+      "carlos eduardo",
+      "carlos eduardo de oliveira alves",
+      "eduardo"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Cruzeiro 2025"
+    },
+    {
+     "id": "Q32984822",
+     "name": "Murilo",
+     "aliases": [
+      "murilo",
+      "murilo cerqueira",
+      "murilo cerqueira paim"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Cruzeiro 2019"
+    },
+    {
+     "id": "Q20015578",
+     "name": "Luis Manuel Orejuela",
+     "aliases": [
+      "luis manuel orejuela",
+      "luis manuel orejuela garcia"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2019"
+    },
+    {
+     "id": "Q3844793",
+     "name": "Manoel",
+     "aliases": [
+      "manoel",
+      "manoel messias silva carvalho"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2016"
+    },
+    {
+     "id": "Q3720578",
+     "name": "Egídio",
+     "aliases": [
+      "egidio",
+      "egidio de araujo pereira junior",
+      "egidio pereira junior"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2019"
+    },
+    {
+     "id": "Q28531145",
+     "name": "Fabrício Bruno",
+     "aliases": [
+      "fabricio bruno",
+      "fabricio bruno soares de faria"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2025"
+    },
+    {
+     "id": "Q2077454",
+     "name": "Federico Mancuello",
+     "aliases": [
+      "federico mancuello"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2018"
+    },
+    {
+     "id": "Q1100643",
+     "name": "Paulo André",
+     "aliases": [
+      "paulo andre",
+      "paulo andre cren benini"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2015"
+    },
+    {
+     "id": "Q5346996",
+     "name": "Edílson",
+     "aliases": [
+      "edilson",
+      "edilson mendes guimaraes"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2019"
+    },
+    {
+     "id": "Q2638408",
+     "name": "Luan Michel Louzã",
+     "aliases": [
+      "luan michel de louza",
+      "luan michel louza"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2014"
+    },
+    {
+     "id": "dataset:Anderson|Cruzeiro",
+     "name": "Anderson",
+     "aliases": [
+      "anderson"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2023"
+    },
+    {
+     "id": "Q15830946",
+     "name": "Bryan",
+     "aliases": [
+      "bryan",
+      "bryan silva garcia"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2016"
+    },
+    {
+     "id": "Q106065345",
+     "name": "Fernando Henrique Pereira",
+     "aliases": [
+      "fernando henrique pereira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2023"
+    },
+    {
+     "id": "Q10340708",
+     "name": "Oliveira",
+     "aliases": [
+      "oliveira",
+      "oliveira imortal"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2023"
+    },
+    {
+     "id": "dataset:Rafael da Silva|Cruzeiro",
+     "name": "Rafael da Silva",
+     "aliases": [
+      "rafael da silva"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2024"
+    },
+    {
+     "id": "Q123488359",
+     "name": "Keny Arroyo",
+     "aliases": [
+      "keny arroyo"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Cruzeiro 2026"
+    },
+    {
+     "id": "Q4025985",
+     "name": "Fabrício dos Santos Silva",
+     "aliases": [
+      "fabricio dos santos silva"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2015"
+    },
+    {
+     "id": "Q115937785",
+     "name": "Kaiki",
+     "aliases": [
+      "kaiki",
+      "kaiki bruno"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2026"
+    },
+    {
+     "id": "Q1634835",
+     "name": "Leonardo Renan Simões de Lacerda",
+     "aliases": [
+      "leonardo renan de lacerda",
+      "leonardo renan lacerda",
+      "leonardo renan simoes de lacerda"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2016"
+    },
+    {
+     "id": "Q2082547",
+     "name": "Lucas Marques",
+     "aliases": [
+      "lucas marques",
+      "lucas rios marques"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2016"
+    },
+    {
+     "id": "Q992104",
+     "name": "Rafael da Silva Francisco",
+     "aliases": [
+      "rafael da silva francisco"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2017"
+    },
+    {
+     "id": "Q7357360",
+     "name": "Rodrigo Junior Paula Silva",
+     "aliases": [
+      "digao",
+      "rodrigo junior paula silva"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2017"
+    },
+    {
+     "id": "Q2054410",
+     "name": "Willians Domingos Fernandes",
+     "aliases": [
+      "willians domingos fernandes"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2015"
+    },
+    {
+     "id": "Q23639381",
+     "name": "Marlon",
+     "aliases": [
+      "marlon",
+      "marlon rodrigues xavier"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2024"
+    },
+    {
+     "id": "Q15831092",
+     "name": "Sassá",
+     "aliases": [
+      "luiz ricardo alves",
+      "sassa"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2019"
+    },
+    {
+     "id": "Q104839508",
+     "name": "João Marcelo",
+     "aliases": [
+      "joao marcelo"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2024"
+    },
+    {
+     "id": "Q126698041",
+     "name": "Jonathan Jesus",
+     "aliases": [
+      "jonathan jesus"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2025"
+    }
+   ]
+  },
+  {
    "id": "marcou-por-botafogo-rj-2019",
    "text": "Diga um jogador que marcou pelo Botafogo no Brasileirão 2019",
    "answers": [
@@ -1236,104 +1600,6 @@
      "tier": "enciclopedia",
      "points": 100,
      "evidence": "Botafogo 2019"
-    }
-   ]
-  },
-  {
-   "id": "marcou-por-fluminense-e-internacional",
-   "text": "Diga um jogador que marcou pelo Fluminense e pelo Internacional no Brasileirão, 2014–2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q318456",
-     "name": "Abel Hernández",
-     "aliases": [
-      "abel hernandez",
-      "abel mathias hernandez duvan",
-      "abel mathias hernandez platero"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Internacional 2020, Fluminense 2021"
-    },
-    {
-     "id": "Q350493",
-     "name": "Rafael Sóbis",
-     "aliases": [
-      "rafael augusto sobis",
-      "rafael augusto sobis do nascimento",
-      "rafael sobis"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Fluminense 2014, Internacional 2019"
-    },
-    {
-     "id": "Q644235",
-     "name": "Wellington Silva",
-     "aliases": [
-      "wellington alves da silva",
-      "wellington silva"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Fluminense 2016, Fluminense 2017, Internacional 2018 e mais 2"
-    },
-    {
-     "id": "Q20048330",
-     "name": "Renê",
-     "aliases": [
-      "rene",
-      "rene rodrigues martins"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Internacional 2023, Fluminense 2025"
-    },
-    {
-     "id": "Q1634101",
-     "name": "Wellington Paulista",
-     "aliases": [
-      "wellington paulista",
-      "wellington pereira do nascimento"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Internacional 2014, Fluminense 2015"
-    },
-    {
-     "id": "Q10552199",
-     "name": "Lucca",
-     "aliases": [
-      "lucca",
-      "lucca borges de brito"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Internacional 2018, Fluminense 2020, Fluminense 2021"
-    },
-    {
-     "id": "Q59206576",
-     "name": "Nonato",
-     "aliases": [
-      "gustavo nonato",
-      "gustavo nonato santana",
-      "nonato"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Internacional 2019, Internacional 2020, Fluminense 2025 e mais 1"
-    },
-    {
-     "id": "Q7981493",
-     "name": "Wellington Silva",
-     "aliases": [
-      "wellington do nascimento silva",
-      "wellington nascimento silva",
-      "wellington silva"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Internacional 2014, Fluminense 2015, Fluminense 2016"
     }
    ]
   }

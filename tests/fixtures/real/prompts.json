@@ -2986,5 +2986,306 @@
     "evidence": "Fluminense 2021"
    }
   ]
+ },
+ {
+  "id": "marcou-por-flamengo-e-gremio",
+  "text": "Diga um jogador que marcou pelo Flamengo e pelo Grêmio no Brasileirão, 2014–2026 (até 1º de junho)",
+  "answers": [
+   {
+    "id": "Q17385902",
+    "name": "Everton Cebolinha",
+    "aliases": [
+     "cebolinha",
+     "everton",
+     "everton cebolinha",
+     "everton sousa soares"
+    ],
+    "tier": "arquibancada",
+    "points": 10,
+    "evidence": "Grêmio 2015, Grêmio 2016, Grêmio 2017 e mais 7"
+   },
+   {
+    "id": "Q23893158",
+    "name": "Felipe Vizeu",
+    "aliases": [
+     "felipe vizeu"
+    ],
+    "tier": "arquibancada",
+    "points": 10,
+    "evidence": "Flamengo 2016, Flamengo 2017, Flamengo 2018 e mais 1"
+   },
+   {
+    "id": "Q3869209",
+    "name": "Marinho",
+    "aliases": [
+     "marinho",
+     "mario sergio santos costa"
+    ],
+    "tier": "torcedor",
+    "points": 30,
+    "evidence": "Grêmio 2018, Flamengo 2022"
+   },
+   {
+    "id": "Q488139",
+    "name": "Everton",
+    "aliases": [
+     "everton",
+     "everton cardoso da silva"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Flamengo 2014, Flamengo 2015, Flamengo 2016 e mais 3"
+   },
+   {
+    "id": "Q3840503",
+    "name": "Fernandinho",
+    "aliases": [
+     "fernandinho",
+     "luiz fernando pereira da silva"
+    ],
+    "tier": "resenha",
+    "points": 85,
+    "evidence": "Grêmio 2015, Flamengo 2016, Grêmio 2017"
+   },
+   {
+    "id": "Q3934132",
+    "name": "Rhodolfo",
+    "aliases": [
+     "luiz rhodolfo dini gaioto",
+     "rhodolfo",
+     "rhodolfo dini gaioto"
+    ],
+    "tier": "enciclopedia",
+    "points": 100,
+    "evidence": "Grêmio 2015, Flamengo 2018"
+   }
+  ]
+ },
+ {
+  "id": "marcou-por-ceara-2020",
+  "text": "Diga um jogador que marcou pelo Ceará no Brasileirão 2020",
+  "answers": [
+   {
+    "id": "Q23893158",
+    "name": "Felipe Vizeu",
+    "aliases": [
+     "felipe vizeu"
+    ],
+    "tier": "arquibancada",
+    "points": 10,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q10393419",
+    "name": "Wescley",
+    "aliases": [
+     "wescley",
+     "wescley gomes dos santos"
+    ],
+    "tier": "arquibancada",
+    "points": 10,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q18638095",
+    "name": "Tiago Pagnussat",
+    "aliases": [
+     "tiago pagnussat"
+    ],
+    "tier": "torcedor",
+    "points": 30,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q28113226",
+    "name": "Samuel Xavier",
+    "aliases": [
+     "samuel xavier",
+     "samuel xavier brito"
+    ],
+    "tier": "torcedor",
+    "points": 30,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q20641618",
+    "name": "Vina",
+    "aliases": [
+     "vina",
+     "vinicius",
+     "vinicius goes",
+     "vinicius goes barbosa de souza"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q61749236",
+    "name": "Charles",
+    "aliases": [
+     "charles",
+     "charles rigon matos",
+     "charles rigon mattos"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q24006713",
+    "name": "Eduardo Brock",
+    "aliases": [
+     "eduardo brock",
+     "eduardo schroder brock",
+     "eduardo schroeder brock"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "dataset:Fabinho|Ceara",
+    "name": "Fabinho",
+    "aliases": [
+     "fabinho"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q100795784",
+    "name": "Kelvyn",
+    "aliases": [
+     "kelvyn",
+     "kelvyn ramos da fonseca"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q6509611",
+    "name": "Leandro Carvalho",
+    "aliases": [
+     "leandro carvalho"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "dataset:Lima|Ceara",
+    "name": "Lima",
+    "aliases": [
+     "lima"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q84306003",
+    "name": "Léo Chú",
+    "aliases": [
+     "leo chu",
+     "leonardo alves chu franco"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q22092369",
+    "name": "Mateus Gonçalves",
+    "aliases": [
+     "mateus goncalves",
+     "mateus goncalves martins"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q65029716",
+    "name": "Pedro Naressi",
+    "aliases": [
+     "pedrinho",
+     "pedro henrique naressi machado",
+     "pedro naressi"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q104154063",
+    "name": "Saulo Mineiro",
+    "aliases": [
+     "saulo mineiro",
+     "saulo rodrigues da silva"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q98270217",
+    "name": "Vítor Jacaré",
+    "aliases": [
+     "francisco vitor silva costa",
+     "vitor jacare"
+    ],
+    "tier": "raiz",
+    "points": 60,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q5042023",
+    "name": "Eduardo",
+    "aliases": [
+     "carlos eduardo santos oliveira",
+     "eduardo"
+    ],
+    "tier": "resenha",
+    "points": 85,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q5137266",
+    "name": "Cléber",
+    "aliases": [
+     "cleber",
+     "cleber antonio de oliveira",
+     "cleber antonio oliveira"
+    ],
+    "tier": "enciclopedia",
+    "points": 100,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q55375411",
+    "name": "Luiz Otávio",
+    "aliases": [
+     "luiz otavio",
+     "luiz otavio anacleto leandro"
+    ],
+    "tier": "enciclopedia",
+    "points": 100,
+    "evidence": "Ceará 2020"
+   },
+   {
+    "id": "Q60675645",
+    "name": "Fernando Sobral",
+    "aliases": [
+     "fernando pereira do nascimento",
+     "fernando sobral"
+    ],
+    "tier": "enciclopedia",
+    "points": 100,
+    "evidence": "Ceará 2020"
+   }
+  ]
  }
 ]

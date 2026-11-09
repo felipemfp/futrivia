@@ -19,3 +19,13 @@ adaoduque:Marquinho,,,,reports/identity-check.md,gate 1: matched a player born 1
 adaoduque:Xavier,,,,reports/identity-check.md,gate 1: matched a player born 1980
 adaoduque:Ricardo de Souza Silva,,,,reports/identity-check.md,gate 1: matched a player born 1975
 adaoduque:Rossicley Pereira da Silva,,Rossi,rossi,https://www.wikidata.org/w/index.php?search=Rossicley,"no Wikidata match; known as Rossi (Chapecoense, Internacional, Vasco, Bahia)"
+adaoduque:Everton Cebolinha,Q17385902,Everton Cebolinha,everton|everton cebolinha|cebolinha|everton sousa soares,https://pt.wikipedia.org/wiki/Everton_Cebolinha,Grêmio 2014–2019 and Flamengo 2022–2024 were split into two answers; Cebolinha is his nickname
+adaoduque:Everton Sousa Soares,Q17385902,Everton Cebolinha,everton|everton cebolinha|cebolinha,https://pt.wikipedia.org/wiki/Everton_Cebolinha,Grêmio rows of the same player
+adaoduque:Vinícius|Ceara,Q20641618,Vina,vina|vinicius|vinicius goes,https://pt.wikipedia.org/wiki/Vina_(futebolista),Ceará 2020–2022; Wikidata lists no Ceará stint so he was split from Vina
+adaoduque:Vinícius|Atletico-MG,Q20641618,Vina,vina|vinicius,https://pt.wikipedia.org/wiki/Vina_(futebolista),Atlético-MG 2019
+adaoduque:Vinícius|Bahia,Q20641618,Vina,vina|vinicius,https://pt.wikipedia.org/wiki/Vina_(futebolista),Bahia 2017–2018
+adaoduque:Vinícius|Athletico-PR,Q20641618,Vina,vina|vinicius,https://pt.wikipedia.org/wiki/Vina_(futebolista),Athletico-PR 2016
+adaoduque:Vinícius|Fluminense,Q20641618,Vina,vina|vinicius,https://pt.wikipedia.org/wiki/Vina_(futebolista),Fluminense 2015
+adaoduque:Yago Pikachu,Q10394490,,yago pikachu|pikachu,https://pt.wikipedia.org/wiki/Yago_Pikachu,nickname
+adaoduque:Pablo Vegetti,Q15146754,,pablo vegetti|vegetti|pirata,https://pt.wikipedia.org/wiki/Pablo_Vegetti,nickname El Pirata
+adaoduque:Hernanes,Q313570,,hernanes|profeta,https://pt.wikipedia.org/wiki/Hernanes,nickname O Profeta

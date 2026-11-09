@@ -1,9 +1,9 @@
 {
  "start": "2026-11-05",
  "days": 85,
- "prompts_available": 687,
+ "prompts_available": 690,
  "prompts_needed": 595,
- "days_schedulable": 85,
+ "days_schedulable": 86,
  "templates": {
   "acrescimos": {
    "candidates": 33,
@@ -56,8 +56,8 @@
   },
   "marcou-por-dois": {
    "candidates": 136,
-   "kept": 63,
-   "too_few": 73,
+   "kept": 66,
+   "too_few": 70,
    "too_many": 0,
    "duplicate": 0
   },
@@ -84,14 +84,14 @@
   }
  },
  "identities": {
-  "ambiguous": 459,
-  "club": 1046,
+  "ambiguous": 454,
+  "club": 1045,
   "name": 584,
-  "none": 179,
-  "override": 23,
-  "transfermarkt-id": 940
+  "none": 178,
+  "override": 28,
+  "transfermarkt-id": 936
  },
- "answers_in_use": 2185,
- "answers_untrusted": 622,
+ "answers_in_use": 2179,
+ "answers_untrusted": 616,
  "name_only_trusted": false
 }

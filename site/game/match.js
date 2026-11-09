@@ -74,5 +74,15 @@ export function matchAnswer(input, answers) {
     if (byTypo) return byTypo;
   }
 
+  // Several words with a nickname the data lacks ("Everton Cebolinha"): the words that name exactly one answer decide.
+  // Unknown words are ignored; known words that only point at several answers ask for more detail.
+  if (!singleWord) {
+    const words = typed.split(" ").filter((w) => w.length >= MIN_WORD && !PARTICLES.has(w));
+    const hits = words.map((w) => answers.filter((a) => keys(a).some((k) => k.split(" ").includes(w))));
+    const named = new Set(hits.filter((h) => h.length === 1).map((h) => h[0]));
+    if (named.size === 1) return { status: "correct", answer: [...named][0] };
+    if (named.size > 1 || hits.some((h) => h.length > 1)) return { status: "ambiguous" };
+  }
+
   return { status: "wrong" };
 }

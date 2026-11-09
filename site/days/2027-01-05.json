@@ -3,140 +3,64 @@
  "date": "2027-01-05",
  "prompts": [
   {
-   "id": "expulso-gremio-2014-2019",
-   "text": "Diga um jogador que foi expulso jogando pelo Grêmio no Brasileirão, 2014–2019",
+   "id": "penalti-ponte-preta",
+   "text": "Diga um jogador que marcou de pênalti pela Ponte Preta no Brasileirão, 2014–2026 (até 1º de junho)",
    "answers": [
     {
-     "id": "Q266410",
-     "name": "Pedro Geromel",
+     "id": "Q10393735",
+     "name": "William Pottker",
      "aliases": [
-      "pedro geromel",
-      "pedro tonon geromel"
+      "william de oliveira pottker",
+      "william pottker"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Grêmio 2014"
+     "evidence": "Ponte Preta 2016"
     },
     {
-     "id": "Q905206",
-     "name": "Diego Tardelli",
+     "id": "Q19879773",
+     "name": "Clayson",
      "aliases": [
-      "diego tardelli",
-      "diego tardelli martins",
-      "tardelli martins"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Grêmio 2019"
-    },
-    {
-     "id": "Q17403521",
-     "name": "Walace",
-     "aliases": [
-      "walace",
-      "walace souza silva"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Grêmio 2015"
-    },
-    {
-     "id": "Q1408157",
-     "name": "Marcelo Grohe",
-     "aliases": [
-      "marcelo grohe"
+      "clayson",
+      "clayson henrique da silva vieira"
      ],
      "tier": "torcedor",
      "points": 30,
-     "evidence": "Grêmio 2017"
+     "evidence": "Ponte Preta 2017"
     },
     {
-     "id": "Q3612361",
-     "name": "Walter Kannemann",
+     "id": "Q10552199",
+     "name": "Lucca",
      "aliases": [
-      "walter kannemann",
-      "walter wally kannemann"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Grêmio 2018"
-    },
-    {
-     "id": "Q19822751",
-     "name": "Lincoln Henrique",
-     "aliases": [
-      "lincoln henrique",
-      "lincoln henrique oliveira dos santos"
+      "lucca",
+      "lucca borges de brito"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Grêmio 2016"
+     "evidence": "Ponte Preta 2017"
     },
     {
-     "id": "Q934259",
-     "name": "Hernán Barcos",
+     "id": "Q26132957",
+     "name": "Danilo",
      "aliases": [
-      "hernan barcos"
+      "danilo",
+      "danilo barcelos",
+      "danilo carvalho barcelos"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Grêmio 2014"
+     "evidence": "Ponte Preta 2017"
     },
     {
-     "id": "Q15241347",
-     "name": "Ramiro",
+     "id": "Q2070369",
+     "name": "Fernando Bob",
      "aliases": [
-      "ramiro",
-      "ramiro benetti",
-      "ramiro moschen benetti"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Grêmio 2016"
-    },
-    {
-     "id": "Q5346996",
-     "name": "Edílson",
-     "aliases": [
-      "edilson",
-      "edilson mendes guimaraes"
+      "fernando bob",
+      "fernando paixao da silva"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Grêmio 2016, Grêmio 2017"
-    },
-    {
-     "id": "Q20828260",
-     "name": "Pedro Rocha",
-     "aliases": [
-      "pedro rocha",
-      "pedro rocha neves"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Grêmio 2015"
-    },
-    {
-     "id": "Q15215049",
-     "name": "Bressan",
-     "aliases": [
-      "bressan"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Grêmio 2014, Grêmio 2016"
-    },
-    {
-     "id": "Q3928947",
-     "name": "Rafael Galhardo",
-     "aliases": [
-      "galhardo",
-      "rafael galhardo",
-      "rafael galhardo de souza"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Grêmio 2019"
+     "evidence": "Ponte Preta 2015"
     }
    ]
   },
@@ -349,6 +273,212 @@
    ]
   },
   {
+   "id": "penalti-flamengo",
+   "text": "Diga um jogador que marcou de pênalti pelo Flamengo no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q192671",
+     "name": "Arturo Vidal",
+     "aliases": [
+      "arturo erasmo vidal",
+      "arturo erasmo vidal pardo",
+      "arturo vidal",
+      "arturo vidal pardo",
+      "erasmo vidal pardo"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2022"
+    },
+    {
+     "id": "Q3810078",
+     "name": "Jorginho",
+     "aliases": [
+      "jorge luiz frello",
+      "jorge luiz frello filho",
+      "jorginho"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2025, Flamengo 2026"
+    },
+    {
+     "id": "Q109428",
+     "name": "Diego Ribas",
+     "aliases": [
+      "diego",
+      "diego ribas",
+      "diego ribas da cunha",
+      "diego souza ribas"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2016, Flamengo 2017, Flamengo 2018"
+    },
+    {
+     "id": "Q13578003",
+     "name": "Giorgian de Arrascaeta",
+     "aliases": [
+      "de arrascaeta",
+      "giorgian arrascaeta",
+      "giorgian daniel de arrascaeta benedetti",
+      "giorgian de arrascaeta"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2019, Flamengo 2025, Flamengo 2026"
+    },
+    {
+     "id": "Q13646572",
+     "name": "Gabigol",
+     "aliases": [
+      "gabigol",
+      "gabriel barbosa",
+      "gabriel barbosa almeida"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2019, Flamengo 2020, Flamengo 2021 e mais 3"
+    },
+    {
+     "id": "Q62733",
+     "name": "Leandro Damião",
+     "aliases": [
+      "leandro damiao"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2016"
+    },
+    {
+     "id": "Q4025436",
+     "name": "Everton Ribeiro",
+     "aliases": [
+      "everton augusto de barros ribeiro",
+      "everton de barros ribeiro",
+      "everton ribeiro"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2017"
+    },
+    {
+     "id": "Q47491410",
+     "name": "Pedro",
+     "aliases": [
+      "pedro",
+      "pedro guilherme",
+      "pedro guilherme abreu dos santos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2023, Flamengo 2024, Flamengo 2025"
+    },
+    {
+     "id": "Q19956526",
+     "name": "Bruno Henrique",
+     "aliases": [
+      "bruno henrique",
+      "bruno henrique pinto",
+      "bruno henrique pintos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2020, Flamengo 2024, Flamengo 2025"
+    },
+    {
+     "id": "Q923402",
+     "name": "Alan Patrick",
+     "aliases": [
+      "alan patrick",
+      "alan patrick lourenco"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2016"
+    },
+    {
+     "id": "Q88130791",
+     "name": "Carlos Alcaraz",
+     "aliases": [
+      "carlos alcaraz",
+      "carlos jonas alcaraz",
+      "charly alcaraz"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2024"
+    },
+    {
+     "id": "Q3869209",
+     "name": "Marinho",
+     "aliases": [
+      "marinho",
+      "mario sergio santos costa"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Flamengo 2022"
+    },
+    {
+     "id": "Q488139",
+     "name": "Everton",
+     "aliases": [
+      "everton",
+      "everton cardoso da silva"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Flamengo 2015"
+    },
+    {
+     "id": "Q2002761",
+     "name": "Alecsandro",
+     "aliases": [
+      "alecsandro",
+      "alecsandro barbosa felisbino"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2014"
+    },
+    {
+     "id": "Q2578811",
+     "name": "Léo Moura",
+     "aliases": [
+      "leo moura",
+      "leonardo da silva moura",
+      "leonardo moura"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2014"
+    },
+    {
+     "id": "Q14244926",
+     "name": "Henrique Dourado",
+     "aliases": [
+      "henrique dourado",
+      "jose henrique da silva dourado"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2018"
+    },
+    {
+     "id": "Q3838361",
+     "name": "Lucas Mugni",
+     "aliases": [
+      "lucas andres mugni",
+      "lucas mugni"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2014"
+    }
+   ]
+  },
+  {
    "id": "marcou-contra-sao-paulo-2022",
    "text": "Diga um jogador que marcou contra o São Paulo no Brasileirão 2022",
    "answers": [
@@ -546,6 +676,7 @@
      "name": "Yago Pikachu",
      "aliases": [
       "glaybson yago souza lisboa",
+      "pikachu",
       "yago picachu",
       "yago pikachu"
      ],
@@ -861,9 +992,11 @@
     },
     {
      "id": "Q17385902",
-     "name": "Everton",
+     "name": "Everton Cebolinha",
      "aliases": [
+      "cebolinha",
       "everton",
+      "everton cebolinha",
       "everton sousa soares"
      ],
      "tier": "torcedor",
@@ -1182,221 +1315,192 @@
    ]
   },
   {
-   "id": "expulso-chapecoense-2020-2026",
-   "text": "Diga um jogador que foi expulso jogando pela Chapecoense no Brasileirão, 2020–2026 (até 1º de junho)",
+   "id": "acrescimos-goias",
+   "text": "Diga um jogador que marcou nos acréscimos do segundo tempo pelo Goiás no Brasileirão, 2014–2024",
    "answers": [
     {
-     "id": "Q7322717",
-     "name": "Kadu",
+     "id": "Q1027483",
+     "name": "Apodi",
      "aliases": [
-      "kadu"
+      "apodi"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Chapecoense 2021"
+     "evidence": "Goiás 2023"
     },
     {
-     "id": "Q54744062",
-     "name": "Bruno Silva",
+     "id": "Q18246631",
+     "name": "Erik Nascimento Lima",
      "aliases": [
-      "bruno da silva costa",
-      "bruno silva"
+      "erik",
+      "erik lima",
+      "erik nascimento de lima",
+      "erik nascimento lima"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Goiás 2014"
+    },
+    {
+     "id": "Q6292180",
+     "name": "Fernandão",
+     "aliases": [
+      "fernandao",
+      "jose fernando viana de santana"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Goiás 2020"
+    },
+    {
+     "id": "Q63699796",
+     "name": "Pedro Raul",
+     "aliases": [
+      "pedro raul",
+      "pedro raul garay da silva"
      ],
      "tier": "torcedor",
      "points": 30,
-     "evidence": "Chapecoense 2021"
+     "evidence": "Goiás 2022"
     },
     {
-     "id": "Q5554895",
-     "name": "Geuvânio",
+     "id": "Q60048692",
+     "name": "Michael",
      "aliases": [
-      "geuvanio",
-      "geuvanio silva"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Chapecoense 2021"
-    },
-    {
-     "id": "dataset:Anderson Jordan|Chapecoense",
-     "name": "Anderson Jordan",
-     "aliases": [
-      "anderson jordan"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Chapecoense 2021"
-    },
-    {
-     "id": "dataset:698784",
-     "name": "Doma",
-     "aliases": [
-      "doma"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Chapecoense 2026"
-    },
-    {
-     "id": "Q70449138",
-     "name": "Kaio Nunes",
-     "aliases": [
-      "kaio",
-      "kaio nunes",
-      "kaio nunes ferreira"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Chapecoense 2021"
-    },
-    {
-     "id": "Q138004908",
-     "name": "Everton",
-     "aliases": [
-      "everton"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Chapecoense 2026"
-    }
-   ]
-  },
-  {
-   "id": "marcou-por-cruzeiro-e-gremio",
-   "text": "Diga um jogador que marcou pelo Cruzeiro e pelo Grêmio no Brasileirão, 2014–2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q6696318",
-     "name": "Lucas Silva",
-     "aliases": [
-      "lucas silva",
-      "lucas silva borges"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Cruzeiro 2014, Grêmio 2020, Grêmio 2021 e mais 2"
-    },
-    {
-     "id": "Q1341709",
-     "name": "Dudu",
-     "aliases": [
-      "dudu",
-      "eduardo pereira rodrigues"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Grêmio 2014, Cruzeiro 2025"
-    },
-    {
-     "id": "Q56633268",
-     "name": "Matheus Henrique",
-     "aliases": [
-      "matheus henrique",
-      "matheus henrique de souza"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Grêmio 2018, Grêmio 2020, Grêmio 2021 e mais 1"
-    },
-    {
-     "id": "Q20015578",
-     "name": "Luis Manuel Orejuela",
-     "aliases": [
-      "luis manuel orejuela",
-      "luis manuel orejuela garcia"
+      "michael",
+      "michael richard delgado de oliveira"
      ],
      "tier": "torcedor",
      "points": 30,
-     "evidence": "Cruzeiro 2019, Grêmio 2020"
+     "evidence": "Goiás 2019"
     },
     {
-     "id": "Q3869209",
-     "name": "Marinho",
+     "id": "Q578635",
+     "name": "Rafael Moura",
      "aliases": [
-      "marinho",
-      "mario sergio santos costa"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Cruzeiro 2015, Grêmio 2018"
-    },
-    {
-     "id": "Q934259",
-     "name": "Hernán Barcos",
-     "aliases": [
-      "hernan barcos"
+      "rafael martiniano de miranda moura",
+      "rafael moura"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Grêmio 2014, Cruzeiro 2018"
+     "evidence": "Goiás 2019"
     },
     {
-     "id": "Q5346996",
-     "name": "Edílson",
+     "id": "Q13780654",
+     "name": "Rafael Vaz",
      "aliases": [
-      "edilson",
-      "edilson mendes guimaraes"
+      "rafael vaz",
+      "rafael vaz dos santos"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Grêmio 2016, Grêmio 2017, Cruzeiro 2018"
+     "evidence": "Goiás 2019"
     },
     {
-     "id": "Q3940035",
-     "name": "Rodriguinho",
+     "id": "dataset:Diego|Goias",
+     "name": "Diego",
      "aliases": [
-      "rodrigo eduardo costa marinho",
-      "rodriguinho",
-      "rodriguinho marinho"
+      "diego"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Grêmio 2014, Cruzeiro 2019"
+     "evidence": "Goiás 2022"
     },
     {
-     "id": "Q4727251",
-     "name": "Alisson",
+     "id": "dataset:Kayke Moreno|Goias",
+     "name": "Kayke Moreno",
      "aliases": [
-      "alisson",
-      "alisson euler de freitas castro"
+      "kayke moreno"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Goiás 2019"
+    },
+    {
+     "id": "Q16589813",
+     "name": "Leandro Barcia",
+     "aliases": [
+      "leandro barcia",
+      "leandro barcia montero"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Goiás 2019"
+    },
+    {
+     "id": "Q84342505",
+     "name": "Miguel Figueira",
+     "aliases": [
+      "miguel ferreira",
+      "miguel figueira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Goiás 2020"
+    },
+    {
+     "id": "Q75550684",
+     "name": "Nicolas Godinho Johann",
+     "aliases": [
+      "nicolas godinho johann"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Goiás 2022"
+    },
+    {
+     "id": "Q886577",
+     "name": "Victor Andrade",
+     "aliases": [
+      "victor andrade",
+      "victor andrade santos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Goiás 2020"
+    },
+    {
+     "id": "Q16337605",
+     "name": "Jackson de Souza",
+     "aliases": [
+      "jackson de souza"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Cruzeiro 2014, Cruzeiro 2015, Cruzeiro 2016 e mais 5"
+     "evidence": "Goiás 2014"
     },
     {
-     "id": "Q20828260",
-     "name": "Pedro Rocha",
+     "id": "Q96280211",
+     "name": "Matheus Babi",
      "aliases": [
-      "pedro rocha",
-      "pedro rocha neves"
+      "matheus babi",
+      "matheus barcelos da silva"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Grêmio 2015, Grêmio 2016, Grêmio 2017 e mais 1"
+     "evidence": "Goiás 2023"
     },
     {
-     "id": "Q5279185",
-     "name": "Diogo Barbosa",
+     "id": "Q64167374",
+     "name": "David Duarte",
      "aliases": [
-      "diogo barbosa",
-      "diogo barbosa medonha",
-      "diogo barbosa mendanha"
+      "david de duarte macedo",
+      "david duarte"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Cruzeiro 2017, Grêmio 2021"
+     "evidence": "Goiás 2020"
     },
     {
-     "id": "Q23639381",
-     "name": "Marlon",
+     "id": "Q75133413",
+     "name": "Thalles",
      "aliases": [
-      "marlon",
-      "marlon rodrigues xavier"
+      "thalles",
+      "thalles gabriel morais dos reis"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Cruzeiro 2023, Grêmio 2025, Grêmio 2026"
+     "evidence": "Goiás 2019"
     }
    ]
   },
@@ -1406,9 +1510,11 @@
    "answers": [
     {
      "id": "Q17385902",
-     "name": "Everton",
+     "name": "Everton Cebolinha",
      "aliases": [
+      "cebolinha",
       "everton",
+      "everton cebolinha",
       "everton sousa soares"
      ],
      "tier": "arquibancada",
