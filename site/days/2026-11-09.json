@@ -8,14 +8,16 @@
    "answers": [
     {
      "id": "Q17385902",
-     "name": "Everton",
+     "name": "Everton Cebolinha",
      "aliases": [
+      "cebolinha",
       "everton",
+      "everton cebolinha",
       "everton sousa soares"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Grêmio 2015, Grêmio 2016, Grêmio 2017 e mais 4"
+     "evidence": "Grêmio 2015, Grêmio 2016, Grêmio 2017 e mais 7"
     },
     {
      "id": "Q23893158",
@@ -1032,9 +1034,11 @@
     },
     {
      "id": "Q17385902",
-     "name": "Everton",
+     "name": "Everton Cebolinha",
      "aliases": [
+      "cebolinha",
       "everton",
+      "everton cebolinha",
       "everton sousa soares"
      ],
      "tier": "arquibancada",
@@ -1124,6 +1128,7 @@
      "name": "Yago Pikachu",
      "aliases": [
       "glaybson yago souza lisboa",
+      "pikachu",
       "yago picachu",
       "yago pikachu"
      ],

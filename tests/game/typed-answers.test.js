@@ -43,8 +43,15 @@ const CASES = [
   ["2026-11-09", "expulso-palmeiras-2014-2019", "Valdivia", "correct", "Jorge Valdivia"],
   ["2026-11-09", "expulso-palmeiras-2014-2019", "Dudu", "correct", "Dudu"],
   ["2026-11-09", "expulso-palmeiras-2014-2019", "Mago Valdivia", "correct", "Jorge Valdivia"],
-  // Known limit: only whole aliases or single words match, so part of a legal name is wrong.
-  ["2026-11-09", "expulso-palmeiras-2014-2019", "Luis Valdivia", "wrong"],
+  // Player reports: nicknames from data/overrides.csv, and players once split in two by club.
+  ["2026-11-09", "marcou-por-flamengo-e-gremio", "Everton cebolinha", "correct", "Everton Cebolinha"],
+  ["2026-11-09", "marcou-por-flamengo-e-gremio", "Cebolinha", "correct", "Everton Cebolinha"],
+  ["2026-11-09", "marcou-por-flamengo-e-gremio", "Éverton", "correct", "Everton Cebolinha"],
+  ["2026-11-09", "marcou-por-flamengo-e-gremio", "Everton Cardoso", "correct", "Everton"],
+  ["2026-11-05", "marcou-por-ceara-2020", "vina", "correct", "Vina"],
+  ["2026-11-05", "marcou-por-ceara-2020", "Vinícius", "correct", "Vina"],
+  // A word naming one answer counts next to words the data lacks.
+  ["2026-11-09", "expulso-palmeiras-2014-2019", "Luis Valdivia", "correct", "Jorge Valdivia"],
   ["2026-11-09", "marcou-por-cruzeiro-e-internacional", "Damiao", "correct", "Leandro Damião"],
   ["2026-11-09", "marcou-por-cruzeiro-e-internacional", "Sobis", "correct", "Rafael Sóbis"],
   ["2026-11-20", "marcou-contra-flamengo-2025", "Vitor Roque", "correct", "Vitor Roque"],

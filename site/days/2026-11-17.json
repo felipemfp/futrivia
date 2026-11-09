@@ -412,6 +412,370 @@
    ]
   },
   {
+   "id": "expulso-internacional-2020-2026",
+   "text": "Diga um jogador que foi expulso jogando pelo Internacional no Brasileirão, 2020–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q72904",
+     "name": "Luiz Adriano",
+     "aliases": [
+      "luiz adriano"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2023"
+    },
+    {
+     "id": "Q1372491",
+     "name": "Gabriel Mercado",
+     "aliases": [
+      "gabriel ivan mercado",
+      "gabriel mercado"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2022, Internacional 2023"
+    },
+    {
+     "id": "Q18719633",
+     "name": "Rafael Borré",
+     "aliases": [
+      "borre",
+      "rafael borre",
+      "rafael santos borre",
+      "rafael santos borre maury"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q10393735",
+     "name": "William Pottker",
+     "aliases": [
+      "william de oliveira pottker",
+      "william pottker"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2020"
+    },
+    {
+     "id": "Q1825157",
+     "name": "Hugo Mallo",
+     "aliases": [
+      "hugo mallo",
+      "hugo mallo novegil"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2023"
+    },
+    {
+     "id": "Q1707749",
+     "name": "Edenilson",
+     "aliases": [
+      "edenilson",
+      "edenilson andrade dos santos"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Internacional 2021"
+    },
+    {
+     "id": "Q20050532",
+     "name": "Thiago Galhardo",
+     "aliases": [
+      "thiago galhardo",
+      "thiago galhardo do nascimento rocha",
+      "thiago galhardo nascimento rocha"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Internacional 2020"
+    },
+    {
+     "id": "Q6105612",
+     "name": "Renzo Saravia",
+     "aliases": [
+      "renzo saravia"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Internacional 2021"
+    },
+    {
+     "id": "Q2073247",
+     "name": "Rodrigo Moledo",
+     "aliases": [
+      "rodrigo modesto da silva moledo",
+      "rodrigo moledo"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Internacional 2020"
+    },
+    {
+     "id": "Q4979245",
+     "name": "Bruno Henrique",
+     "aliases": [
+      "bruno henrique",
+      "bruno henrique corsini"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q28816035",
+     "name": "Agustín Rogel",
+     "aliases": [
+      "agustin maximiliano rogel paita",
+      "agustin rogel"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2024"
+    },
+    {
+     "id": "dataset:Caio Vidal|Internacional",
+     "name": "Caio Vidal",
+     "aliases": [
+      "caio vidal"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2021"
+    },
+    {
+     "id": "Q5752209",
+     "name": "Carlos de Pena",
+     "aliases": [
+      "carlos de pena",
+      "carlos maria de pena bonino"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2023"
+    },
+    {
+     "id": "Q3701299",
+     "name": "Damián Musto",
+     "aliases": [
+      "damian marcelo musto",
+      "damian musto",
+      "danian marcelo musto"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2020"
+    },
+    {
+     "id": "Q109619483",
+     "name": "Matheus Cadorini",
+     "aliases": [
+      "matheus cadorini"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2022"
+    },
+    {
+     "id": "Q29017171",
+     "name": "Moisés Roberto Barbosa",
+     "aliases": [
+      "moises roberto barbosa"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2021"
+    },
+    {
+     "id": "dataset:Patrick|Internacional",
+     "name": "Patrick",
+     "aliases": [
+      "patrick"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2021"
+    },
+    {
+     "id": "dataset:Paulo Victor|Internacional",
+     "name": "Paulo Victor",
+     "aliases": [
+      "paulo victor"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2021"
+    },
+    {
+     "id": "dataset:Pedro Henrique|Internacional",
+     "name": "Pedro Henrique",
+     "aliases": [
+      "pedro henrique"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2021"
+    },
+    {
+     "id": "dataset:Rodinei de Almeida|Internacional",
+     "name": "Rodinei de Almeida",
+     "aliases": [
+      "rodinei de almeida"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2020"
+    },
+    {
+     "id": "dataset:Vitor Hugo Batista Araujo de Mendonça|Internacional",
+     "name": "Vitor Hugo Batista Araujo de Mendonça",
+     "aliases": [
+      "vitor hugo batista araujo de mendonca"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2021"
+    },
+    {
+     "id": "Q66685898",
+     "name": "Zé Gabriel",
+     "aliases": [
+      "jose",
+      "jose gabriel",
+      "jose gabriel dos santos silva",
+      "ze gabriel"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2020"
+    },
+    {
+     "id": "Q71620133",
+     "name": "Alexandro Bernabei",
+     "aliases": [
+      "alexander bernabei",
+      "alexandro bernabei",
+      "alexandro ezequiel bernabei"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025, Internacional 2026"
+    },
+    {
+     "id": "Q29117869",
+     "name": "Bruno Tabata",
+     "aliases": [
+      "bruno tabata",
+      "bruno vinicius souza ramos"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q1839743",
+     "name": "Danilo Fernandes",
+     "aliases": [
+      "danilo fernandes",
+      "danilo fernandes batista"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2021"
+    },
+    {
+     "id": "Q60841629",
+     "name": "Vitão",
+     "aliases": [
+      "vitao"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2023"
+    },
+    {
+     "id": "Q21707180",
+     "name": "Ronaldo",
+     "aliases": [
+      "ronaldo",
+      "ronaldo da silva souza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q59644108",
+     "name": "Johan Carbonero",
+     "aliases": [
+      "johan carbonero",
+      "johan stiven carbonero"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q7877456",
+     "name": "Uendel",
+     "aliases": [
+      "uendel",
+      "uendel pereira goncalves"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2020"
+    },
+    {
+     "id": "Q27839473",
+     "name": "David",
+     "aliases": [
+      "david",
+      "david correa da fonseca"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Internacional 2022"
+    },
+    {
+     "id": "Q66309096",
+     "name": "Heitor",
+     "aliases": [
+      "heitor",
+      "heitor rodrigues da fonseca"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Internacional 2020"
+    },
+    {
+     "id": "Q117474660",
+     "name": "Lucca",
+     "aliases": [
+      "lucca",
+      "lucca holanda sampaio tavares"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Internacional 2023"
+    },
+    {
+     "id": "Q137216971",
+     "name": "Alisson",
+     "aliases": [
+      "alisson"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Internacional 2025"
+    }
+   ]
+  },
+  {
    "id": "marcou-por-bahia-e-sao-paulo",
    "text": "Diga um jogador que marcou pelo Bahia e pelo São Paulo no Brasileirão, 2014–2026 (até 1º de junho)",
    "answers": [
@@ -645,79 +1009,6 @@
    ]
   },
   {
-   "id": "marcou-por-bahia-e-fluminense",
-   "text": "Diga um jogador que marcou pelo Bahia e pelo Fluminense no Brasileirão, 2014–2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q16337517",
-     "name": "Gilberto",
-     "aliases": [
-      "gilberto",
-      "gilberto moraes junior"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Fluminense 2018, Bahia 2023, Bahia 2024 e mais 1"
-    },
-    {
-     "id": "Q17379892",
-     "name": "Everaldo",
-     "aliases": [
-      "everaldo",
-      "everaldo stum"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Bahia 2023, Bahia 2024, Fluminense 2025 e mais 1"
-    },
-    {
-     "id": "Q106734264",
-     "name": "Biel",
-     "aliases": [
-      "biel",
-      "gabriel teixeira"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Fluminense 2021, Bahia 2023, Bahia 2024"
-    },
-    {
-     "id": "Q16337384",
-     "name": "Edson Felipe da Cruz",
-     "aliases": [
-      "edson felipe da cruz"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Fluminense 2014, Fluminense 2015, Bahia 2017"
-    },
-    {
-     "id": "Q58011292",
-     "name": "Michel Araújo",
-     "aliases": [
-      "michel araujo",
-      "michel araujo silvestre",
-      "michel daryl araujo villar"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Fluminense 2020, Fluminense 2022, Bahia 2025"
-    },
-    {
-     "id": "Q55364031",
-     "name": "Daniel Sampaio Simões",
-     "aliases": [
-      "daniel",
-      "daniel sampaio simoes",
-      "danielzinho"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Fluminense 2019, Bahia 2020, Bahia 2021"
-    }
-   ]
-  },
-  {
    "id": "marcou-por-cruzeiro-2024",
    "text": "Diga um jogador que marcou pelo Cruzeiro no Brasileirão 2024",
    "answers": [
@@ -924,239 +1215,303 @@
    ]
   },
   {
-   "id": "expulso-chapecoense-2014-2026",
-   "text": "Diga um jogador que foi expulso jogando pela Chapecoense no Brasileirão, 2014–2026 (até 1º de junho)",
+   "id": "expulso-sport-2014-2026",
+   "text": "Diga um jogador que foi expulso jogando pelo Sport no Brasileirão, 2014–2026 (até 1º de junho)",
    "answers": [
     {
-     "id": "Q719472",
-     "name": "Thiego",
+     "id": "Q313570",
+     "name": "Hernanes",
      "aliases": [
-      "thiego",
-      "william thiego de jesus",
-      "willian thiego",
-      "willian thiego de jesus"
+      "hernanes",
+      "profeta"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Chapecoense 2016"
+     "evidence": "Sport 2021"
     },
     {
-     "id": "Q1440120",
-     "name": "Márcio Araújo",
+     "id": "Q370014",
+     "name": "Thiago Neves",
      "aliases": [
-      "marcio araujo",
-      "marcio rodrigues araujo"
+      "thiago neves",
+      "thiago neves augusto"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Chapecoense 2019"
+     "evidence": "Sport 2021"
     },
     {
-     "id": "Q1027483",
-     "name": "Apodi",
+     "id": "Q2761481",
+     "name": "Eugenio Mena",
      "aliases": [
-      "apodi"
+      "eugenio esteban mena reveco",
+      "eugenio mena",
+      "quero"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Chapecoense 2015"
+     "evidence": "Sport 2017"
     },
     {
-     "id": "Q3083900",
-     "name": "Leandro",
+     "id": "Q712406",
+     "name": "Neto Baiano",
      "aliases": [
-      "leandro",
-      "leandro rodrigues"
+      "euvaldo jose de aguiar neto",
+      "neto baiano"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Chapecoense 2018"
+     "evidence": "Sport 2014"
     },
     {
-     "id": "Q20312611",
-     "name": "Barreto",
+     "id": "Q16729128",
+     "name": "Gabriel Xavier",
      "aliases": [
-      "barreto",
-      "gustavo barreto",
-      "gustavo bonatto barreto"
+      "gabriel augusto xavier",
+      "gabriel xavier"
      ],
      "tier": "torcedor",
      "points": 30,
-     "evidence": "Chapecoense 2018"
+     "evidence": "Sport 2016"
     },
     {
-     "id": "Q3031471",
-     "name": "Tiago Luís",
+     "id": "Q2449294",
+     "name": "Diego Souza",
      "aliases": [
-      "tiago luis",
-      "tiago luis martins"
+      "diego de souza andrade",
+      "diego souza"
      ],
      "tier": "torcedor",
      "points": 30,
-     "evidence": "Chapecoense 2014"
+     "evidence": "Sport 2015, Sport 2016, Sport 2017"
     },
     {
-     "id": "Q2458285",
-     "name": "Gum",
+     "id": "Q10327357",
+     "name": "Matheus Ferraz",
      "aliases": [
-      "gum"
+      "matheus ferraz",
+      "matheus ferraz pereira"
      ],
      "tier": "torcedor",
      "points": 30,
-     "evidence": "Chapecoense 2019"
+     "evidence": "Sport 2016"
     },
     {
-     "id": "Q4979169",
-     "name": "Bruno Silva",
+     "id": "Q1523172",
+     "name": "Anselmo",
      "aliases": [
-      "bruno cesar pereira da silva",
-      "bruno cesar pereira silva",
-      "bruno silva"
+      "anselmo",
+      "anselmo de moraes"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Sport 2017"
+    },
+    {
+     "id": "Q28113226",
+     "name": "Samuel Xavier",
+     "aliases": [
+      "samuel xavier",
+      "samuel xavier brito"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Chapecoense 2014"
+     "evidence": "Sport 2015"
     },
     {
-     "id": "Q7322717",
-     "name": "Kadu",
+     "id": "Q1185500",
+     "name": "Durval",
      "aliases": [
-      "kadu"
+      "durval"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Chapecoense 2021"
+     "evidence": "Sport 2014, Sport 2018"
     },
     {
-     "id": "dataset:Anderson Jordan|Chapecoense",
-     "name": "Anderson Jordan",
+     "id": "Q3368854",
+     "name": "Patric Cabral Lalau",
      "aliases": [
-      "anderson jordan"
+      "patric cabral lalau"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Chapecoense 2021"
+     "evidence": "Sport 2020"
     },
     {
-     "id": "dataset:698784",
-     "name": "Doma",
+     "id": "dataset:Gustavo|Sport",
+     "name": "Gustavo",
      "aliases": [
-      "doma"
+      "gustavo"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Chapecoense 2026"
+     "evidence": "Sport 2021"
     },
     {
-     "id": "Q3934983",
-     "name": "Douglas Silva Bacelar",
+     "id": "Q19704118",
+     "name": "Júnior Tavares",
      "aliases": [
-      "douglas",
-      "douglas silva bacelar"
+      "junior tavares"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Chapecoense 2018"
+     "evidence": "Sport 2020"
     },
     {
-     "id": "Q70449138",
-     "name": "Kaio Nunes",
+     "id": "Q215040",
+     "name": "Maxwell",
      "aliases": [
-      "kaio",
-      "kaio nunes",
-      "kaio nunes ferreira"
+      "cabelino andrade maxwell scherrer",
+      "maxwell",
+      "maxwell cabelino andrade",
+      "maxwell scherrer cabelino andrade",
+      "maxwell scherrer carmona tumbo"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Chapecoense 2021"
+     "evidence": "Sport 2021"
     },
     {
-     "id": "dataset:Rossicley Pereira da Silva|Chapecoense",
-     "name": "Rossi",
+     "id": "dataset:Patrick|Sport",
+     "name": "Patrick",
      "aliases": [
-      "rossi",
-      "rossicley pereira da silva"
+      "patrick"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Chapecoense 2017"
+     "evidence": "Sport 2017"
     },
     {
-     "id": "Q28534266",
-     "name": "Luizão",
+     "id": "Q28124445",
+     "name": "Raul Prata",
      "aliases": [
-      "luiz otavio",
-      "luiz otavio da silva santos",
-      "luizao"
+      "raul prata"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Sport 2018"
+    },
+    {
+     "id": "Q17219331",
+     "name": "Ronaldo Henrique Silva",
+     "aliases": [
+      "ronaldo henrique silva"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Sport 2020"
+    },
+    {
+     "id": "Q29943212",
+     "name": "Sander Henrique Bortolotto",
+     "aliases": [
+      "sander",
+      "sander henrique bortolotto"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Sport 2020"
+    },
+    {
+     "id": "Q17490036",
+     "name": "Cláudio Winck",
+     "aliases": [
+      "claudio winck",
+      "claudio winck neto"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Chapecoense 2017"
+     "evidence": "Sport 2018"
     },
     {
-     "id": "Q7931220",
-     "name": "Vilson",
+     "id": "Q10278491",
+     "name": "Everton Felipe",
      "aliases": [
-      "vilson",
-      "vilson xavier de menezes junior"
+      "everton felipe",
+      "everton felipe de oliveira silva"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Chapecoense 2015"
+     "evidence": "Sport 2016"
     },
     {
-     "id": "Q54744062",
-     "name": "Bruno Silva",
+     "id": "Q27662767",
+     "name": "Matheusinho",
      "aliases": [
-      "bruno da silva costa",
-      "bruno silva"
+      "matheus leonardo sales cardoso",
+      "matheusinho"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Chapecoense 2021"
+     "evidence": "Sport 2025"
     },
     {
-     "id": "Q32187582",
-     "name": "Bruno Pacheco",
+     "id": "Q12201095",
+     "name": "Reinaldo Lenis",
      "aliases": [
-      "bruno de jesus pacheco",
-      "bruno pacheco"
+      "reinaldo eduardo lenis montes",
+      "reinaldo lenis",
+      "reinaldo lenis montes"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Sport 2016"
+    },
+    {
+     "id": "Q10310467",
+     "name": "Rogério",
+     "aliases": [
+      "jose rogerio",
+      "jose rogerio de oliveira melo",
+      "rogerio"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Sport 2018"
+    },
+    {
+     "id": "Q3609851",
+     "name": "Magrão",
+     "aliases": [
+      "magrao"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Chapecoense 2019"
+     "evidence": "Sport 2016"
     },
     {
-     "id": "Q5554895",
-     "name": "Geuvânio",
+     "id": "Q28145603",
+     "name": "Ramon Menezes",
      "aliases": [
-      "geuvanio",
-      "geuvanio silva"
+      "ramon menezes",
+      "ramon menezes roma"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Chapecoense 2021"
+     "evidence": "Sport 2025"
     },
     {
-     "id": "Q59206098",
-     "name": "Hiago",
+     "id": "Q18637914",
+     "name": "Rithely",
      "aliases": [
-      "hiago",
-      "hiago correa silveira cena"
+      "francisco rithely da silva sousa",
+      "rithely"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Chapecoense 2019"
+     "evidence": "Sport 2016"
     },
     {
-     "id": "Q138004908",
-     "name": "Everton",
+     "id": "Q80391903",
+     "name": "Matheus Alexandre",
      "aliases": [
-      "everton"
+      "matheus alexandre",
+      "matheus alexandre anastacio de souza"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Chapecoense 2026"
+     "evidence": "Sport 2025"
     }
    ]
   },

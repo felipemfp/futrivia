@@ -3,278 +3,6 @@
  "date": "2026-11-12",
  "prompts": [
   {
-   "id": "expulso-internacional-2014-2019",
-   "text": "Diga um jogador que foi expulso jogando pelo Internacional no Brasileirão, 2014–2019",
-   "answers": [
-    {
-     "id": "Q188544",
-     "name": "Dida",
-     "aliases": [
-      "dida",
-      "nelson de jesus silva"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Internacional 2014"
-    },
-    {
-     "id": "Q484772",
-     "name": "Anderson",
-     "aliases": [
-      "anderson",
-      "anderson de abreu",
-      "anderson luis de abreu oliveira"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Internacional 2015"
-    },
-    {
-     "id": "Q156802",
-     "name": "Paolo Guerrero",
-     "aliases": [
-      "jose paolo guerrero",
-      "jose paolo guerrero gonzales",
-      "paolo guerrero"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Internacional 2019"
-    },
-    {
-     "id": "Q202429",
-     "name": "Juan",
-     "aliases": [
-      "juan",
-      "juan silveira dos santos"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Internacional 2015"
-    },
-    {
-     "id": "Q296133",
-     "name": "Lisandro López",
-     "aliases": [
-      "lisandro lopez"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Internacional 2015"
-    },
-    {
-     "id": "Q313741",
-     "name": "Andrés D'Alessandro",
-     "aliases": [
-      "andres d alessandro",
-      "andres nicolas d alessandro"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Internacional 2018"
-    },
-    {
-     "id": "Q180735",
-     "name": "Fabinho",
-     "aliases": [
-      "fabinho",
-      "fabinho soldado"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Internacional 2016"
-    },
-    {
-     "id": "Q10393735",
-     "name": "William Pottker",
-     "aliases": [
-      "william de oliveira pottker",
-      "william pottker"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Internacional 2018"
-    },
-    {
-     "id": "Q1707749",
-     "name": "Edenilson",
-     "aliases": [
-      "edenilson",
-      "edenilson andrade dos santos"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Internacional 2018"
-    },
-    {
-     "id": "Q19928264",
-     "name": "Rodrigo Dourado",
-     "aliases": [
-      "rodrigo dourado",
-      "rodrigo dourado cunha"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Internacional 2016"
-    },
-    {
-     "id": "Q848129",
-     "name": "Nílton",
-     "aliases": [
-      "nilton",
-      "nilton ferreira junior"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Internacional 2015"
-    },
-    {
-     "id": "Q644235",
-     "name": "Wellington Silva",
-     "aliases": [
-      "wellington alves da silva",
-      "wellington silva"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Internacional 2018"
-    },
-    {
-     "id": "Q553754",
-     "name": "Alex Meschini",
-     "aliases": [
-      "alex meschini",
-      "alex raphael meschini",
-      "alexandre raphael meschini",
-      "meschini"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Internacional 2016"
-    },
-    {
-     "id": "Q2073247",
-     "name": "Rodrigo Moledo",
-     "aliases": [
-      "rodrigo modesto da silva moledo",
-      "rodrigo moledo"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Internacional 2018"
-    },
-    {
-     "id": "dataset:Eduardo Henrique|Internacional",
-     "name": "Eduardo Henrique",
-     "aliases": [
-      "eduardo henrique"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Internacional 2016"
-    },
-    {
-     "id": "Q9093411",
-     "name": "Víctor Cuesta",
-     "aliases": [
-      "victor cuesta",
-      "victor leandro cuesta"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Internacional 2018"
-    },
-    {
-     "id": "Q16336243",
-     "name": "Alan Ruschel",
-     "aliases": [
-      "alan luciano ruschel",
-      "alan ruschel",
-      "pend"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Internacional 2014, Internacional 2015"
-    },
-    {
-     "id": "Q6756582",
-     "name": "Marcelo Lomba",
-     "aliases": [
-      "marcelo lomba",
-      "marcelo lomba do nascimento"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Internacional 2019"
-    },
-    {
-     "id": "Q1634101",
-     "name": "Wellington Paulista",
-     "aliases": [
-      "wellington paulista",
-      "wellington pereira do nascimento"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Internacional 2014"
-    },
-    {
-     "id": "Q2092700",
-     "name": "Paulão",
-     "aliases": [
-      "paulao",
-      "paulo marcos de jesus ribeiro"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Internacional 2014"
-    },
-    {
-     "id": "Q4025985",
-     "name": "Fabrício dos Santos Silva",
-     "aliases": [
-      "fabricio dos santos silva"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Internacional 2014"
-    },
-    {
-     "id": "Q2070369",
-     "name": "Fernando Bob",
-     "aliases": [
-      "fernando bob",
-      "fernando paixao da silva"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Internacional 2016"
-    },
-    {
-     "id": "Q3645955",
-     "name": "Bruno Vieira",
-     "aliases": [
-      "bruno vieira",
-      "bruno vieira do nascimento"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Internacional 2019"
-    },
-    {
-     "id": "Q16337761",
-     "name": "Léo Morais",
-     "aliases": [
-      "leo morais",
-      "leonardo moreira morais"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Internacional 2015"
-    }
-   ]
-  },
-  {
    "id": "marcou-contra-fluminense-2025",
    "text": "Diga um jogador que marcou contra o Fluminense no Brasileirão 2025",
    "answers": [
@@ -1594,8 +1322,8 @@
       "vitor bueno",
       "vitor frezarin bueno"
      ],
-     "tier": "raiz",
-     "points": 60,
+     "tier": "torcedor",
+     "points": 30,
      "evidence": "Santos 2016"
     },
     {
@@ -1709,16 +1437,6 @@
      "evidence": "Grêmio 2016"
     },
     {
-     "id": "dataset:Vinícius|Athletico-PR",
-     "name": "Vinícius",
-     "aliases": [
-      "vinicius"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Athletico-PR 2016"
-    },
-    {
      "id": "Q7454311",
      "name": "Sergio Manoel Barbosa Santos",
      "aliases": [
@@ -1771,6 +1489,19 @@
      "tier": "resenha",
      "points": 85,
      "evidence": "Ponte Preta 2016"
+    },
+    {
+     "id": "Q20641618",
+     "name": "Vina",
+     "aliases": [
+      "vina",
+      "vinicius",
+      "vinicius goes",
+      "vinicius goes barbosa de souza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Athletico-PR 2016"
     },
     {
      "id": "Q3732095",
@@ -1888,6 +1619,80 @@
      "tier": "enciclopedia",
      "points": 100,
      "evidence": "Bahia 2017, Bahia 2018, Coritiba 2022"
+    }
+   ]
+  },
+  {
+   "id": "marcou-por-cruzeiro-e-sao-paulo",
+   "text": "Diga um jogador que marcou pelo Cruzeiro e pelo São Paulo no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q2945530",
+     "name": "Gilberto",
+     "aliases": [
+      "gilberto",
+      "gilberto oliveira souza junior"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "São Paulo 2016, São Paulo 2017, Cruzeiro 2023"
+    },
+    {
+     "id": "Q16323765",
+     "name": "Juan Dinenno",
+     "aliases": [
+      "danonino",
+      "dinegol",
+      "juan dinenno",
+      "juan ignacio dinenno",
+      "juan ignacio dinenno de cara"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2024, São Paulo 2025"
+    },
+    {
+     "id": "Q4727251",
+     "name": "Alisson",
+     "aliases": [
+      "alisson",
+      "alisson euler de freitas castro"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Cruzeiro 2014, Cruzeiro 2015, Cruzeiro 2016 e mais 3"
+    },
+    {
+     "id": "Q2605478",
+     "name": "Nikão",
+     "aliases": [
+      "nikao"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "São Paulo 2022, Cruzeiro 2023"
+    },
+    {
+     "id": "Q33026801",
+     "name": "Raniel",
+     "aliases": [
+      "raniel",
+      "raniel santana de vasconcelos"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Cruzeiro 2017, Cruzeiro 2018, São Paulo 2019"
+    },
+    {
+     "id": "Q27839473",
+     "name": "David",
+     "aliases": [
+      "david",
+      "david correa da fonseca"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2018, São Paulo 2023"
     }
    ]
   }

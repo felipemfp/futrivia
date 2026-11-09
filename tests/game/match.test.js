@@ -69,3 +69,30 @@ test("a typo close to several answers asks for more detail", () => {
   ];
   assert.equal(matchAnswer("Marmon", answers).status, "ambiguous");
 });
+
+// Several words: a known word next to a nickname the data lacks ("Everton Cebolinha", "Luis Valdivia").
+const evertons = [
+  { id: "cebolinha", name: "Everton", aliases: ["everton", "everton sousa soares"], points: 10 },
+  { id: "cardoso", name: "Everton", aliases: ["everton", "everton cardoso da silva"], points: 60 },
+  { id: "ribeiro", name: "Everton Ribeiro", aliases: ["everton ribeiro"], points: 30 },
+];
+
+test("several words: a word naming one answer is correct next to unknown words", () => {
+  assert.equal(matchAnswer("Everton Soares", evertons).answer.id, "cebolinha");
+  assert.equal(matchAnswer("Everton Cardoso", evertons).answer.id, "cardoso");
+  assert.equal(matchAnswer("Tigrinho Cardoso", evertons).answer.id, "cardoso");
+  assert.equal(matchAnswer("Jo de Ribeiro", evertons).answer.id, "ribeiro");
+});
+
+test("several words: only shared words ask for more detail instead of failing", () => {
+  assert.equal(matchAnswer("Everton Cebolinha", evertons).status, "ambiguous");
+});
+
+test("several words: words naming different answers ask for more detail", () => {
+  assert.equal(matchAnswer("Soares Cardoso", evertons).status, "ambiguous");
+});
+
+test("several words: no known word is wrong; particles and short words never count", () => {
+  assert.equal(matchAnswer("Ronaldo Fenomeno", evertons).status, "wrong");
+  assert.equal(matchAnswer("Ze do Jo", evertons).status, "wrong");
+});

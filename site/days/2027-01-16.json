@@ -182,221 +182,6 @@
    ]
   },
   {
-   "id": "acrescimos-vasco",
-   "text": "Diga um jogador que marcou nos acréscimos do segundo tempo pelo Vasco no Brasileirão, 2014–2024",
-   "answers": [
-    {
-     "id": "Q376247",
-     "name": "Dimitri Payet",
-     "aliases": [
-      "dimitri payet",
-      "florent dimitri payet"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Vasco 2023"
-    },
-    {
-     "id": "Q28363823",
-     "name": "Douglas Luiz",
-     "aliases": [
-      "douglas luiz",
-      "douglas luiz soares de paula",
-      "douglas luiz soares de paulo"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Vasco 2017"
-    },
-    {
-     "id": "Q312317",
-     "name": "Maxi López",
-     "aliases": [
-      "maxi lopez",
-      "maximiliano gaston lopez",
-      "maximiliano lopez"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Vasco 2018"
-    },
-    {
-     "id": "Q316836",
-     "name": "Nenê",
-     "aliases": [
-      "nene"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Vasco 2017"
-    },
-    {
-     "id": "Q515938",
-     "name": "Alex Teixeira",
-     "aliases": [
-      "alex teixeira",
-      "alex teixeira santos"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Vasco 2024"
-    },
-    {
-     "id": "Q20050532",
-     "name": "Thiago Galhardo",
-     "aliases": [
-      "thiago galhardo",
-      "thiago galhardo do nascimento rocha",
-      "thiago galhardo nascimento rocha"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Vasco 2018"
-    },
-    {
-     "id": "Q1738411",
-     "name": "Kelvin",
-     "aliases": [
-      "kelvin",
-      "kelvin mateus de oliveira"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Vasco 2018"
-    },
-    {
-     "id": "Q3761170",
-     "name": "Germán Cano",
-     "aliases": [
-      "german cano",
-      "german ezequiel cano",
-      "german ezequiel cano recalde"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Vasco 2020"
-    },
-    {
-     "id": "Q52419105",
-     "name": "Ricardo Graça",
-     "aliases": [
-      "ricardo graca"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Vasco 2020"
-    },
-    {
-     "id": "Q10394490",
-     "name": "Yago Pikachu",
-     "aliases": [
-      "glaybson yago souza lisboa",
-      "yago picachu",
-      "yago pikachu"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Vasco 2018, Vasco 2020"
-    },
-    {
-     "id": "Q59209514",
-     "name": "Luca Orellano",
-     "aliases": [
-      "luca orellano"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Vasco 2023"
-    },
-    {
-     "id": "Q61677128",
-     "name": "Marcos Júnior",
-     "aliases": [
-      "marcos antonio candido ferreira junior",
-      "marcos junior"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Vasco 2019"
-    },
-    {
-     "id": "Q30087944",
-     "name": "Paulo Vitor Fernandes Pereira",
-     "aliases": [
-      "paulo vitor fernandes pereira"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Vasco 2017"
-    },
-    {
-     "id": "Q652849",
-     "name": "Wágner",
-     "aliases": [
-      "wagner",
-      "wagner ferreira dos santos"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Vasco 2017"
-    },
-    {
-     "id": "Q71735316",
-     "name": "Juan Sforza",
-     "aliases": [
-      "juan sforza"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Vasco 2024"
-    },
-    {
-     "id": "Q24006455",
-     "name": "Ribamar",
-     "aliases": [
-      "lucas ribamar",
-      "ribamar"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Vasco 2019, Vasco 2020"
-    },
-    {
-     "id": "Q23771909",
-     "name": "Jair",
-     "aliases": [
-      "jair",
-      "jair rodrigues junior"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Vasco 2023"
-    },
-    {
-     "id": "Q27839473",
-     "name": "David",
-     "aliases": [
-      "david",
-      "david correa da fonseca"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Vasco 2024"
-    },
-    {
-     "id": "Q47483915",
-     "name": "Guilherme",
-     "aliases": [
-      "guilherme",
-      "guilherme costa machado silveira"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Vasco 2017"
-    }
-   ]
-  },
-  {
    "id": "marcou-contra-gremio-2018",
    "text": "Diga um jogador que marcou contra o Grêmio no Brasileirão 2018",
    "answers": [
@@ -650,6 +435,131 @@
    ]
   },
   {
+   "id": "gols-por-gremio-20",
+   "text": "Diga um jogador que fez 20 ou mais gols pelo Grêmio no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q17385902",
+     "name": "Everton Cebolinha",
+     "aliases": [
+      "cebolinha",
+      "everton",
+      "everton cebolinha",
+      "everton sousa soares"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Grêmio 2015, Grêmio 2016, Grêmio 2017 e mais 2"
+    },
+    {
+     "id": "Q35694605",
+     "name": "Carlos Vinícius",
+     "aliases": [
+      "carlos vinicius",
+      "carlos vinicius alves morais"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Grêmio 2025, Grêmio 2026"
+    },
+    {
+     "id": "Q2449294",
+     "name": "Diego Souza",
+     "aliases": [
+      "diego de souza andrade",
+      "diego souza"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Grêmio 2020, Grêmio 2021"
+    },
+    {
+     "id": "Q16919481",
+     "name": "Luan Guilherme",
+     "aliases": [
+      "luan guilherme",
+      "luan guilherme de jesus vieira",
+      "luan vieira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Grêmio 2014, Grêmio 2015, Grêmio 2016 e mais 3"
+    },
+    {
+     "id": "Q54858384",
+     "name": "Pepê",
+     "aliases": [
+      "eduardo gabriel aquino cossa",
+      "pepe",
+      "pepe aquino"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Grêmio 2017, Grêmio 2018, Grêmio 2019 e mais 3"
+    }
+   ]
+  },
+  {
+   "id": "gols-por-athletico-pr-15",
+   "text": "Diga um jogador que fez 15 ou mais gols pelo Athletico-PR no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q111016177",
+     "name": "Vitor Roque",
+     "aliases": [
+      "mortadha roque",
+      "vitor hugo roque ferreira",
+      "vitor roque"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Athletico-PR 2022, Athletico-PR 2023"
+    },
+    {
+     "id": "Q15831136",
+     "name": "Pablo",
+     "aliases": [
+      "pablo",
+      "pablo felipe teixeira"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Athletico-PR 2016, Athletico-PR 2017, Athletico-PR 2018 e mais 3"
+    },
+    {
+     "id": "Q2605478",
+     "name": "Nikão",
+     "aliases": [
+      "nikao"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Athletico-PR 2015, Athletico-PR 2016, Athletico-PR 2017 e mais 5"
+    },
+    {
+     "id": "Q15438413",
+     "name": "David Terans",
+     "aliases": [
+      "david terans"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Athletico-PR 2021, Athletico-PR 2022"
+    },
+    {
+     "id": "Q6756532",
+     "name": "Marcelo Cirino",
+     "aliases": [
+      "marcelo cirino",
+      "marcelo cirino da silva"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Athletico-PR 2014, Athletico-PR 2018, Athletico-PR 2019"
+    }
+   ]
+  },
+  {
    "id": "marcou-por-santos-2022",
    "text": "Diga um jogador que marcou pelo Santos no Brasileirão 2022",
    "answers": [
@@ -827,393 +737,6 @@
    ]
   },
   {
-   "id": "penalti-atletico-mg",
-   "text": "Diga um jogador que marcou de pênalti pelo Atlético-MG no Brasileirão, 2014–2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q58441",
-     "name": "Robinho",
-     "aliases": [
-      "robinho"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Atlético-MG 2016"
-    },
-    {
-     "id": "Q62786",
-     "name": "Hulk",
-     "aliases": [
-      "givanildo vieira de sousa",
-      "hulk",
-      "hulk chorao",
-      "hulk creps aweonaito"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Atlético-MG 2021, Atlético-MG 2022, Atlético-MG 2023 e mais 2"
-    },
-    {
-     "id": "Q2268949",
-     "name": "Eduardo Vargas",
-     "aliases": [
-      "eduardo jesus vargas",
-      "eduardo jesus vargas rojas",
-      "eduardo vargas",
-      "eduardo vargas rojas",
-      "el edu vargas"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Atlético-MG 2021, Atlético-MG 2022, Atlético-MG 2024"
-    },
-    {
-     "id": "Q2316179",
-     "name": "Fábio Santos",
-     "aliases": [
-      "fabio santos",
-      "fabio santos romeu"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Atlético-MG 2017, Atlético-MG 2018, Atlético-MG 2019"
-    },
-    {
-     "id": "Q16553648",
-     "name": "Cristian Pavón",
-     "aliases": [
-      "cristian david pavon",
-      "cristian pavon"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Atlético-MG 2023"
-    },
-    {
-     "id": "Q315330",
-     "name": "Franco Di Santo",
-     "aliases": [
-      "di santo",
-      "franco di santo",
-      "franco matias di santo"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Atlético-MG 2019"
-    },
-    {
-     "id": "Q905206",
-     "name": "Diego Tardelli",
-     "aliases": [
-      "diego tardelli",
-      "diego tardelli martins",
-      "tardelli martins"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Atlético-MG 2014"
-    },
-    {
-     "id": "Q965517",
-     "name": "Paulinho",
-     "aliases": [
-      "paulinho",
-      "paulo antonio de oliveira"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Atlético-MG 2024"
-    },
-    {
-     "id": "Q19709176",
-     "name": "Gustavo Scarpa",
-     "aliases": [
-      "gustavo henrique furtado scarpa",
-      "gustavo scarpa"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Atlético-MG 2024"
-    },
-    {
-     "id": "Q518525",
-     "name": "André Balada",
-     "aliases": [
-      "andre balada",
-      "andre felipe",
-      "andre felipe ribeiro de souza"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Atlético-MG 2014"
-    },
-    {
-     "id": "Q22958501",
-     "name": "Maycon",
-     "aliases": [
-      "maycon",
-      "maycon de andrade barberan"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Atlético-MG 2026"
-    },
-    {
-     "id": "Q952754",
-     "name": "Juan Cazares",
-     "aliases": [
-      "juan cazares",
-      "juan ramon cazares sevillano",
-      "juanito"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Atlético-MG 2016, Atlético-MG 2019"
-    },
-    {
-     "id": "Q1845684",
-     "name": "Lucas Pratto",
-     "aliases": [
-      "lucas david pratto",
-      "lucas el oso pratto",
-      "lucas pratto"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Atlético-MG 2015"
-    },
-    {
-     "id": "Q6447402",
-     "name": "Ignacio Fernández",
-     "aliases": [
-      "ignacio fernandez",
-      "ignacio martin fernandez",
-      "nacho",
-      "nacho fernandez"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Atlético-MG 2021, Atlético-MG 2022"
-    },
-    {
-     "id": "Q59207905",
-     "name": "Igor Gomes",
-     "aliases": [
-      "igor gomes",
-      "igor silveira gomes"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Atlético-MG 2024"
-    },
-    {
-     "id": "Q17180926",
-     "name": "Keno",
-     "aliases": [
-      "keno",
-      "marcos da silva",
-      "marcos da silva franca"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Atlético-MG 2020"
-    },
-    {
-     "id": "Q1031999",
-     "name": "Thiago Ribeiro",
-     "aliases": [
-      "thiago",
-      "thiago ribeiro",
-      "thiago ribeiro cardoso"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Atlético-MG 2015"
-    },
-    {
-     "id": "Q19958146",
-     "name": "Hyoran",
-     "aliases": [
-      "hyoran",
-      "hyoran kaue dalmoro"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Atlético-MG 2020"
-    },
-    {
-     "id": "Q55613051",
-     "name": "Guga",
-     "aliases": [
-      "claudio rodrigues gomes",
-      "guga"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Atlético-MG 2020"
-    },
-    {
-     "id": "Q123348890",
-     "name": "Brahian Palacios",
-     "aliases": [
-      "brahian palacios"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Atlético-MG 2024"
-    },
-    {
-     "id": "Q64617410",
-     "name": "Marrony",
-     "aliases": [
-      "marrony",
-      "marrony da silva liberato"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Atlético-MG 2020"
-    },
-    {
-     "id": "Q18637322",
-     "name": "Dodô",
-     "aliases": [
-      "dodo",
-      "raphael guimaraes de paula"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Atlético-MG 2014"
-    }
-   ]
-  },
-  {
-   "id": "penalti-ceara",
-   "text": "Diga um jogador que marcou de pênalti pelo Ceará no Brasileirão, 2014–2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q20050532",
-     "name": "Thiago Galhardo",
-     "aliases": [
-      "thiago galhardo",
-      "thiago galhardo do nascimento rocha",
-      "thiago galhardo nascimento rocha"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Ceará 2019"
-    },
-    {
-     "id": "Q5933619",
-     "name": "Stiven Mendoza",
-     "aliases": [
-      "john steven mendoza valencia",
-      "john stiven mendoza valencia",
-      "steven mendoza",
-      "stiven mendoza"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Ceará 2022"
-    },
-    {
-     "id": "Q63699796",
-     "name": "Pedro Raul",
-     "aliases": [
-      "pedro raul",
-      "pedro raul garay da silva"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ceará 2025"
-    },
-    {
-     "id": "dataset:Erick|Ceara",
-     "name": "Erick",
-     "aliases": [
-      "erick"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ceará 2022"
-    },
-    {
-     "id": "Q6121721",
-     "name": "Jael",
-     "aliases": [
-      "jael",
-      "jael ferreira",
-      "jael ferreira vieira"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ceará 2021"
-    },
-    {
-     "id": "dataset:Lima|Ceara",
-     "name": "Lima",
-     "aliases": [
-      "lima"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ceará 2020, Ceará 2022"
-    },
-    {
-     "id": "Q51885537",
-     "name": "Pio",
-     "aliases": [
-      "francisco hercules de araujo",
-      "pio"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ceará 2018"
-    },
-    {
-     "id": "dataset:Vinícius|Ceara",
-     "name": "Vinícius",
-     "aliases": [
-      "vinicius"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ceará 2020, Ceará 2021"
-    },
-    {
-     "id": "dataset:Zé Roberto|Ceara",
-     "name": "Zé Roberto",
-     "aliases": [
-      "ze roberto"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ceará 2022"
-    },
-    {
-     "id": "Q16940500",
-     "name": "Juninho",
-     "aliases": [
-      "juninho",
-      "paulo roberto valoura junior"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Ceará 2018"
-    },
-    {
-     "id": "Q60675645",
-     "name": "Fernando Sobral",
-     "aliases": [
-      "fernando pereira do nascimento",
-      "fernando sobral"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Ceará 2020"
-    }
-   ]
-  },
-  {
    "id": "marcou-contra-vasco-2019",
    "text": "Diga um jogador que marcou contra o Vasco no Brasileirão 2019",
    "answers": [
@@ -1291,9 +814,11 @@
     },
     {
      "id": "Q17385902",
-     "name": "Everton",
+     "name": "Everton Cebolinha",
      "aliases": [
+      "cebolinha",
       "everton",
+      "everton cebolinha",
       "everton sousa soares"
      ],
      "tier": "torcedor",
@@ -1621,6 +1146,126 @@
      "tier": "enciclopedia",
      "points": 100,
      "evidence": "Avaí 2019"
+    }
+   ]
+  },
+  {
+   "id": "marcou-por-atletico-mg-e-gremio",
+   "text": "Diga um jogador que marcou pelo Atlético-MG e pelo Grêmio no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q459707",
+     "name": "Diego Costa",
+     "aliases": [
+      "diego costa",
+      "diego da silva costa"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Atlético-MG 2021, Grêmio 2024"
+    },
+    {
+     "id": "Q16553648",
+     "name": "Cristian Pavón",
+     "aliases": [
+      "cristian david pavon",
+      "cristian pavon"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Atlético-MG 2022, Atlético-MG 2023, Grêmio 2024"
+    },
+    {
+     "id": "Q15831045",
+     "name": "Jemerson",
+     "aliases": [
+      "jemerson",
+      "jemerson de jesus nascimento"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Atlético-MG 2015, Grêmio 2024, Grêmio 2025"
+    },
+    {
+     "id": "Q905206",
+     "name": "Diego Tardelli",
+     "aliases": [
+      "diego tardelli",
+      "diego tardelli martins",
+      "tardelli martins"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Atlético-MG 2014, Grêmio 2019"
+    },
+    {
+     "id": "Q1341709",
+     "name": "Dudu",
+     "aliases": [
+      "dudu",
+      "eduardo pereira rodrigues"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Grêmio 2014, Atlético-MG 2025, Atlético-MG 2026"
+    },
+    {
+     "id": "Q1707749",
+     "name": "Edenilson",
+     "aliases": [
+      "edenilson",
+      "edenilson andrade dos santos"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Atlético-MG 2023, Grêmio 2024, Grêmio 2025 e mais 1"
+    },
+    {
+     "id": "Q16679775",
+     "name": "Nathan",
+     "aliases": [
+      "nathan",
+      "nathan allan de souza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Atlético-MG 2019, Atlético-MG 2020, Atlético-MG 2021 e mais 1"
+    },
+    {
+     "id": "Q518525",
+     "name": "André Balada",
+     "aliases": [
+      "andre balada",
+      "andre felipe",
+      "andre felipe ribeiro de souza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Atlético-MG 2014, Grêmio 2018, Grêmio 2019"
+    },
+    {
+     "id": "Q3840503",
+     "name": "Fernandinho",
+     "aliases": [
+      "fernandinho",
+      "luiz fernando pereira da silva"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Atlético-MG 2014, Grêmio 2015, Grêmio 2017"
+    },
+    {
+     "id": "Q20641618",
+     "name": "Vina",
+     "aliases": [
+      "vina",
+      "vinicius",
+      "vinicius goes",
+      "vinicius goes barbosa de souza"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Atlético-MG 2019, Grêmio 2023"
     }
    ]
   }

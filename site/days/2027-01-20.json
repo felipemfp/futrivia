@@ -137,6 +137,7 @@
      "name": "Yago Pikachu",
      "aliases": [
       "glaybson yago souza lisboa",
+      "pikachu",
       "yago picachu",
       "yago pikachu"
      ],
@@ -416,6 +417,147 @@
      "tier": "enciclopedia",
      "points": 100,
      "evidence": "São Paulo 2024"
+    }
+   ]
+  },
+  {
+   "id": "gols-por-vasco-10",
+   "text": "Diga um jogador que fez 10 ou mais gols pelo Vasco no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q115937989",
+     "name": "Rayan",
+     "aliases": [
+      "rayan",
+      "rayan vitor",
+      "rayan vitor simplicio rocha"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Vasco 2023, Vasco 2024, Vasco 2025"
+    },
+    {
+     "id": "Q316836",
+     "name": "Nenê",
+     "aliases": [
+      "nene"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Vasco 2015, Vasco 2017"
+    },
+    {
+     "id": "Q3761170",
+     "name": "Germán Cano",
+     "aliases": [
+      "german cano",
+      "german ezequiel cano",
+      "german ezequiel cano recalde"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Vasco 2020"
+    },
+    {
+     "id": "Q10394490",
+     "name": "Yago Pikachu",
+     "aliases": [
+      "glaybson yago souza lisboa",
+      "pikachu",
+      "yago picachu",
+      "yago pikachu"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Vasco 2017, Vasco 2018, Vasco 2019 e mais 1"
+    },
+    {
+     "id": "Q976602",
+     "name": "Andrés Ríos",
+     "aliases": [
+      "andres lorenzo rios",
+      "andres rios",
+      "andy rios"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Vasco 2017, Vasco 2018"
+    },
+    {
+     "id": "Q15146754",
+     "name": "Pablo Vegetti",
+     "aliases": [
+      "pablo ezequiel vegetti pfaffen",
+      "pablo vegetti",
+      "pirata",
+      "vegetti"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Vasco 2023, Vasco 2024, Vasco 2025"
+    }
+   ]
+  },
+  {
+   "id": "gols-por-fluminense-20",
+   "text": "Diga um jogador que fez 20 ou mais gols pelo Fluminense no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q312772",
+     "name": "Fred",
+     "aliases": [
+      "fred",
+      "frederico chaves guedes"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Fluminense 2014, Fluminense 2015, Fluminense 2016 e mais 3"
+    },
+    {
+     "id": "Q65378670",
+     "name": "Jhon Arias",
+     "aliases": [
+      "jhon adolfo arias andrade",
+      "jhon arias"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Fluminense 2021, Fluminense 2022, Fluminense 2023 e mais 2"
+    },
+    {
+     "id": "Q3761170",
+     "name": "Germán Cano",
+     "aliases": [
+      "german cano",
+      "german ezequiel cano",
+      "german ezequiel cano recalde"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Fluminense 2022, Fluminense 2023, Fluminense 2024 e mais 1"
+    },
+    {
+     "id": "Q105393903",
+     "name": "John Kennedy",
+     "aliases": [
+      "jk",
+      "john kennedy",
+      "john kennedy batista de souza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Fluminense 2020, Fluminense 2021, Fluminense 2023 e mais 2"
+    },
+    {
+     "id": "Q14244926",
+     "name": "Henrique Dourado",
+     "aliases": [
+      "henrique dourado",
+      "jose henrique da silva dourado"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Fluminense 2016, Fluminense 2017"
     }
    ]
   },
@@ -815,382 +957,52 @@
    ]
   },
   {
-   "id": "penalti-santos",
-   "text": "Diga um jogador que marcou de pênalti pelo Santos no Brasileirão, 2014–2026 (até 1º de junho)",
+   "id": "marcou-por-gremio-e-sao-paulo",
+   "text": "Diga um jogador que marcou pelo Grêmio e pelo São Paulo no Brasileirão, 2014–2026 (até 1º de junho)",
    "answers": [
     {
-     "id": "Q142794",
-     "name": "Neymar",
+     "id": "Q488139",
+     "name": "Everton",
      "aliases": [
-      "neymar",
-      "neymar da silva",
-      "neymar da silva santos junior",
-      "neymar jr",
-      "neymar junior"
+      "everton",
+      "everton cardoso da silva"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Santos 2025, Santos 2026"
+     "evidence": "São Paulo 2018, São Paulo 2019, Grêmio 2020 e mais 1"
     },
     {
-     "id": "Q13646572",
-     "name": "Gabigol",
+     "id": "Q15966749",
+     "name": "Luciano",
      "aliases": [
-      "gabigol",
-      "gabriel barbosa",
-      "gabriel barbosa almeida"
+      "luciano",
+      "luciano da rocha neves"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Santos 2014, Santos 2015, Santos 2018 e mais 1"
+     "evidence": "Grêmio 2019, São Paulo 2020, São Paulo 2021 e mais 5"
     },
     {
-     "id": "Q315079",
-     "name": "Ricardo Oliveira",
+     "id": "Q7155258",
+     "name": "Paulo Miranda",
      "aliases": [
-      "ricardo de oliveira",
-      "ricardo oliveira"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Santos 2015, Santos 2016"
-    },
-    {
-     "id": "Q5041766",
-     "name": "Carlos Sánchez",
-     "aliases": [
-      "carlos andres sanchez",
-      "carlos andres sanchez arcosa",
-      "carlos sanchez"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Santos 2018, Santos 2019, Santos 2021"
-    },
-    {
-     "id": "Q98534760",
-     "name": "Marcos Leonardo",
-     "aliases": [
-      "marcos leonardo",
-      "marcos leonardo santos almeida"
+      "paulo miranda",
+      "paulo miranda zagueiro"
      ],
      "tier": "torcedor",
      "points": 30,
-     "evidence": "Santos 2020, Santos 2021, Santos 2022 e mais 1"
+     "evidence": "São Paulo 2015, Grêmio 2019, Grêmio 2020"
     },
     {
-     "id": "Q15207061",
-     "name": "Lucas Lima",
+     "id": "Q4727251",
+     "name": "Alisson",
      "aliases": [
-      "lucas lima",
-      "lucas rafael araujo lima"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Santos 2015"
-    },
-    {
-     "id": "Q20976280",
-     "name": "Yeferson Soteldo",
-     "aliases": [
-      "soteldinho",
-      "yeferson julio soteldo martinez",
-      "yeferson soteldo"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Santos 2020"
-    },
-    {
-     "id": "Q19985279",
-     "name": "Tiquinho Soares",
-     "aliases": [
-      "francisco soares",
-      "tiquinho soares"
+      "alisson",
+      "alisson euler de freitas castro"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q20641619",
-     "name": "Vitor Bueno",
-     "aliases": [
-      "vitor bueno",
-      "vitor frezarin bueno"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Santos 2016"
-    },
-    {
-     "id": "Q3869209",
-     "name": "Marinho",
-     "aliases": [
-      "marinho",
-      "mario sergio santos costa"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Santos 2020, Santos 2021"
-    },
-    {
-     "id": "Q5933619",
-     "name": "Stiven Mendoza",
-     "aliases": [
-      "john steven mendoza valencia",
-      "john stiven mendoza valencia",
-      "steven mendoza",
-      "stiven mendoza"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Santos 2023"
-    },
-    {
-     "id": "Q15075773",
-     "name": "Jean Mota",
-     "aliases": [
-      "jean mota",
-      "jean mota oliveira de souza"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Santos 2019"
-    },
-    {
-     "id": "Q1150828",
-     "name": "Cícero Santos",
-     "aliases": [
-      "cicero santos"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Santos 2014"
-    },
-    {
-     "id": "Q27804547",
-     "name": "Arthur Gomes",
-     "aliases": [
-      "arthur gomes",
-      "arthur gomes lourenco"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Santos 2020"
-    },
-    {
-     "id": "Q17490178",
-     "name": "Joel Tagueu",
-     "aliases": [
-      "diederrick joel",
-      "diederrick joel tagueu tadjo",
-      "joel tagueu",
-      "tagueu tadjo diederrick joel"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Santos 2016"
-    },
-    {
-     "id": "Q57387537",
-     "name": "Álvaro Barreal",
-     "aliases": [
-      "alvaro barreal"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q47436345",
-     "name": "Benjamín Rollheiser",
-     "aliases": [
-      "benjamin rollheiser",
-      "rollheiser"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Santos 2025, Santos 2026"
-    },
-    {
-     "id": "Q1627338",
-     "name": "Madson",
-     "aliases": [
-      "madson",
-      "madson formagini caridade"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Santos 2020"
-    },
-    {
-     "id": "Q110818507",
-     "name": "Rwan Cruz",
-     "aliases": [
-      "rwan cruz",
-      "rwan philipe rodrigues de souza cruz",
-      "rwan seco"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Santos 2022"
-    }
-   ]
-  },
-  {
-   "id": "acrescimos-avai",
-   "text": "Diga um jogador que marcou nos acréscimos do segundo tempo pelo Avaí no Brasileirão, 2014–2024",
-   "answers": [
-    {
-     "id": "Q3187323",
-     "name": "João Paulo",
-     "aliases": [
-      "joao paulo",
-      "joao paulo da silva",
-      "joao paulo silva"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Avaí 2019"
-    },
-    {
-     "id": "Q520972",
-     "name": "André Lima",
-     "aliases": [
-      "andre lima",
-      "andre luiz barreto silva lima",
-      "andre luiz barretto silva lima"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Avaí 2015"
-    },
-    {
-     "id": "Q37231",
-     "name": "Néstor Camacho",
-     "aliases": [
-      "nestor abrahan camacho ledezma",
-      "nestor camacho"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Avaí 2015"
-    },
-    {
-     "id": "Q2153488",
-     "name": "Junior Dutra",
-     "aliases": [
-      "junior dutra",
-      "sergio dutra junior"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Avaí 2017"
-    },
-    {
-     "id": "dataset:Mateus Ferreira|Avai",
-     "name": "Mateus Ferreira",
-     "aliases": [
-      "mateus ferreira"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Avaí 2022"
-    },
-    {
-     "id": "Q20641405",
-     "name": "Rômulo",
-     "aliases": [
-      "romulo",
-      "romulo dos santos de souza"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Avaí 2015"
-    },
-    {
-     "id": "Q66619098",
-     "name": "Daniel Amorim",
-     "aliases": [
-      "daniel amorim",
-      "daniel amorim dias da silva"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Avaí 2019"
-    }
-   ]
-  },
-  {
-   "id": "penalti-chapecoense",
-   "text": "Diga um jogador que marcou de pênalti pela Chapecoense no Brasileirão, 2014–2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q438035",
-     "name": "Túlio de Melo",
-     "aliases": [
-      "tulio de melo"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Chapecoense 2015"
-    },
-    {
-     "id": "Q3083900",
-     "name": "Leandro",
-     "aliases": [
-      "leandro",
-      "leandro rodrigues"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Chapecoense 2018"
-    },
-    {
-     "id": "Q9667711",
-     "name": "Bruno Rangel",
-     "aliases": [
-      "bruno rangel",
-      "bruno rangel domingues"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Chapecoense 2014, Chapecoense 2015, Chapecoense 2016"
-    },
-    {
-     "id": "Q17379892",
-     "name": "Everaldo",
-     "aliases": [
-      "everaldo",
-      "everaldo stum"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Chapecoense 2019"
-    },
-    {
-     "id": "Q1634101",
-     "name": "Wellington Paulista",
-     "aliases": [
-      "wellington paulista",
-      "wellington pereira do nascimento"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Chapecoense 2017, Chapecoense 2018"
-    },
-    {
-     "id": "Q2457765",
-     "name": "Henrique Almeida",
-     "aliases": [
-      "henrique almeida",
-      "henrique almeida caixeta nascentes",
-      "henrique nascentes"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Chapecoense 2019"
+     "evidence": "Grêmio 2018, Grêmio 2019, Grêmio 2020 e mais 3"
     },
     {
      "id": "Q16232876",
@@ -1199,74 +1011,21 @@
       "reinaldo",
       "reinaldo manoel da silva"
      ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Chapecoense 2017"
-    },
-    {
-     "id": "Q2093183",
-     "name": "Anselmo Ramon",
-     "aliases": [
-      "anselmo ramon",
-      "anselmo ramon alves herculano"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Chapecoense 2021"
-    },
-    {
-     "id": "dataset:Guilherme|Chapecoense",
-     "name": "Guilherme",
-     "aliases": [
-      "guilherme"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Chapecoense 2018"
-    },
-    {
-     "id": "Q23893632",
-     "name": "Ravanelli Ferreira dos Santos",
-     "aliases": [
-      "ravanelli ferreira dos santos"
-     ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Chapecoense 2021"
+     "evidence": "São Paulo 2018, São Paulo 2019, São Paulo 2020 e mais 4"
     },
     {
-     "id": "Q5444628",
-     "name": "Camilo",
+     "id": "Q77896856",
+     "name": "Ferreirinha",
      "aliases": [
-      "camilo",
-      "fernando camilo farias",
-      "fernando camilo faris de souza"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Chapecoense 2014"
-    },
-    {
-     "id": "Q6849383",
-     "name": "Mike",
-     "aliases": [
-      "mike",
-      "mike dos santos nenatarvicius"
+      "aldemir dos santos ferreira",
+      "aldemir ferreira",
+      "ferreirinha"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Chapecoense 2021"
-    },
-    {
-     "id": "Q6166189",
-     "name": "Walter Clar",
-     "aliases": [
-      "walter clar",
-      "walter david clar fritz"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Chapecoense 2026"
+     "evidence": "Grêmio 2019, Grêmio 2020, Grêmio 2021 e mais 4"
     }
    ]
   },

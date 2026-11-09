@@ -3,6 +3,424 @@
  "date": "2026-12-06",
  "prompts": [
   {
+   "id": "expulso-vasco-2014-2019",
+   "text": "Diga um jogador que foi expulso jogando pelo Vasco no Brasileirão, 2014–2019",
+   "answers": [
+    {
+     "id": "Q1573556",
+     "name": "Leandro Castán",
+     "aliases": [
+      "leandro castan",
+      "leandro castan da silva"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Vasco 2018, Vasco 2019"
+    },
+    {
+     "id": "Q44742",
+     "name": "Breno",
+     "aliases": [
+      "breno",
+      "breno borges",
+      "breno rodrigues borges",
+      "breno vinicius rodrigues borges"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Vasco 2017, Vasco 2018"
+    },
+    {
+     "id": "Q431267",
+     "name": "Julio dos Santos",
+     "aliases": [
+      "julio daniel dos santos rodriguez",
+      "julio dos santos"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Vasco 2015"
+    },
+    {
+     "id": "Q52419105",
+     "name": "Ricardo Graça",
+     "aliases": [
+      "ricardo graca"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Vasco 2019"
+    },
+    {
+     "id": "Q10394490",
+     "name": "Yago Pikachu",
+     "aliases": [
+      "glaybson yago souza lisboa",
+      "pikachu",
+      "yago picachu",
+      "yago pikachu"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Vasco 2018"
+    },
+    {
+     "id": "Q14757828",
+     "name": "Henrique",
+     "aliases": [
+      "henrique",
+      "henrique silva milagres"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Vasco 2018"
+    },
+    {
+     "id": "Q2945530",
+     "name": "Gilberto",
+     "aliases": [
+      "gilberto",
+      "gilberto oliveira souza junior"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Vasco 2015"
+    },
+    {
+     "id": "Q1353506",
+     "name": "Pablo Guiñazú",
+     "aliases": [
+      "guinazu",
+      "pablo guinazu",
+      "pablo horacio guinazu"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Vasco 2015"
+    },
+    {
+     "id": "Q725010",
+     "name": "Duvier Riascos",
+     "aliases": [
+      "duvier orlando riascos barahona",
+      "duvier riascos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Vasco 2018"
+    },
+    {
+     "id": "Q976602",
+     "name": "Andrés Ríos",
+     "aliases": [
+      "andres lorenzo rios",
+      "andres rios",
+      "andy rios"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Vasco 2017"
+    },
+    {
+     "id": "Q2352258",
+     "name": "Jorge Henrique",
+     "aliases": [
+      "jorge henrique",
+      "jorge henrique de souza"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Vasco 2015"
+    },
+    {
+     "id": "Q26132957",
+     "name": "Danilo",
+     "aliases": [
+      "danilo",
+      "danilo barcelos",
+      "danilo carvalho barcelos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Vasco 2019"
+    },
+    {
+     "id": "Q5972250",
+     "name": "Desábato",
+     "aliases": [
+      "desabato",
+      "leandro desabato",
+      "leandro luis desabato"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Vasco 2018"
+    },
+    {
+     "id": "Q2016846",
+     "name": "Jordi",
+     "aliases": [
+      "jordi",
+      "jordi figueras",
+      "jordi figueras montel"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Vasco 2015"
+    },
+    {
+     "id": "Q30091513",
+     "name": "Andrey",
+     "aliases": [
+      "andrey",
+      "andrey ramos",
+      "andrey ramos do nascimento",
+      "andrey ramos do nascimiento"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Vasco 2018"
+    },
+    {
+     "id": "Q6191118",
+     "name": "Jhon Cley",
+     "aliases": [
+      "jhon cley",
+      "jhon cley jesus da silva",
+      "jhon cley jesus silva"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Vasco 2015"
+    },
+    {
+     "id": "Q2707174",
+     "name": "Rodrigo Baldasso da Costa",
+     "aliases": [
+      "rodrigo baldasso da costa",
+      "rodrigo da costa"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Vasco 2015"
+    },
+    {
+     "id": "Q64617410",
+     "name": "Marrony",
+     "aliases": [
+      "marrony",
+      "marrony da silva liberato"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Vasco 2019"
+    },
+    {
+     "id": "Q20048319",
+     "name": "Rafael Silva",
+     "aliases": [
+      "rafael feital da silva",
+      "rafael feital da silva souza",
+      "rafael silva",
+      "rafael silva dos santos"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Vasco 2015"
+    },
+    {
+     "id": "Q20641652",
+     "name": "Christianno",
+     "aliases": [
+      "christianno",
+      "christianno andrey de araujo vieira"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Vasco 2015"
+    },
+    {
+     "id": "Q59208940",
+     "name": "Moresche",
+     "aliases": [
+      "matheus celestino moresche rodrigues",
+      "matheus moresche",
+      "moresche"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Vasco 2018"
+    }
+   ]
+  },
+  {
+   "id": "expulso-cruzeiro-2020-2026",
+   "text": "Diga um jogador que foi expulso jogando pelo Cruzeiro no Brasileirão, 2020–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q56876908",
+     "name": "Kaio Jorge",
+     "aliases": [
+      "kaio jorge",
+      "kaio jorge pinto ramos"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2025"
+    },
+    {
+     "id": "Q20048445",
+     "name": "William",
+     "aliases": [
+      "william",
+      "william de asevedo furtado",
+      "william furtado"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2025, Cruzeiro 2026"
+    },
+    {
+     "id": "Q15831118",
+     "name": "Matheus Pereira",
+     "aliases": [
+      "matheus fellipe costa pereira",
+      "matheus pereira"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Cruzeiro 2024"
+    },
+    {
+     "id": "Q3538173",
+     "name": "Lucas Romero",
+     "aliases": [
+      "lucas daniel romero",
+      "lucas romero"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Cruzeiro 2024"
+    },
+    {
+     "id": "Q5042026",
+     "name": "Eduardo",
+     "aliases": [
+      "carlos eduardo",
+      "carlos eduardo de oliveira alves",
+      "eduardo"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Cruzeiro 2025"
+    },
+    {
+     "id": "Q28531145",
+     "name": "Fabrício Bruno",
+     "aliases": [
+      "fabricio bruno",
+      "fabricio bruno soares de faria"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2025"
+    },
+    {
+     "id": "Q123488359",
+     "name": "Keny Arroyo",
+     "aliases": [
+      "keny arroyo"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2026"
+    },
+    {
+     "id": "dataset:Anderson|Cruzeiro",
+     "name": "Anderson",
+     "aliases": [
+      "anderson"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2023"
+    },
+    {
+     "id": "Q106065345",
+     "name": "Fernando Henrique Pereira",
+     "aliases": [
+      "fernando henrique pereira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2023"
+    },
+    {
+     "id": "Q10340708",
+     "name": "Oliveira",
+     "aliases": [
+      "oliveira",
+      "oliveira imortal"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2023"
+    },
+    {
+     "id": "dataset:Rafael da Silva|Cruzeiro",
+     "name": "Rafael da Silva",
+     "aliases": [
+      "rafael da silva"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Cruzeiro 2024"
+    },
+    {
+     "id": "Q115937785",
+     "name": "Kaiki",
+     "aliases": [
+      "kaiki",
+      "kaiki bruno"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Cruzeiro 2026"
+    },
+    {
+     "id": "Q23639381",
+     "name": "Marlon",
+     "aliases": [
+      "marlon",
+      "marlon rodrigues xavier"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Cruzeiro 2024"
+    },
+    {
+     "id": "Q104839508",
+     "name": "João Marcelo",
+     "aliases": [
+      "joao marcelo"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2024"
+    },
+    {
+     "id": "Q126698041",
+     "name": "Jonathan Jesus",
+     "aliases": [
+      "jonathan jesus"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Cruzeiro 2025"
+    }
+   ]
+  },
+  {
    "id": "marcou-por-vasco-2024",
    "text": "Diga um jogador que marcou pelo Vasco no Brasileirão 2024",
    "answers": [
@@ -126,7 +544,9 @@
      "name": "Pablo Vegetti",
      "aliases": [
       "pablo ezequiel vegetti pfaffen",
-      "pablo vegetti"
+      "pablo vegetti",
+      "pirata",
+      "vegetti"
      ],
      "tier": "raiz",
      "points": 60,
@@ -513,16 +933,6 @@
      "evidence": "Internacional 2015"
     },
     {
-     "id": "dataset:Vinícius|Fluminense",
-     "name": "Vinícius",
-     "aliases": [
-      "vinicius"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Fluminense 2015"
-    },
-    {
      "id": "Q1031999",
      "name": "Thiago Ribeiro",
      "aliases": [
@@ -555,6 +965,19 @@
      "tier": "resenha",
      "points": 85,
      "evidence": "Corinthians 2015"
+    },
+    {
+     "id": "Q20641618",
+     "name": "Vina",
+     "aliases": [
+      "vina",
+      "vinicius",
+      "vinicius goes",
+      "vinicius goes barbosa de souza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Fluminense 2015"
     },
     {
      "id": "Q10289882",
@@ -653,7 +1076,8 @@
      "id": "Q313570",
      "name": "Hernanes",
      "aliases": [
-      "hernanes"
+      "hernanes",
+      "profeta"
      ],
      "tier": "arquibancada",
      "points": 10,
@@ -822,6 +1246,7 @@
      "name": "Yago Pikachu",
      "aliases": [
       "glaybson yago souza lisboa",
+      "pikachu",
       "yago picachu",
       "yago pikachu"
      ],
@@ -1066,404 +1491,6 @@
    ]
   },
   {
-   "id": "penalti-vasco",
-   "text": "Diga um jogador que marcou de pênalti pelo Vasco no Brasileirão, 2014–2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q376247",
-     "name": "Dimitri Payet",
-     "aliases": [
-      "dimitri payet",
-      "florent dimitri payet"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Vasco 2024"
-    },
-    {
-     "id": "Q312317",
-     "name": "Maxi López",
-     "aliases": [
-      "maxi lopez",
-      "maximiliano gaston lopez",
-      "maximiliano lopez"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Vasco 2018, Vasco 2019"
-    },
-    {
-     "id": "Q115937989",
-     "name": "Rayan",
-     "aliases": [
-      "rayan",
-      "rayan vitor",
-      "rayan vitor simplicio rocha"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Vasco 2025"
-    },
-    {
-     "id": "Q316836",
-     "name": "Nenê",
-     "aliases": [
-      "nene"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Vasco 2015"
-    },
-    {
-     "id": "Q23907269",
-     "name": "Puma Rodríguez",
-     "aliases": [
-      "jose luis rodriguez",
-      "jose luis rodriguez bebanz",
-      "puma rodriguez",
-      "pumita"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Vasco 2026"
-    },
-    {
-     "id": "Q20050532",
-     "name": "Thiago Galhardo",
-     "aliases": [
-      "thiago galhardo",
-      "thiago galhardo do nascimento rocha",
-      "thiago galhardo nascimento rocha"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Vasco 2018"
-    },
-    {
-     "id": "Q3761170",
-     "name": "Germán Cano",
-     "aliases": [
-      "german cano",
-      "german ezequiel cano",
-      "german ezequiel cano recalde"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Vasco 2020"
-    },
-    {
-     "id": "Q26132957",
-     "name": "Danilo",
-     "aliases": [
-      "danilo",
-      "danilo barcelos",
-      "danilo carvalho barcelos"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Vasco 2019"
-    },
-    {
-     "id": "dataset:Rossicley Pereira da Silva|Vasco",
-     "name": "Rossi",
-     "aliases": [
-      "rossi",
-      "rossicley pereira da silva"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Vasco 2019"
-    },
-    {
-     "id": "Q10394490",
-     "name": "Yago Pikachu",
-     "aliases": [
-      "glaybson yago souza lisboa",
-      "yago picachu",
-      "yago pikachu"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Vasco 2018, Vasco 2019, Vasco 2020"
-    },
-    {
-     "id": "Q24006455",
-     "name": "Ribamar",
-     "aliases": [
-      "lucas ribamar",
-      "ribamar"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Vasco 2020"
-    },
-    {
-     "id": "Q15146754",
-     "name": "Pablo Vegetti",
-     "aliases": [
-      "pablo ezequiel vegetti pfaffen",
-      "pablo vegetti"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Vasco 2023, Vasco 2025"
-    },
-    {
-     "id": "Q23771909",
-     "name": "Jair",
-     "aliases": [
-      "jair",
-      "jair rodrigues junior"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Vasco 2023"
-    }
-   ]
-  },
-  {
-   "id": "penalti-sao-paulo",
-   "text": "Diga um jogador que marcou de pênalti pelo São Paulo no Brasileirão, 2014–2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q313570",
-     "name": "Hernanes",
-     "aliases": [
-      "hernanes"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "São Paulo 2017"
-    },
-    {
-     "id": "Q312886",
-     "name": "Lucas Moura",
-     "aliases": [
-      "lucas moura",
-      "lucas rodrigues moura da silva",
-      "lucas rodrigues moura silva"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "São Paulo 2024, São Paulo 2025, São Paulo 2026"
-    },
-    {
-     "id": "Q192963",
-     "name": "Luís Fabiano",
-     "aliases": [
-      "luis fabiano",
-      "luis fabiano clemente"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "São Paulo 2015"
-    },
-    {
-     "id": "Q1249859",
-     "name": "Rogério Ceni",
-     "aliases": [
-      "ceni",
-      "rogerio ceni",
-      "rogerio mucke ceni"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "São Paulo 2014, São Paulo 2015"
-    },
-    {
-     "id": "Q167698",
-     "name": "Eder Citadin Martins",
-     "aliases": [
-      "eder",
-      "eder citadin martins"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "São Paulo 2022"
-    },
-    {
-     "id": "Q648744",
-     "name": "Christian Cueva",
-     "aliases": [
-      "christian alberto cueva bravo",
-      "christian cueva"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "São Paulo 2016"
-    },
-    {
-     "id": "Q316836",
-     "name": "Nenê",
-     "aliases": [
-      "nene"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "São Paulo 2018"
-    },
-    {
-     "id": "Q16298050",
-     "name": "Jonathan Calleri",
-     "aliases": [
-      "jonathan calleri"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "São Paulo 2021, São Paulo 2022, São Paulo 2023 e mais 1"
-    },
-    {
-     "id": "Q110936974",
-     "name": "Erison Danilo de Souza",
-     "aliases": [
-      "erison danilo de souza"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "São Paulo 2023"
-    },
-    {
-     "id": "Q15831136",
-     "name": "Pablo",
-     "aliases": [
-      "pablo",
-      "pablo felipe teixeira"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "São Paulo 2021"
-    },
-    {
-     "id": "Q15966749",
-     "name": "Luciano",
-     "aliases": [
-      "luciano",
-      "luciano da rocha neves"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "São Paulo 2020, São Paulo 2022, São Paulo 2023 e mais 2"
-    },
-    {
-     "id": "Q16232876",
-     "name": "Reinaldo",
-     "aliases": [
-      "reinaldo",
-      "reinaldo manoel da silva"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "São Paulo 2019, São Paulo 2020, São Paulo 2021 e mais 1"
-    },
-    {
-     "id": "Q19965665",
-     "name": "Cauly",
-     "aliases": [
-      "cauly",
-      "cauly oliveira souza"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q61776748",
-     "name": "André Silva",
-     "aliases": [
-      "andre oliveira silva",
-      "andre silva"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "São Paulo 2025"
-    }
-   ]
-  },
-  {
-   "id": "acrescimos-ponte-preta",
-   "text": "Diga um jogador que marcou nos acréscimos do segundo tempo pela Ponte Preta no Brasileirão, 2014–2024",
-   "answers": [
-    {
-     "id": "Q10393735",
-     "name": "William Pottker",
-     "aliases": [
-      "william de oliveira pottker",
-      "william pottker"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Ponte Preta 2016"
-    },
-    {
-     "id": "Q2092417",
-     "name": "Renato Cajá",
-     "aliases": [
-      "renato adriano jaco morais",
-      "renato caja"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Ponte Preta 2015"
-    },
-    {
-     "id": "Q5274756",
-     "name": "Diego Oliveira",
-     "aliases": [
-      "diego oliveira",
-      "diego oliveira de queiroz"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Ponte Preta 2015"
-    },
-    {
-     "id": "Q19879773",
-     "name": "Clayson",
-     "aliases": [
-      "clayson",
-      "clayson henrique da silva vieira"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ponte Preta 2017"
-    },
-    {
-     "id": "Q10552199",
-     "name": "Lucca",
-     "aliases": [
-      "lucca",
-      "lucca borges de brito"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Ponte Preta 2017"
-    },
-    {
-     "id": "Q436160",
-     "name": "Renato Chaves",
-     "aliases": [
-      "renato chaves",
-      "renato de araujo chaves junior",
-      "renato junior"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Ponte Preta 2015"
-    },
-    {
-     "id": "Q14755605",
-     "name": "Biro-Biro",
-     "aliases": [
-      "biro biro",
-      "diego santos gama camilo"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Ponte Preta 2015"
-    }
-   ]
-  },
-  {
    "id": "marcou-por-palmeiras-2024",
    "text": "Diga um jogador que marcou pelo Palmeiras no Brasileirão 2024",
    "answers": [
@@ -1658,6 +1685,66 @@
      "tier": "enciclopedia",
      "points": 100,
      "evidence": "Palmeiras 2024"
+    }
+   ]
+  },
+  {
+   "id": "marcou-por-atletico-mg-e-coritiba",
+   "text": "Diga um jogador que marcou pelo Atlético-MG e pelo Coritiba no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q315079",
+     "name": "Ricardo Oliveira",
+     "aliases": [
+      "ricardo de oliveira",
+      "ricardo oliveira"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Atlético-MG 2018, Atlético-MG 2019, Coritiba 2020"
+    },
+    {
+     "id": "Q10289882",
+     "name": "Giovanni Augusto",
+     "aliases": [
+      "giovanni augusto",
+      "giovanni augusto oliveira cardoso"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Atlético-MG 2015, Coritiba 2020"
+    },
+    {
+     "id": "Q86445352",
+     "name": "Natanael",
+     "aliases": [
+      "natanael",
+      "natanael moreira milouski"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2020, Atlético-MG 2025"
+    },
+    {
+     "id": "Q80672850",
+     "name": "Nathan Silva",
+     "aliases": [
+      "nathan silva",
+      "nathanael ananias da silva"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2020, Atlético-MG 2021"
+    },
+    {
+     "id": "Q28465684",
+     "name": "Matheus Galdezani",
+     "aliases": [
+      "matheus galdezani"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Coritiba 2017, Atlético-MG 2018, Coritiba 2020"
     }
    ]
   }

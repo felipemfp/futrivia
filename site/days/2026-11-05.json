@@ -49,23 +49,25 @@
      "evidence": "Ceará 2020"
     },
     {
-     "id": "Q61749236",
-     "name": "Charles",
+     "id": "Q20641618",
+     "name": "Vina",
      "aliases": [
-      "charles",
-      "charles rigon matos",
-      "charles rigon mattos"
+      "vina",
+      "vinicius",
+      "vinicius goes",
+      "vinicius goes barbosa de souza"
      ],
      "tier": "raiz",
      "points": 60,
      "evidence": "Ceará 2020"
     },
     {
-     "id": "Q5042023",
-     "name": "Eduardo",
+     "id": "Q61749236",
+     "name": "Charles",
      "aliases": [
-      "carlos eduardo santos oliveira",
-      "eduardo"
+      "charles",
+      "charles rigon matos",
+      "charles rigon mattos"
      ],
      "tier": "raiz",
      "points": 60,
@@ -170,17 +172,6 @@
      "evidence": "Ceará 2020"
     },
     {
-     "id": "dataset:Vinícius|Ceara",
-     "name": "Vinícius",
-     "aliases": [
-      "vinicius",
-      "vina"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ceará 2020"
-    },
-    {
      "id": "Q98270217",
      "name": "Vítor Jacaré",
      "aliases": [
@@ -192,6 +183,17 @@
      "evidence": "Ceará 2020"
     },
     {
+     "id": "Q5042023",
+     "name": "Eduardo",
+     "aliases": [
+      "carlos eduardo santos oliveira",
+      "eduardo"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Ceará 2020"
+    },
+    {
      "id": "Q5137266",
      "name": "Cléber",
      "aliases": [
@@ -199,8 +201,8 @@
       "cleber antonio de oliveira",
       "cleber antonio oliveira"
      ],
-     "tier": "resenha",
-     "points": 85,
+     "tier": "enciclopedia",
+     "points": 100,
      "evidence": "Ceará 2020"
     },
     {
@@ -210,8 +212,8 @@
       "luiz otavio",
       "luiz otavio anacleto leandro"
      ],
-     "tier": "resenha",
-     "points": 85,
+     "tier": "enciclopedia",
+     "points": 100,
      "evidence": "Ceará 2020"
     },
     {
@@ -1507,17 +1509,6 @@
      "evidence": "Fluminense 2021"
     },
     {
-     "id": "dataset:Vinícius|Ceara",
-     "name": "Vinícius",
-     "aliases": [
-      "vinicius",
-      "vina"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ceará 2021"
-    },
-    {
      "id": "dataset:Ytalo José dos Santos|Bragantino",
      "name": "Ytalo José dos Santos",
      "aliases": [
@@ -1581,6 +1572,19 @@
      "tier": "resenha",
      "points": 85,
      "evidence": "América-MG 2021"
+    },
+    {
+     "id": "Q20641618",
+     "name": "Vina",
+     "aliases": [
+      "vina",
+      "vinicius",
+      "vinicius goes",
+      "vinicius goes barbosa de souza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Ceará 2021"
     },
     {
      "id": "Q19668602",

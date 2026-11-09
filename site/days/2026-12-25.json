@@ -377,6 +377,19 @@
      "evidence": "Flamengo 2024"
     },
     {
+     "id": "Q17385902",
+     "name": "Everton Cebolinha",
+     "aliases": [
+      "cebolinha",
+      "everton",
+      "everton cebolinha",
+      "everton sousa soares"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2024"
+    },
+    {
      "id": "Q20994037",
      "name": "Nicolás de la Cruz",
      "aliases": [
@@ -433,29 +446,6 @@
      "evidence": "Flamengo 2024"
     },
     {
-     "id": "Q23638974",
-     "name": "Ayrton Lucas",
-     "aliases": [
-      "ayrton",
-      "ayrton lucas",
-      "ayrton lucas dantas de medeiros"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Flamengo 2024"
-    },
-    {
-     "id": "Q25175962",
-     "name": "Luiz Araújo",
-     "aliases": [
-      "luiz araujo",
-      "luiz de araujo guimaraes neto"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Flamengo 2024"
-    },
-    {
      "id": "dataset:Carlinhos|Flamengo",
      "name": "Carlinhos",
      "aliases": [
@@ -472,16 +462,6 @@
       "carlos alcaraz",
       "carlos jonas alcaraz",
       "charly alcaraz"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Flamengo 2024"
-    },
-    {
-     "id": "dataset:Everton Cebolinha|Flamengo",
-     "name": "Everton Cebolinha",
-     "aliases": [
-      "everton cebolinha"
      ],
      "tier": "raiz",
      "points": 60,
@@ -505,6 +485,29 @@
      ],
      "tier": "raiz",
      "points": 60,
+     "evidence": "Flamengo 2024"
+    },
+    {
+     "id": "Q23638974",
+     "name": "Ayrton Lucas",
+     "aliases": [
+      "ayrton",
+      "ayrton lucas",
+      "ayrton lucas dantas de medeiros"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Flamengo 2024"
+    },
+    {
+     "id": "Q25175962",
+     "name": "Luiz Araújo",
+     "aliases": [
+      "luiz araujo",
+      "luiz de araujo guimaraes neto"
+     ],
+     "tier": "resenha",
+     "points": 85,
      "evidence": "Flamengo 2024"
     },
     {
@@ -1171,627 +1174,304 @@
    ]
   },
   {
-   "id": "acrescimos-fortaleza",
-   "text": "Diga um jogador que marcou nos acréscimos do segundo tempo pelo Fortaleza no Brasileirão, 2014–2024",
+   "id": "expulso-flamengo-2020-2026",
+   "text": "Diga um jogador que foi expulso jogando pelo Flamengo no Brasileirão, 2020–2026 (até 1º de junho)",
    "answers": [
     {
-     "id": "Q10394490",
-     "name": "Yago Pikachu",
+     "id": "Q437329",
+     "name": "Danilo",
      "aliases": [
-      "glaybson yago souza lisboa",
-      "yago picachu",
-      "yago pikachu"
+      "danilo",
+      "danilo luiz",
+      "danilo luiz da silva"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Fortaleza 2021, Fortaleza 2023"
+     "evidence": "Flamengo 2025, Flamengo 2026"
     },
     {
-     "id": "Q16233976",
-     "name": "Juan Martín Lucero",
+     "id": "Q3810078",
+     "name": "Jorginho",
      "aliases": [
-      "juan martin lucero"
+      "jorge luiz frello",
+      "jorge luiz frello filho",
+      "jorginho"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Fortaleza 2023"
+     "evidence": "Flamengo 2026"
     },
     {
-     "id": "Q94731943",
-     "name": "Caio Alexandre",
+     "id": "Q109428",
+     "name": "Diego Ribas",
      "aliases": [
-      "caio alexandre",
-      "caio alexandre souza e silva"
+      "diego",
+      "diego ribas",
+      "diego ribas da cunha",
+      "diego souza ribas"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2021"
+    },
+    {
+     "id": "Q13646572",
+     "name": "Gabigol",
+     "aliases": [
+      "gabigol",
+      "gabriel barbosa",
+      "gabriel barbosa almeida"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Flamengo 2020, Flamengo 2021, Flamengo 2022 e mais 1"
+    },
+    {
+     "id": "Q313082",
+     "name": "Diego Alves",
+     "aliases": [
+      "diego alves",
+      "diego alves carreira"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2020"
+    },
+    {
+     "id": "Q17385902",
+     "name": "Everton Cebolinha",
+     "aliases": [
+      "cebolinha",
+      "everton",
+      "everton cebolinha",
+      "everton sousa soares"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2022"
+    },
+    {
+     "id": "Q4025436",
+     "name": "Everton Ribeiro",
+     "aliases": [
+      "everton augusto de barros ribeiro",
+      "everton de barros ribeiro",
+      "everton ribeiro"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2021"
+    },
+    {
+     "id": "Q60842120",
+     "name": "Gonzalo Plata",
+     "aliases": [
+      "gonzalo plata"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Flamengo 2025"
+    },
+    {
+     "id": "Q18617137",
+     "name": "Gerson",
+     "aliases": [
+      "gerson",
+      "gerson santos da silva",
+      "gerson santos putin"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Fortaleza 2022"
+     "evidence": "Flamengo 2023, Flamengo 2025"
     },
     {
-     "id": "Q22279980",
-     "name": "Renato Kayzer",
+     "id": "Q19362872",
+     "name": "Jorge Carrascal",
      "aliases": [
-      "renato kayser",
-      "renato kayzer",
-      "renato kayzer de souza"
+      "el fracasado carrascal",
+      "jorge andres carrascal guardo",
+      "jorge carrascal",
+      "jorge carrascalle"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Fortaleza 2024"
+     "evidence": "Flamengo 2026"
     },
     {
-     "id": "Q105429768",
-     "name": "Igor Torres",
+     "id": "Q19956526",
+     "name": "Bruno Henrique",
      "aliases": [
-      "igor torres"
+      "bruno henrique",
+      "bruno henrique pinto",
+      "bruno henrique pintos"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Fortaleza 2021"
+     "evidence": "Flamengo 2023"
     },
     {
-     "id": "Q3960943",
-     "name": "Silvio Romero",
+     "id": "Q16911636",
+     "name": "Erick Pulgar",
      "aliases": [
-      "chino",
-      "silvio ezequiel romero",
-      "silvio romero"
+      "eric pulgar",
+      "erick antonio pulgar farfan",
+      "erick pulgar"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Fortaleza 2023"
+     "evidence": "Flamengo 2024, Flamengo 2026"
     },
     {
-     "id": "Q111948991",
-     "name": "Hércules",
+     "id": "dataset:Carlinhos|Flamengo",
+     "name": "Carlinhos",
      "aliases": [
-      "hercules",
-      "hercules pereira do nascimento"
+      "carlinhos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2024"
+    },
+    {
+     "id": "Q88130791",
+     "name": "Carlos Alcaraz",
+     "aliases": [
+      "carlos alcaraz",
+      "carlos jonas alcaraz",
+      "charly alcaraz"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2024"
+    },
+    {
+     "id": "Q20916833",
+     "name": "Allan",
+     "aliases": [
+      "allan",
+      "allan rodrigues de souza",
+      "allan souza"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Fortaleza 2022"
+     "evidence": "Flamengo 2024"
     },
     {
-     "id": "Q18218092",
-     "name": "Tinga",
+     "id": "Q25175962",
+     "name": "Luiz Araújo",
      "aliases": [
-      "guilherme",
-      "guilherme de jesus da silva",
-      "tinga"
+      "luiz araujo",
+      "luiz de araujo guimaraes neto"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Fortaleza 2019"
+     "evidence": "Flamengo 2023"
     },
     {
-     "id": "Q32187582",
-     "name": "Bruno Pacheco",
+     "id": "Q5621422",
+     "name": "Gustavo Henrique",
      "aliases": [
-      "bruno de jesus pacheco",
-      "bruno pacheco"
+      "gustavo henrique",
+      "gustavo henrique vernes"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Fortaleza 2023"
+     "evidence": "Flamengo 2020"
+    },
+    {
+     "id": "Q3869209",
+     "name": "Marinho",
+     "aliases": [
+      "marinho",
+      "mario sergio santos costa"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2022"
+    },
+    {
+     "id": "Q20048828",
+     "name": "Rodinei",
+     "aliases": [
+      "rodinei",
+      "rodinei de almeida",
+      "rodinei marcelo de almeida"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2022"
+    },
+    {
+     "id": "Q126365061",
+     "name": "Evertton Araújo",
+     "aliases": [
+      "evertton araujo",
+      "evertton gustavo fernandes araujo"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2025, Flamengo 2026"
+    },
+    {
+     "id": "Q130635636",
+     "name": "Wallace Yan",
+     "aliases": [
+      "wallace yan"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Flamengo 2025"
     }
    ]
   },
   {
-   "id": "titular-santos-2025-1",
-   "text": "Diga um jogador que foi titular pelo Santos no Brasileirão 2025",
+   "id": "marcou-por-corinthians-e-gremio",
+   "text": "Diga um jogador que marcou pelo Corinthians e pelo Grêmio no Brasileirão, 2014–2026 (até 1º de junho)",
    "answers": [
     {
-     "id": "Q142794",
-     "name": "Neymar",
+     "id": "Q16297591",
+     "name": "Fabián Balbuena",
      "aliases": [
-      "neymar",
-      "neymar da silva",
-      "neymar da silva santos junior",
-      "neymar jr",
-      "neymar junior"
+      "fabian balbuena",
+      "fabian cornelio balbuena gonzalez"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Santos 2025"
+     "evidence": "Corinthians 2017, Corinthians 2022, Grêmio 2025"
     },
     {
-     "id": "Q210279",
-     "name": "Tomás Rincón",
+     "id": "Q713886",
+     "name": "Giuliano",
      "aliases": [
-      "tomas eduardo rincon hernandez",
-      "tomas rincon"
+      "giuliano",
+      "giuliano victor de paula"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Santos 2025"
+     "evidence": "Grêmio 2014, Grêmio 2015, Grêmio 2016 e mais 3"
     },
     {
-     "id": "Q116560",
-     "name": "Gil",
+     "id": "Q518525",
+     "name": "André Balada",
      "aliases": [
-      "carlos gilberto do nascimento silva",
-      "carlos gilberto nascimento silva",
-      "gil"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q10312199",
-     "name": "João Schmidt",
-     "aliases": [
-      "joao felipe schmidt urbano",
-      "joao schmidt"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q20976280",
-     "name": "Yeferson Soteldo",
-     "aliases": [
-      "soteldinho",
-      "yeferson julio soteldo martinez",
-      "yeferson soteldo"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q75059692",
-     "name": "Gabriel Souza",
-     "aliases": [
-      "gabriel souza",
-      "gabriel veron",
-      "gabriel veron fonseca de souza"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q2035459",
-     "name": "Willian Arão",
-     "aliases": [
-      "willian arao",
-      "willian souza arao da silva"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q114405335",
-     "name": "Deivid Washington",
-     "aliases": [
-      "deivid washington"
+      "andre balada",
+      "andre felipe",
+      "andre felipe ribeiro de souza"
      ],
      "tier": "torcedor",
      "points": 30,
-     "evidence": "Santos 2025"
+     "evidence": "Corinthians 2016, Grêmio 2018, Grêmio 2019"
     },
     {
-     "id": "Q127179158",
-     "name": "Gustavo Caballero",
+     "id": "Q16919481",
+     "name": "Luan Guilherme",
      "aliases": [
-      "gustavo caballero"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q19985279",
-     "name": "Tiquinho Soares",
-     "aliases": [
-      "francisco soares",
-      "tiquinho soares"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q58447210",
-     "name": "Gabriel Brazão",
-     "aliases": [
-      "gabriel brazao",
-      "gabriel nascimento resende brazao"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q19818652",
-     "name": "Luan Peres",
-     "aliases": [
-      "luan peres",
-      "luan peres petroni"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q15690175",
-     "name": "Mayke",
-     "aliases": [
-      "mayke",
-      "mayke rocha de oliveira",
-      "mayke rocha oliveira"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q19519846",
-     "name": "Zé Rafael",
-     "aliases": [
-      "jose rafael vivian",
-      "ze rafael"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q28853715",
-     "name": "Diego Pituca",
-     "aliases": [
-      "diego cristiano evaristo",
-      "diego pituca"
+      "luan guilherme",
+      "luan guilherme de jesus vieira",
+      "luan vieira"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q124661440",
-     "name": "Souza",
-     "aliases": [
-      "joao victor de souza menezes",
-      "souza"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q57387537",
-     "name": "Álvaro Barreal",
-     "aliases": [
-      "alvaro barreal"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q18128072",
-     "name": "Aderlan",
-     "aliases": [
-      "aderlan",
-      "aderlan de lima silva",
-      "aderlan silva"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q61708625",
-     "name": "Adonis Frías",
-     "aliases": [
-      "adonis frias"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q24006191",
-     "name": "Igor Vinícius",
-     "aliases": [
-      "igor",
-      "igor vinicius",
-      "igor vinicius de souza"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q111983266",
-     "name": "Victor Hugo",
-     "aliases": [
-      "victor hugo",
-      "victor hugo gomes silva"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q47436345",
-     "name": "Benjamín Rollheiser",
-     "aliases": [
-      "benjamin rollheiser",
-      "rollheiser"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q28012403",
-     "name": "Gonzalo Escobar",
-     "aliases": [
-      "gonzalo daniel escobar",
-      "gonzalo escobar"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q28474511",
-     "name": "Ivaldo",
-     "aliases": [
-      "ivaldo",
-      "jose ivaldo almeida silva",
-      "ze ivaldo"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q60842090",
-     "name": "Alexis Duarte",
-     "aliases": [
-      "alexis david duarte pereira",
-      "alexis duarte",
-      "pulpito",
-      "pulpito duarte"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q28113132",
-     "name": "Guilherme",
-     "aliases": [
-      "guilherme",
-      "guilherme augusto vieira dos santos"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q29052480",
-     "name": "João Basso",
-     "aliases": [
-      "joao basso",
-      "joao othavio basso"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q113489248",
-     "name": "Lautaro Díaz",
-     "aliases": [
-      "lautaro ariel diaz",
-      "lautaro diaz"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q131910304",
-     "name": "Gabriel Bontempo",
-     "aliases": [
-      "gabriel bontempo",
-      "gabriel morais silva bontempo"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q27983276",
-     "name": "Leonardo Godoy",
-     "aliases": [
-      "leonardo ezequiel godoy",
-      "leonardo godoy"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q131693296",
-     "name": "Robinho Junior",
-     "aliases": [
-      "robinho junior",
-      "robson de souza junior",
-      "robson junior"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q24062447",
-     "name": "Thaciano",
-     "aliases": [
-      "thaciano",
-      "thaciano mickael da silva"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q124802312",
-     "name": "JP Chermont",
-     "aliases": [
-      "joao pedro chermont crema",
-      "jp chermont"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Santos 2025"
-    },
-    {
-     "id": "Q131036321",
-     "name": "Luisão",
-     "aliases": [
-      "luisao"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Santos 2025"
-    }
-   ]
-  },
-  {
-   "id": "titular-sao-paulo-2026-1",
-   "text": "Diga um jogador que foi titular pelo São Paulo no Brasileirão 2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q312886",
-     "name": "Lucas Moura",
-     "aliases": [
-      "lucas moura",
-      "lucas rodrigues moura da silva",
-      "lucas rodrigues moura silva"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q481330",
-     "name": "Cédric Soares",
-     "aliases": [
-      "cedric",
-      "cedric ricardo alves soares",
-      "cedric soares"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q3928977",
-     "name": "Rafael Tolói",
-     "aliases": [
-      "rafael toloi"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q15131398",
-     "name": "Wendell",
-     "aliases": [
-      "wendell",
-      "wendell nascimento borges"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q16298050",
-     "name": "Jonathan Calleri",
-     "aliases": [
-      "jonathan calleri"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q116223348",
-     "name": "Damián Bobadilla",
-     "aliases": [
-      "damian bobadilla"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q22082660",
-     "name": "Robert Arboleda",
-     "aliases": [
-      "robert abel arboleda escobar",
-      "robert arboleda",
-      "robert0 arboleda"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q3386174",
-     "name": "Dória",
-     "aliases": [
-      "doria",
-      "matheus doria",
-      "matheus doria macedo"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q28665426",
-     "name": "Artur",
-     "aliases": [
-      "artur",
-      "artur victor guimaraes"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q60497160",
-     "name": "Marcos Antônio",
-     "aliases": [
-      "marcos antonio",
-      "marcos antonio silva santos",
-      "marcos bahia"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q3928964",
-     "name": "Rafael",
-     "aliases": [
-      "rafael",
-      "rafael pires",
-      "rafael pires monteiro"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "São Paulo 2026"
+     "evidence": "Grêmio 2014, Grêmio 2015, Grêmio 2016 e mais 4"
     },
     {
      "id": "Q15966749",
@@ -1800,164 +1480,349 @@
       "luciano",
       "luciano da rocha neves"
      ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Corinthians 2014, Corinthians 2015, Corinthians 2016 e mais 1"
+    },
+    {
+     "id": "Q15241347",
+     "name": "Ramiro",
+     "aliases": [
+      "ramiro",
+      "ramiro benetti",
+      "ramiro moschen benetti"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Grêmio 2014, Grêmio 2016, Grêmio 2017 e mais 1"
+    },
+    {
+     "id": "Q3940035",
+     "name": "Rodriguinho",
+     "aliases": [
+      "rodrigo eduardo costa marinho",
+      "rodriguinho",
+      "rodriguinho marinho"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Grêmio 2014, Corinthians 2015, Corinthians 2016 e mais 2"
+    }
+   ]
+  },
+  {
+   "id": "expulso-coritiba-2020-2026",
+   "text": "Diga um jogador que foi expulso jogando pelo Coritiba no Brasileirão, 2020–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q1347269",
+     "name": "Islam Slimani",
+     "aliases": [
+      "islam slimani"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Coritiba 2023"
+    },
+    {
+     "id": "Q313576",
+     "name": "Henrique",
+     "aliases": [
+      "henrique",
+      "henrique adriano buss"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Coritiba 2022"
+    },
+    {
+     "id": "Q65030995",
+     "name": "Igor Jesus",
+     "aliases": [
+      "igor jesus",
+      "igor jesus maciel da cruz"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Coritiba 2020"
+    },
+    {
+     "id": "Q560329",
+     "name": "Maicon",
+     "aliases": [
+      "maicon",
+      "maicon pereira roque"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Coritiba 2026"
+    },
+    {
+     "id": "Q2645254",
+     "name": "Josué",
+     "aliases": [
+      "josue",
+      "josue filipe soares pesqueira",
+      "josue pesqueira"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Coritiba 2026"
+    },
+    {
+     "id": "Q20828260",
+     "name": "Pedro Rocha",
+     "aliases": [
+      "pedro rocha",
+      "pedro rocha neves"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Coritiba 2026"
+    },
+    {
+     "id": "Q3934132",
+     "name": "Rhodolfo",
+     "aliases": [
+      "luiz rhodolfo dini gaioto",
+      "rhodolfo",
+      "rhodolfo dini gaioto"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Coritiba 2020"
+    },
+    {
+     "id": "Q8023194",
+     "name": "Wilson Rodrigues de Moura Júnior",
+     "aliases": [
+      "wilson rodrigues de moura junior"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Coritiba 2020"
+    },
+    {
+     "id": "Q3468241",
+     "name": "Renê Júnior",
+     "aliases": [
+      "rene junior"
+     ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "São Paulo 2026"
+     "evidence": "Coritiba 2020"
     },
     {
-     "id": "Q29005745",
-     "name": "Alan Franco",
+     "id": "Q27915066",
+     "name": "Yan Sasse",
      "aliases": [
-      "alan franco",
-      "alan javier franco"
+      "yan medeiros sasse",
+      "yan sasse"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "São Paulo 2026"
+     "evidence": "Coritiba 2020"
     },
     {
-     "id": "Q110914598",
-     "name": "Pablo Maia",
+     "id": "dataset:Bruno Gomes|Coritiba",
+     "name": "Bruno Gomes",
      "aliases": [
-      "pablo goncalves maia fortunato",
-      "pablo maia"
+      "bruno gomes"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "São Paulo 2026"
+     "evidence": "Coritiba 2023"
     },
     {
-     "id": "Q19965665",
-     "name": "Cauly",
+     "id": "Q112181174",
+     "name": "Diego Porfírio",
      "aliases": [
-      "cauly",
-      "cauly oliveira souza"
+      "diego porfirio"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2022"
+    },
+    {
+     "id": "dataset:Egídio|Coritiba",
+     "name": "Egídio",
+     "aliases": [
+      "egidio"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2022"
+    },
+    {
+     "id": "Q2708551",
+     "name": "Guillermo De Los Santos",
+     "aliases": [
+      "guillermo de los santos"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2022"
+    },
+    {
+     "id": "Q6696793",
+     "name": "Luciano Castán",
+     "aliases": [
+      "luciano castan",
+      "luciano castan da silva"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2022"
+    },
+    {
+     "id": "dataset:Nathan|Coritiba",
+     "name": "Nathan",
+     "aliases": [
+      "nathan"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2022"
+    },
+    {
+     "id": "dataset:Robson Fernandes|Coritiba",
+     "name": "Robson Fernandes",
+     "aliases": [
+      "robson fernandes"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2020"
+    },
+    {
+     "id": "dataset:Rodolfo|Coritiba",
+     "name": "Rodolfo",
+     "aliases": [
+      "rodolfo"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2020"
+    },
+    {
+     "id": "Q54858439",
+     "name": "Thonny Anderson",
+     "aliases": [
+      "thonny anderson",
+      "thonny anderson da silva carvalho"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2022"
+    },
+    {
+     "id": "dataset:Zé Roberto|Coritiba",
+     "name": "Zé Roberto",
+     "aliases": [
+      "ze roberto"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2023"
+    },
+    {
+     "id": "Q106643466",
+     "name": "Alef Manga",
+     "aliases": [
+      "alef manga",
+      "alef mangueira severino pereira"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "São Paulo 2026"
+     "evidence": "Coritiba 2022"
     },
     {
-     "id": "Q77896856",
-     "name": "Ferreirinha",
+     "id": "Q61596074",
+     "name": "Bruno Melo",
      "aliases": [
-      "aldemir dos santos ferreira",
-      "aldemir ferreira",
-      "ferreirinha"
+      "bruno ferreira melo",
+      "bruno melo"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "São Paulo 2026"
+     "evidence": "Coritiba 2026"
     },
     {
-     "id": "Q90777249",
-     "name": "Gonzalo Tapia",
+     "id": "Q86445352",
+     "name": "Natanael",
      "aliases": [
-      "gonzalo andres tapia",
-      "gonzalo andres tapia dubournais",
-      "gonzalo tapia",
-      "gonzalo tapia dubournais"
+      "natanael",
+      "natanael moreira milouski"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "São Paulo 2026"
+     "evidence": "Coritiba 2020"
     },
     {
-     "id": "Q58303243",
-     "name": "Enzo Díaz",
+     "id": "Q10393744",
+     "name": "Willian Farias",
      "aliases": [
-      "enzo diaz",
-      "enzo hernan diaz"
+      "willian farias",
+      "willian roberto de farias",
+      "willian roberto farias"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "São Paulo 2026"
+     "evidence": "Coritiba 2023"
     },
     {
-     "id": "Q134149734",
-     "name": "Lucca",
+     "id": "Q96414286",
+     "name": "Warley",
      "aliases": [
-      "lucca",
-      "lucca marques",
-      "lucca marques alencar"
+      "warley",
+      "warley leandro da silva"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "São Paulo 2026"
+     "evidence": "Coritiba 2022"
     },
     {
-     "id": "Q61776748",
-     "name": "André Silva",
+     "id": "Q85770498",
+     "name": "Jacy",
      "aliases": [
-      "andre oliveira silva",
-      "andre silva"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q58414178",
-     "name": "Lucas Ramon",
-     "aliases": [
-      "lucas ramon",
-      "lucas ramon batista silva"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q61594859",
-     "name": "Sabino",
-     "aliases": [
-      "jose sabino chagas monteiro",
-      "sabino"
+      "jacy",
+      "jacy maranhao oliveira"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "São Paulo 2026"
+     "evidence": "Coritiba 2026"
     },
     {
-     "id": "Q55364035",
-     "name": "Danielzinho",
+     "id": "Q118396098",
+     "name": "Renato Marques",
      "aliases": [
-      "danielzinho"
+      "renato marques"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "São Paulo 2026"
+     "evidence": "Coritiba 2026"
     },
     {
-     "id": "Q135761517",
-     "name": "Maik",
+     "id": "Q106144407",
+     "name": "Tiago Cóser",
      "aliases": [
-      "maik",
-      "maik gomes viegas"
+      "tiago coser"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "São Paulo 2026"
+     "evidence": "Coritiba 2026"
     },
     {
-     "id": "Q138478867",
-     "name": "Djhordney",
+     "id": "Q115707747",
+     "name": "Jamerson",
      "aliases": [
-      "djhordney"
+      "jamerson",
+      "jamerson bahia",
+      "jamerson santos de jesus"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "São Paulo 2026"
-    },
-    {
-     "id": "Q139806664",
-     "name": "Luis Osorio",
-     "aliases": [
-      "luis osorio"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "São Paulo 2026"
+     "evidence": "Coritiba 2023"
     }
    ]
   }

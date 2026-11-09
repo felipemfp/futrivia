@@ -3,167 +3,134 @@
  "date": "2027-01-07",
  "prompts": [
   {
-   "id": "gols-por-atletico-mg-20",
-   "text": "Diga um jogador que fez 20 ou mais gols pelo Atlético-MG no Brasileirão, 2014–2026 (até 1º de junho)",
+   "id": "acrescimos-atletico-go",
+   "text": "Diga um jogador que marcou nos acréscimos do segundo tempo pelo Atlético-GO no Brasileirão, 2014–2024",
    "answers": [
     {
-     "id": "Q62786",
-     "name": "Hulk",
+     "id": "Q17379892",
+     "name": "Everaldo",
      "aliases": [
-      "givanildo vieira de sousa",
-      "hulk",
-      "hulk chorao",
-      "hulk creps aweonaito"
+      "everaldo",
+      "everaldo stum"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Atlético-MG 2021, Atlético-MG 2022, Atlético-MG 2023 e mais 3"
+     "evidence": "Atlético-GO 2017"
     },
     {
-     "id": "Q312772",
-     "name": "Fred",
+     "id": "Q21707180",
+     "name": "Ronaldo",
      "aliases": [
-      "fred",
-      "frederico chaves guedes"
+      "ronaldo",
+      "ronaldo da silva souza"
      ],
      "tier": "torcedor",
      "points": 30,
-     "evidence": "Atlético-MG 2016, Atlético-MG 2017"
+     "evidence": "Atlético-GO 2017"
     },
     {
-     "id": "Q2268949",
-     "name": "Eduardo Vargas",
+     "id": "Q101245811",
+     "name": "Wellington Rato",
      "aliases": [
-      "eduardo jesus vargas",
-      "eduardo jesus vargas rojas",
-      "eduardo vargas",
-      "eduardo vargas rojas",
-      "el edu vargas"
+      "wellington rato",
+      "wellington soares da silva"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Atlético-MG 2020, Atlético-MG 2021, Atlético-MG 2022 e mais 2"
+     "evidence": "Atlético-GO 2022"
     },
     {
-     "id": "Q952754",
-     "name": "Juan Cazares",
+     "id": "Q110834432",
+     "name": "Alejo Cruz",
      "aliases": [
-      "juan cazares",
-      "juan ramon cazares sevillano",
-      "juanito"
+      "alejo cruz"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Atlético-MG 2016, Atlético-MG 2017, Atlético-MG 2018 e mais 1"
+     "evidence": "Atlético-GO 2024"
     },
     {
-     "id": "Q965517",
-     "name": "Paulinho",
+     "id": "Q3644489",
+     "name": "Brian Montenegro",
      "aliases": [
-      "paulinho",
-      "paulo antonio de oliveira"
+      "brian montenegro"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-GO 2021"
+    },
+    {
+     "id": "dataset:Gilvan|Atletico-GO",
+     "name": "Gilvan",
+     "aliases": [
+      "gilvan"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-GO 2020"
+    },
+    {
+     "id": "dataset:Janderson|Atletico-GO",
+     "name": "Janderson",
+     "aliases": [
+      "janderson"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-GO 2021"
+    },
+    {
+     "id": "dataset:João Paulo|Atletico-GO",
+     "name": "João Paulo",
+     "aliases": [
+      "joao paulo"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-GO 2021"
+    },
+    {
+     "id": "Q124059616",
+     "name": "Mateo Zuleta",
+     "aliases": [
+      "mateo zuleta"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-GO 2024"
+    },
+    {
+     "id": "Q105176278",
+     "name": "Vitor Leque",
+     "aliases": [
+      "vitor benedito leque da silva",
+      "vitor leque"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-GO 2020"
+    },
+    {
+     "id": "Q65030454",
+     "name": "Jonas Toró",
+     "aliases": [
+      "jonas gabriel da silva nunes",
+      "jonas toro"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Atlético-MG 2023, Atlético-MG 2024"
+     "evidence": "Atlético-GO 2021"
     },
     {
-     "id": "Q3837942",
-     "name": "Luan Paiva",
+     "id": "Q28777441",
+     "name": "Shaylon",
      "aliases": [
-      "luan madson gedeao de paiva",
-      "luan paiva"
+      "shaylon",
+      "shaylon kallyson cardozo"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Atlético-MG 2014, Atlético-MG 2015, Atlético-MG 2016 e mais 3"
-    }
-   ]
-  },
-  {
-   "id": "gols-por-cruzeiro-15",
-   "text": "Diga um jogador que fez 15 ou mais gols pelo Cruzeiro no Brasileirão, 2014–2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q370014",
-     "name": "Thiago Neves",
-     "aliases": [
-      "thiago neves",
-      "thiago neves augusto"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Cruzeiro 2017, Cruzeiro 2018, Cruzeiro 2019"
-    },
-    {
-     "id": "Q13578003",
-     "name": "Giorgian de Arrascaeta",
-     "aliases": [
-      "de arrascaeta",
-      "giorgian arrascaeta",
-      "giorgian daniel de arrascaeta benedetti",
-      "giorgian de arrascaeta"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Cruzeiro 2015, Cruzeiro 2016, Cruzeiro 2017 e mais 1"
-    },
-    {
-     "id": "Q370507",
-     "name": "Marcelo Moreno",
-     "aliases": [
-      "marcelo martins",
-      "marcelo martins moreno",
-      "marcelo moreno",
-      "marcelo moreno martins"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Cruzeiro 2014"
-    },
-    {
-     "id": "Q56876908",
-     "name": "Kaio Jorge",
-     "aliases": [
-      "kaio jorge",
-      "kaio jorge pinto ramos"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2024, Cruzeiro 2025, Cruzeiro 2026"
-    },
-    {
-     "id": "Q15831118",
-     "name": "Matheus Pereira",
-     "aliases": [
-      "matheus fellipe costa pereira",
-      "matheus pereira"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cruzeiro 2023, Cruzeiro 2024, Cruzeiro 2025 e mais 1"
-    },
-    {
-     "id": "Q7322659",
-     "name": "Ricardo Goulart",
-     "aliases": [
-      "ricardo goulart",
-      "ricardo goulart pereira"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Cruzeiro 2014"
-    },
-    {
-     "id": "Q1031647",
-     "name": "Willian Bigode",
-     "aliases": [
-      "willian bigode",
-      "willian gomes de siqueira"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Cruzeiro 2014, Cruzeiro 2015, Cruzeiro 2016"
+     "evidence": "Atlético-GO 2024"
     }
    ]
   },
@@ -886,7 +853,8 @@
      "id": "Q313570",
      "name": "Hernanes",
      "aliases": [
-      "hernanes"
+      "hernanes",
+      "profeta"
      ],
      "tier": "arquibancada",
      "points": 10,
@@ -1287,88 +1255,676 @@
    ]
   },
   {
-   "id": "marcou-por-atletico-mg-e-botafogo-rj",
-   "text": "Diga um jogador que marcou pelo Atlético-MG e pelo Botafogo no Brasileirão, 2014–2026 (até 1º de junho)",
+   "id": "titular-internacional-2025-1",
+   "text": "Diga um jogador que foi titular pelo Internacional no Brasileirão 2025",
    "answers": [
     {
-     "id": "Q459707",
-     "name": "Diego Costa",
+     "id": "Q2843080",
+     "name": "Enner Valencia",
      "aliases": [
-      "diego costa",
-      "diego da silva costa"
+      "enner remberto valencia lastra",
+      "enner valencia"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Atlético-MG 2021, Botafogo 2023"
+     "evidence": "Internacional 2025"
     },
     {
-     "id": "Q1707749",
-     "name": "Edenilson",
+     "id": "Q1372491",
+     "name": "Gabriel Mercado",
      "aliases": [
-      "edenilson",
-      "edenilson andrade dos santos"
+      "gabriel ivan mercado",
+      "gabriel mercado"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Atlético-MG 2023, Botafogo 2026"
+     "evidence": "Internacional 2025"
     },
     {
-     "id": "Q20735677",
-     "name": "Jefferson Savarino",
+     "id": "Q973416",
+     "name": "Fernando",
      "aliases": [
-      "jefferson david savarino quintero",
-      "jefferson savarino"
+      "fernando",
+      "fernando francisco reges",
+      "fernando francisco reges mouta",
+      "fernando reges"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q17086753",
+     "name": "Sergio Rochet",
+     "aliases": [
+      "sergio rochet"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q18719633",
+     "name": "Rafael Borré",
+     "aliases": [
+      "borre",
+      "rafael borre",
+      "rafael santos borre",
+      "rafael santos borre maury"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q18394141",
+     "name": "Thiago Maia",
+     "aliases": [
+      "thiago maia",
+      "thiago maia alencar"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q15960512",
+     "name": "Óscar Romero",
+     "aliases": [
+      "oscar david romero villamayor",
+      "oscar romero",
+      "oscar romero villamayor"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q923402",
+     "name": "Alan Patrick",
+     "aliases": [
+      "alan patrick",
+      "alan patrick lourenco"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q4979245",
+     "name": "Bruno Henrique",
+     "aliases": [
+      "bruno henrique",
+      "bruno henrique corsini"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q28816035",
+     "name": "Agustín Rogel",
+     "aliases": [
+      "agustin maximiliano rogel paita",
+      "agustin rogel"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q71620133",
+     "name": "Alexandro Bernabei",
+     "aliases": [
+      "alexander bernabei",
+      "alexandro bernabei",
+      "alexandro ezequiel bernabei"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Atlético-MG 2020, Atlético-MG 2021, Atlético-MG 2022 e mais 2"
+     "evidence": "Internacional 2025"
     },
     {
-     "id": "Q56065071",
-     "name": "Júnior Santos",
+     "id": "Q29117869",
+     "name": "Bruno Tabata",
      "aliases": [
-      "jose antonio dos santos junior",
-      "junior santos",
-      "junitor"
+      "bruno tabata",
+      "bruno vinicius souza ramos"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Botafogo 2022, Botafogo 2023, Botafogo 2024 e mais 2"
+     "evidence": "Internacional 2025"
     },
     {
-     "id": "Q24049261",
-     "name": "Tchê Tchê",
+     "id": "Q21621619",
+     "name": "Juninho",
      "aliases": [
-      "danilo das neves pinheiro",
-      "danilo neves",
-      "tche tche"
+      "jose carlos ferreira junior",
+      "juninho"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Atlético-MG 2021, Botafogo 2022, Botafogo 2023"
+     "evidence": "Internacional 2025"
     },
     {
-     "id": "Q27448052",
-     "name": "Gabriel Costa França",
+     "id": "Q60841629",
+     "name": "Vitão",
      "aliases": [
-      "gabriel costa franca"
+      "vitao"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q65718438",
+     "name": "Wesley",
+     "aliases": [
+      "wesley",
+      "wesley ribeiro da silva",
+      "wesley ribeiro silva"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q21707180",
+     "name": "Ronaldo",
+     "aliases": [
+      "ronaldo",
+      "ronaldo da silva souza"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q59644108",
+     "name": "Johan Carbonero",
+     "aliases": [
+      "johan carbonero",
+      "johan stiven carbonero"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q16297740",
+     "name": "Alan Benítez",
+     "aliases": [
+      "alan benitez",
+      "alan max benitez dominguez"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Atlético-MG 2017, Botafogo 2019, Atlético-MG 2021"
+     "evidence": "Internacional 2025"
     },
     {
-     "id": "Q30935916",
-     "name": "Igor Rabello",
+     "id": "Q76376134",
+     "name": "Diego Rosa",
      "aliases": [
-      "fatura",
-      "igor rabello",
-      "igor rabello da costa",
-      "rabello"
+      "diego rosa"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q65030052",
+     "name": "Ivan",
+     "aliases": [
+      "ivan",
+      "ivan quaresma da silva"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q123644346",
+     "name": "Ricardo Mathias",
+     "aliases": [
+      "ricardo mathias"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q65704481",
+     "name": "Vitinho",
+     "aliases": [
+      "vitinho",
+      "vitor hugo naum dos santos",
+      "vitor naum"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q41510959",
+     "name": "Richard",
+     "aliases": [
+      "richard",
+      "richard candido coelho"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q69982022",
+     "name": "Bruno Gomes",
+     "aliases": [
+      "bruno gomes",
+      "bruno gomes da silva clevelario"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q126083081",
+     "name": "Gustavo Prado",
+     "aliases": [
+      "gustavo prado"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q97169033",
+     "name": "Ramon",
+     "aliases": [
+      "ramon",
+      "ramon ramos lima"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q101129365",
+     "name": "Braian Aguirre",
+     "aliases": [
+      "braian aguirre",
+      "braian nahuel aguirre",
+      "brian nahuel aguirre"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q130629639",
+     "name": "Luis Otávio",
+     "aliases": [
+      "luis otavio",
+      "luis otavio costa de aquino"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q73222929",
+     "name": "Alan Rodríguez",
+     "aliases": [
+      "alan rodriguez"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Botafogo 2017, Botafogo 2018, Atlético-MG 2020 e mais 1"
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q117474660",
+     "name": "Lucca",
+     "aliases": [
+      "lucca",
+      "lucca holanda sampaio tavares"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q104538050",
+     "name": "Nathan",
+     "aliases": [
+      "nathan",
+      "nathan santos",
+      "nathan santos de araujo"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q130282467",
+     "name": "Clayton",
+     "aliases": [
+      "clayton",
+      "clayton sampaio"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q107598385",
+     "name": "Victor Gabriel",
+     "aliases": [
+      "victor gabriel"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Internacional 2025"
+    },
+    {
+     "id": "Q124745297",
+     "name": "Anthoni",
+     "aliases": [
+      "anthoni",
+      "anthoni spier souza"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Internacional 2025"
+    }
+   ]
+  },
+  {
+   "id": "titular-fortaleza-2025-5",
+   "text": "Diga um jogador que foi titular pelo Fortaleza em 5 ou mais jogos no Brasileirão 2025",
+   "answers": [
+    {
+     "id": "Q10552615",
+     "name": "Deyverson",
+     "aliases": [
+      "deyverson",
+      "deyverson brum silva",
+      "deyverson brum silva acosta"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q18618525",
+     "name": "Benjamín Kuscevic",
+     "aliases": [
+      "benjamin kuscevic",
+      "patron"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q10394490",
+     "name": "Yago Pikachu",
+     "aliases": [
+      "glaybson yago souza lisboa",
+      "pikachu",
+      "yago picachu",
+      "yago pikachu"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q3869209",
+     "name": "Marinho",
+     "aliases": [
+      "marinho",
+      "mario sergio santos costa"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q66685106",
+     "name": "Brenno",
+     "aliases": [
+      "brenno",
+      "brenno oliveira fraga costa"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q101230488",
+     "name": "Breno Lopes",
+     "aliases": [
+      "breno henrique vasconcelos lopes",
+      "breno lopes"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q16233976",
+     "name": "Juan Martín Lucero",
+     "aliases": [
+      "juan martin lucero"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q21064573",
+     "name": "Matheus Pereira",
+     "aliases": [
+      "matheus pereira",
+      "matheus pereira da silva"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q61866581",
+     "name": "Gastón Ávila",
+     "aliases": [
+      "gaston avila"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q5279185",
+     "name": "Diogo Barbosa",
+     "aliases": [
+      "diogo barbosa",
+      "diogo barbosa medonha",
+      "diogo barbosa mendanha"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q6696266",
+     "name": "Lucas Sasha",
+     "aliases": [
+      "lucas pacheco affini",
+      "lucas sasha"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q60286902",
+     "name": "Adam Bareiro",
+     "aliases": [
+      "adam bareiro",
+      "adam fernando bareiro gamarra"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q19277762",
+     "name": "Tomás Pochettino",
+     "aliases": [
+      "tomas pochettino"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q27805382",
+     "name": "Matheus Rossetto",
+     "aliases": [
+      "matheus rossetto"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q23007695",
+     "name": "João Ricardo",
+     "aliases": [
+      "joao ricardo",
+      "joao ricardo riedi"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q52418817",
+     "name": "Emanuel Brítez",
+     "aliases": [
+      "emanuel britez",
+      "emmanuel britez"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q19668602",
+     "name": "Lucas Crispim",
+     "aliases": [
+      "lucas crispim",
+      "lucas de figueiredo crispim"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q21152705",
+     "name": "Emmanuel Martínez",
+     "aliases": [
+      "emmanuel martinez",
+      "leandro emmanuel martinez"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q18218092",
+     "name": "Tinga",
+     "aliases": [
+      "guilherme",
+      "guilherme de jesus da silva",
+      "tinga"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q32187582",
+     "name": "Bruno Pacheco",
+     "aliases": [
+      "bruno de jesus pacheco",
+      "bruno pacheco"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q107656025",
+     "name": "Eros Mancuso",
+     "aliases": [
+      "eros mancuso",
+      "eros nazareno mancuso"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q133890399",
+     "name": "Gustavo Mancha",
+     "aliases": [
+      "gustavo mancha",
+      "gustavo teixeira lopes da conceicao"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q114773479",
+     "name": "José Herrera",
+     "aliases": [
+      "jose herrera",
+      "jose maria herrera"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q113468481",
+     "name": "Lucas Gazal",
+     "aliases": [
+      "lucas gazal"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q136222999",
+     "name": "Pierre",
+     "aliases": [
+      "pierre",
+      "pierre wagner oliveira dos santos"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Fortaleza 2025"
+    },
+    {
+     "id": "Q134055636",
+     "name": "Lucca Prior",
+     "aliases": [
+      "lucca prior"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Fortaleza 2025"
     }
    ]
   }

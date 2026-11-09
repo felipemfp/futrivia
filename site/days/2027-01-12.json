@@ -88,6 +88,7 @@
      "name": "Yago Pikachu",
      "aliases": [
       "glaybson yago souza lisboa",
+      "pikachu",
       "yago picachu",
       "yago pikachu"
      ],
@@ -302,6 +303,165 @@
      "tier": "enciclopedia",
      "points": 100,
      "evidence": "Ceará 2021"
+    }
+   ]
+  },
+  {
+   "id": "gols-por-santos-20",
+   "text": "Diga um jogador que fez 20 ou mais gols pelo Santos no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q13646572",
+     "name": "Gabigol",
+     "aliases": [
+      "gabigol",
+      "gabriel barbosa",
+      "gabriel barbosa almeida"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Santos 2014, Santos 2015, Santos 2016 e mais 2"
+    },
+    {
+     "id": "Q315079",
+     "name": "Ricardo Oliveira",
+     "aliases": [
+      "ricardo de oliveira",
+      "ricardo oliveira"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Santos 2015, Santos 2016, Santos 2017"
+    },
+    {
+     "id": "Q5041766",
+     "name": "Carlos Sánchez",
+     "aliases": [
+      "carlos andres sanchez",
+      "carlos andres sanchez arcosa",
+      "carlos sanchez"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Santos 2018, Santos 2019, Santos 2021"
+    },
+    {
+     "id": "Q98534760",
+     "name": "Marcos Leonardo",
+     "aliases": [
+      "marcos leonardo",
+      "marcos leonardo santos almeida"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Santos 2020, Santos 2021, Santos 2022 e mais 1"
+    },
+    {
+     "id": "Q3869209",
+     "name": "Marinho",
+     "aliases": [
+      "marinho",
+      "mario sergio santos costa"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Santos 2019, Santos 2020, Santos 2021"
+    }
+   ]
+  },
+  {
+   "id": "marcou-por-gremio-e-santos",
+   "text": "Diga um jogador que marcou pelo Grêmio e pelo Santos no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q905206",
+     "name": "Diego Tardelli",
+     "aliases": [
+      "diego tardelli",
+      "diego tardelli martins",
+      "tardelli martins"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Grêmio 2019, Santos 2021"
+    },
+    {
+     "id": "Q508075",
+     "name": "Bruno Uvini",
+     "aliases": [
+      "bruno uvini",
+      "bruno uvini bortolanca"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Santos 2014, Grêmio 2023"
+    },
+    {
+     "id": "Q20976280",
+     "name": "Yeferson Soteldo",
+     "aliases": [
+      "soteldinho",
+      "yeferson julio soteldo martinez",
+      "yeferson soteldo"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Santos 2019, Santos 2020, Santos 2023 e mais 1"
+    },
+    {
+     "id": "Q3869209",
+     "name": "Marinho",
+     "aliases": [
+      "marinho",
+      "mario sergio santos costa"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Grêmio 2018, Santos 2019, Santos 2020 e mais 1"
+    },
+    {
+     "id": "Q939542",
+     "name": "David Braz",
+     "aliases": [
+      "david braz",
+      "david braz de oliveira filho"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Santos 2014, Santos 2015, Santos 2017 e mais 2"
+    },
+    {
+     "id": "Q16919481",
+     "name": "Luan Guilherme",
+     "aliases": [
+      "luan guilherme",
+      "luan guilherme de jesus vieira",
+      "luan vieira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Grêmio 2014, Grêmio 2015, Grêmio 2016 e mais 4"
+    },
+    {
+     "id": "Q1150828",
+     "name": "Cícero Santos",
+     "aliases": [
+      "cicero santos"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Santos 2014, Grêmio 2018"
+    },
+    {
+     "id": "Q24062447",
+     "name": "Thaciano",
+     "aliases": [
+      "thaciano",
+      "thaciano mickael da silva"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Grêmio 2018, Grêmio 2019, Grêmio 2020 e mais 2"
     }
    ]
   },
@@ -691,6 +851,39 @@
      "evidence": "Fluminense 2021"
     },
     {
+     "id": "Q86493810",
+     "name": "Gabriel Sara",
+     "aliases": [
+      "gabriel davi gomes sara",
+      "gabriel sara"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "São Paulo 2021"
+    },
+    {
+     "id": "Q60048692",
+     "name": "Michael",
+     "aliases": [
+      "michael",
+      "michael richard delgado de oliveira"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Flamengo 2021"
+    },
+    {
+     "id": "Q1634101",
+     "name": "Wellington Paulista",
+     "aliases": [
+      "wellington paulista",
+      "wellington pereira do nascimento"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Fortaleza 2021"
+    },
+    {
      "id": "Q100327655",
      "name": "Alê",
      "aliases": [
@@ -732,16 +925,6 @@
      "evidence": "Juventude 2021"
     },
     {
-     "id": "dataset:Vinícius|Ceara",
-     "name": "Vinícius",
-     "aliases": [
-      "vinicius"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Ceará 2021"
-    },
-    {
      "id": "dataset:Ytalo José dos Santos|Bragantino",
      "name": "Ytalo José dos Santos",
      "aliases": [
@@ -750,39 +933,6 @@
      "tier": "raiz",
      "points": 60,
      "evidence": "Bragantino 2021"
-    },
-    {
-     "id": "Q86493810",
-     "name": "Gabriel Sara",
-     "aliases": [
-      "gabriel davi gomes sara",
-      "gabriel sara"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "São Paulo 2021"
-    },
-    {
-     "id": "Q60048692",
-     "name": "Michael",
-     "aliases": [
-      "michael",
-      "michael richard delgado de oliveira"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Flamengo 2021"
-    },
-    {
-     "id": "Q1634101",
-     "name": "Wellington Paulista",
-     "aliases": [
-      "wellington paulista",
-      "wellington pereira do nascimento"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Fortaleza 2021"
     },
     {
      "id": "Q27804547",
@@ -851,6 +1001,19 @@
      "evidence": "Fluminense 2021"
     },
     {
+     "id": "Q20641618",
+     "name": "Vina",
+     "aliases": [
+      "vina",
+      "vinicius",
+      "vinicius goes",
+      "vinicius goes barbosa de souza"
+     ],
+     "tier": "enciclopedia",
+     "points": 100,
+     "evidence": "Ceará 2021"
+    },
+    {
      "id": "Q16940500",
      "name": "Juninho",
      "aliases": [
@@ -882,133 +1045,6 @@
      "tier": "enciclopedia",
      "points": 100,
      "evidence": "Fortaleza 2021"
-    }
-   ]
-  },
-  {
-   "id": "acrescimos-bragantino",
-   "text": "Diga um jogador que marcou nos acréscimos do segundo tempo pelo Bragantino no Brasileirão, 2014–2024",
-   "answers": [
-    {
-     "id": "Q55816003",
-     "name": "Léo Ortiz",
-     "aliases": [
-      "leo ortiz",
-      "leonardo rech ortiz"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Bragantino 2020"
-    },
-    {
-     "id": "Q28665426",
-     "name": "Artur",
-     "aliases": [
-      "artur",
-      "artur victor guimaraes"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Bragantino 2021"
-    },
-    {
-     "id": "Q14755607",
-     "name": "Lucas Evangelista",
-     "aliases": [
-      "lucas evangelista",
-      "lucas evangelista santana de oliveira"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Bragantino 2023"
-    },
-    {
-     "id": "Q59207116",
-     "name": "Luan Cândido",
-     "aliases": [
-      "luan candido",
-      "luan candido de almeida"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Bragantino 2022"
-    },
-    {
-     "id": "Q40165656",
-     "name": "Bruno Gonçalves",
-     "aliases": [
-      "bruno goncalves"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Bragantino 2021"
-    },
-    {
-     "id": "Q104880373",
-     "name": "Chrigor",
-     "aliases": [
-      "chrigor",
-      "chrigor flores moraes"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Bragantino 2021"
-    },
-    {
-     "id": "dataset:Claudinho|Bragantino",
-     "name": "Claudinho",
-     "aliases": [
-      "claudinho"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Bragantino 2020"
-    },
-    {
-     "id": "Q104708318",
-     "name": "Gabriel Novaes",
-     "aliases": [
-      "gabriel novaes",
-      "gabriel novaes fernandes"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Bragantino 2022"
-    },
-    {
-     "id": "Q30126774",
-     "name": "Jan Hurtado",
-     "aliases": [
-      "churta hurtado",
-      "jan carlos hurtado",
-      "jan carlos hurtado anchico",
-      "jan hurtado"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Bragantino 2020"
-    },
-    {
-     "id": "Q99673891",
-     "name": "Thiago Borbas",
-     "aliases": [
-      "thiago borbas"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Bragantino 2023, Bragantino 2024"
-    },
-    {
-     "id": "Q117031970",
-     "name": "Gustavinho",
-     "aliases": [
-      "gustavinho",
-      "gustavo neves",
-      "gustavo ribeiro neves"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Bragantino 2024"
     }
    ]
   },
@@ -1177,6 +1213,7 @@
      "name": "Vina",
      "aliases": [
       "vina",
+      "vinicius",
       "vinicius goes",
       "vinicius goes barbosa de souza"
      ],
@@ -1229,209 +1266,63 @@
    ]
   },
   {
-   "id": "penalti-cuiaba",
-   "text": "Diga um jogador que marcou de pênalti pelo Cuiabá no Brasileirão, 2014–2026 (até 1º de junho)",
+   "id": "gols-por-corinthians-20",
+   "text": "Diga um jogador que fez 20 ou mais gols pelo Corinthians no Brasileirão, 2014–2026 (até 1º de junho)",
    "answers": [
     {
-     "id": "Q2507087",
-     "name": "Elton Rodrigues Brandão",
+     "id": "Q314099",
+     "name": "Jô",
      "aliases": [
-      "elton rodrigues brandao"
+      "jo",
+      "jo alves"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Cuiabá 2021, Cuiabá 2022"
+     "evidence": "Corinthians 2017, Corinthians 2020, Corinthians 2021 e mais 1"
     },
     {
-     "id": "Q10552615",
-     "name": "Deyverson",
+     "id": "Q359160",
+     "name": "Jadson",
      "aliases": [
-      "deyverson",
-      "deyverson brum silva",
-      "deyverson brum silva acosta"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Cuiabá 2022, Cuiabá 2023"
-    },
-    {
-     "id": "Q518525",
-     "name": "André Balada",
-     "aliases": [
-      "andre balada",
-      "andre felipe",
-      "andre felipe ribeiro de souza"
+      "jadson",
+      "jadson rodrigues da silva"
      ],
      "tier": "torcedor",
      "points": 30,
-     "evidence": "Cuiabá 2022"
+     "evidence": "Corinthians 2014, Corinthians 2015, Corinthians 2017 e mais 1"
     },
     {
-     "id": "Q99096411",
-     "name": "Isidro Pitta",
+     "id": "Q10364015",
+     "name": "Róger Guedes",
      "aliases": [
-      "isidro miguel pitta saldivar",
-      "isidro pitta"
+      "roger guedes"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Cuiabá 2023, Cuiabá 2024"
+     "evidence": "Corinthians 2021, Corinthians 2022, Corinthians 2023"
     },
     {
-     "id": "Q18719321",
-     "name": "Jonathan Cafu",
+     "id": "Q43252427",
+     "name": "Yuri Alberto",
      "aliases": [
-      "jonathan cafu",
-      "jonathan renato barbosa"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Cuiabá 2021"
-    },
-    {
-     "id": "Q19879773",
-     "name": "Clayson",
-     "aliases": [
-      "clayson",
-      "clayson henrique da silva vieira"
+      "yuri alberto",
+      "yuri alberto monteiro da silva"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Cuiabá 2023"
+     "evidence": "Corinthians 2022, Corinthians 2023, Corinthians 2024 e mais 2"
     },
     {
-     "id": "Q60675645",
-     "name": "Fernando Sobral",
+     "id": "Q15960510",
+     "name": "Ángel Romero",
      "aliases": [
-      "fernando pereira do nascimento",
-      "fernando sobral"
+      "angel rodrigo romero villamayor",
+      "angel romero",
+      "angel romero villamayor"
      ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Cuiabá 2024"
-    }
-   ]
-  },
-  {
-   "id": "penalti-atletico-go",
-   "text": "Diga um jogador que marcou de pênalti pelo Atlético-GO no Brasileirão, 2014–2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q17379892",
-     "name": "Everaldo",
-     "aliases": [
-      "everaldo",
-      "everaldo stum"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Atlético-GO 2017"
-    },
-    {
-     "id": "Q545249",
-     "name": "Walter",
-     "aliases": [
-      "walter",
-      "walter henrique da silva"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Atlético-GO 2017"
-    },
-    {
-     "id": "Q19866008",
-     "name": "Marlon Freitas",
-     "aliases": [
-      "marlon freitas",
-      "marlon rodrigues de freitas"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Atlético-GO 2021, Atlético-GO 2022"
-    },
-    {
-     "id": "Q19958242",
-     "name": "Jeanzinho",
-     "aliases": [
-      "jean paulo fernandes filho",
-      "jeanzinho"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Atlético-GO 2020"
-    },
-    {
-     "id": "Q954935",
-     "name": "Diego Churín",
-     "aliases": [
-      "diego churin"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Atlético-GO 2022"
-    },
-    {
-     "id": "Q110834432",
-     "name": "Alejo Cruz",
-     "aliases": [
-      "alejo cruz"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Atlético-GO 2024"
-    },
-    {
-     "id": "Q356797",
-     "name": "Joel Campbell",
-     "aliases": [
-      "joel campbell",
-      "joel nathaniel campbell samuels"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Atlético-GO 2024"
-    },
-    {
-     "id": "dataset:João Paulo|Atletico-GO",
-     "name": "João Paulo",
-     "aliases": [
-      "joao paulo"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Atlético-GO 2021"
-    },
-    {
-     "id": "dataset:Zé Roberto|Atletico-GO",
-     "name": "Zé Roberto",
-     "aliases": [
-      "ze roberto"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Atlético-GO 2021"
-    },
-    {
-     "id": "Q28086372",
-     "name": "Luiz Fernando",
-     "aliases": [
-      "luiz fernando",
-      "luiz fernando moraes dos santos"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Atlético-GO 2017"
-    },
-    {
-     "id": "Q28777441",
-     "name": "Shaylon",
-     "aliases": [
-      "shaylon",
-      "shaylon kallyson cardozo"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Atlético-GO 2024"
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Corinthians 2015, Corinthians 2016, Corinthians 2017 e mais 3"
     }
    ]
   }

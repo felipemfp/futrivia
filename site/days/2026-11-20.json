@@ -150,19 +150,20 @@
    ]
   },
   {
-   "id": "expulso-avai-2014-2019",
-   "text": "Diga um jogador que foi expulso jogando pelo Avaí no Brasileirão, 2014–2019",
+   "id": "expulso-coritiba-2014-2019",
+   "text": "Diga um jogador que foi expulso jogando pelo Coritiba no Brasileirão, 2014–2019",
    "answers": [
     {
-     "id": "Q619109",
-     "name": "Eduardo Neto",
+     "id": "Q484772",
+     "name": "Anderson",
      "aliases": [
-      "eduardo da silva nascimento neto",
-      "eduardo neto"
+      "anderson",
+      "anderson de abreu",
+      "anderson luis de abreu oliveira"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Avaí 2015"
+     "evidence": "Coritiba 2017"
     },
     {
      "id": "Q3187323",
@@ -174,19 +175,66 @@
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Avaí 2019"
+     "evidence": "Coritiba 2016"
     },
     {
-     "id": "Q2084020",
-     "name": "Willians Santana",
+     "id": "Q2277170",
+     "name": "Kléber",
      "aliases": [
-      "williams dos santos santana",
-      "willians dos santos santana",
-      "willians santana"
+      "kleber",
+      "kleber de sousa freitas",
+      "kleber giacomazzi de souza freitas",
+      "kleber gladiador"
      ],
      "tier": "arquibancada",
      "points": 10,
-     "evidence": "Avaí 2017"
+     "evidence": "Coritiba 2016, Coritiba 2017"
+    },
+    {
+     "id": "Q2585913",
+     "name": "Leandro Almeida",
+     "aliases": [
+      "leandro almeida",
+      "leandro almeida da silva",
+      "leandro almeida silva"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Coritiba 2014"
+    },
+    {
+     "id": "Q1634101",
+     "name": "Wellington Paulista",
+     "aliases": [
+      "wellington paulista",
+      "wellington pereira do nascimento"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Coritiba 2015"
+    },
+    {
+     "id": "Q2457765",
+     "name": "Henrique Almeida",
+     "aliases": [
+      "henrique almeida",
+      "henrique almeida caixeta nascentes",
+      "henrique nascentes"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Coritiba 2015"
+    },
+    {
+     "id": "Q21621619",
+     "name": "Juninho",
+     "aliases": [
+      "jose carlos ferreira junior",
+      "juninho"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2015"
     },
     {
      "id": "Q779177",
@@ -196,333 +244,86 @@
       "juan maldonado jaimez",
       "juan maldonado jaimez junior"
      ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Avaí 2017"
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Coritiba 2016"
     },
     {
-     "id": "Q72980881",
-     "name": "Eduardo Kunde",
+     "id": "Q8015227",
+     "name": "William Matheus",
      "aliases": [
-      "eduardo kunde",
-      "eduardo lecke kunde"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Avaí 2019"
-    },
-    {
-     "id": "Q4776503",
-     "name": "Antônio Carlos",
-     "aliases": [
-      "antonio carlos",
-      "antonio carlos capocasali",
-      "antonio carlos cunha capocasali junior"
+      "william matheus",
+      "william matheus da silva"
      ],
      "tier": "raiz",
      "points": 60,
-     "evidence": "Avaí 2015"
+     "evidence": "Coritiba 2017"
     },
     {
-     "id": "Q18719454",
-     "name": "Gustavo Ferrareis",
+     "id": "Q1615346",
+     "name": "Lucio Flavio",
      "aliases": [
-      "gustavo ferrareis",
-      "gustavo henrique ferrareis"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Avaí 2019"
-    },
-    {
-     "id": "Q126447",
-     "name": "André Moritz",
-     "aliases": [
-      "andre francisco moritz",
-      "andre moritz"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Avaí 2019"
-    },
-    {
-     "id": "Q29415805",
-     "name": "Brenner Marlos",
-     "aliases": [
-      "brenner marlos",
-      "brenner marlos varanda de oliveira"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Avaí 2019"
-    },
-    {
-     "id": "Q717218",
-     "name": "Ebert Willian Amâncio",
-     "aliases": [
-      "betao",
-      "ebert william amancio",
-      "ebert willian amancio"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Avaí 2019"
-    },
-    {
-     "id": "dataset:Joel Tagueu|Avai",
-     "name": "Joel Tagueu",
-     "aliases": [
-      "joel tagueu"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Avaí 2017"
-    },
-    {
-     "id": "Q53568345",
-     "name": "Matheus Barbosa",
-     "aliases": [
-      "matheus barbosa",
-      "matheus barbosa teixeira"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Avaí 2019"
-    },
-    {
-     "id": "Q605965",
-     "name": "Marquinhos Santos",
-     "aliases": [
-      "marcos vicente dos santos",
-      "marquinhos santos"
+      "lucio flavio",
+      "lucio flavio dos santos"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Avaí 2017"
+     "evidence": "Coritiba 2015"
     },
     {
-     "id": "Q20048349",
-     "name": "Romário",
+     "id": "Q6997000",
+     "name": "Nery Bareiro",
      "aliases": [
-      "romario",
-      "romario guilherme dos santos"
+      "nery bareiro",
+      "nery ruben bareiro zorrilla"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Avaí 2015"
+     "evidence": "Coritiba 2016"
     },
     {
-     "id": "Q16337761",
-     "name": "Léo Morais",
+     "id": "Q7386520",
+     "name": "Róbson Michael Signorini",
      "aliases": [
-      "leo morais",
-      "leonardo moreira morais"
+      "robinho",
+      "robson michael signorini"
      ],
      "tier": "resenha",
      "points": 85,
-     "evidence": "Avaí 2019"
+     "evidence": "Coritiba 2014"
     },
     {
-     "id": "Q6509749",
-     "name": "Leandro Silva",
+     "id": "Q16940371",
+     "name": "Norberto",
      "aliases": [
-      "leandro da silva",
-      "leandro silva"
+      "norberto",
+      "norberto pereira marinho neto"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Avaí 2017"
+     "evidence": "Coritiba 2015"
     },
     {
-     "id": "Q66619041",
-     "name": "Wesley Soares",
+     "id": "Q4019016",
+     "name": "Werley",
      "aliases": [
-      "wesley soares",
-      "wesley soares xavier"
+      "werley",
+      "werley ananias da silva"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Avaí 2019"
-    }
-   ]
-  },
-  {
-   "id": "expulso-athletico-pr-2020-2026",
-   "text": "Diga um jogador que foi expulso jogando pelo Athletico-PR no Brasileirão, 2020–2026 (até 1º de junho)",
-   "answers": [
-    {
-     "id": "Q459356",
-     "name": "Fernandinho",
-     "aliases": [
-      "fernandinho",
-      "fernando luiz rosa",
-      "fernando luiz roza"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Athletico-PR 2023"
+     "evidence": "Coritiba 2017"
     },
     {
-     "id": "Q26838705",
-     "name": "Agustín Canobbio",
+     "id": "Q30145302",
+     "name": "Marcio",
      "aliases": [
-      "agustin canobbio"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Athletico-PR 2024"
-    },
-    {
-     "id": "Q976476",
-     "name": "Thiago Heleno",
-     "aliases": [
-      "thiago heleno",
-      "thiago heleno henrique ferreira"
-     ],
-     "tier": "arquibancada",
-     "points": 10,
-     "evidence": "Athletico-PR 2020, Athletico-PR 2021, Athletico-PR 2022 e mais 1"
-    },
-    {
-     "id": "Q27836019",
-     "name": "Alex Santana",
-     "aliases": [
-      "alex paulo menezes santana",
-      "alex santana"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Athletico-PR 2023"
-    },
-    {
-     "id": "Q29477702",
-     "name": "Tomás Cuello",
-     "aliases": [
-      "tomas cuello"
-     ],
-     "tier": "torcedor",
-     "points": 30,
-     "evidence": "Athletico-PR 2022"
-    },
-    {
-     "id": "Q28474511",
-     "name": "Ivaldo",
-     "aliases": [
-      "ivaldo",
-      "jose ivaldo almeida silva",
-      "ze ivaldo"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Athletico-PR 2023"
-    },
-    {
-     "id": "Q101084011",
-     "name": "Lucas Esquivel",
-     "aliases": [
-      "lucas angel esquivel",
-      "lucas esquivel"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Athletico-PR 2024, Athletico-PR 2026"
-    },
-    {
-     "id": "Q65704481",
-     "name": "Vitinho",
-     "aliases": [
-      "vitinho",
-      "vitor hugo naum dos santos",
-      "vitor naum"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Athletico-PR 2022"
-    },
-    {
-     "id": "Q41510959",
-     "name": "Richard",
-     "aliases": [
-      "richard",
-      "richard candido coelho"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Athletico-PR 2020, Athletico-PR 2021"
-    },
-    {
-     "id": "Q116482015",
-     "name": "Fernando Augusto Pereira Bueno Júnior",
-     "aliases": [
-      "fernando augusto pereira bueno junior"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Athletico-PR 2024"
-    },
-    {
-     "id": "Q117879587",
-     "name": "Vinicius Kauê",
-     "aliases": [
-      "vinicius kaue",
-      "vinicius kaue ribeiro ferreira"
-     ],
-     "tier": "raiz",
-     "points": 60,
-     "evidence": "Athletico-PR 2023"
-    },
-    {
-     "id": "Q60736971",
-     "name": "Hugo Moura",
-     "aliases": [
-      "hugo moura",
-      "hugo moura arruda da silva"
-     ],
-     "tier": "resenha",
-     "points": 85,
-     "evidence": "Athletico-PR 2022"
-    },
-    {
-     "id": "Q107585758",
-     "name": "Bruno Zapelli",
-     "aliases": [
-      "bruno zapelli"
+      "marcio",
+      "marcio marcelo leite junior"
      ],
      "tier": "enciclopedia",
      "points": 100,
-     "evidence": "Athletico-PR 2026"
-    },
-    {
-     "id": "Q55281478",
-     "name": "Marcinho",
-     "aliases": [
-      "marcinho",
-      "marcio almeida de oliveira"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Athletico-PR 2021"
-    },
-    {
-     "id": "Q116780485",
-     "name": "Mycael",
-     "aliases": [
-      "mycael",
-      "mycael pontes"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Athletico-PR 2024"
-    },
-    {
-     "id": "Q116872137",
-     "name": "Léo Linck",
-     "aliases": [
-      "leo linck"
-     ],
-     "tier": "enciclopedia",
-     "points": 100,
-     "evidence": "Athletico-PR 2024"
+     "evidence": "Coritiba 2017"
     }
    ]
   },
@@ -893,9 +694,11 @@
     },
     {
      "id": "Q17385902",
-     "name": "Everton",
+     "name": "Everton Cebolinha",
      "aliases": [
+      "cebolinha",
       "everton",
+      "everton cebolinha",
       "everton sousa soares"
      ],
      "tier": "arquibancada",
@@ -999,6 +802,7 @@
      "name": "Yago Pikachu",
      "aliases": [
       "glaybson yago souza lisboa",
+      "pikachu",
       "yago picachu",
       "yago pikachu"
      ],
@@ -1398,6 +1202,67 @@
      "tier": "enciclopedia",
      "points": 100,
      "evidence": "Internacional 2016"
+    }
+   ]
+  },
+  {
+   "id": "marcou-por-athletico-pr-e-atletico-mg",
+   "text": "Diga um jogador que marcou pelo Athletico-PR e pelo Atlético-MG no Brasileirão, 2014–2026 (até 1º de junho)",
+   "answers": [
+    {
+     "id": "Q28748046",
+     "name": "Rony",
+     "aliases": [
+      "rony"
+     ],
+     "tier": "arquibancada",
+     "points": 10,
+     "evidence": "Athletico-PR 2018, Athletico-PR 2019, Atlético-MG 2025"
+    },
+    {
+     "id": "Q554402",
+     "name": "Guilherme Milhomem Gusmão",
+     "aliases": [
+      "guilherme milhomem gusmao",
+      "guilherme milhomen gusmao",
+      "puncho"
+     ],
+     "tier": "torcedor",
+     "points": 30,
+     "evidence": "Atlético-MG 2014, Athletico-PR 2017, Athletico-PR 2018"
+    },
+    {
+     "id": "Q29477702",
+     "name": "Tomás Cuello",
+     "aliases": [
+      "tomas cuello"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Athletico-PR 2022, Athletico-PR 2024, Atlético-MG 2025 e mais 1"
+    },
+    {
+     "id": "Q15438413",
+     "name": "David Terans",
+     "aliases": [
+      "david terans"
+     ],
+     "tier": "raiz",
+     "points": 60,
+     "evidence": "Atlético-MG 2018, Athletico-PR 2021, Athletico-PR 2022"
+    },
+    {
+     "id": "Q20641618",
+     "name": "Vina",
+     "aliases": [
+      "vina",
+      "vinicius",
+      "vinicius goes",
+      "vinicius goes barbosa de souza"
+     ],
+     "tier": "resenha",
+     "points": 85,
+     "evidence": "Athletico-PR 2016, Atlético-MG 2019"
     }
    ]
   }
