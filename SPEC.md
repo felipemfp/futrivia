@@ -42,7 +42,7 @@ A daily Brazilian football trivia game in Portuguese. Every player gets the same
 2. Accept the player's dataset name or any Wikidata or override alias.
 3. Accept a single name word, such as a surname, if it identifies one answer in this prompt.
 4. Accept one typo (edit distance 1) in names of 5 or more letters, if that identifies one answer.
-5. For several typed words, accept if the words that each identify one answer all point to the same answer; words the data doesn't know (a nickname like "Cebolinha") are ignored. Particles and words under 3 letters never count.
+5. For several typed words, accept if every word the data knows points to the same single answer and at least one of them is a surname or a one-word name; words the data doesn't know (a nickname like "Cebolinha") are ignored. A first name alone never decides ("Rafael Moura" is not Rafael Vaz). Particles and words under 3 letters never count.
 6. If several answers match by name word or typo, or several typed words only point to shared or different answers, show "Seja mais específico" and keep the timer running. If the typed text exactly matches the name or alias of several answers (two different players called Dudu), it is correct and credits the most obvious of them.
 
 ### Prompt rules

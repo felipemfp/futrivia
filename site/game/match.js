@@ -74,14 +74,17 @@ export function matchAnswer(input, answers) {
     if (byTypo) return byTypo;
   }
 
-  // Several words with a nickname the data lacks ("Everton Cebolinha"): the words that name exactly one answer decide.
-  // Unknown words are ignored; known words that only point at several answers ask for more detail.
+  // Several words with a nickname the data lacks ("Everton Cebolinha"): unknown words are ignored, and the one
+  // answer every known word points at is correct. At least one of those words must be a surname or a one-word
+  // name: a first name next to an unknown word is likely another player ("Rafael Moura" is not Rafael Vaz).
   if (!singleWord) {
     const words = typed.split(" ").filter((w) => w.length >= MIN_WORD && !PARTICLES.has(w));
+    const decides = (w, a) => keys(a).some((k) => k.split(" ").some((kw, i, all) => kw === w && (i > 0 || all.length === 1)));
     const hits = words.map((w) => answers.filter((a) => keys(a).some((k) => k.split(" ").includes(w))));
-    const named = new Set(hits.filter((h) => h.length === 1).map((h) => h[0]));
-    if (named.size === 1) return { status: "correct", answer: [...named][0] };
-    if (named.size > 1 || hits.some((h) => h.length > 1)) return { status: "ambiguous" };
+    const known = hits.filter((h) => h.length);
+    const named = answers.filter((a) => known.length && known.every((h) => h.includes(a)) && words.some((w) => decides(w, a)));
+    if (named.length === 1) return { status: "correct", answer: named[0] };
+    if (known.some((h) => h.length > 1) || new Set(known.flat()).size > 1) return { status: "ambiguous" };
   }
 
   return { status: "wrong" };
