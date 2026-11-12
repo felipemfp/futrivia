@@ -96,3 +96,16 @@ test("several words: no known word is wrong; particles and short words never cou
   assert.equal(matchAnswer("Ronaldo Fenomeno", evertons).status, "wrong");
   assert.equal(matchAnswer("Ze do Jo", evertons).status, "wrong");
 });
+
+// Player report 2026-11-11: "Rafael Moura" scored as Rafael Vaz, "Bruno Henrique" as Bruno Praxedes.
+const firstNames = [
+  { id: "vaz", name: "Rafael Vaz", aliases: ["rafael vaz", "rafael vaz dos santos"], points: 30 },
+  { id: "praxedes", name: "Praxedes", aliases: ["bruno praxedes", "praxedes"], points: 100 },
+];
+
+test("several words: a first name alone never decides next to an unknown word", () => {
+  assert.equal(matchAnswer("Rafael Moura", firstNames).status, "wrong");
+  assert.equal(matchAnswer("Bruno Henrique", firstNames).status, "wrong");
+  assert.equal(matchAnswer("Rafael Santos", firstNames).answer.id, "vaz");
+  assert.equal(matchAnswer("Volante Praxedes", firstNames).answer.id, "praxedes");
+});

@@ -52,6 +52,13 @@ const CASES = [
   ["2026-11-05", "marcou-por-ceara-2020", "Vinícius", "correct", "Vina"],
   // A word naming one answer counts next to words the data lacks.
   ["2026-11-09", "expulso-palmeiras-2014-2019", "Luis Valdivia", "correct", "Jorge Valdivia"],
+  // Player report 2026-11-11: a shared first name next to another player's surname is not that player.
+  ["2026-11-11", "expulso-goias-2020-2026", "Rafael Moura", "wrong"],
+  ["2026-11-11", "expulso-goias-2020-2026", "Rafael Vaz", "correct", "Rafael Vaz"],
+  ["2026-11-11", "expulso-goias-2020-2026", "Bruno Henrique", "wrong"],
+  // "henrique" is in another answer's legal name, so the two known words point at different players.
+  ["2026-11-11", "marcou-contra-fluminense-2023", "Bruno Henrique", "ambiguous"],
+  ["2026-11-11", "marcou-contra-fluminense-2023", "Bruno Praxedes", "correct", "Praxedes"],
   ["2026-11-09", "marcou-por-cruzeiro-e-internacional", "Damiao", "correct", "Leandro Damião"],
   ["2026-11-09", "marcou-por-cruzeiro-e-internacional", "Sobis", "correct", "Rafael Sóbis"],
   ["2026-11-20", "marcou-contra-flamengo-2025", "Vitor Roque", "correct", "Vitor Roque"],
